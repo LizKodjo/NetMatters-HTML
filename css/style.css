@@ -32,6 +32,26 @@ ul {
   color: white;
 }
 
+.servicegrid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  background-color: #333645;
+  position: relative;
+  color: white;
+}
+
 .main-footer {
   display: flex;
   background-color: #323544;
