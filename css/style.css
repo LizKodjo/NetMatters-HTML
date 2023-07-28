@@ -26,8 +26,14 @@ ul {
   display: flex;
 }
 
+.reviews {
+  display: flex;
+  background-color: #333645;
+  color: white;
+}
+
 .main-footer {
-  display: grid;
+  display: flex;
   background-color: #323544;
 }
 
