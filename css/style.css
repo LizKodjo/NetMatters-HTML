@@ -1,3 +1,33 @@
+* {
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.privacy {
+  color: black;
+  text-decoration: underline;
+}
+
+ul {
+  color: white;
+  list-style: none;
+}
+
+.main-footer {
+  display: grid;
+  background-color: #323544;
+}
+
+.copyright {
+  background-color: #212330;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */
