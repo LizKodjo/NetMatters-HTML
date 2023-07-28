@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
-  font-family: Poppins, san-serif;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0;
 }
 
 a {
@@ -35,17 +39,19 @@ ul {
 .servicegrid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 20px auto;
-  padding: 10px;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .service {
   flex: 1 200px;
+  margin: 20px;
   padding: 10px;
-  border: 1px solid orange;
+  border: 1px solid black;
   border-radius: 5px;
   text-align: center;
+  align-self: center;
 }
 
 nav {
@@ -57,8 +63,14 @@ nav {
 
 .latestnews {
   display: flex;
-  border: 2px solid green;
-  background-color: pink;
+}
+
+.top-help {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .main-footer {
@@ -72,6 +84,48 @@ nav {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.logo1 {
+  border: 0;
+  vertical-align: middle;
+}
+
+form.example input {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 20%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: grey;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*# sourceMappingURL=style.css.map */
