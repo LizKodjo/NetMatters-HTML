@@ -28,10 +28,14 @@ ul {
 }
 .servicegrid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    margin: 20px auto;
+    padding: 10px;
 }
 .service {
-    margin: 20px;
+    flex: 1 200px;
+    // margin: 20px;
     padding: 10px;
     border: 1px solid orange;
     border-radius: 5px;
@@ -42,4 +46,9 @@ nav {
     background-color: #333645;
     position: relative;
     color: white;
+}
+.latestnews {
+    display: flex;
+    border: 2px solid green;
+    background-color: pink;
 }
