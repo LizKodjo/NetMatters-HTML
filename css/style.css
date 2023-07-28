@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Poppins, san-serif;
 }
 
 a {
@@ -15,6 +16,14 @@ a {
 ul {
   color: white;
   list-style: none;
+}
+
+.newsletter {
+  background-color: #ddd;
+}
+
+.signup {
+  display: flex;
 }
 
 .main-footer {

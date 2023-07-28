@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Poppins, san-serif;
 }
 
 a {
@@ -14,3 +15,13 @@ ul {
     color: white;
     list-style: none;
 }
+.newsletter {
+    background-color: #ddd;
+}
+.signup {
+    display: flex;
+}
+// .privacy {
+//     color: black;
+//     text-decoration: underline;
+// }
