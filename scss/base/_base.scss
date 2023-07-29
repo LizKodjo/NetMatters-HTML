@@ -56,6 +56,7 @@ nav {
 }
 .latestnews {
     display: flex;
+    flex-direction: row;
 }
 .top-help {
     display: flex;
@@ -65,3 +66,7 @@ nav {
     padding-bottom: 10px;
 }
 
+.clients {
+    text-align: center;
+    font-weight: 300;
+}
