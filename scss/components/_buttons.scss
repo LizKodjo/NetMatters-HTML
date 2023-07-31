@@ -15,7 +15,78 @@
     background-image: none;
     border: 1px solid transparent;
 }
-.main-color {
+// Top buttons
+.itbtn {
+    color: white;
+    background-color: #4183d7;
+    border-color: #4183d7;
+}
+.contactbtn {
+    background-color: #999aa2;
+    border-color: #999aa2;
+}
+
+// Our Services buttons
+.servebespoke {
+    background-color: #999aa2;
+    border-color: #999aa2;
+    color: white;
+}
+.serveit {
+    background-color: #4183d7;
+    border-color: #4183d7;
+    color: white;
+}
+.servedigital {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    color: white;
+}
+.servetelecoms {
+    background-color: #d64541;
+    border-color: #d64541;
+    color: white;
+}
+.serveweb {
+    background-color: #926fb1;
+    border-color: #926fb1;
+    color: white;
+}
+.servecyber {
+    background-color: #f62459;
+    border-color: #f62459;
+    color: white;
+}
+.servedev {
+    background-color: #ce4125;
+    border-color: #ce4125;
+    color: white;
+}
+// Styling the icons
+// <style>
+// .material-symbols-outlined {
+//   font-variation-settings:
+//   'FILL' 0,
+//   'wght' 400,
+//   'GRAD' 0,
+//   'opsz' 48
+// }
+// </style>
+// Reviews
+.googlebtn {
+    background-color: #4387f6;
+    color: white;
+}
+.trustbtn {
+    background-color: #00b67b;
+    color: white;
+}
+.latestbtn {
+    background-color: #4183d7;
+    border-color: #4183d7;
+    color: white;
+}
+.welcomebtn {
     color: white;
     background-color: #272936;
     border-color: #333645;

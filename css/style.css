@@ -16,12 +16,6 @@ body {
   /* padding: 3.75rem 0; */
 }
 
-/* .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-} */
 a {
   text-decoration: none;
   color: white;
@@ -160,24 +154,6 @@ nav {
   color: orange;
 }
 
-.btn {
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-  white-space: normal;
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-}
-
 h2 {
   font-size: 2rem;
 }
@@ -202,8 +178,11 @@ h4 {
   background-color: #212330;
   color: white;
   text-align: left;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  padding: 5px 0 10px;
+  font-size: 0.8125rem;
 }
 
 a:hover {
@@ -215,25 +194,27 @@ a:hover {
 .footer-logo {
   border: 0;
   vertical-align: middle;
-  width: 100%;
-  overflow-clip-margin: content-box;
-  overflow: clip;
+  width: auto;
 }
 
 .footer-sections {
   display: flex;
-  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 .fa {
   padding: 20px;
-  font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
 }
 
+.social-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .social-logos a {
   background-color: #212330;
 }
@@ -275,7 +256,76 @@ a:hover {
   border: 1px solid transparent;
 }
 
-.main-color {
+.itbtn {
+  color: white;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+.contactbtn {
+  background-color: #999aa2;
+  border-color: #999aa2;
+}
+
+.servebespoke {
+  background-color: #999aa2;
+  border-color: #999aa2;
+  color: white;
+}
+
+.serveit {
+  background-color: #4183d7;
+  border-color: #4183d7;
+  color: white;
+}
+
+.servedigital {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+  color: white;
+}
+
+.servetelecoms {
+  background-color: #d64541;
+  border-color: #d64541;
+  color: white;
+}
+
+.serveweb {
+  background-color: #926fb1;
+  border-color: #926fb1;
+  color: white;
+}
+
+.servecyber {
+  background-color: #f62459;
+  border-color: #f62459;
+  color: white;
+}
+
+.servedev {
+  background-color: #ce4125;
+  border-color: #ce4125;
+  color: white;
+}
+
+.googlebtn {
+  background-color: #4387f6;
+  color: white;
+}
+
+.trustbtn {
+  background-color: #00b67b;
+  color: white;
+}
+
+.latestbtn {
+  background-color: #4183d7;
+  border-color: #4183d7;
+  color: white;
+}
+
+.welcomebtn {
   color: white;
   background-color: #272936;
   border-color: #333645;
