@@ -32,6 +32,18 @@ h2 {
   height: auto;
 }
 
+.jobpic {
+  border-radius: 50%;
+}
+
+.jobvac {
+  width: 75%;
+}
+
+.postedby {
+  font-size: 12px;
+}
+
 .clients {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -162,7 +174,7 @@ footer {
   align-items: baseline;
 }
 
-img {
+.light-logo {
   max-width: 50%;
   height: auto;
 }
