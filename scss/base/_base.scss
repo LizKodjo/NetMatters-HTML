@@ -6,10 +6,32 @@ body {
     font-size: 1rem;
 }
 
+// Latest news
+section {
+    border: 1px solid purple;
+}
+article {
+    align-items: center;
+}
+h2 {
+    text-align: center;
+}
+.latestnews {
+    display: flex;
+    flex-direction: column;
+}
+.latestbtn {
+    background-color: #4183d7;
+    border-color: #4183d7;
+    color: white;
+    text-transform: uppercase;
+    height: auto;
+}
+
 // Clients
 .clients {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .clients-img {
     max-width: 50%;
@@ -21,6 +43,40 @@ body {
     vertical-align: middle;
     padding: 0 20px;
     filter: grayscale(100%)
+}
+.clients-img:hover {
+    filter:grayscale(10%);
+}
+// Tooltip container
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+// tooltip text
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    // Postion the tooltip text
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    // Fade in tooltip
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+// tooltip arrow
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 // Newsletter
 .newsletter {
