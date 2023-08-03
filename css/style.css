@@ -8,7 +8,8 @@ body {
 }
 
 section {
-  border: 1px solid purple;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
 }
 
 article {
@@ -22,6 +23,7 @@ h2 {
 .latestnews {
   display: flex;
   flex-direction: column;
+  margin: 20px;
 }
 
 .latestbtn {
@@ -30,18 +32,45 @@ h2 {
   color: white;
   text-transform: uppercase;
   height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .jobpic {
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .jobvac {
-  width: 75%;
+  width: 100%;
+}
+
+.jobtitle {
+  color: #4183d7;
 }
 
 .postedby {
+  font-size: 15px;
+  display: inline-block;
+  padding: 15px;
+}
+
+.jobspan {
+  color: #ddd;
+  text-transform: uppercase;
   font-size: 12px;
+}
+
+.art-details {
+  padding: 15px;
+}
+
+.dateposted {
+  border-top: 1px solid #ddd;
+}
+
+.jobspec {
+  color: #666;
 }
 
 .clients {
@@ -196,6 +225,7 @@ a {
 
 h4 {
   color: white;
+  text-transform: uppercase;
 }
 
 /* Styling the social media icons */
