@@ -7,6 +7,150 @@ body {
   font-size: 1rem;
 }
 
+.partners {
+  padding: 15px;
+}
+
+.service-subheading {
+  color: black;
+}
+
+.service {
+  border: 1px solid #a3a8ac;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+}
+
+.servicegrid {
+  padding: 20px;
+  color: #333645;
+}
+
+.service-topic {
+  font-size: 20px;
+}
+
+.service-info {
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+.btn {
+  text-transform: uppercase;
+  color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.servedev {
+  background-color: #ce4125;
+  border-color: #ce4125;
+}
+
+.servecyber {
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
+.serveweb {
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.servetelecoms {
+  background-color: #d64541;
+  border-color: #d64541;
+}
+
+.servedigital {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.serveit {
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+.servebespoke {
+  background-color: #67809f;
+  border-color: #67809f;
+}
+
+.reviews {
+  background-color: #333645;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  padding: 20px;
+}
+
+.trustbtn {
+  background-color: #00b67b;
+  border-color: #00b67b;
+  color: white;
+  border-radius: 5px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 12px;
+}
+
+.googlebtn {
+  background-color: #4183d7;
+  border-color: #4183d7;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.ash-review {
+  font-style: italic;
+}
+
+.reviewer {
+  color: #a3a8ac;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.ashllp {
+  font-weight: bold;
+  color: white;
+}
+
+.clients-think {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.stars {
+  color: orange;
+}
+
+.welcome {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.welcomebtn {
+  color: white;
+  background-color: #272936;
+  border-color: #272936;
+  text-transform: uppercase;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
 section {
   border: 1px solid #ddd;
   margin-bottom: 20px;
@@ -190,7 +334,7 @@ footer {
   height: auto;
 }
 
-.container {
+.footer-container {
   background-color: #323544;
   justify-content: space-between;
 }
