@@ -7,18 +7,32 @@
     <title>Full Service Digital Agency</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f8bda8a3df.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+        <symbol id="icon-home" viewBox="0 0 32 32">
+        <path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path>
+        </symbol>
+        <symbol id="icon-folder-open" viewBox="0 0 32 32">
+        <path d="M26 30l6-16h-26l-6 16zM4 12l-4 18v-26h9l4 4h13v4z"></path>
+        </symbol>
+        <symbol id="icon-display" viewBox="0 0 32 32">
+        <path d="M0 2v20h32v-20h-32zM30 20h-28v-16h28v16zM21 24h-10l-1 4-2 2h16l-2-2z"></path>
+        </symbol>
+        </defs>
+        </svg>
     <header class="main-header">
         <div class="container">
             <!-- <div class="top-help">
                 <img class="logo" src="img/asset 0.png">
-                <button class="btn itbtn"></i>Support</button>
-                <button class="btn contactbtn">Contact</button>
+                <button class="btn itbtn"></i>Support</button><i class="fa-regular fa-paper-plane"></i>
+                <button class="btn contactbtn"><span class="material-symbols-outlined">mouse</span>Contact</button>
                 <form class="example">
                     <input type="text" placeholder="Search..." name="search">
                     <button class="btn" type="submit"><i class="fa fa-search"></i></button>
@@ -30,24 +44,25 @@
                 <div class="bespoke">
                     <button class="bespokebtn">Bespoke Software</button>
                     <div class="bespoke-content">
+                        <h3>Our Bespoke Software Services</h3>
                         <a href="#">Bespoke CRM</a>
-                        <a href="#">Business Automation</a>
+                        <a href="#"><i class="fa-solid fa-briefcase"></i>Business Automation</a>
                         <a href="#">Software Integrations</a>
-                        <a href="#">Bespoke Databases</a>
+                        <a href="#"><i class="fa-solid fa-folder-open"></i>Bespoke Databases</a>
                         <a href="#">Mobile App Development</a>
                         <a href="#">Sharepoint Development</a>
-                        <a href="#">Operational Systems</a>
+                        <a href="#"><i class="fa-solid fa-download"></i>Operational Systems</a>
                         <a href="#">Business Central Implementation</a>
-                        <a href="#">Internet of Things (IoT) Software</a>
-                        <a href="#">Intranet Development</a>
+                        <a href="#"><i class="fa-solid fa-laptop"></i>Internet of Things (IoT) Software</a>
+                        <a href="#"><i class="fa-solid fa-cloud"></i>Intranet Development</a>
                         <a href="#">Customer Portal Development</a>
-                        <a href="#">Reporting Hub</a>
+                        <a href="#"><i class="fa-solid fa-earth-americas"></i>Reporting Hub</a>
                     </div>
                 </div>
                 <!-- Bespoke Software -->
                 <!-- IT Support -->
                 <div class="itsupport">
-                    <button class="itsupportbtn">IT Support</button>
+                    <button class="itsupportbtn"><span class="material-symbols-outlined itpic">monitor</span><br>IT Support</button>
                     <div class="itsupport-content">
                         <a href="#">Managed IT Support</a>
                         <a href="#">Business IT Support</a>
@@ -60,7 +75,7 @@
                 <!-- IT Support -->
                 <!-- Digital Marketing -->
                 <div class="digitalmarketing">
-                    <button class="digimarketbtn">Digital Marketing</button>
+                    <button class="digimarketbtn"><span class="material-symbols-outlined digipic">signal_cellular_alt</span><br>Digital Marketing</button>
                     <div class="digimarket-content">
                         <a href="#">Search Engine Optimisation (SAO)</a>
                         <a href="#">Pay Per Click Advertising (PPC)</a>
@@ -73,7 +88,7 @@
                 <!-- Digital Marketing -->
                 <!-- Telecoms Services -->
                 <div class="telecomsservices">
-                    <button class="telecomsbtn">Telecoms Services</button>
+                    <button class="telecomsbtn"><span class="material-symbols-outlined telepic">phone_in_talk</span><br>Telecoms Services</button>
                     <div class="telecoms-content">
                         <a href="#">Business Mobile</a>
                         <a href="#">Hosted VOIP</a>
@@ -86,7 +101,7 @@
                 <!-- Telecoms Services -->
                 <!-- Web Design -->
                 <div class="webdesign">
-                    <button class="webdesignbtn">Web Design</button>
+                    <button class="webdesignbtn"><span class="material-symbols-outlined webpic">code_off</span><br>Web Design</button>
                     <div class="webdesign-content">
                         <a href="#">Bespoke Website Design</a>
                         <a href="#">eCommerce Stores</a>
@@ -99,7 +114,7 @@
                 <!-- Web Design -->
                 <!-- Cyber Security -->
                 <div class="cyber">
-                    <button class="cybersecbtn">Cyber Security</button>
+                    <button class="cybersecbtn"><span class="material-symbols-outlined cyberpic">security</span><br>Cyber Security</button>
                     <div class="cyber-content">
                         <a href="#">Assessment</a>
                         <a href="#">Penetration Testing</a>
@@ -111,7 +126,7 @@
                 <!-- Cyber Security -->
                 <!-- Developer Course -->
                 <div class="devcourse">
-                    <button class="devcoursebtn">Developer Course</button>
+                    <button class="devcoursebtn"><span class="material-symbols-outlined devpic">school</span><br>Developer Course</button>
                     <div class="devcourse-content">
                         <a href="#">Train For A Career In Tech</a>
                         <a href="#">Skills Bootcamp</a>
