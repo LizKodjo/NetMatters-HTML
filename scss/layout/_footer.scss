@@ -1,10 +1,14 @@
 footer {
     height: auto;
 }
+footer ul li a {
+    color: white;
+}
 
 .footer-container {
     background-color: #323544;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .footer-sections {
@@ -31,10 +35,14 @@ ul {
 }
 
 a {
-    color: white;
     text-decoration: none;
     letter-spacing: .4px;
 }
+
+// .footerlist ~ li {
+//     color:white;
+// }
+
 h4 {
     color: white;
     text-transform: uppercase;
