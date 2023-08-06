@@ -2,11 +2,16 @@ footer {
     height: auto;
 }
 footer ul li a {
-    color: white;
+    color: $white;
+}
+
+.footer-cols {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .footer-container {
-    background-color: #323544;
+    background-color: $tuna;
     justify-content: space-between;
     padding: 20px;
 }
@@ -14,17 +19,25 @@ footer ul li a {
 .footer-sections {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: baseline;
+    flex-direction: row;
+    
 }
 .light-logo {
-    max-width: 50%;
+    max-width:100%;
     height:auto;
 }
 
-li {
+.footerlist li {
     text-align: justify;
+    font-size:small;
+    margin-bottom:10px;
+}
+.footer-logo {
+    color:$white;
+}
+.footer-logo h4 {
+    font-weight:lighter;
+    text-transform: uppercase;
 }
 
 
@@ -43,19 +56,20 @@ a {
 //     color:white;
 // }
 
-h4 {
-    color: white;
+.footer-cols h4 {
+    color: $white;
     text-transform: uppercase;
+    font-size: small;    
 }
 
 /* Styling the social media icons */
-.fa {
-    padding: 20px;
+.fb-btn, .ln-btn, .tw-btn, .in-btn {
+    padding: 10px;
     font-size: 30px;
     width: 50px;
-    text-align: center;
     text-decoration: none;
-    background: #212330;
+    background: $ebony-clay;
+    color: $white;
 }
 /* Hover effect */
 .fa:hover {
@@ -73,7 +87,11 @@ h4 {
     flex-wrap: wrap;
 }
 .copyright {
-    background-color: #212330;
-    color: white;
-    padding: 5px 15px;
+    background-color: $ebony-clay;
+    color: $white;
+    padding: 10px 15px;
+    font-size:small;
+}
+.copyright a {
+    color: $white;
 }

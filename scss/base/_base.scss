@@ -1,61 +1,81 @@
 * {
     box-sizing: border-box;
 }
+
 body {
-    font-family: Poppins, sans-serif;
+    font-family: $primary-font;
     font-size: 1rem;
 }
 
 // Navigation
-// .bespoke-content {
-//     color: black;
-//     list-style-type: none;
-//     margin: 0;
-//     padding: 0;
-// }
-// .nav-list {
-//     color: black;
-// }
-// .bespokebtn {
-//     color: black;
-// }
-
-// styling navigation
-.topnav {
-    background-color: #333;
-    overflow: hidden;
+.itbtn {
+    background-color: $havelock-blue;
 }
 
-// Style the links inside the navigation bar
-.topnav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.contactbtn {
+    background-color: $primary-warm-col;
+}
+
+.searchbar {
+    float: right;
+    padding: 15px;
+    border: 1px solid $primary-warm-col;
+    margin: 15px;
     font-size: 17px;
 }
-//  highlight the active page
-// .active {
-//     background-color: #04aa6d;
-//     color: white;
-// }
 
-// Hide the link that opens and closes the nav on small screens
-.topnav .icon {
-    display: none;
+.searchbtn {
+    float: right;
+    padding: 15px;
+    ;
+    margin: 15px;
+    background: $primary-warm-col;
+    font-size: 17px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-// dropdown container
-.bespoke, .itsupport, .digitalmarketing,
-.telecomsservices, .webdesign, .cyber, 
+.menu {
+    color: $white;
+    background-color: $primary-dark-col;
+    border-color: $primary-dark-col;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+// styling navigation and the links inside
+.topnav {
+    background-color: $mineshaft;
+    overflow: hidden;
+
+    a {
+        float: left;
+        display: block;
+        color: $white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .icon {
+        display: none;
+    }
+}
+
+// dropdown container and Styling the dropdown buttons
+.bespoke,
+.itsupport,
+.digitalmarketing,
+.telecomsservices,
+.webdesign,
+.cyber,
 .devcourse {
     float: left;
     overflow: hidden;
 }
-
-// Styling the dropdown buttons
 .bespoke .bespokebtn,
 .itsupport .itsupportbtn,
 .digitalmarketing .digimarketbtn,
@@ -64,22 +84,21 @@ body {
 .cyber .cybersecbtn,
 .devcourse .devcoursebtn {
     font-size: 17px;
-    border:none;
+    border: none;
     outline: none;
-    color: white;
+    color: $white;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
 }
-
 // style the dropdown content
 [class$="-content"] {
     display: none;
     position: absolute;
     // background-color: orange;
     min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -92,14 +111,17 @@ a[class$="-content"] {
     display: block;
     text-align: center;
     // a:hover {
-    //     background-color: #ddd;
+    //     background-color: $alto;
     //     color: black;
     // }
 }
+
 // styling background on links and the dropdown hover
-.bespoke a:hover, .bespoke:hover .bespokebtn, .bespoke-content {
-    background-color: #67809f;
-    color: white;
+.bespoke a:hover,
+.bespoke:hover .bespokebtn,
+.bespoke-content {
+    background-color: $hoki;
+    color: $white;
 }
 
 .bespoke:hover .bespoke-content,
@@ -111,52 +133,76 @@ a[class$="-content"] {
 .devcourse:hover .devcourse-content {
     display: block;
 }
-.itsupport a:hover, .itsupport:hover .itsupportbtn, .itsupport-content {
-    background-color: #4183d7;
-    color: white;
+
+.itsupport a:hover,
+.itsupport:hover .itsupportbtn,
+.itsupport-content {
+    background-color: $havelock-blue;
+    color: $white;
 }
+
 .itpic {
-    color: #4183d7;
+    color: $havelock-blue;
 }
-.digitalmarketing a:hover, .digitalmarketing:hover .digimarketbtn, .digimarket-content {
-    background-color: #2ecc71;
-    color: white;
+
+.digitalmarketing a:hover,
+.digitalmarketing:hover .digimarketbtn,
+.digimarket-content {
+    background-color: $shamrock;
+    color: $white;
 }
+
 .digipic {
-    color: #2ecc71;
+    color: $shamrock;
 }
-.telecomsservices a:hover, .telecomsservices:hover .telecomsbtn, .telecoms-content {
-    background-color: #d64541;
-    color: white;
+
+.telecomsservices a:hover,
+.telecomsservices:hover .telecomsbtn,
+.telecoms-content {
+    background-color: $valencia;
+    color: $white;
 }
+
 .telepic {
-    color: #d64541;
+    color: $valencia;
 }
-.webdesign a:hover, .webdesign:hover .webdesignbtn, .webdesign-content {
-    background-color: #926fb1;
-    color: white;
+
+.webdesign a:hover,
+.webdesign:hover .webdesignbtn,
+.webdesign-content {
+    background-color: $wisteria;
+    color: $white;
 }
+
 .webpic {
-    color: #926fb1;
+    color: $wisteria;
 }
-.cyber a:hover, .cyber:hover .cybersecbtn, .cyber-content {
-    background-color: #f62459;
-    color: white;
+
+.cyber a:hover,
+.cyber:hover .cybersecbtn,
+.cyber-content {
+    background-color: $radical-red;
+    color: $white;
 }
+
 .cyberpic {
-    color: #f62459;
+    color: $radical-red;
 }
-.devcourse a:hover, .devcourse:hover .devcoursebtn, .devcourse-content {
-    background-color: #ce4125;
-    color: white;
+
+.devcourse a:hover,
+.devcourse:hover .devcoursebtn,
+.devcourse-content {
+    background-color: $punch;
+    color: $white;
 }
+
 .devpic {
-    color: #ce4125;
+    color: $punch;
 }
 
 // Main picture
 .headerpic {
-    width:100%;
+    width: 100%;
     height: 100%;
 }
 
@@ -164,192 +210,234 @@ a[class$="-content"] {
 .partners {
     padding: 15px;
 }
+
 .service-subheading {
     color: black;
 }
+
 .service {
-    border: 1px solid #a3a8ac;
+    border: 1px solid $primary-warm-col;
     margin-bottom: 15px;
     border-radius: 10px;
     text-align: center;
     padding: 15px;
 }
+
 .servicegrid {
     padding: 20px;
-    color: #333645;
+    color: $primary-dark-col;
 }
+
 .service-topic {
     font-size: 20px;
 }
+
 .service-info {
     font-size: 14px;
     letter-spacing: .4px;
 }
+
 .btn {
     text-transform: uppercase;
-    color: white;
+    color: $white;
     padding: 15px;
     margin: 15px 0;
     border-radius: 5px;
-    border-style:none;
+    border-style: none;
 }
-.servedev, .dev-icon {
-    background-color:#ce4125;
-    border-color:#ce4125;
-}
+
+.servedev,
 .dev-icon {
-    color: white;
+    background-color: $punch;
+    border-color: $punch;
 }
+
+.dev-icon {
+    color: $white;
+}
+
 [class$="-icon"] {
     padding: 15px;
     border-radius: 50%;
     font-size: 40px;
-    color: white;
+    color: $white;
 }
 
-.servecyber, .cyber-icon {
-    background-color: #f62459;
-    border-color: #f62459;
+.servecyber,
+.cyber-icon {
+    background-color: $radical-red;
+    border-color: $radical-red;
 }
-.serveweb, .web-icon {
-    background-color: #926fb1;
-    border-color: #926fb1;
+
+.serveweb,
+.web-icon {
+    background-color: $wisteria;
+    border-color: $wisteria;
 }
-.servetelecoms, .tele-icon {
-    background-color: #d64541;
-    border-color: #d64541;
+
+.servetelecoms,
+.tele-icon {
+    background-color: $valencia;
+    border-color: $valencia;
 }
-.servedigital, .digital-icon {
-    background-color: #2ecc71;
-    border-color: #2ecc71;
+
+.servedigital,
+.digital-icon {
+    background-color: $shamrock;
+    border-color: $shamrock;
 }
-.serveit, .it-icon {
-    background-color: #4183d7;
-    border-color: #4183d7;
+
+.serveit,
+.it-icon {
+    background-color: $havelock-blue;
+    border-color: $havelock-blue;
 }
+
 .servebespoke {
-    background-color: #67809f;
-    border-color: #67809f;
+    background-color: $hoki;
+    border-color: $hoki;
 }
-
 
 // Reviews
 .reviews {
-    background-color:#333645;
-    color: white;
+    display: flex;
+    background-color: $primary-dark-col;
+    color: $white;
     font-size: 20px;
     letter-spacing: .4px;
     padding: 20px;
 
 }
+
 .trustbtn {
-    background-color: #00b67b;
-    border-color: #00b67b;
-    color: white;
+    background-color: $jade;
+    border-color: $jade;
+    color: $white;
     border-radius: 5px;
     font-weight: 300;
     text-transform: uppercase;
     padding: 12px;
 }
+
 .googlebtn {
-    background-color: #4183d7;
-    border-color: #4183d7;
+    background-color: $havelock-blue;
+    border-color: $havelock-blue;
     text-transform: uppercase;
-    color: white;
+    color: $white;
     border-radius: 5px;
     font-weight: 300;
-    padding:12px;
+    padding: 12px;
     margin-bottom: 10px;
 }
+
 .ash-review {
-    font-style:italic;    
+    font-style: italic;
+}
+.review1 {
+    padding-left: 30px;
 }
 .reviewer {
-    color:#a3a8ac;
+    color: $primary-warm-col;
     font-size: 15px;
     font-weight: bold;
 }
+
 .ashllp {
     font-weight: bold;
-    color: white;
+    color: $white;
 }
+
 .clients-think {
-    color: white;
-    text-align:left;
+    color: $white;
+    text-align: left;
     font-weight: bold;
 }
+
 .stars {
     color: orange;
 }
+
 .welcome {
-    color:white;
-    text-align:left;
+    color: $white;
+    text-align: left;
     font-weight: bold;
 }
+
 .welcomebtn {
-    color: white;
-    background-color: #272936;;
-    border-color: #272936;
-    text-transform: uppercase;  
+    color: $white;
+    background-color: $charade;
+    border-color: $charade;
+    text-transform: uppercase;
     padding: 15px;
-    margin-bottom: 20px;  
-    border-style:none;
+    margin-bottom: 20px;
+    border-style: none;
 }
 
 // Latest news
 section {
-    border: 1px solid #ddd;
+    border: 1px solid $alto;
     margin-bottom: 20px;
 }
+
 article {
     align-items: center;
 }
+
 h2 {
     text-align: center;
 }
+
 .latestnews {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
+
 .latestbtn {
-    background-color: #4183d7;
-    border-color: #4183d7;
-    color: white;
+    background-color: $havelock-blue;
+    border-color: $havelock-blue;
+    color: $white;
     text-transform: uppercase;
     height: auto;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
-
 }
+
 .jobpic {
     border-radius: 100%;
 }
+
 .jobvac {
     width: 100%;
 }
+
 .jobtitle {
-    color: #4183d7;
+    color: $havelock-blue;
 }
+
 .postedby {
-    font-size:15px;
-    display:inline-block;
-    padding:15px;
+    font-size: 15px;
+    display: inline-block;
+    padding: 15px;
 }
+
 .jobspan {
-    color: #ddd;
+    color: $alto;
     text-transform: uppercase;
     font-size: 12px;
 }
+
 .art-details {
     padding: 15px;
 }
+
 .dateposted {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid $alto;
 }
+
 .jobspec {
-    color: #666;
+    color: $dove-gray;
 }
 
 // Clients
@@ -357,6 +445,7 @@ h2 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .clients-img {
     max-width: 50%;
     display: flex;
@@ -368,93 +457,114 @@ h2 {
     padding: 0 20px;
     filter: grayscale(100%)
 }
+
 .clients-img:hover {
-    filter:grayscale(10%);
+    filter: grayscale(10%);
 }
-// Tooltip container
+
+// Tooltip container and tooltip text
 .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
+
+    .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: $emperor;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        // Postion the tooltip text
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        // Fade in tooltip
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
 }
 
-// tooltip text
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    // Postion the tooltip text
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    // Fade in tooltip
-    opacity: 0;
-    transition: opacity 0.3s;
-}
 // tooltip arrow
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
+
 // Newsletter
 .newsletter {
-    background-color: #ddd;
-    color:#666;
+    background-color: $alto;
+    color: $dove-gray;
     padding: 50px 15px;
 }
+
 .privacy {
     color: inherit;
-    text-decoration: underline;   
+    text-decoration: underline;
 }
+
 .news-inputs {
     display: flex;
     flex-direction: column;
     border: none;
 }
-.newsform, .privacy-label {
+
+.newsform {
     margin-bottom: 15px;
 }
 
 .privacy-label {
     line-height: 32px;
-    display: block;
+    margin-bottom: 15px;
+    display: table;
 }
+
 .private-check {
     position: relative;
     border-radius: 3px;
-    border: 3px solid #333645;
+    border: 3px solid $primary-dark-col;
     height: 32px;
     width: 32px;
     float: left;
     margin-right: 20px;
 }
+
+.left {
+    float: left;
+}
+
+// .clear {
+//     clear:both;
+// }
 h2 {
     font-weight: 400;
     margin: 0 0 15px;
-    color: #333645;
+    color: $primary-dark-col;
 }
+
 label {
     font-weight: 600;
     margin-bottom: 5px;
 }
+
 // End of newsletter section 
-    
-    
+
+
 
 
 /* Media queries */
 
 @media (min-width: 769px) and (orientation: landscape) {
     .colsforfooter {
-        flex-direction:row;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
+
 // @media (max-width: 850px) {
 //     .topnav {
 //         display:none;
@@ -465,13 +575,21 @@ label {
         flex-direction: column;
     }
 }
+
 @media (min-width: 1025px) {
+    .top-help {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
 }
 
 // hide nav on small screens
 @media screen and (max-width:600px) {
-    .topnav, .bespoke .bespokebtn,
+
+    .topnav,
+    .bespoke .bespokebtn,
     .itsupport .itsupportbtn,
     .digitalmarketing .digimarketbtn,
     .telecomsservices .telecomsbtn,
@@ -480,11 +598,25 @@ label {
     .devcourse .devcoursebtn {
         display: none;
     }
+
     .topnav a.icon {
         float: right;
         display: block;
     }
 }
+
+// When the screen is less than 600, stack the links and serch field vertically.
+
+// @media screen and (max-width: 600px) {
+//     .top-help .searchbar {
+//         float: none;
+//         display:block;
+//         text-align: left;
+//         width: 100%;
+//         margin: 0;
+//         padding: 14px;
+//     }
+// }
 
 // hide links for nav
 
