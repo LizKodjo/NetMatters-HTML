@@ -585,7 +585,7 @@ label {
   .reviews {
     display: flex;
   }
-  .small-help {
+  .smallsearchphone {
     display: none;
   }
   .service-blocks {
@@ -616,6 +616,21 @@ label {
   .dev-block {
     grid-column: -4/-1;
   }
+  .newsarticles {
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px 20px;
+  }
+  .tech1 {
+    grid-column: 1/2;
+  }
+  .tech2 {
+    grid-column: 2/3;
+  }
+  .receptionist {
+    grid-column: 3/4;
+  }
 }
 @media screen and (max-width: 600px) {
   .topnav,
@@ -632,6 +647,9 @@ label {
     float: right;
     display: block;
   }
+  .itbtn, .contactbtn {
+    display: none;
+  }
   .colsforfooter {
     display: flex;
     flex-wrap: wrap;
@@ -642,24 +660,20 @@ label {
     flex-wrap: wrap;
   }
   .top-help {
-    display: none;
-  }
-  .small-help, .small-toprow {
-    padding: 15px;
     display: flex;
+    padding: 15px;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
   }
-  .small-help .logo, .small-toprow .logo {
+  .top-help .logo {
     width: 50%;
   }
-  .small-help .small-toprow, .small-toprow .small-toprow {
-    padding: 0;
-    margin-bottom: 10px;
+  .top-help .menu {
+    position: absolute;
+    right: 0;
+    margin: 0 10px 0 0;
   }
 }
-@media screen and (min-width: 601px) and (max-width: 850px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
   .topnav,
   .bespoke .bespokebtn,
   .itsupport .itsupportbtn,
@@ -674,9 +688,6 @@ label {
     float: right;
     display: block;
   }
-  .small-help {
-    display: none;
-  }
   .top-help {
     display: flex;
     align-items: center;
@@ -686,7 +697,7 @@ label {
   .searchbar button {
     color: #fff;
   }
-  .itbtn, .contactbtn {
+  .itbtn, .contactbtn, .smallsearchphone {
     display: none;
   }
   .service-blocks {
