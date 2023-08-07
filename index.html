@@ -19,17 +19,32 @@
             <div class="top-help">
                 <img class="logo" src="img/asset 0.png">
                 <button class="btn itbtn"><i class="fa-solid fa-computer-mouse"></i> Support</button>
-                <button class="btn contactbtn"><i class="fa-regular fa-paper-plane"></i> Contact</button>
-                <input class="searchbar" type="text" placeholder="Search...">
-                <button type="submit"><i class="fa fa-search searchbtn"></i></button>
+                <button class="btn contactbtn"><i class="fa-regular fa-paper-plane contactplane"></i> Contact</button>
+                <form action="" class="searchbar">
+                    <input type="text" placeholder="Search..." name="q">
+                    <button type="submit"><i class="fa fa-search searchbtn"></i></button>
+                </form>
                 <i class="fa-solid fa-bars menu"></i>
+            </div>
+
+            <div class="small-help">
+                <div class="small-toprow">
+                    <img class="logo" src="img/asset 0.png">
+                    <span class="material-symbols-outlined smallsearchphone">phone_in_talk</span>
+                    <i class="fa-solid fa-bars menu"></i>
+                </div>
+                <form action="" class="searchbar">
+                    <input type="text" placeholder="Search..." name="q">
+                    <button type="submit"><i class="fa fa-search searchbtn"></i></button>
+                </form>
             </div>
             <!-- Top nav -->
             <div class="topnav" id="myTopnav">
                 <a href="#" class="icon"><i class="fa fa-bars"></i></a>
                 <!-- Bespoke Software -->
                 <div class="bespoke">
-                    <button class="bespokebtn"><i class="fa-solid fa-desktop"></i><br>Bespoke Software</button>
+                    <button class="bespokebtn"><span
+                            class="material-symbols-outlined bespokepic">monitor</span><br><small>Bespoke</small><br>Software</button>
                     <div class="bespoke-content">
                         <h3>Our Bespoke Software Services</h3>
                         <a href="#"><i class="fas fa-cogs"></i> Bespoke CRM</a>
@@ -49,8 +64,8 @@
                 <!-- Bespoke Software -->
                 <!-- IT Support -->
                 <div class="itsupport">
-                    <button class="itsupportbtn"><span class="material-symbols-outlined itpic">monitor</span><br>IT
-                        Support</button>
+                    <button class="itsupportbtn"><span
+                            class="material-symbols-outlined itpic">monitor</span><br><small>IT</small><br>Support</button>
                     <div class="itsupport-content">
                         <a href="#"><i class="fa-solid fa-headphones"></i> Managed IT Support</a>
                         <a href="#"><i class="fa-solid fa-briefcase"></i> Business IT Support</a>
@@ -64,8 +79,7 @@
                 <!-- Digital Marketing -->
                 <div class="digitalmarketing">
                     <button class="digimarketbtn"><span
-                            class="material-symbols-outlined digipic">signal_cellular_alt</span><br>Digital
-                        Marketing</button>
+                            class="material-symbols-outlined digipic">signal_cellular_alt</span><br><small>Digital</small><br>Marketing</button>
                     <div class="digimarket-content">
                         <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search Engine Optimisation (SAO)</a>
                         <a href="#"><i class="fa-solid fa-money-bill-1"></i> Pay Per Click Advertising (PPC)</a>
@@ -79,7 +93,7 @@
                 <!-- Telecoms Services -->
                 <div class="telecomsservices">
                     <button class="telecomsbtn"><span
-                            class="material-symbols-outlined telepic">phone_in_talk</span><br>Telecoms Services</button>
+                            class="material-symbols-outlined telepic">phone_in_talk</span><br><small>Telecoms</small><br>Services</button>
                     <div class="telecoms-content">
                         <a href="#"><i class="fa-solid fa-ticket fa-flip-horizontal"></i> Business Mobile</a>
                         <a href="#"><i class="fa-solid fa-phone"></i> Hosted VOIP</a>
@@ -92,7 +106,8 @@
                 <!-- Telecoms Services -->
                 <!-- Web Design -->
                 <div class="webdesign">
-                    <button class="webdesignbtn"><i class="fa-solid fa-code webpic"></i><br>Web Design</button>
+                    <button class="webdesignbtn"><i
+                            class="fa-solid fa-code webpic"></i><br><small>Web</small><br>Design</button>
                     <div class="webdesign-content">
                         <a href="#"><i class="fa-solid fa-pen"></i> Bespoke Website Design</a>
                         <a href="#"><i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i> eCommerce Stores</a>
@@ -106,7 +121,7 @@
                 <!-- Cyber Security -->
                 <div class="cyber">
                     <button class="cybersecbtn"><span
-                            class="material-symbols-outlined cyberpic">security</span><br>Cyber Security</button>
+                            class="material-symbols-outlined cyberpic">security</span><br><small>Cyber</small><br>Security</button>
                     <div class="cyber-content">
                         <a href="#"><i class="fa-solid fa-paste"></i> Cyber Security Assessment</a>
                         <a href="#"><i class="fa-solid fa-flask"></i> Cyber Penetration Testing</a>
@@ -121,7 +136,7 @@
                 <!-- Developer Course -->
                 <div class="devcourse">
                     <button class="devcoursebtn"><span
-                            class="material-symbols-outlined devpic">school</span><br>Developer Course</button>
+                            class="material-symbols-outlined devpic">school</span><br><small>Developer</small><br>Course</button>
                     <div class="devcourse-content">
                         <a href="#"><i class="fa-solid fa-laptop"></i> Train For A Career In Tech</a>
                         <a href="#"><i class="fa-solid fa-code"></i> Skills Bootcamp</a>
@@ -140,7 +155,7 @@
         <div class="servicegrid">
             <h3>Our Services</h3><br>
             <div class="service-blocks">
-                <div class="service bespoke-block">
+                <div class="service bespoke-block"><span class="material-symbols-outlined bespoke-icon">monitor</span>
                     <p class="service-topic">Bespoke Software</p>
                     <p class="service-info">Bespoke software solutions for all your business needs including
                         integrations
@@ -323,11 +338,11 @@
                     <div class="form-sections">
                         <label for="name">Your name *</label>
                         <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-sections">  
+                    </div>
+                    <div class="form-sections">
                         <label for="email">Your email *</label>
                         <input type="email" id="email" name="email" required>
-                        </div>
+                    </div>
                 </div>
             </form>
             <div class="marketinfo">

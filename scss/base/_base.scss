@@ -16,32 +16,60 @@ body {
     background-color: $primary-warm-col;
 }
 
-.searchbar {
-    float: right;
-    padding: 15px;
+.searchbar input {
     border: 1px solid $primary-warm-col;
-    margin: 15px;
-    font-size: 17px;
+    font-size: 20px;
+    padding: 13px;
+}
+.searchbar {
+    display: flex;
 }
 
+::placeholder {
+    color: $primary-warm-col;
+}
 .searchbtn {
-    float: right;
+    width: 25px;
+}
+.searchbar button {
+    border:0;
+    // width: 60px;
+    // height: 60px;
     padding: 15px;
-    ;
-    margin: 15px;
     background: $primary-warm-col;
-    font-size: 17px;
-    border: none;
-    font-size: 20px;
     cursor: pointer;
 }
+// .smallsearchplane {
+//     padding: 10px;
+//     margin: 10px;
+//     font-size: 25px;
+// }
+
+// .searchbar {
+//     float: right;
+//     padding: 15px;
+//     border: 1px solid $primary-warm-col;
+//     margin: 15px;
+//     font-size: 17px;
+// }
+
+// .searchbtn {
+//     float: right;
+//     padding: 15px;
+//     margin: 15px;
+//     background: $primary-warm-col;
+//     font-size: 17px;
+//     border: none;
+//     font-size: 20px;
+//     cursor: pointer;
+// }
 
 .menu {
     color: $white;
     background-color: $primary-dark-col;
     border-color: $primary-dark-col;
     font-size: 25px;
-    padding: 20px;
+    padding: 13px;
     border-radius: 5px;
 }
 
@@ -49,6 +77,9 @@ body {
 .topnav {
     background-color: $mineshaft;
     overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
 
     a {
         float: left;
@@ -73,7 +104,7 @@ body {
 .webdesign,
 .cyber,
 .devcourse {
-    float: left;
+    float:left;
     overflow: hidden;
 }
 .bespoke .bespokebtn,
@@ -83,7 +114,7 @@ body {
 .webdesign .webdesignbtn,
 .cyber .cybersecbtn,
 .devcourse .devcoursebtn {
-    font-size: 17px;
+    font-size: 12px;
     border: none;
     outline: none;
     color: $white;
@@ -91,6 +122,7 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    text-transform:uppercase;
 }
 // style the dropdown content
 [class$="-content"] {
@@ -123,6 +155,12 @@ a[class$="-content"] {
     background-color: $hoki;
     color: $white;
 }
+.bespokepic {
+    color: $hoki;
+    &:hover {
+        color:$white;
+    }
+}
 
 .bespoke:hover .bespoke-content,
 .itsupport:hover .itsupport-content,
@@ -143,6 +181,9 @@ a[class$="-content"] {
 
 .itpic {
     color: $havelock-blue;
+    &:hover {
+        color:$white;
+    }
 }
 
 .digitalmarketing a:hover,
@@ -154,6 +195,9 @@ a[class$="-content"] {
 
 .digipic {
     color: $shamrock;
+    &:hover {
+        color: $white;
+    }
 }
 
 .telecomsservices a:hover,
@@ -165,6 +209,9 @@ a[class$="-content"] {
 
 .telepic {
     color: $valencia;
+    &:hover {
+        color: $white;
+    }
 }
 
 .webdesign a:hover,
@@ -176,6 +223,9 @@ a[class$="-content"] {
 
 .webpic {
     color: $wisteria;
+    &:hover {
+        color: $white;
+    }
 }
 
 .cyber a:hover,
@@ -187,6 +237,9 @@ a[class$="-content"] {
 
 .cyberpic {
     color: $radical-red;
+    &:hover {
+        color: $white;
+    }
 }
 
 .devcourse a:hover,
@@ -198,6 +251,9 @@ a[class$="-content"] {
 
 .devpic {
     color: $punch;
+    &:hover {
+        color: $white;
+    }
 }
 
 // Main picture
@@ -293,14 +349,15 @@ a[class$="-content"] {
     border-color: $havelock-blue;
 }
 
-.servebespoke {
+.servebespoke,
+.bespoke-icon {
     background-color: $hoki;
     border-color: $hoki;
 }
 
 // Reviews
 .reviews {
-    display: flex;
+    // display: flex;
     background-color: $primary-dark-col;
     color: $white;
     font-size: 20px;
@@ -549,6 +606,9 @@ label {
     font-weight: 600;
     margin-bottom: 5px;
 }
+// .bespoke-block {
+//     grid-area: bespoke;
+// }
 
 // End of newsletter section 
 
@@ -557,11 +617,14 @@ label {
 
 /* Media queries */
 
-@media (min-width: 769px) and (orientation: landscape) {
+@media (min-width: 769px)  {
     .colsforfooter {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    .review {
+        display: flex;
     }
 }
 
@@ -570,7 +633,7 @@ label {
 //         display:none;
 //     }
 // }
-@media (max-width: 769px) {
+@media (max-width: 769px) and (orientation: landscape) {
     .colsforfooter {
         flex-direction: column;
     }
@@ -582,12 +645,45 @@ label {
         justify-content: space-around;
         align-items: center;
     }
+    .reviews {
+        display: flex;
+    }
+    .small-help {
+        display: none;
+    }
+    .service-blocks {
+        display: grid;
+        max-width: 900px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 15px 20px;
+    }
+    .bespoke-block {
+        grid-column: 1 / 5;
+    }
+    .it-block {
+        grid-column: 5 / 9;
+    }
+    .digital-block {
+        grid-column: 9 / 13;
+    }
+    .telecoms-block {
+        grid-column: -13 /-10;
+    }
+    .web-block {
+        grid-column: -10 / -7;
+    }
+    .cyber-block {
+        grid-column: -7 / -4;
+    }
+    .dev-block {
+        grid-column: -4 / -1;
+    }
 
 }
 
 // hide nav on small screens
 @media screen and (max-width:600px) {
-
     .topnav,
     .bespoke .bespokebtn,
     .itsupport .itsupportbtn,
@@ -603,7 +699,105 @@ label {
         float: right;
         display: block;
     }
+    .colsforfooter {
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+    .footer-sections {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .top-help {
+        display: none;      
+    }
+    .small-help, .small-toprow {
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        .logo {
+            width: 50%;
+        }
+        .small-toprow {
+            padding: 0;
+            margin-bottom: 10px;
+        }
+    }
+    // .service-blocks {
+    //     height: 100vh;
+    //     display:grid;
+    //     grid-template-columns: 1fr;
+    //     grid-auto-rows: minmax(150px, auto);
+    // }
 }
+
+@media screen and (min-width: 601px) and (max-width:850px) {
+    .topnav,
+    .bespoke .bespokebtn,
+    .itsupport .itsupportbtn,
+    .digitalmarketing .digimarketbtn,
+    .telecomsservices .telecomsbtn,
+    .webdesign .webdesignbtn,
+    .cyber .cybersecbtn,
+    .devcourse .devcoursebtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .small-help {
+        display:none;
+    }
+    .top-help {
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px 20px;
+    }
+    .searchbar button {
+        color: $white;
+    }
+    .itbtn, .contactbtn {
+        display: none;
+    }
+    .service-blocks {
+        display: grid;
+        max-width: 600px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: 300px;
+        grid-gap: 15px 20px;
+    }
+    .bespoke-block, .it-block, .digital-block {
+        grid-column: 1 / -1;
+    }
+
+    // .small-help, .small-toprow {
+    //     padding: 15px;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-around;
+    //     align-items: center;
+    //     .logo {
+    //         width: 50%;
+    //     }
+    //     .small-toprow {
+    //         padding: 0;
+    //         margin-bottom: 10px;
+    //     }
+    //     .smallsearchphone {
+    //         display: none;
+    //     }
+    //     .menu {
+    //         justify-content: flex-end;
+    //     }
+    // }
+}
+
 
 // When the screen is less than 600, stack the links and serch field vertically.
 
