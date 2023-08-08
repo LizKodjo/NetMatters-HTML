@@ -399,10 +399,6 @@ section {
   margin-bottom: 20px;
 }
 
-article {
-  align-items: center;
-}
-
 h2 {
   text-align: center;
 }
@@ -588,9 +584,14 @@ label {
   .smallsearchphone {
     display: none;
   }
+  .servicegrid h3 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+  }
   .service-blocks {
     display: grid;
-    max-width: 900px;
+    max-width: 100%;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     grid-gap: 15px 20px;
@@ -616,11 +617,10 @@ label {
   .dev-block {
     grid-column: -4/-1;
   }
-  .newsarticles {
+  article {
     display: grid;
-    max-width: 900px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px 20px;
+    grid-gap: 15px;
+    grid-template-rows: auto;
   }
   .tech1 {
     grid-column: 1/2;
@@ -630,6 +630,70 @@ label {
   }
   .receptionist {
     grid-column: 3/4;
+  }
+  .dateposted {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .jobvac {
+    height: 142px;
+  }
+  .viewheading {
+    position: absolute;
+    right: 200px;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+  .footer-sections {
+    margin: 30px 200px;
+  }
+  .copyinfo, .news-section, .intro-review, .latestnews,
+  .servicegrid {
+    margin: 0 200px;
+  }
+  .news-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .news-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .newsname {
+    margin-right: 20px;
+  }
+  .form-sections input {
+    width: 400px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+  }
+  .newsform h2 {
+    font-size: 30px;
+    text-align: left;
+  }
+  .intro-review {
+    display: flex;
+    align-items: flex-start;
+  }
+  .stars {
+    font-size: 40px;
+  }
+  .welcomenet, .startclient {
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  .starclient {
+    padding: 0 20px 20px 20px;
+  }
+  .ash-review {
+    font-size: larger;
+    font-weight: bold;
   }
 }
 @media screen and (max-width: 600px) {
