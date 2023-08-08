@@ -127,11 +127,11 @@ body {
 // style the dropdown content
 [class$="-content"] {
     display: none;
-    position: absolute;
-    // background-color: orange;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    position: absolute;    
+    // min-width: 160px;
+    max-width: 100%;
+    // box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    // z-index: 1;
 }
 
 // styling links inside the dropdown
@@ -141,11 +141,8 @@ a[class$="-content"] {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: center;
-    // a:hover {
-    //     background-color: $alto;
-    //     color: black;
-    // }
+    // text-align: center;
+    text-align:left;
 }
 
 // styling background on links and the dropdown hover
@@ -154,7 +151,9 @@ a[class$="-content"] {
 .bespoke-content {
     background-color: $hoki;
     color: $white;
+    text-decoration: underline;
 }
+
 .bespokepic {
     color: $hoki;
     &:hover {
@@ -177,6 +176,7 @@ a[class$="-content"] {
 .itsupport-content {
     background-color: $havelock-blue;
     color: $white;
+    text-decoration:underline;
 }
 
 .itpic {
@@ -191,6 +191,7 @@ a[class$="-content"] {
 .digimarket-content {
     background-color: $shamrock;
     color: $white;
+    text-decoration: underline;
 }
 
 .digipic {
@@ -205,6 +206,7 @@ a[class$="-content"] {
 .telecoms-content {
     background-color: $valencia;
     color: $white;
+    text-decoration: underline;
 }
 
 .telepic {
@@ -219,6 +221,7 @@ a[class$="-content"] {
 .webdesign-content {
     background-color: $wisteria;
     color: $white;
+    text-decoration: underline;
 }
 
 .webpic {
@@ -233,6 +236,7 @@ a[class$="-content"] {
 .cyber-content {
     background-color: $radical-red;
     color: $white;
+    text-decoration: underline;
 }
 
 .cyberpic {
@@ -247,6 +251,8 @@ a[class$="-content"] {
 .devcourse-content {
     background-color: $punch;
     color: $white;
+    text-decoration: underline;
+    
 }
 
 .devpic {
@@ -255,6 +261,19 @@ a[class$="-content"] {
         color: $white;
     }
 }
+.bespoke:hover .bespokebtn, 
+.itsupport:hover .itsupportbtn,
+.digitalmarketing:hover .digimarketbtn,
+.telecomsservices:hover .telecomsbtn,
+.webdesign:hover .webdesignbtn,
+.cyber:hover .cybersecbtn,
+.devcourse:hover .devcoursebtn { 
+    text-decoration: none;
+}
+.content-heading {
+    text-decoration: none;
+}
+
 
 // Main picture
 .headerpic {
@@ -650,6 +669,15 @@ label {
     .smallsearchphone {
         display: none;
     }
+    
+    .mainmenu {
+        display: flex;
+        margin: 0 200px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
     .servicegrid h3 {
         font-size: 30px;
         font-weight: bold;
@@ -772,21 +800,7 @@ label {
     .ash-review {
         font-size: larger;
         font-weight:bold;
-    }
-    // .starclient {
-    //     display: flex;
-    //     flex-direction:row;
-    //     flex-wrap: wrap;
-    //     justify-content: space-between;
-    //     // padding-right: 150px;
-    // }
-    // .googlebtn, .trustbtn {
-    //     font-size: 75%;
-    // }
-    
-
-
-   
+    }   
 }
 
 // hide nav on small screens
@@ -860,6 +874,7 @@ label {
     // }
 }
 
+// mobile landscape
 @media screen and (min-width: 601px) and (max-width:1024px) {
     .topnav,
     .bespoke .bespokebtn,
@@ -876,14 +891,20 @@ label {
         float: right;
         display: block;
     }
-    // .small-help {
-    //     display:none;
-    // }
+    
     .top-help {
         display:flex;
         align-items: center;
-        justify-content: space-around;
-        padding: 15px 20px;
+        justify-content: space-evenly;
+        padding: 15px 0 15px 0;
+        margin: 0 50px;
+    }
+    .top-help .logo {
+        width: 50%;
+    }
+    .searchbar input {
+        width: 150px;
+        font-size: small;
     }
     .searchbar button {
         color: $white;
@@ -897,31 +918,39 @@ label {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-template-rows: 300px;
         grid-gap: 15px 20px;
+        
     }
     .bespoke-block, .it-block, .digital-block {
         grid-column: 1 / -1;
     }
-
-    // .small-help, .small-toprow {
-    //     padding: 15px;
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     justify-content: space-around;
-    //     align-items: center;
-    //     .logo {
-    //         width: 50%;
-    //     }
-    //     .small-toprow {
-    //         padding: 0;
-    //         margin-bottom: 10px;
-    //     }
-    //     .smallsearchphone {
-    //         display: none;
-    //     }
-    //     .menu {
-    //         justify-content: flex-end;
-    //     }
-    // }
+    .service-subheading {
+        position: absolute;
+        right: 115px;
+        top: 480px;
+        font-weight: bold;
+    }
+    .servicegrid {
+        margin: 0 100px;
+    }
+    .servicegrid h3 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .partners {
+        margin: 0 100px;
+    }
+    .intro-review, .latestnews {
+        margin: 20px 100px;
+    }
+    .stars {
+        font-size: 30px;
+    }
+    article {
+        display: flex;
+    }
+    .receptionist {
+        display:none;
+    }
 }
 
 
