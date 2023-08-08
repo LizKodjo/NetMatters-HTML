@@ -247,10 +247,6 @@ a[class$=-content] {
   height: 100%;
 }
 
-.partners {
-  padding: 15px;
-}
-
 .service-subheading {
   color: black;
 }
@@ -480,7 +476,7 @@ h2 {
   padding-bottom: 20px;
 }
 
-.clients-img {
+.clients-img, .partners {
   max-width: 50%;
   display: flex;
   align-items: center;
@@ -490,9 +486,11 @@ h2 {
   vertical-align: middle;
   padding: 0 20px;
   filter: grayscale(100%);
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.clients-img:hover {
+.clients-img:hover, .partners:hover {
   filter: grayscale(10%);
 }
 
@@ -576,21 +574,6 @@ label {
 }
 
 /* Media queries */
-@media (min-width: 769px) {
-  .colsforfooter {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .review {
-    display: flex;
-  }
-}
-@media (max-width: 769px) and (orientation: landscape) {
-  .colsforfooter {
-    flex-direction: column;
-  }
-}
 @media (min-width: 1025px) {
   .top-help {
     display: flex;
@@ -741,10 +724,15 @@ label {
   .itbtn, .contactbtn {
     display: none;
   }
+  .headerpic {
+    height: auto;
+  }
   .colsforfooter {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-left: 0;
+    margin-right: 0;
   }
   .footer-sections {
     flex-direction: row;
@@ -756,12 +744,35 @@ label {
     flex-wrap: wrap;
   }
   .top-help .logo {
-    width: 50%;
+    width: 60%;
+    margin-bottom: 20px;
   }
   .top-help .menu {
     position: absolute;
-    right: 0;
-    margin: 0 10px 0 0;
+    right: 39px;
+    top: 10px;
+    margin: 0 10px 10px 0;
+  }
+  .smallsearchphone {
+    position: absolute;
+    left: 60%;
+    font-size: 35px;
+  }
+  .partners, .clients-img {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  .newsform h2 {
+    text-align: left;
+    font-size: 40px;
+    font-weight: lighter;
+  }
+  .form-sections input {
+    width: 100%;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -824,6 +835,7 @@ label {
   }
   .partners {
     margin: 0 100px;
+    padding-bottom: 20px;
   }
   .intro-review, .latestnews {
     margin: 20px 100px;
@@ -832,10 +844,28 @@ label {
     font-size: 30px;
   }
   article {
-    display: flex;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
   }
   .receptionist {
     display: none;
+  }
+  .news-section {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .form-sections input {
+    width: 150%;
+    font-size: 25px;
+  }
+  .newsform h2 {
+    text-align: left;
+    font-size: 35px;
   }
 }
 .clearfix:before,
