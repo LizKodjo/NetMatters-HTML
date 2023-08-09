@@ -1,5 +1,6 @@
 
 .sub-btn {
+    @include primarydark;
     height: auto;
     line-height: 35px;
     padding: 5px 15px;
@@ -7,7 +8,80 @@
     font-size: 1.063rem;
     border-radius: 3px;
     white-space: normal;
-    background-color: #333645;
-    border-color: #333645;
     color: white;
+}
+
+// Navigation buttons
+.itbtn {
+    @extend %topcontactbtn;
+    background-color: $havelock-blue;
+}
+
+.contactbtn {
+    @extend %topcontactbtn;
+    background-color: $primary-warm-col;
+}
+.searchbtn {
+    width: 25px;
+}
+.searchbar button {
+    border:0;
+    padding: 15px;
+    background: $primary-warm-col;
+    cursor: pointer;
+}
+.bespoke .bespokebtn,
+.itsupport .itsupportbtn,
+.digitalmarketing .digimarketbtn,
+.telecomsservices .telecomsbtn,
+.webdesign .webdesignbtn,
+.cyber .cybersecbtn,
+.devcourse .devcoursebtn {
+    font-size: 12px;
+    border: none;
+    outline: none;
+    color: $white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-transform:uppercase;
+}
+.bespoke:hover .bespokebtn, 
+.itsupport:hover .itsupportbtn,
+.digitalmarketing:hover .digimarketbtn,
+.telecomsservices:hover .telecomsbtn,
+.webdesign:hover .webdesignbtn,
+.cyber:hover .cybersecbtn,
+.devcourse:hover .devcoursebtn { 
+    text-decoration: none;
+}
+.btn {
+    @extend %btnwhitett;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+.trustbtn {
+    @extend %topcontactbtn;
+    @include jade;
+}
+
+.googlebtn {
+    @extend %topcontactbtn;
+    @include havelock;  
+    margin-bottom: 10px;
+}
+.welcomebtn {
+    @extend %btnwhitett;
+    @include charade;
+    margin-bottom: 20px;
+}
+.latestbtn {
+    @include havelock;
+    color: $white;
+    text-transform: uppercase;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }

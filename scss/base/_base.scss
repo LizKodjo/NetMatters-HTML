@@ -7,14 +7,8 @@ body {
     font-size: 1rem;
 }
 
-// Navigation
-.itbtn {
-    background-color: $havelock-blue;
-}
 
-.contactbtn {
-    background-color: $primary-warm-col;
-}
+// Navigation
 
 .searchbar input {
     border: 1px solid $primary-warm-col;
@@ -28,46 +22,10 @@ body {
 ::placeholder {
     color: $primary-warm-col;
 }
-.searchbtn {
-    width: 25px;
-}
-.searchbar button {
-    border:0;
-    // width: 60px;
-    // height: 60px;
-    padding: 15px;
-    background: $primary-warm-col;
-    cursor: pointer;
-}
-// .smallsearchplane {
-//     padding: 10px;
-//     margin: 10px;
-//     font-size: 25px;
-// }
-
-// .searchbar {
-//     float: right;
-//     padding: 15px;
-//     border: 1px solid $primary-warm-col;
-//     margin: 15px;
-//     font-size: 17px;
-// }
-
-// .searchbtn {
-//     float: right;
-//     padding: 15px;
-//     margin: 15px;
-//     background: $primary-warm-col;
-//     font-size: 17px;
-//     border: none;
-//     font-size: 20px;
-//     cursor: pointer;
-// }
 
 .menu {
+    @include primarydark;
     color: $white;
-    background-color: $primary-dark-col;
-    border-color: $primary-dark-col;
     font-size: 25px;
     padding: 13px;
     border-radius: 5px;
@@ -107,23 +65,7 @@ body {
     float:left;
     overflow: hidden;
 }
-.bespoke .bespokebtn,
-.itsupport .itsupportbtn,
-.digitalmarketing .digimarketbtn,
-.telecomsservices .telecomsbtn,
-.webdesign .webdesignbtn,
-.cyber .cybersecbtn,
-.devcourse .devcoursebtn {
-    font-size: 12px;
-    border: none;
-    outline: none;
-    color: $white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    text-transform:uppercase;
-}
+
 // style the dropdown content
 [class$="-content"] {
     display: none;
@@ -261,15 +203,7 @@ a[class$="-content"] {
         color: $white;
     }
 }
-.bespoke:hover .bespokebtn, 
-.itsupport:hover .itsupportbtn,
-.digitalmarketing:hover .digimarketbtn,
-.telecomsservices:hover .telecomsbtn,
-.webdesign:hover .webdesignbtn,
-.cyber:hover .cybersecbtn,
-.devcourse:hover .devcoursebtn { 
-    text-decoration: none;
-}
+
 .content-heading {
     text-decoration: none;
 }
@@ -281,21 +215,6 @@ a[class$="-content"] {
     height: 100%;
 }
 
-// Partners
-// .partners {
-//     padding: 15px;
-//     max-width: 50%;
-//     display: flex;
-//     align-items: center;
-//     height: auto;
-//     flex-wrap: nowrap;
-//     justify-content: space-between;
-//     vertical-align: middle;
-//     padding: 0 20px;
-//     filter: grayscale(100%);
-//     margin-right: auto;
-//     margin-left:auto;
-// }
 
 .service-subheading {
     color: black;
@@ -323,19 +242,11 @@ a[class$="-content"] {
     letter-spacing: .4px;
 }
 
-.btn {
-    text-transform: uppercase;
-    color: $white;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 5px;
-    border-style: none;
-}
+
 
 .servedev,
 .dev-icon {
-    background-color: $punch;
-    border-color: $punch;
+    @include punch;
 }
 .dev-block:hover {
     background-color: $punch;
@@ -359,8 +270,7 @@ a[class$="-content"] {
 
 .servecyber,
 .cyber-icon {
-    background-color: $radical-red;
-    border-color: $radical-red;
+    @include radicalred;
 }
 .cyber-block:hover {
     background-color: $radical-red;
@@ -373,8 +283,7 @@ a[class$="-content"] {
 
 .serveweb,
 .web-icon {
-    background-color: $wisteria;
-    border-color: $wisteria;
+    @include wisteria;
 }
 .web-block:hover {
     background-color: $wisteria;
@@ -387,8 +296,7 @@ a[class$="-content"] {
 
 .servetelecoms,
 .tele-icon {
-    background-color: $valencia;
-    border-color: $valencia;
+    @include valencia;
 }
 .telecoms-block:hover {
     background-color: $valencia;
@@ -397,20 +305,17 @@ a[class$="-content"] {
 
 .servedigital,
 .digital-icon {
-    background-color: $shamrock;
-    border-color: $shamrock;
+    @include shamrock;
 }
 
 .serveit,
 .it-icon {
-    background-color: $havelock-blue;
-    border-color: $havelock-blue;
+    @include havelock;
 }
 
 .servebespoke,
 .bespoke-icon {
-    background-color: $hoki;
-    border-color: $hoki;
+    @include hoki;
 }
 
 // Reviews
@@ -424,26 +329,7 @@ a[class$="-content"] {
 
 }
 
-.trustbtn {
-    background-color: $jade;
-    border-color: $jade;
-    color: $white;
-    border-radius: 5px;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 12px;
-}
 
-.googlebtn {
-    background-color: $havelock-blue;
-    border-color: $havelock-blue;
-    text-transform: uppercase;
-    color: $white;
-    border-radius: 5px;
-    font-weight: 300;
-    padding: 12px;
-    margin-bottom: 10px;
-}
 
 .ash-review {
     font-style: italic;
@@ -478,25 +364,13 @@ a[class$="-content"] {
     font-weight: bold;
 }
 
-.welcomebtn {
-    color: $white;
-    background-color: $charade;
-    border-color: $charade;
-    text-transform: uppercase;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-style: none;
-}
+
 
 // Latest news
 section {
     border: 1px solid $alto;
     margin-bottom: 20px;
 }
-
-// article {
-//     align-items: center;
-// }
 
 h2 {
     text-align: center;
@@ -508,16 +382,7 @@ h2 {
     margin: 20px;
 }
 
-.latestbtn {
-    background-color: $havelock-blue;
-    border-color: $havelock-blue;
-    color: $white;
-    text-transform: uppercase;
-    height: auto;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
+
 
 .jobpic {
     border-radius: 100%;
@@ -525,7 +390,6 @@ h2 {
 
 .jobvac {
     width: 100%;
-    
 }
 
 .jobtitle {
@@ -576,7 +440,6 @@ h2 {
     margin-left:auto;
     margin-bottom: 10px;
 }
-
 .clients-img:hover, .partners:hover {
     filter: grayscale(10%);
 }
@@ -696,6 +559,9 @@ label {
     width: 100%;
 }
 
+// responsive form
+
+
 
 // End of newsletter section 
 
@@ -731,6 +597,7 @@ label {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
     }
     .smallnav {
         display:none;
@@ -816,13 +683,6 @@ label {
         grid-column: -4 / -1;
     }
    
-
-    // .newsarticles {
-    //     display: grid;
-    //     max-width: 900px;
-    //     grid-template-columns: repeat(3, 1fr);        
-    //     grid-gap: 15px 20px;
-    // }
     article {
         display: grid;
         // margin: 0 200px;
@@ -876,32 +736,6 @@ label {
         margin-right: 20px;
     }
     
-    // .form-sections input {
-    //     width: 100%;
-    //     padding:12px;
-    //     border-radius: 3px;
-    //     resize: vertical;
-    //     // width: 600px;  
-    //     // height: 50px;
-    //     // border-radius: 3px;
-    //     border:none;      
-    // }
-    // //form labels
-    // .col-25 {
-    //     float:left;
-    // }
-    // .col-100 {
-    //     float: left;
-    // }
-    // .row:after {
-    //     content:"";
-    //     display:table;
-    //     clear:both;
-    // }
-    // .col-25, .col-100 {
-    //     width: 100;
-    //     margin-top: 0;
-    // }
     .col-25, .col-75 {
         width: 100%;
         margin-top:0;
@@ -920,10 +754,6 @@ label {
     }
     .welcomenet, .startclient {
         margin-right: 20px;
-        // display:flex;
-        // flex-direction:row;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
         font-size: 18px;
     }
     .starclient {
@@ -944,18 +774,18 @@ label {
     .telecomsservices .telecomsbtn,
     .webdesign .webdesignbtn,
     .cyber .cybersecbtn,
-    .devcourse .devcoursebtn, .top-help {
+    .devcourse .devcoursebtn, .top-help,
+    .itbtn, .contactbtn {
         display: none;
     }
-
     .topnav a.icon {
         float: right;
         display: block;
     }
     
-    .itbtn, .contactbtn {
-        display: none;
-    }
+    // .itbtn, .contactbtn {
+    //     display: none;
+    // }
     .headerpic {
         height: 60vh;
         width: 100%;
@@ -1014,8 +844,13 @@ label {
     }
     .searchbar input {
         background-color: $alto;
-        border: none;
-        
+        border: none;        
+    }
+    .searchform {
+        display:flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
     }
     .searchbar button {
         background: $alto;
@@ -1023,31 +858,7 @@ label {
     .light-logo {
         width: 60%;
     }
-    // .smallnavtop {
-    //     display:flex;
-
-    // }
-
-    // .top-help {
-    //     display:flex;
-    //     padding: 15px;
-    //     flex-wrap: wrap;
-    //     .logo {
-    //         width: 60%;
-    //         margin-bottom: 20px;
-    //     }
-    //     .menu {
-    //         position: absolute;
-    //         right: 39px;
-    //         top: 10px;
-    //         margin: 0 10px 10px 0;
-    //     }
-    // }
-    // .smallsearchphone {
-    //     position: absolute;
-    //     left: 60%;
-    //     font-size: 35px;
-    // }
+    
     .partners, .clients-img {
         width: 100%;
         align-items: center;
@@ -1063,15 +874,7 @@ label {
     .col-25, .col-75 {
         width: 100%;
         margin-top:0;
-    }
-    
-   
-    // .form-sections input {
-    //     width:100%;
-    //     font-size: 25px;
-    //     margin-bottom: 10px;
-    // }
-    
+    }  
 }
 
 // mobile landscape
@@ -1083,13 +886,17 @@ label {
     .telecomsservices .telecomsbtn,
     .webdesign .webdesignbtn,
     .cyber .cybersecbtn,
-    .devcourse .devcoursebtn, .smallnav {
+    .devcourse .devcoursebtn, .smallnav,
+    .itbtn, .contactbtn, .smallsearchphone {
         display: none;
     }
 
     .topnav a.icon {
         float: right;
         display: block;
+    }
+    .top-help {
+        float: right;
     }
     
     .top-help {
@@ -1098,6 +905,7 @@ label {
         justify-content: space-evenly;
         padding: 15px 0 15px 0;
         margin: 0 50px;
+        flex-wrap: wrap;
     }
     .top-help .logo {
         width: 50%;
@@ -1109,9 +917,7 @@ label {
     .searchbar button {
         color: $white;
     }
-    .itbtn, .contactbtn, .smallsearchphone {
-        display: none;
-    }
+   
     .main-pic {
         position: relative;
         text-align: center;

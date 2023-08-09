@@ -1,3 +1,19 @@
+.googlebtn, .trustbtn, .contactbtn, .itbtn {
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 12px;
+  border: none;
+}
+
+.welcomebtn, .btn {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px;
+  border-style: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,14 +21,6 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-}
-
-.itbtn {
-  background-color: #4183d7;
-}
-
-.contactbtn {
-  background-color: #a3a8ac;
 }
 
 .searchbar input {
@@ -29,21 +37,10 @@ body {
   color: #a3a8ac;
 }
 
-.searchbtn {
-  width: 25px;
-}
-
-.searchbar button {
-  border: 0;
-  padding: 15px;
-  background: #a3a8ac;
-  cursor: pointer;
-}
-
 .menu {
-  color: #fff;
   background-color: #333645;
   border-color: #333645;
+  color: #fff;
   font-size: 25px;
   padding: 13px;
   border-radius: 5px;
@@ -78,24 +75,6 @@ body {
 .devcourse {
   float: left;
   overflow: hidden;
-}
-
-.bespoke .bespokebtn,
-.itsupport .itsupportbtn,
-.digitalmarketing .digimarketbtn,
-.telecomsservices .telecomsbtn,
-.webdesign .webdesignbtn,
-.cyber .cybersecbtn,
-.devcourse .devcoursebtn {
-  font-size: 12px;
-  border: none;
-  outline: none;
-  color: #fff;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  text-transform: uppercase;
 }
 
 [class$=-content] {
@@ -228,16 +207,6 @@ a[class$=-content] {
   color: #fff;
 }
 
-.bespoke:hover .bespokebtn,
-.itsupport:hover .itsupportbtn,
-.digitalmarketing:hover .digimarketbtn,
-.telecomsservices:hover .telecomsbtn,
-.webdesign:hover .webdesignbtn,
-.cyber:hover .cybersecbtn,
-.devcourse:hover .devcoursebtn {
-  text-decoration: none;
-}
-
 .content-heading {
   text-decoration: none;
 }
@@ -271,15 +240,6 @@ a[class$=-content] {
 .service-info {
   font-size: 14px;
   letter-spacing: 0.4px;
-}
-
-.btn {
-  text-transform: uppercase;
-  color: #fff;
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 5px;
-  border-style: none;
 }
 
 .servedev,
@@ -378,27 +338,6 @@ a[class$=-content] {
   padding: 20px;
 }
 
-.trustbtn {
-  background-color: #00b67b;
-  border-color: #00b67b;
-  color: #fff;
-  border-radius: 5px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 12px;
-}
-
-.googlebtn {
-  background-color: #4183d7;
-  border-color: #4183d7;
-  text-transform: uppercase;
-  color: #fff;
-  border-radius: 5px;
-  font-weight: 300;
-  padding: 12px;
-  margin-bottom: 10px;
-}
-
 .ash-review {
   font-style: italic;
 }
@@ -434,16 +373,6 @@ a[class$=-content] {
   font-weight: bold;
 }
 
-.welcomebtn {
-  color: #fff;
-  background-color: #272936;
-  border-color: #272936;
-  text-transform: uppercase;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-style: none;
-}
-
 section {
   border: 1px solid #ddd;
   margin-bottom: 20px;
@@ -457,17 +386,6 @@ h2 {
   display: flex;
   flex-direction: column;
   margin: 20px;
-}
-
-.latestbtn {
-  background-color: #4183d7;
-  border-color: #4183d7;
-  color: #fff;
-  text-transform: uppercase;
-  height: auto;
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 20px;
 }
 
 .jobpic {
@@ -645,6 +563,7 @@ label {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
   }
   .smallnav {
     display: none;
@@ -810,15 +729,13 @@ label {
   .telecomsservices .telecomsbtn,
   .webdesign .webdesignbtn,
   .cyber .cybersecbtn,
-  .devcourse .devcoursebtn, .top-help {
+  .devcourse .devcoursebtn, .top-help,
+  .itbtn, .contactbtn {
     display: none;
   }
   .topnav a.icon {
     float: right;
     display: block;
-  }
-  .itbtn, .contactbtn {
-    display: none;
   }
   .headerpic {
     height: 60vh;
@@ -878,6 +795,12 @@ label {
     background-color: #ddd;
     border: none;
   }
+  .searchform {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+  }
   .searchbar button {
     background: #ddd;
   }
@@ -909,7 +832,8 @@ label {
   .telecomsservices .telecomsbtn,
   .webdesign .webdesignbtn,
   .cyber .cybersecbtn,
-  .devcourse .devcoursebtn, .smallnav {
+  .devcourse .devcoursebtn, .smallnav,
+  .itbtn, .contactbtn, .smallsearchphone {
     display: none;
   }
   .topnav a.icon {
@@ -917,11 +841,15 @@ label {
     display: block;
   }
   .top-help {
+    float: right;
+  }
+  .top-help {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 15px 0 15px 0;
     margin: 0 50px;
+    flex-wrap: wrap;
   }
   .top-help .logo {
     width: 50%;
@@ -932,9 +860,6 @@ label {
   }
   .searchbar button {
     color: #fff;
-  }
-  .itbtn, .contactbtn, .smallsearchphone {
-    display: none;
   }
   .main-pic {
     position: relative;
@@ -1103,6 +1028,7 @@ a {
   text-decoration: none;
   background: #212330;
   color: #fff;
+  text-align: center;
 }
 
 /* Hover effect */
@@ -1110,14 +1036,8 @@ a {
   opacity: 0.7;
 }
 
-.fb-btn, .ln-btn, .tw-btn, .in-btn {
-  text-align: center;
-}
-
 .colsforfooter {
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
   min-height: 1px;
   position: relative;
   flex-wrap: wrap;
@@ -1135,6 +1055,8 @@ a {
 }
 
 .sub-btn {
+  background-color: #333645;
+  border-color: #333645;
   height: auto;
   line-height: 35px;
   padding: 5px 15px;
@@ -1142,9 +1064,87 @@ a {
   font-size: 1.063rem;
   border-radius: 3px;
   white-space: normal;
-  background-color: #333645;
-  border-color: #333645;
   color: white;
+}
+
+.itbtn {
+  background-color: #4183d7;
+}
+
+.contactbtn {
+  background-color: #a3a8ac;
+}
+
+.searchbtn {
+  width: 25px;
+}
+
+.searchbar button {
+  border: 0;
+  padding: 15px;
+  background: #a3a8ac;
+  cursor: pointer;
+}
+
+.bespoke .bespokebtn,
+.itsupport .itsupportbtn,
+.digitalmarketing .digimarketbtn,
+.telecomsservices .telecomsbtn,
+.webdesign .webdesignbtn,
+.cyber .cybersecbtn,
+.devcourse .devcoursebtn {
+  font-size: 12px;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.bespoke:hover .bespokebtn,
+.itsupport:hover .itsupportbtn,
+.digitalmarketing:hover .digimarketbtn,
+.telecomsservices:hover .telecomsbtn,
+.webdesign:hover .webdesignbtn,
+.cyber:hover .cybersecbtn,
+.devcourse:hover .devcoursebtn {
+  text-decoration: none;
+}
+
+.btn {
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.trustbtn {
+  background-color: #00b67b;
+  border-color: #00b67b;
+}
+
+.googlebtn {
+  background-color: #4183d7;
+  border-color: #4183d7;
+  margin-bottom: 10px;
+}
+
+.welcomebtn {
+  background-color: #272936;
+  border-color: #272936;
+  margin-bottom: 20px;
+}
+
+.latestbtn {
+  background-color: #4183d7;
+  border-color: #4183d7;
+  color: #fff;
+  text-transform: uppercase;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
