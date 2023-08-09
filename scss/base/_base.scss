@@ -337,6 +337,14 @@ a[class$="-content"] {
     background-color: $punch;
     border-color: $punch;
 }
+.dev-block:hover {
+    background-color: $punch;
+    color:$white;
+}
+.servedev:hover {
+    background-color: $white;
+    color:$punch;
+}
 
 .dev-icon {
     color: $white;
@@ -354,17 +362,37 @@ a[class$="-content"] {
     background-color: $radical-red;
     border-color: $radical-red;
 }
+.cyber-block:hover {
+    background-color: $radical-red;
+    color:$white;
+}
+.servecyber:hover {
+    background-color:$white;
+    color: $radical-red;
+}
 
 .serveweb,
 .web-icon {
     background-color: $wisteria;
     border-color: $wisteria;
 }
+.web-block:hover {
+    background-color: $wisteria;
+    color: $white;
+}
+.serveweb:hover {
+    background-color: $white;
+    color: $wisteria;
+}
 
 .servetelecoms,
 .tele-icon {
     background-color: $valencia;
     border-color: $valencia;
+}
+.telecoms-block:hover {
+    background-color: $valencia;
+    color: $white;
 }
 
 .servedigital,
@@ -546,7 +574,7 @@ h2 {
     filter: grayscale(100%);
     margin-right: auto;
     margin-left:auto;
-
+    margin-bottom: 10px;
 }
 
 .clients-img:hover, .partners:hover {
@@ -641,6 +669,33 @@ label {
     margin-bottom: 5px;
 }
 
+.row input[type=text] {
+    width:100%;
+    padding: 12px;
+    border:none;
+    border-radius: 3px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+.col-25 {
+    float: left;
+    width: 26%;
+    margin-top: 6px;
+}
+.col-75 {
+    // float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+.newsform {
+    width: 100%;
+}
+
 
 // End of newsletter section 
 
@@ -677,11 +732,46 @@ label {
         justify-content: space-around;
         align-items: center;
     }
+    .smallnav {
+        display:none;
+    }
     .reviews {
         display: flex;
     }
     .smallsearchphone {
         display: none;
+    }
+    .main-pic {
+        position: relative;
+        text-align: left;
+        color: $white;
+        // z-index: 1;
+    }
+    .top-left {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-70%, -70%);
+        // top: 20px;
+        // left: 50px;
+        font-size: 50px;
+        font-weight:400;
+    }
+    .bottom-left {
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing:.1rem;
+        margin-bottom: 15px;
+    }
+    .main-button {
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 5px;
+        border:none;
+        color:$white;
+        background-color: $wisteria;
     }
     
     .mainmenu {
@@ -725,6 +815,8 @@ label {
     .dev-block {
         grid-column: -4 / -1;
     }
+   
+
     // .newsarticles {
     //     display: grid;
     //     max-width: 900px;
@@ -783,12 +875,38 @@ label {
     .newsname {
         margin-right: 20px;
     }
-    .form-sections input {
-        width: 400px;  
-        height: 50px;
-        border-radius: 3px;
-        border:none;      
+    
+    // .form-sections input {
+    //     width: 100%;
+    //     padding:12px;
+    //     border-radius: 3px;
+    //     resize: vertical;
+    //     // width: 600px;  
+    //     // height: 50px;
+    //     // border-radius: 3px;
+    //     border:none;      
+    // }
+    // //form labels
+    // .col-25 {
+    //     float:left;
+    // }
+    // .col-100 {
+    //     float: left;
+    // }
+    // .row:after {
+    //     content:"";
+    //     display:table;
+    //     clear:both;
+    // }
+    // .col-25, .col-100 {
+    //     width: 100;
+    //     margin-top: 0;
+    // }
+    .col-25, .col-75 {
+        width: 100%;
+        margin-top:0;
     }
+
     .newsform h2 {
         font-size: 30px;
         text-align: left;
@@ -826,7 +944,7 @@ label {
     .telecomsservices .telecomsbtn,
     .webdesign .webdesignbtn,
     .cyber .cybersecbtn,
-    .devcourse .devcoursebtn {
+    .devcourse .devcoursebtn, .top-help {
         display: none;
     }
 
@@ -839,7 +957,37 @@ label {
         display: none;
     }
     .headerpic {
-        height: auto;
+        height: 60vh;
+        width: 100%;
+    }
+    .main-pic {
+        position: relative;
+        text-align: center;
+        color: $white;
+    }
+    .top-left {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        font-weight:400;
+    }
+    .bottom-left {
+        font-size: 16px;
+        font-weight: bolder;
+        letter-spacing:.1rem;
+        margin-bottom: 15px;
+    }
+    .main-button {
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 5px;
+        border:none;
+        color:$white;
+        background-color: $wisteria;
     }
    
     .colsforfooter {
@@ -854,26 +1002,52 @@ label {
         flex-wrap: wrap;
     }
 
-    .top-help {
-        display:flex;
-        padding: 15px;
+    .smallnav, .smallnavtop {
+        display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10px;
         .logo {
             width: 60%;
-            margin-bottom: 20px;
-        }
-        .menu {
-            position: absolute;
-            right: 39px;
-            top: 10px;
-            margin: 0 10px 10px 0;
         }
     }
-    .smallsearchphone {
-        position: absolute;
-        left: 60%;
-        font-size: 35px;
+    .searchbar input {
+        background-color: $alto;
+        border: none;
+        
     }
+    .searchbar button {
+        background: $alto;
+    }
+    .light-logo {
+        width: 60%;
+    }
+    // .smallnavtop {
+    //     display:flex;
+
+    // }
+
+    // .top-help {
+    //     display:flex;
+    //     padding: 15px;
+    //     flex-wrap: wrap;
+    //     .logo {
+    //         width: 60%;
+    //         margin-bottom: 20px;
+    //     }
+    //     .menu {
+    //         position: absolute;
+    //         right: 39px;
+    //         top: 10px;
+    //         margin: 0 10px 10px 0;
+    //     }
+    // }
+    // .smallsearchphone {
+    //     position: absolute;
+    //     left: 60%;
+    //     font-size: 35px;
+    // }
     .partners, .clients-img {
         width: 100%;
         align-items: center;
@@ -886,10 +1060,17 @@ label {
         font-size: 40px;
         font-weight: lighter;
     }
-    .form-sections input {
-        width:100%;
-        font-size: 25px;
+    .col-25, .col-75 {
+        width: 100%;
+        margin-top:0;
     }
+    
+   
+    // .form-sections input {
+    //     width:100%;
+    //     font-size: 25px;
+    //     margin-bottom: 10px;
+    // }
     
 }
 
@@ -902,7 +1083,7 @@ label {
     .telecomsservices .telecomsbtn,
     .webdesign .webdesignbtn,
     .cyber .cybersecbtn,
-    .devcourse .devcoursebtn {
+    .devcourse .devcoursebtn, .smallnav {
         display: none;
     }
 
@@ -930,6 +1111,36 @@ label {
     }
     .itbtn, .contactbtn, .smallsearchphone {
         display: none;
+    }
+    .main-pic {
+        position: relative;
+        text-align: center;
+        color: $white;
+    }
+    .top-left {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        font-weight:400;
+        letter-spacing: 2px;
+    }
+    .bottom-left {
+        font-size: 16px;
+        font-weight: bolder;
+        letter-spacing:.1rem;
+        margin-bottom: 15px;
+    }
+    .main-button {
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 5px;
+        border:none;
+        color:$white;
+        background-color: $wisteria;
     }
     .service-blocks {
         display: grid;
@@ -988,6 +1199,10 @@ label {
     .newsform h2 {
         text-align:left;
         font-size: 35px;
+    }
+    .col-25, .col-75 {
+        width: 100%;
+        margin-top:0;
     }
 }
 

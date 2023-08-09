@@ -27,6 +27,17 @@
                 </form>
                 <i class="fa-solid fa-bars menu"></i>
             </div>
+            <div class="smallnav">
+                <div class="smallnavtop">
+                    <img class="logo" src="img/asset 0.png">
+                    <span class="material-symbols-outlined smallsearchphone">phone_in_talk</span>
+                    <i class="fa-solid fa-bars menu"></i>
+                </div>
+                <form action="" class="searchbar">
+                    <input type="text" placeholder="Search..." name="q">
+                    <button type="submit"><i class="fa fa-search searchbtn"></i></button>
+                </form>
+            </div>
             <!-- Top nav -->
             <div class="topnav" id="myTopnav">
                 <div class="mainmenu">
@@ -37,19 +48,19 @@
                                 class="material-symbols-outlined bespokepic">monitor</span><br><small>Bespoke</small><br>Software</button>
                         <div class="bespoke-content">
                             <!-- <div class="dropdown-bespoke"> -->
-                                <h3 class="content-heading">Our Bespoke Software Services</h3>
-                                <a href="#"><i class="fas fa-cogs"></i> Bespoke CRM</a>
-                                <a href="#"><i class="fa-solid fa-briefcase"></i> Business Automation</a>
-                                <a href="#"><i class="fa-solid fa-shuffle"></i>Software Integrations</a>
-                                <a href="#"><i class="fa-solid fa-folder-open"></i> Bespoke Databases</a>
-                                <a href="#"><i class="fa-solid fa-mobile"></i> Mobile App Development</a>
-                                <a href="#"><i class="fa-solid fa-right-left"></i> Sharepoint Development</a>
-                                <a href="#"><i class="fa-solid fa-download"></i> Operational Systems</a>
-                                <a href="#"><i class="fa-solid fa-users"></i> Business Central Implementation</a>
-                                <a href="#"><i class="fa-solid fa-laptop"></i> Internet of Things (IoT) Software</a>
-                                <a href="#"><i class="fa-solid fa-cloud"></i> Intranet Development</a>
-                                <a href="#"><i class="fa-solid fa-cloud-arrow-down"></i> Customer Portal Development</a>
-                                <a href="#"><i class="fa-solid fa-earth-americas"></i> Reporting Hub</a>
+                            <h3 class="content-heading">Our Bespoke Software Services</h3>
+                            <a href="#"><i class="fas fa-cogs"></i> Bespoke CRM</a>
+                            <a href="#"><i class="fa-solid fa-briefcase"></i> Business Automation</a>
+                            <a href="#"><i class="fa-solid fa-shuffle"></i>Software Integrations</a>
+                            <a href="#"><i class="fa-solid fa-folder-open"></i> Bespoke Databases</a>
+                            <a href="#"><i class="fa-solid fa-mobile"></i> Mobile App Development</a>
+                            <a href="#"><i class="fa-solid fa-right-left"></i> Sharepoint Development</a>
+                            <a href="#"><i class="fa-solid fa-download"></i> Operational Systems</a>
+                            <a href="#"><i class="fa-solid fa-users"></i> Business Central Implementation</a>
+                            <a href="#"><i class="fa-solid fa-laptop"></i> Internet of Things (IoT) Software</a>
+                            <a href="#"><i class="fa-solid fa-cloud"></i> Intranet Development</a>
+                            <a href="#"><i class="fa-solid fa-cloud-arrow-down"></i> Customer Portal Development</a>
+                            <a href="#"><i class="fa-solid fa-earth-americas"></i> Reporting Hub</a>
                             <!-- </div> -->
                         </div>
                     </div>
@@ -149,8 +160,14 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="main-pic">
             <img class="headerpic" src="img/asset 3.png">
+            <div class="top-left"><strong>The East of England's Leading Technology Company</strong><br>
+                <div class="bottom-left">Performance-driven digital and technology services with complete transparency.
+                </div>
+                <button class="main-button">why choose us? &rarr;</button>
+            </div>
+
         </div>
     </header>
     <!-- Our Services -->
@@ -347,21 +364,44 @@
             <div class="news-section">
                 <form class="newsform" method="post">
                     <h2>Email Newsletter Sign-Up</h2>
-                    <div class="news-inputs">
-                        <div class="form-sections">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="yourname">Your name *</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="yourname" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Your email *</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="email" placeholder="">
+                        </div>
+                    </div>
+                    </form>
+                    <!-- <div class="news-inputs"> -->
+                        <!-- <div class="form-sections row">
                             <div class="newsname">
-                                <label for="name">Your name *</label><br>
-                                <input type="text" id="name" name="name" required>
+                                <div class="col-25">
+                                    <label for="name">Your name *</label><br>
+                                </div>
+                                <div class="col-100">
+                                    <input type="text" id="name" name="name" required>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-sections">
+                        <div class="form-sections row">
                             <div>
-                                <label for="email">Your email *</label><br>
-                                <input type="email" id="email" name="email" required>
+                                <div class="col-25">
+                                <label for="email">Your email *</label><br></div>
+                                <div class="col-100">
+                                <input type="email" id="email" name="email" required></div>
                             </div>
                         </div>
                     </div>
-                </form>
+                </form> -->
                 <div class="marketinfo">
                     <input id="privacy" type="checkbox" class="private-check">
                     <label class="privacy-label" for="privacy">Please tick this box if you wish to receive marketing

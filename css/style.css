@@ -288,6 +288,16 @@ a[class$=-content] {
   border-color: #ce4125;
 }
 
+.dev-block:hover {
+  background-color: #ce4125;
+  color: #fff;
+}
+
+.servedev:hover {
+  background-color: #fff;
+  color: #ce4125;
+}
+
 .dev-icon {
   color: #fff;
 }
@@ -305,16 +315,41 @@ a[class$=-content] {
   border-color: #f62459;
 }
 
+.cyber-block:hover {
+  background-color: #f62459;
+  color: #fff;
+}
+
+.servecyber:hover {
+  background-color: #fff;
+  color: #f62459;
+}
+
 .serveweb,
 .web-icon {
   background-color: #926fb1;
   border-color: #926fb1;
 }
 
+.web-block:hover {
+  background-color: #926fb1;
+  color: #fff;
+}
+
+.serveweb:hover {
+  background-color: #fff;
+  color: #926fb1;
+}
+
 .servetelecoms,
 .tele-icon {
   background-color: #d64541;
   border-color: #d64541;
+}
+
+.telecoms-block:hover {
+  background-color: #d64541;
+  color: #fff;
 }
 
 .servedigital,
@@ -488,6 +523,7 @@ h2 {
   filter: grayscale(100%);
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 10px;
 }
 
 .clients-img:hover, .partners:hover {
@@ -573,6 +609,36 @@ label {
   margin-bottom: 5px;
 }
 
+.row input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.col-25 {
+  float: left;
+  width: 26%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.newsform {
+  width: 100%;
+}
+
 /* Media queries */
 @media (min-width: 1025px) {
   .top-help {
@@ -580,11 +646,43 @@ label {
     justify-content: space-around;
     align-items: center;
   }
+  .smallnav {
+    display: none;
+  }
   .reviews {
     display: flex;
   }
   .smallsearchphone {
     display: none;
+  }
+  .main-pic {
+    position: relative;
+    text-align: left;
+    color: #fff;
+  }
+  .top-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -70%);
+    font-size: 50px;
+    font-weight: 400;
+  }
+  .bottom-left {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+  }
+  .main-button {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #926fb1;
   }
   .mainmenu {
     display: flex;
@@ -677,11 +775,9 @@ label {
   .newsname {
     margin-right: 20px;
   }
-  .form-sections input {
-    width: 400px;
-    height: 50px;
-    border-radius: 3px;
-    border: none;
+  .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
   }
   .newsform h2 {
     font-size: 30px;
@@ -714,7 +810,7 @@ label {
   .telecomsservices .telecomsbtn,
   .webdesign .webdesignbtn,
   .cyber .cybersecbtn,
-  .devcourse .devcoursebtn {
+  .devcourse .devcoursebtn, .top-help {
     display: none;
   }
   .topnav a.icon {
@@ -725,7 +821,37 @@ label {
     display: none;
   }
   .headerpic {
-    height: auto;
+    height: 60vh;
+    width: 100%;
+  }
+  .main-pic {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  .top-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .bottom-left {
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+  }
+  .main-button {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #926fb1;
   }
   .colsforfooter {
     display: flex;
@@ -738,25 +864,25 @@ label {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .top-help {
+  .smallnav, .smallnavtop {
     display: flex;
-    padding: 15px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
   }
-  .top-help .logo {
+  .smallnav .logo, .smallnavtop .logo {
     width: 60%;
-    margin-bottom: 20px;
   }
-  .top-help .menu {
-    position: absolute;
-    right: 39px;
-    top: 10px;
-    margin: 0 10px 10px 0;
+  .searchbar input {
+    background-color: #ddd;
+    border: none;
   }
-  .smallsearchphone {
-    position: absolute;
-    left: 60%;
-    font-size: 35px;
+  .searchbar button {
+    background: #ddd;
+  }
+  .light-logo {
+    width: 60%;
   }
   .partners, .clients-img {
     width: 100%;
@@ -770,9 +896,9 @@ label {
     font-size: 40px;
     font-weight: lighter;
   }
-  .form-sections input {
+  .col-25, .col-75 {
     width: 100%;
-    font-size: 25px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -783,7 +909,7 @@ label {
   .telecomsservices .telecomsbtn,
   .webdesign .webdesignbtn,
   .cyber .cybersecbtn,
-  .devcourse .devcoursebtn {
+  .devcourse .devcoursebtn, .smallnav {
     display: none;
   }
   .topnav a.icon {
@@ -809,6 +935,36 @@ label {
   }
   .itbtn, .contactbtn, .smallsearchphone {
     display: none;
+  }
+  .main-pic {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  .top-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .bottom-left {
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+  }
+  .main-button {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #926fb1;
   }
   .service-blocks {
     display: grid;
@@ -866,6 +1022,10 @@ label {
   .newsform h2 {
     text-align: left;
     font-size: 35px;
+  }
+  .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
   }
 }
 .clearfix:before,
