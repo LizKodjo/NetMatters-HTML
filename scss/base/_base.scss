@@ -113,12 +113,12 @@ a[class$="-content"] {
     display: block;
 }
 
+
 .itsupport a:hover,
 .itsupport:hover .itsupportbtn,
 .itsupport-content {
+    @extend %linkunderline;
     background-color: $havelock-blue;
-    color: $white;
-    text-decoration:underline;
 }
 
 .itpic {
@@ -131,9 +131,8 @@ a[class$="-content"] {
 .digitalmarketing a:hover,
 .digitalmarketing:hover .digimarketbtn,
 .digimarket-content {
+    @extend %linkunderline;
     background-color: $shamrock;
-    color: $white;
-    text-decoration: underline;
 }
 
 .digipic {
@@ -146,9 +145,8 @@ a[class$="-content"] {
 .telecomsservices a:hover,
 .telecomsservices:hover .telecomsbtn,
 .telecoms-content {
+    @extend %linkunderline;
     background-color: $valencia;
-    color: $white;
-    text-decoration: underline;
 }
 
 .telepic {
@@ -161,9 +159,8 @@ a[class$="-content"] {
 .webdesign a:hover,
 .webdesign:hover .webdesignbtn,
 .webdesign-content {
+    @extend %linkunderline;
     background-color: $wisteria;
-    color: $white;
-    text-decoration: underline;
 }
 
 .webpic {
@@ -176,9 +173,8 @@ a[class$="-content"] {
 .cyber a:hover,
 .cyber:hover .cybersecbtn,
 .cyber-content {
+    @extend %linkunderline;
     background-color: $radical-red;
-    color: $white;
-    text-decoration: underline;
 }
 
 .cyberpic {
@@ -191,10 +187,8 @@ a[class$="-content"] {
 .devcourse a:hover,
 .devcourse:hover .devcoursebtn,
 .devcourse-content {
-    background-color: $punch;
-    color: $white;
-    text-decoration: underline;
-    
+    @extend %linkunderline;
+    background-color: $punch;    
 }
 
 .devpic {
@@ -329,8 +323,6 @@ a[class$="-content"] {
 
 }
 
-
-
 .ash-review {
     font-style: italic;
 }
@@ -349,9 +341,7 @@ a[class$="-content"] {
 }
 
 .clients-think {
-    color: $white;
-    text-align: left;
-    font-weight: bold;
+    @include boldleft;
 }
 
 .stars {
@@ -359,9 +349,7 @@ a[class$="-content"] {
 }
 
 .welcome {
-    color: $white;
-    text-align: left;
-    font-weight: bold;
+    @include boldleft;
 }
 
 
@@ -381,9 +369,6 @@ h2 {
     flex-direction: column;
     margin: 20px;
 }
-
-
-
 .jobpic {
     border-radius: 100%;
 }
@@ -518,9 +503,6 @@ h2 {
     float: left;
 }
 
-// .clear {
-//     clear:both;
-// }
 h2 {
     font-weight: 400;
     margin: 0 0 15px;
@@ -721,16 +703,15 @@ label {
     .servicegrid {
         margin: 0 200px;
     }
+    
     .news-section {
-        display: flex;
-        justify-content: flex-start;
+        @include justifyflexstart;
         flex-direction: column;
         align-items: flex-start;
     }
     .news-inputs {
-        display:flex;
+        @include justifyflexstart;
         flex-direction: row;
-        justify-content: flex-start;
     }
     .newsname {
         margin-right: 20px;
@@ -833,9 +814,7 @@ label {
     }
 
     .smallnav, .smallnavtop {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        @include flexevencenter;
         align-items: center;
         margin: 10px;
         .logo {
@@ -847,10 +826,8 @@ label {
         border: none;        
     }
     .searchform {
-        display:flex;
-        flex-wrap: wrap;
+        @include flexevencenter;
         align-content: center;
-        justify-content: space-evenly;
     }
     .searchbar button {
         background: $alto;
