@@ -568,9 +568,8 @@ label {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
   }
-  .smallnav {
+  .smallnav, .service-subheading2 {
     display: none;
   }
   .reviews {
@@ -580,7 +579,6 @@ label {
     display: none;
   }
   .main-pic {
-    position: relative;
     text-align: left;
     color: #fff;
   }
@@ -614,9 +612,9 @@ label {
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
   }
-  .servicegrid h3 {
+  .servicegrid h3,
+  .service-subheading {
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 0.4px;
@@ -679,17 +677,24 @@ label {
     font-weight: bold;
   }
   .footer-sections {
-    margin: 30px 200px;
+    margin: 0 360px;
+    height: 372px;
   }
   .copyinfo, .news-section, .intro-review, .latestnews,
   .servicegrid {
-    margin: 0 200px;
+    margin: 0 360px;
   }
   .news-section {
     display: flex;
     justify-content: flex-start;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-around;
+  }
+  .newsletter {
+    display: flex;
+    height: 385px;
   }
   .news-inputs {
     display: flex;
@@ -725,6 +730,25 @@ label {
     font-size: larger;
     font-weight: bold;
   }
+  .headerpic {
+    height: 550px;
+  }
+  .service-subheading {
+    margin: 0;
+    color: #333645;
+  }
+  .serveheadings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tablerows {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    grid-gap: 20px;
+    margin: auto;
+  }
 }
 @media screen and (max-width: 600px) {
   .topnav,
@@ -735,7 +759,7 @@ label {
   .webdesign .webdesignbtn,
   .cyber .cybersecbtn,
   .devcourse .devcoursebtn, .top-help,
-  .itbtn, .contactbtn {
+  .itbtn, .contactbtn, .service-subheading {
     display: none;
   }
   .topnav a.icon {
@@ -838,7 +862,8 @@ label {
   .webdesign .webdesignbtn,
   .cyber .cybersecbtn,
   .devcourse .devcoursebtn, .smallnav,
-  .itbtn, .contactbtn, .smallsearchphone {
+  .itbtn, .contactbtn, .smallsearchphone,
+  .service-subheading2 {
     display: none;
   }
   .topnav a.icon {
