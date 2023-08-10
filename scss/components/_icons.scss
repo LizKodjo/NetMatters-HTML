@@ -1,0 +1,45 @@
+.dev-icon {
+    color: $white;
+}
+
+[class$="-icon"] {
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: $white;
+}
+
+.servecyber,
+.cyber-icon {
+    @include radicalred;
+}
+
+.serveweb,
+.web-icon {
+    @include wisteria;
+}
+
+.servetelecoms,
+.tele-icon {
+    @include valencia;
+}
+
+.servedigital,
+.digital-icon {
+    @include shamrock;
+}
+
+.serveit,
+.it-icon {
+    @include havelock;
+}
+
+.servebespoke,
+.bespoke-icon {
+    @include hoki;
+}
+
+.servedev,
+.dev-icon {
+    @include punch;
+}

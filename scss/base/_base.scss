@@ -8,206 +8,10 @@ body {
 }
 
 
-// Navigation
-
-.searchbar input {
-    border: 1px solid $primary-warm-col;
-    font-size: 20px;
-    padding: 13px;
-}
-.searchbar {
-    display: flex;
-}
-
-::placeholder {
-    color: $primary-warm-col;
-}
-
-.menu {
-    @include primarydark;
-    color: $white;
-    font-size: 25px;
-    padding: 13px;
-    border-radius: 5px;
-}
-
-// styling navigation and the links inside
-.topnav {
-    background-color: $mineshaft;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-
-    a {
-        float: left;
-        display: block;
-        color: $white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-    .icon {
-        display: none;
-    }
-}
-
-// dropdown container and Styling the dropdown buttons
-.bespoke,
-.itsupport,
-.digitalmarketing,
-.telecomsservices,
-.webdesign,
-.cyber,
-.devcourse {
-    float:left;
-    overflow: hidden;
-}
-
-// style the dropdown content
-[class$="-content"] {
-    display: none;
-    position: absolute;    
-    // min-width: 160px;
-    max-width: 100%;
-    // box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    // z-index: 1;
-}
-
-// styling links inside the dropdown
-a[class$="-content"] {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    // text-align: center;
-    text-align:left;
-}
-
-// styling background on links and the dropdown hover
-.bespoke a:hover,
-.bespoke:hover .bespokebtn,
-.bespoke-content {
-    background-color: $hoki;
-    color: $white;
-    text-decoration: underline;
-}
-
-.bespokepic {
-    color: $hoki;
-    &:hover {
-        color:$white;
-    }
-}
-
-.bespoke:hover .bespoke-content,
-.itsupport:hover .itsupport-content,
-.digitalmarketing:hover .digimarket-content,
-.telecomsservices:hover .telecoms-content,
-.webdesign:hover .webdesign-content,
-.cyber:hover .cyber-content,
-.devcourse:hover .devcourse-content {
-    display: block;
-}
 
 
-.itsupport a:hover,
-.itsupport:hover .itsupportbtn,
-.itsupport-content {
-    @extend %linkunderline;
-    background-color: $havelock-blue;
-}
-
-.itpic {
-    color: $havelock-blue;
-    &:hover {
-        color:$white;
-    }
-}
-
-.digitalmarketing a:hover,
-.digitalmarketing:hover .digimarketbtn,
-.digimarket-content {
-    @extend %linkunderline;
-    background-color: $shamrock;
-}
-
-.digipic {
-    color: $shamrock;
-    &:hover {
-        color: $white;
-    }
-}
-
-.telecomsservices a:hover,
-.telecomsservices:hover .telecomsbtn,
-.telecoms-content {
-    @extend %linkunderline;
-    background-color: $valencia;
-}
-
-.telepic {
-    color: $valencia;
-    &:hover {
-        color: $white;
-    }
-}
-
-.webdesign a:hover,
-.webdesign:hover .webdesignbtn,
-.webdesign-content {
-    @extend %linkunderline;
-    background-color: $wisteria;
-}
-
-.webpic {
-    color: $wisteria;
-    &:hover {
-        color: $white;
-    }
-}
-
-.cyber a:hover,
-.cyber:hover .cybersecbtn,
-.cyber-content {
-    @extend %linkunderline;
-    background-color: $radical-red;
-}
-
-.cyberpic {
-    color: $radical-red;
-    &:hover {
-        color: $white;
-    }
-}
-
-.devcourse a:hover,
-.devcourse:hover .devcoursebtn,
-.devcourse-content {
-    @extend %linkunderline;
-    background-color: $punch;    
-}
-
-.devpic {
-    color: $punch;
-    &:hover {
-        color: $white;
-    }
-}
-
-.content-heading {
-    text-decoration: none;
-}
 
 
-// Main picture
-.headerpic {
-    width: 100%;
-    height: 100%;
-}
 
 
 .service-subheading {
@@ -238,10 +42,7 @@ a[class$="-content"] {
 
 
 
-.servedev,
-.dev-icon {
-    @include punch;
-}
+
 .dev-block:hover {
     background-color: $punch;
     color:$white;
@@ -251,21 +52,7 @@ a[class$="-content"] {
     color:$punch;
 }
 
-.dev-icon {
-    color: $white;
-}
 
-[class$="-icon"] {
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 40px;
-    color: $white;
-}
-
-.servecyber,
-.cyber-icon {
-    @include radicalred;
-}
 .cyber-block:hover {
     background-color: $radical-red;
     color:$white;
@@ -275,10 +62,7 @@ a[class$="-content"] {
     color: $radical-red;
 }
 
-.serveweb,
-.web-icon {
-    @include wisteria;
-}
+
 .web-block:hover {
     background-color: $wisteria;
     color: $white;
@@ -288,29 +72,13 @@ a[class$="-content"] {
     color: $wisteria;
 }
 
-.servetelecoms,
-.tele-icon {
-    @include valencia;
-}
+
 .telecoms-block:hover {
     background-color: $valencia;
     color: $white;
 }
 
-.servedigital,
-.digital-icon {
-    @include shamrock;
-}
 
-.serveit,
-.it-icon {
-    @include havelock;
-}
-
-.servebespoke,
-.bespoke-icon {
-    @include hoki;
-}
 
 // Reviews
 .reviews {
@@ -552,28 +320,6 @@ label {
 
 /* Media queries */
 
-// @media (min-width: 769px)  {
-//     .colsforfooter {
-//         display: flex;
-//         flex-direction: row;
-//         flex-wrap: wrap;
-//     }
-//     .review {
-//         display: flex;
-//     }
-// }
-
-// @media (max-width: 850px) {
-//     .topnav {
-//         display:none;
-//     }
-// }
-// @media (max-width: 769px) and (orientation: landscape) {
-//     .colsforfooter {
-//         flex-direction: column;
-//     }
-// }
-
 @media (min-width: 1025px) {
     .top-help {
         display: flex;
@@ -586,6 +332,7 @@ label {
     }
     .reviews {
         display: flex;
+        height: 630px;
     }
     .smallsearchphone {
         display: none;
@@ -790,6 +537,9 @@ label {
     }
     .latestnews {
         padding: 50px 0;
+    }
+    .latestnews h3 {
+        font-size: 35px;
     }
 }
 
