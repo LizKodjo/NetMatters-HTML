@@ -619,7 +619,7 @@ label {
     font-size: 30px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .topnav,
   .bespoke .bespokebtn,
   .itsupport .itsupportbtn,
@@ -726,7 +726,7 @@ label {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1025px) and (min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
   .topnav,
   .bespoke .bespokebtn,
   .itsupport .itsupportbtn,
@@ -858,13 +858,12 @@ label {
     margin-top: 0;
   }
 }
-@media (min-width: 1025px) {
-  .clearfix:before,
-  .clearfix:after {
-    content: " ";
-    display: table;
-  }
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
 }
+
 footer {
   height: auto;
 }
