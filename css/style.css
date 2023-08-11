@@ -40,6 +40,40 @@ body {
   font-size: 1rem;
 }
 
+.more {
+  display: none;
+}
+
+.jobtitle1 {
+  color: #67809f;
+  font-size: small;
+  letter-spacing: 1px;
+}
+
+.latestbtn1 {
+  background-color: #67809f;
+}
+
+.jobtitle2 {
+  color: #926fb1;
+  font-size: small;
+  letter-spacing: 1px;
+}
+
+.latestbtn2 {
+  background-color: #926fb1;
+}
+
+.jobtitle3 {
+  color: #4183d7;
+  font-size: small;
+  letter-spacing: 1px;
+}
+
+.latestbtn3 {
+  background-color: #4183d7;
+}
+
 .service-subheading {
   color: black;
 }
@@ -64,6 +98,36 @@ body {
 .service-info {
   font-size: 14px;
   letter-spacing: 0.4px;
+}
+
+.bespoke-block:hover {
+  background-color: #67809f;
+  color: #fff;
+}
+
+.servebespoke:hover {
+  background-color: #fff;
+  color: #67809f;
+}
+
+.serveit:hover {
+  background-color: #fff;
+  color: #4183d7;
+}
+
+.it-block:hover {
+  background-color: #4183d7;
+  color: #fff;
+}
+
+.digital-block:hover {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.servedigital:hover {
+  background-color: #fff;
+  color: #2ecc71;
 }
 
 .dev-block:hover {
@@ -99,6 +163,11 @@ body {
 .telecoms-block:hover {
   background-color: #d64541;
   color: #fff;
+}
+
+.servetelecoms:hover {
+  background-color: #fff;
+  color: #d64541;
 }
 
 .reviews {
@@ -193,6 +262,7 @@ h2 {
 
 .jobspec {
   color: #666;
+  font-size: small;
 }
 
 .clients {
@@ -335,12 +405,17 @@ label {
     justify-content: space-around;
     align-items: center;
   }
-  .smallnav, .service-subheading2 {
+  .smallnav, .service-subheading2,
+  .viewheading {
     display: none;
+  }
+  .searchbar button {
+    background: #a3a8ac;
   }
   .reviews {
     display: flex;
     height: 630px;
+    padding-top: 50px;
   }
   .smallsearchphone {
     display: none;
@@ -434,6 +509,9 @@ label {
     justify-content: center;
     align-items: center;
   }
+  .jobtitle {
+    font-size: 20px;
+  }
   .jobvac {
     height: 142px;
   }
@@ -483,21 +561,18 @@ label {
     margin-bottom: 0;
   }
   .intro-review {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 600px;
+    grid-gap: 20px;
   }
   .stars {
     font-size: 40px;
   }
   .welcomenet, .startclient {
-    margin-right: 20px;
     font-size: 18px;
   }
-  .starclient {
-    padding: 0 20px 20px 20px;
-  }
   .ash-review {
-    font-size: larger;
     font-weight: bold;
   }
   .headerpic {
@@ -534,11 +609,17 @@ label {
   .latestnews {
     padding: 50px 0;
   }
-  .latestnews h3 {
+  .newsheading, .viewheading2 {
     font-size: 35px;
+    margin: 0;
+  }
+  .viewheading2 {
+    text-align: end;
+    font-weight: bold;
+    font-size: 30px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1025px) and (max-width: 600px) {
   .topnav,
   .bespoke .bespokebtn,
   .itsupport .itsupportbtn,
@@ -547,7 +628,8 @@ label {
   .webdesign .webdesignbtn,
   .cyber .cybersecbtn,
   .devcourse .devcoursebtn, .top-help,
-  .itbtn, .contactbtn, .service-subheading {
+  .itbtn, .contactbtn, .service-subheading,
+  .viewheading2 {
     display: none;
   }
   .topnav a.icon {
@@ -618,6 +700,9 @@ label {
     justify-content: space-evenly;
     align-content: center;
   }
+  .searchbar {
+    border: 1px solid #a3a8ac;
+  }
   .searchbar button {
     background: #ddd;
   }
@@ -641,7 +726,7 @@ label {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 1025px) and (min-width: 601px) and (max-width: 1024px) {
   .topnav,
   .bespoke .bespokebtn,
   .itsupport .itsupportbtn,
@@ -651,7 +736,8 @@ label {
   .cyber .cybersecbtn,
   .devcourse .devcoursebtn, .smallnav,
   .itbtn, .contactbtn, .smallsearchphone,
-  .service-subheading2 {
+  .service-subheading2,
+  .viewheading2 {
     display: none;
   }
   .topnav a.icon {
@@ -678,6 +764,7 @@ label {
   }
   .searchbar button {
     color: #fff;
+    background: #a3a8ac;
   }
   .main-pic {
     position: relative;
@@ -771,12 +858,13 @@ label {
     margin-top: 0;
   }
 }
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
+@media (min-width: 1025px) {
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
 }
-
 footer {
   height: auto;
 }
@@ -1049,7 +1137,6 @@ a[class$=-content] {
 
 .headerpic {
   width: 100%;
-  height: 100%;
 }
 
 .sub-btn {
@@ -1080,7 +1167,6 @@ a[class$=-content] {
 .searchbar button {
   border: 0;
   padding: 15px;
-  background: #a3a8ac;
   cursor: pointer;
 }
 

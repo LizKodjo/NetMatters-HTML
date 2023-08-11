@@ -7,8 +7,33 @@ body {
     font-size: 1rem;
 }
 
-
-
+.more {
+    display:none;
+}
+.jobtitle1 {
+    color: $hoki;
+    font-size: small;
+    letter-spacing: 1px;
+}
+.latestbtn1 {
+    background-color: $hoki;
+}
+.jobtitle2 {
+    color: $wisteria;
+    font-size: small;
+    letter-spacing: 1px;
+}
+.latestbtn2 {
+    background-color: $wisteria;
+}
+.jobtitle3 {
+    color: $havelock-blue;
+    font-size: small;
+    letter-spacing: 1px;
+}
+.latestbtn3 {
+    background-color: $havelock-blue;
+}
 
 
 
@@ -39,9 +64,31 @@ body {
     font-size: 14px;
     letter-spacing: .4px;
 }
+.bespoke-block:hover {
+    background-color: $hoki;
+    color: $white;
+}
 
-
-
+.servebespoke:hover {
+    background-color: $white;
+    color: $hoki;
+}
+.serveit:hover {
+    background-color: $white;
+    color: $havelock-blue;
+}
+.it-block:hover {
+    background-color: $havelock-blue;
+    color: $white;
+}
+.digital-block:hover {
+    background-color: $shamrock;
+    color: $white;
+}
+.servedigital:hover {
+    background-color: $white;
+    color: $shamrock;
+}
 
 .dev-block:hover {
     background-color: $punch;
@@ -76,6 +123,10 @@ body {
 .telecoms-block:hover {
     background-color: $valencia;
     color: $white;
+}
+.servetelecoms:hover {
+    background-color: $white;
+    color:$valencia;
 }
 
 
@@ -171,6 +222,7 @@ h2 {
 
 .jobspec {
     color: $dove-gray;
+    font-size: small;
 }
 
 // Clients
@@ -327,12 +379,18 @@ label {
         align-items: center;
         // flex-wrap: wrap;
     }
-    .smallnav, .service-subheading2 {
+    .smallnav, .service-subheading2,
+    .viewheading {
         display:none;
+    }
+
+    .searchbar button {
+        background: $primary-warm-col;
     }
     .reviews {
         display: flex;
         height: 630px;
+        padding-top: 50px;
     }
     .smallsearchphone {
         display: none;
@@ -434,6 +492,9 @@ label {
         justify-content: center;
         align-items: center;
     }
+    .jobtitle {
+        font-size: 20px;
+    }
     .jobvac {
         height: 142px;
     }
@@ -487,21 +548,26 @@ label {
         margin-bottom: 0;
     }
     .intro-review {
-        display: flex;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 600px;
+        grid-gap: 20px;
+        // margin-left: auto;
+        // margin-right: auto;
+        // align-items: flex-start;
     }
     .stars {
         font-size: 40px;
     }
     .welcomenet, .startclient {
-        margin-right: 20px;
+        // margin-right: 20px;
         font-size: 18px;
     }
-    .starclient {
-        padding: 0 20px 20px 20px;
-    }
+    // .starclient {
+    //     padding: 0 20px 20px 20px;
+    // }
     .ash-review {
-        font-size: larger;
+        // font-size: larger;
         font-weight:bold;
     }   
     .headerpic {
@@ -538,10 +604,16 @@ label {
     .latestnews {
         padding: 50px 0;
     }
-    .latestnews h3 {
+    .newsheading, .viewheading2 {
         font-size: 35px;
+        margin: 0;
     }
-}
+    .viewheading2 {
+        text-align: end;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
 
 // hide nav on small screens
 @media screen and (max-width:600px) {
@@ -553,7 +625,8 @@ label {
     .webdesign .webdesignbtn,
     .cyber .cybersecbtn,
     .devcourse .devcoursebtn, .top-help,
-    .itbtn, .contactbtn, .service-subheading {
+    .itbtn, .contactbtn, .service-subheading,
+    .viewheading2 {
         display: none;
     }
     .topnav a.icon {
@@ -626,6 +699,9 @@ label {
         @include flexevencenter;
         align-content: center;
     }
+    .searchbar {
+        border: 1px solid $primary-warm-col;
+    }
     .searchbar button {
         background: $alto;
     }
@@ -662,7 +738,8 @@ label {
     .cyber .cybersecbtn,
     .devcourse .devcoursebtn, .smallnav,
     .itbtn, .contactbtn, .smallsearchphone,
-    .service-subheading2 {
+    .service-subheading2,
+    .viewheading2 {
         display: none;
     }
 
@@ -691,6 +768,7 @@ label {
     }
     .searchbar button {
         color: $white;
+        background: $primary-warm-col;
     }
    
     .main-pic {
@@ -794,3 +872,4 @@ label {
     display: table;
 }
 
+}
