@@ -733,7 +733,296 @@ label {
 }
 
 // mobile landscape
-@media screen and (min-width: 601px) and (max-width:1100px) {
+// @media screen and (min-width: 600px) and (max-width:1100px) {
+//     .topnav,
+//     .bespoke .bespokebtn,
+//     .itsupport .itsupportbtn,
+//     .digitalmarketing .digimarketbtn,
+//     .telecomsservices .telecomsbtn,
+//     .webdesign .webdesignbtn,
+//     .cyber .cybersecbtn,
+//     .devcourse .devcoursebtn, .smallnav,
+//     .itbtn, .contactbtn, .smallsearchphone,
+//     .service-subheading2,
+//     .viewheading2 {
+//         display: none;
+//     }
+//     .headerpic {
+//         height: 550px;
+//     }
+
+//     .topnav a.icon {
+//         float: right;
+//         display: block;
+//     }
+//     .top-help {
+//         float: right;
+//     }
+    
+//     .top-help {
+//         display:flex;
+//         align-items: center;
+//         justify-content: space-evenly;
+//         padding: 15px 0 15px 0;
+//         margin: 0 50px;
+//         // flex-wrap: wrap;
+//     }
+//     .top-help .logo {
+//         width: 50%;
+//     }
+//     .searchbar input {
+//         width: 150px;
+//         font-size: small;
+//     }
+//     .searchbar button {
+//         color: $white;
+//         background: $primary-warm-col;
+//     }
+   
+//     .main-pic {
+//         position: relative;
+//         text-align: center;
+//         color: $white;
+//     }
+//     .top-left {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         font-size: 30px;
+//         font-weight:400;
+//         letter-spacing: 2px;
+//     }
+//     .bottom-left {
+//         font-size: 16px;
+//         font-weight: bolder;
+//         letter-spacing:.1rem;
+//         margin-bottom: 15px;
+//     }
+//     .main-button {
+//         text-transform: uppercase;
+//         font-size: 15px;
+//         font-weight: bold;
+//         padding: 15px;
+//         border-radius: 5px;
+//         border:none;
+//         color:$white;
+//         background-color: $wisteria;
+//     }
+//     .service-blocks {
+//         display: grid;
+//         max-width: 600px;
+//         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//         grid-template-rows: 300px;
+//         grid-gap: 15px 20px;
+        
+//     }
+//     .bespoke-block, .it-block, .digital-block {
+//         grid-column: 1 / -1;
+//     }
+//     .service-subheading {
+//         text-align: end;
+//         // position: absolute;
+//         // right: 115px;
+//         // top: 480px;
+//         font-weight: bold;
+//     }
+//     .servicegrid {
+//         margin: 0 100px;
+//     }
+//     .servicegrid h3 {
+//         font-weight: bold;
+//         font-size: 30px;
+//     }
+//     .partners {
+//         margin: 0 100px;
+//         padding-bottom: 20px;
+//     }
+//     .intro-review, .latestnews {
+//         margin: 20px 100px;
+//     }
+//     .stars {
+//         font-size: 30px;
+//     }
+//     article {
+//         display: grid;
+//         max-width: 100%;
+//         grid-template-columns: auto auto;
+//         grid-gap: 15px;
+//     }
+//     .receptionist {
+//         display:none;
+//     }
+//     .news-section {
+//         margin: 0 100px;
+//         display:flex;
+//         flex-direction: column;
+//         justify-content: space-around;
+//         align-items: flex-start;
+//     }
+//     .form-sections input{
+//         width:150%;
+//         font-size: 25px;
+//     }
+//     .newsform h2 {
+//         text-align:left;
+//         font-size: 35px;
+//     }
+//     .col-25, .col-75 {
+//         width: 100%;
+//         margin-top:0;
+//     }
+// }
+
+@media screen and (min-width: 992px) {
+
+    .main-footer {
+        height: 375px;
+        margin: 0 50px;
+    }
+    .news-section {
+        margin: 0 50px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .newsform, .row input[type=text] {
+        margin-bottom: 0;
+    }
+    .tablerows {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px; 
+        margin-bottom: 10px;
+    }
+    .col-25, .col-75 {
+        width: 100%;
+        margin-top:0;
+    }
+    .clients-img {
+        height: 70px;
+        padding: 50px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro-review, .latestnews {
+        margin: 20px 50px;
+    }
+
+    .latestnews {
+        height: 765px;
+    }
+    article {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: auto auto auto;
+        grid-gap: 15px;
+    }
+    .viewheading2 {
+        text-align: end;
+        font-size: 25px;
+    }
+    .newsheading, .viewheading2 {
+        margin: 0;
+    }
+    .newsheading {
+        font-size: 35px;
+    }
+    .intro-review {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        height: 630px;
+    }
+    .reviews {
+        padding: 20px 0 0 0;
+    }
+    .welcomenet, .startclient {
+        font-size:18px;
+    }
+
+    .partners {
+        margin: 0 50px;
+        padding-bottom: 20px;
+        height: 170px;
+    }
+    .servicegrid {
+        margin: 0 50px;
+    }
+
+    .service-blocks {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: repeat(12, auto);
+        grid-template-rows: auto auto;
+        grid-gap: 15px 20px;
+        
+    }
+    .bespoke-block {
+        grid-column: 1 / 5;
+    } 
+    .it-block {
+        grid-column: 5 / 9;
+    } 
+    .digital-block {
+        grid-column: 9 / 13;
+    }
+    .telecoms-block {
+        grid-column: -13 / -10;
+    }
+    .web-block {
+        grid-column: -10 / -7;
+    }
+    .cyber-block {
+        grid-column: -7 / -4;
+    }
+    .dev-block {
+        grid-column: -4 / -1;
+    }
+
+
+
+
+
+
+
+
+    // Old section start
+    .form-sections input{
+        width:100%;
+        font-size: 25px;
+    }
+
+    .news-inputs {
+        @include justifyflexstart;
+        flex-direction: row;
+    }
+    .newsname {
+        margin-right: 20px;
+    }
+    
+   
+
+    .newsform h2 {
+        font-size: 30px;
+        text-align: left;
+    }
+    
+    // .news-section {
+    //     margin: 0 50px;
+    //     height: 380px;
+    // }
+
+    // .newsform h2 {
+    //     text-align:left;
+    //     font-size: 35px;
+    // }
+    // .col-25, .col-75 {
+    //     width: 100%;
+    //     margin-top:0;
+    // }
     .topnav,
     .bespoke .bespokebtn,
     .itsupport .itsupportbtn,
@@ -744,7 +1033,7 @@ label {
     .devcourse .devcoursebtn, .smallnav,
     .itbtn, .contactbtn, .smallsearchphone,
     .service-subheading2,
-    .viewheading2 {
+    .viewheading {
         display: none;
     }
     .headerpic {
@@ -809,17 +1098,7 @@ label {
         color:$white;
         background-color: $wisteria;
     }
-    .service-blocks {
-        display: grid;
-        max-width: 600px;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-template-rows: 300px;
-        grid-gap: 15px 20px;
-        
-    }
-    .bespoke-block, .it-block, .digital-block {
-        grid-column: 1 / -1;
-    }
+    
     .service-subheading {
         text-align: end;
         // position: absolute;
@@ -827,52 +1106,33 @@ label {
         // top: 480px;
         font-weight: bold;
     }
-    .servicegrid {
-        margin: 0 100px;
-    }
+    
     .servicegrid h3 {
         font-weight: bold;
         font-size: 30px;
     }
-    .partners {
-        margin: 0 100px;
-        padding-bottom: 20px;
-    }
-    .intro-review, .latestnews {
-        margin: 20px 100px;
-    }
+    
+    
     .stars {
         font-size: 30px;
     }
-    article {
-        display: grid;
-        max-width: 100%;
-        grid-template-columns: auto auto;
-        grid-gap: 15px;
-    }
-    .receptionist {
-        display:none;
-    }
-    .news-section {
-        margin: 0 100px;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-    .form-sections input{
-        width:150%;
-        font-size: 25px;
-    }
-    .newsform h2 {
-        text-align:left;
-        font-size: 35px;
-    }
-    .col-25, .col-75 {
-        width: 100%;
-        margin-top:0;
-    }
+    
+    
+   
+    
+    
 }
+// @media screen and (max-width: 992)  {
+//     .main-footer {
+//         height: 375px;
+//         margin: 0 50px;
+//     }
+//     .newsletter {
+//         height: 380px;
+//         margin: 0 50px;
+//     }
+
+// }
 
 // Clearfix
 .clearfix:before,
