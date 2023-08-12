@@ -27,7 +27,6 @@
 .searchbar button {
     border:0;
     padding: 15px;
-    // background: $primary-warm-col;
     cursor: pointer;
 }
 .bespoke .bespokebtn,
@@ -84,4 +83,13 @@
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
+}
+.latestbtn1 {
+    background-color: $hoki;
+}
+.latestbtn2 {
+    background-color: $wisteria;
+}
+.latestbtn3 {
+    background-color: $havelock-blue;
 }
