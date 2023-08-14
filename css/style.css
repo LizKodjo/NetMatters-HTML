@@ -613,6 +613,7 @@ h2 {
   .headerpic {
     height: 60vh;
     width: 100%;
+    opacity: 0.5;
   }
   .main-pic {
     position: relative;
@@ -723,6 +724,7 @@ h2 {
   }
   .headerpic {
     height: 550px;
+    opacity: 0.5;
   }
   .topnav a.icon {
     float: right;
@@ -1089,7 +1091,6 @@ footer ul li a {
 }
 
 .footerlist li {
-  text-align: justify;
   font-size: small;
   margin-bottom: 10px;
 }
@@ -1340,6 +1341,7 @@ a[class$=-content] {
 
 .content-heading {
   text-decoration: none;
+  padding-left: 20px;
 }
 
 .headerpic {
