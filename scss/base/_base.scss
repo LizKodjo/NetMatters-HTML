@@ -421,6 +421,7 @@ h2 {
         font-size: 30px;
         font-weight: bold;
         letter-spacing: .4px;
+        color: $primary-dark-col;
     }
 
     .service-blocks {
@@ -648,6 +649,10 @@ h2 {
     .service-subheading,
     .viewheading2 {
         display: none;
+    }
+
+    .latestnews {
+        margin: 15px;
     }
 
     .topnav a.icon {
@@ -934,7 +939,7 @@ h2 {
 }
 
 // small laptops
-@media screen and (min-width: 992px) and (max-width:1200px) {
+@media screen and (min-width: 992px) and (orientation: landscape) and (max-width:1200px) {
     .smallnav,
     .smallsearchphone,
     .service-subheading2,
