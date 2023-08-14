@@ -224,6 +224,7 @@
   line-height: 32px;
   margin-bottom: 15px;
   display: table;
+  font-size: 18px;
 }
 
 .private-check {
@@ -352,13 +353,17 @@ h2 {
   width: 100%;
 }
 
+.tablerows {
+  font-size: 18px;
+}
+
 /* Media queries */
 @media screen and (min-width: 1025px) {
   .top-help {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px 200px;
+    margin: 20px 0;
   }
   .top-help .logo {
     width: 25%;
@@ -483,7 +488,6 @@ h2 {
     font-weight: bold;
   }
   .footer-sections {
-    margin: 0 360px;
     height: 372px;
   }
   .copyinfo,
@@ -514,7 +518,7 @@ h2 {
   }
   .col-25,
   .col-75 {
-    width: 100%;
+    width: 75%;
     margin-top: 0;
   }
   .newsform h2 {
@@ -613,7 +617,7 @@ h2 {
   .headerpic {
     height: 60vh;
     width: 100%;
-    opacity: 0.5;
+    background-color: black;
   }
   .main-pic {
     position: relative;
@@ -724,7 +728,7 @@ h2 {
   }
   .headerpic {
     height: 550px;
-    opacity: 0.5;
+    background-color: black;
   }
   .topnav a.icon {
     float: right;
@@ -850,7 +854,7 @@ h2 {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 992px) and (orientation: landscape) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .smallnav,
   .smallsearchphone,
   .service-subheading2,
@@ -1073,7 +1077,7 @@ footer ul li a {
   margin-right: 15px;
 }
 
-.footer-container {
+.footercontainer {
   background-color: #323544;
   justify-content: space-between;
   padding: 20px;
@@ -1355,18 +1359,20 @@ a[class$=-content] {
   line-height: 35px;
   padding: 5px 15px;
   text-transform: uppercase;
-  font-size: 1.063rem;
+  font-size: 15px;
   border-radius: 3px;
   white-space: normal;
-  color: white;
+  color: #fff;
 }
 
 .itbtn {
   background-color: #4183d7;
+  font-size: 15px;
 }
 
 .contactbtn {
   background-color: #a3a8ac;
+  font-size: 15px;
 }
 
 .searchbtn {
