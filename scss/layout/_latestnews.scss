@@ -1,0 +1,69 @@
+// Latest news
+section {
+    border: 1px solid $alto;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.latestnews {
+    display: flex;
+    flex-direction: column;
+}
+
+.jobpic {
+    border-radius: 100%;
+}
+
+
+.jobtitle {
+    color: $havelock-blue;
+}
+
+.postedby {
+    font-size: 15px;
+    display: inline-block;
+    padding: 15px;
+}
+
+.jobspan {
+    color: $alto;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+.dateposted {
+    border-top: 1px solid $alto;
+}
+
+.jobspec {
+    color: $dove-gray;
+    font-size: small;
+}
+
+.clients-img,
+.partners {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    height: auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    vertical-align: middle;
+    padding: 0 20px;
+    filter: grayscale(100%);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.jobvac {
+    width: 100%;
+}
+
+.tablerows {
+    font-size: 18px;
+}

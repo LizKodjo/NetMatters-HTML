@@ -1,0 +1,91 @@
+// Our Service
+
+.service-subheading {
+    color: black;
+}
+
+.service {
+    border: 1px solid $primary-warm-col;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.servicegrid {
+    padding: 20px;
+    color: $primary-dark-col;
+}
+
+.bespoke-block:hover {
+    background-color: $hoki;
+    color: $white;
+}
+
+.servebespoke:hover {
+    background-color: $white;
+    color: $hoki;
+}
+
+.serveit:hover {
+    background-color: $white;
+    color: $havelock-blue;
+}
+
+.it-block:hover {
+    background-color: $havelock-blue;
+    color: $white;
+}
+
+.digital-block:hover {
+    background-color: $shamrock;
+    color: $white;
+}
+
+.servedigital:hover {
+    background-color: $white;
+    color: $shamrock;
+}
+
+.dev-block:hover {
+    background-color: $punch;
+    color: $white;
+}
+
+.servedev:hover {
+    background-color: $white;
+    color: $punch;
+}
+
+
+.cyber-block:hover {
+    background-color: $radical-red;
+    color: $white;
+}
+
+.servecyber:hover {
+    background-color: $white;
+    color: $radical-red;
+}
+
+
+.web-block:hover {
+    background-color: $wisteria;
+    color: $white;
+}
+
+.serveweb:hover {
+    background-color: $white;
+    color: $wisteria;
+}
+
+
+.telecoms-block:hover {
+    background-color: $valencia;
+    color: $white;
+}
+
+.servetelecoms:hover {
+    background-color: $white;
+    color: $valencia;
+}

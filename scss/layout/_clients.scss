@@ -1,0 +1,43 @@
+// Clients
+.clients {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.clients-img:hover,
+.partners:hover {
+    filter: grayscale(10%);
+}
+
+// Tooltip container and tooltip text
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+
+    .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: $emperor;
+        color: $white;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        // Postion the tooltip text
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        // Fade in tooltip
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+}
+
+// tooltip arrow
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

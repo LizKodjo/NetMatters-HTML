@@ -1,0 +1,55 @@
+// Mixins
+@mixin havelock {
+    background-color: $havelock-blue;
+    border-color: $havelock-blue;
+}
+@mixin wisteria {
+    background-color: $wisteria;
+    border-color: $wisteria;
+}
+@mixin primarydark {
+    background-color: $primary-dark-col;
+    border-color: $primary-dark-col;
+}
+@mixin shamrock {
+    background-color: $shamrock;
+    border-color:$shamrock;
+}
+@mixin punch {
+    background-color: $punch;
+    border-color:$punch;
+}
+@mixin radicalred {
+    background-color: $radical-red;
+    border-color: $radical-red;
+}
+@mixin valencia {
+    background-color: $valencia;
+    border-color: $valencia;
+}
+@mixin hoki {
+    background-color: $hoki;
+    border-color: $hoki;
+}
+@mixin jade {
+    background-color: $jade;
+    border-color: $jade;
+}
+@mixin charade {
+    background-color:$charade;
+    border-color:$charade;
+}
+@mixin boldleft {
+    color: $white;
+    text-align: left;
+    font-weight: bold;
+}
+@mixin justifyflexstart {
+    display:flex;
+    justify-content:flex-start;
+}
+@mixin flexevencenter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

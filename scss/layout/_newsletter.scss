@@ -1,0 +1,92 @@
+// Newsletter
+.newsletter {
+    background-color: $alto;
+    color: $dove-gray;
+    padding: 50px 15px;
+}
+
+.privacy {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.news-inputs {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.newsform {
+    margin-bottom: 15px;
+}
+
+.privacy-label {
+    line-height: 32px;
+    margin-bottom: 15px;
+    display: table;
+    font-size: 18px;
+}
+
+.private-check {
+    position: relative;
+    border-radius: 3px;
+    border: 3px solid $primary-dark-col;
+    height: 32px;
+    width: 32px;
+    float: left;
+    margin-right: 20px;
+}
+
+.left {
+    float: left;
+}
+
+h2 {
+    font-weight: 400;
+    margin: 0 0 15px;
+    color: $primary-dark-col;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.row input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+.col-25 {
+    float: left;
+    width: 26%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    // float: left;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.newsform {
+    width: 100%;
+}
+
+.webdesignbtn .webpic {
+    font-size: 26px;
+}
+
+.art-details {
+    padding: 15px;
+}
