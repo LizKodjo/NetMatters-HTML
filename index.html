@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/f8bda8a3df.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -19,249 +19,272 @@
     <header>
         <!-- Main header container -->
         <div class="inner">
-            <div class="container">
-                <div class="top-help">
-                    <img class="logo" src="img/asset 0.png" alt="Netmatters Dark logo">
-                    <button class="topcontactbtn itbtn"><i class="fa-solid fa-computer-mouse"></i> Support </button>
-                    <button class="topcontactbtn contactbtn"><i class="fa-regular fa-paper-plane contactplane"></i>
-                        Contact</button>
-                    <span class="material-symbols-outlined smallsearchphone">phone_in_talk</span>
-                    <form action="" class="searchbar">
-                        <input type="text" placeholder="Search..." name="q">
-                        <button type="submit"><i class="fa fa-search searchbtn"></i></button>
-                    </form>
-                    <i class="fa-solid fa-bars menu"></i>
+            <div class="container main-topnav">
+                <div class="container">
+                    <div class="top-help">
+                        <img class="logo" src="img/asset0.png" alt="Netmatters Dark logo">
+                        <button class="topcontactbtn itbtn"><i class="fa-solid fa-computer-mouse"></i> Support </button>
+                        <button class="topcontactbtn contactbtn"><i class="fa-regular fa-paper-plane contactplane"></i>
+                            Contact</button>
+                        <span class="material-symbols-outlined smallsearchphone">phone_in_talk</span>
+                        <form class="searchbar">
+                            <input type="text" placeholder="Search..." name="q">
+                            <button type="submit"><i class="fa fa-search searchbtn"></i></button>
+                        </form>
+                        <i class="fa-solid fa-bars menu"></i>
+                    </div>
                 </div>
                 <div class="smallnav">
                     <div class="smallnavtop">
-                        <img class="logo" src="img/asset 0.png" alt="Netmatters Dark logo">
+                        <img class="logo" src="img/asset0.png" alt="Netmatters Dark logo">
                         <span class="material-symbols-outlined smallsearchphone">phone_in_talk</span>
                         <i class="fa-solid fa-bars menu"></i>
                     </div>
                     <div class="searchform">
-                        <form action="" class="searchbar">
+                        <form class="searchbar">
                             <input type="text" placeholder="Search..." name="q">
                             <button type="submit"><i class="fa fa-search searchbtn"></i></button>
                         </form>
                     </div>
                 </div>
+
+                <!-- Top nav -->
+                <div class="topnav" id="myTopnav">
+                    <div class="mainmenu">
+                        <!-- <a href="#" class="icon"><i class="fa fa-bars"></i></a> -->
+                        <!-- Bespoke Software -->
+                        <div class="bespoke">
+                            <button class="bespokebtn"><span
+                                    class="material-symbols-outlined bespokepic">monitor</span><br><small>Bespoke</small><br>Software</button>
+                            <div class="bespoke-content">
+                                <!-- <div class="dropdown-bespoke"> -->
+                                <div>
+                                    <h3 class="content-heading">Our Bespoke Software Services</h3>
+                                </div>
+                                <div class="firstrow">
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fas fa-cogs"></i> Bespoke CRM</a>
+                                        <a href="#"><i class="fa-solid fa-mobile"></i> Mobile App Development</a>
+                                        <a href="#"><i class="fa-solid fa-download"></i> Operational Systems</a>
+                                        <a href="#"><i class="fa-solid fa-cloud"></i> Intranet Development</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-briefcase"></i> Business Automation</a>
+                                        <a href="#"><i class="fa-solid fa-folder-open"></i> Bespoke Databases</a>
+                                        <a href="#"><i class="fa-solid fa-users"></i> Business Central
+                                            Implementation</a>
+                                        <a href="#"><i class="fa-solid fa-cloud-arrow-down"></i> Customer Portal
+                                            Development</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-shuffle"></i> Software Integrations</a>
+                                        <a href="#"><i class="fa-solid fa-right-left"></i> Sharepoint
+                                            Development</a>
+                                        <a href="#"><i class="fa-solid fa-laptop"></i> Internet of Things (IoT)
+                                            Software</a>
+                                        <a href="#"><i class="fa-solid fa-earth-americas"></i> Reporting Hub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bespoke Software -->
+                        <!-- IT Support -->
+                        <div class="itsupport">
+                            <button class="itsupportbtn"><span
+                                    class="material-symbols-outlined itpic">monitor</span><br><small>IT</small><br>Support</button>
+                            <div class="itsupport-content">
+                                <div>
+                                    <h3 class="content-heading">Our IT Support Services</h3>
+                                </div>
+                                <div class="firstrow">
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-headphones"></i> Managed IT Support</a>
+                                        <a href="#"><i class="fa-solid fa-graduation-cap fa-flip-horizontal"></i> IT
+                                            Consultancy</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-briefcase"></i> Business IT Support</a>
+                                        <a href="#"><i class="fa-solid fa-cloud"></i> Cloud Service Provider</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-laptop"></i> Office 365 for Business</a>
+                                        <a href="#"><i class="fa-solid fa-hard-drive"></i> Data Backup & Disaster
+                                            Recovery</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- IT Support -->
+                        <!-- Digital Marketing -->
+                        <div class="digitalmarketing">
+                            <button class="digimarketbtn"><span
+                                    class="material-symbols-outlined digipic">signal_cellular_alt</span><br><small>Digital</small><br>Marketing</button>
+                            <div class="digimarket-content">
+                                <div>
+                                    <h3 class="content-heading">Our Digital Marketing Services</h3>
+                                </div>
+                                <div class="firstrow">
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search Engine
+                                            Optimisation
+                                            (SEO)</a>
+                                        <a href="#"><i class="fa-solid fa-envelope"></i> Email Marketing</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-money-bill-1"></i> Pay Per Click
+                                            Advertising
+                                            (PPC)</a>
+                                        <a href="#"><i class="fa-solid fa-users"></i> Social Media Marketing</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-arrow-trend-up"></i> Conversion Rate
+                                            Optimisation
+                                            (CRO)</a>
+                                        <a href="#"><i class="fa-solid fa-pen"></i> Content Marketing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Digital Marketing -->
+                        <!-- Telecoms Services -->
+                        <div class="telecomsservices">
+                            <button class="telecomsbtn"><span
+                                    class="material-symbols-outlined telepic">phone_in_talk</span><br><small>Telecoms</small><br>Services</button>
+                            <div class="telecoms-content">
+                                <div>
+                                    <h3 class="content-heading">Our Telecoms Services</h3>
+                                </div>
+                                <div class="firstrow">
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-ticket fa-flip-horizontal"></i> Business
+                                            Mobile</a>
+                                        <a href="#"><i class='fas fa-tachometer-alt'></i> Business Broadband</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-phone"></i> Hosted VOIP Provider</a>
+                                        <a href="#"><i class="fa-regular fa-handshake"></i> Leased Lines
+                                            Provider</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-square-phone"></i> Business VOIP
+                                            Systems</a>
+                                        <a href="#"><i class="fa-solid fa-phone-volume"></i> 3CX Systems</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Telecoms Services -->
+                        <!-- Web Design -->
+                        <div class="webdesign">
+                            <button class="webdesignbtn"><i
+                                    class="fa-solid fa-code webpic"></i><br><small>Web</small><br>Design</button>
+                            <div class="webdesign-content">
+                                <div>
+                                    <h3 class="content-heading">Our Web Design Services</h3>
+                                </div>
+                                <div class="firstrow">
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-pen"></i> Bespoke Website Design</a>
+                                        <a href="#"><i class="fa-solid fa-bullhorn"></i> Branding & Design</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i>
+                                            eCommerce
+                                            Stores</a>
+                                        <a href="#"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App
+                                            Development</a>
+                                    </div>
+                                    <div class="firstcolum">
+                                        <a href="#"><i class="fa-solid fa-desktop"></i> Pay Monthly Websites</a>
+                                        <a href="#"><i class="fa-solid fa-cloud"></i> Web Hosting</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Web Design -->
+                        <!-- Cyber Security -->
+                        <div class="cyber">
+                            <button class="cybersecbtn"><span
+                                    class="material-symbols-outlined cyberpic">security</span><br><small>Cyber</small><br>Security</button>
+                            <div class="cyber-content">
+                                <div>
+                                    <h3 class="content-heading">Our Cyber Security Services</h3>
+                                </div>
+                                <div class="firstrow">
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-paste"></i> Cyber Security Assessment</a>
+                                        <a href="#"><i class="fa-solid fa-graduation-cap fa-flip-horizontal"></i>
+                                            Cyber
+                                            Essentials Certification</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-regular fa-clock fa-flip-horizontal"></i> Cyber
+                                            Security
+                                            Management</a>
+                                        <a href="#"><span class="material-symbols-outlined">security</span>PCI/DSS
+                                            Compliance</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-flask"></i> Cyber Penetration Testing</a>
+                                        <a href="#"><i class="fa-solid fa-lock"></i> Hacker Prevention</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cyber Security -->
+                        <!-- Developer Course -->
+                        <div class="devcourse">
+                            <button class="devcoursebtn"><span
+                                    class="material-symbols-outlined devpic">school</span><br><small>Developer</small><br>Course</button>
+                            <div class="devcourse-content">
+                                <div>
+                                    <h3 class="content-heading">Our Developer Course Services</h3>
+                                </div>
+                                <div class="firstrow">
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-laptop"></i> Train For A Career In
+                                            Tech</a>
+                                        <a href="#"><i class="fa-regular fa-handshake"></i>Scion Collaborators</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-code"></i> Skills Bootcamp</a>
+                                    </div>
+                                    <div class="firstcolumn">
+                                        <a href="#"><i class="fa-solid fa-circle-question"></i> Scion Frequently
+                                            Asked
+                                            Questions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Top nav -->
-        <div class="topnav" id="myTopnav">
-            <div class="mainmenu">
-                <!-- <a href="#" class="icon"><i class="fa fa-bars"></i></a> -->
-                <!-- Bespoke Software -->
-                <div class="bespoke">
-                    <button class="bespokebtn"><span
-                            class="material-symbols-outlined bespokepic">monitor</span><br><small>Bespoke</small><br>Software</button>
-                    <div class="bespoke-content">
-                        <!-- <div class="dropdown-bespoke"> -->
-                        <div>
-                            <h3 class="content-heading">Our Bespoke Software Services</h3>
-                        </div>
-                        <div class="firstrow">
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fas fa-cogs"></i> Bespoke CRM</a>
-                                <a href="#"><i class="fa-solid fa-mobile"></i> Mobile App Development</a>
-                                <a href="#"><i class="fa-solid fa-download"></i> Operational Systems</a>
-                                <a href="#"><i class="fa-solid fa-cloud"></i> Intranet Development</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-briefcase"></i> Business Automation</a>
-                                <a href="#"><i class="fa-solid fa-folder-open"></i> Bespoke Databases</a>
-                                <a href="#"><i class="fa-solid fa-users"></i> Business Central Implementation</a>
-                                <a href="#"><i class="fa-solid fa-cloud-arrow-down"></i> Customer Portal
-                                    Development</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-shuffle"></i> Software Integrations</a>
-                                <a href="#"><i class="fa-solid fa-right-left"></i> Sharepoint Development</a>
-                                <a href="#"><i class="fa-solid fa-laptop"></i> Internet of Things (IoT) Software</a>
-                                <a href="#"><i class="fa-solid fa-earth-americas"></i> Reporting Hub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Bespoke Software -->
-                <!-- IT Support -->
-                <div class="itsupport">
-                    <button class="itsupportbtn"><span
-                            class="material-symbols-outlined itpic">monitor</span><br><small>IT</small><br>Support</button>
-                    <div class="itsupport-content">
-                        <div>
-                            <h3 class="content-heading">Our IT Support Services</h3>
-                        </div>
-                        <div class="firstrow">
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-headphones"></i> Managed IT Support</a>
-                                <a href="#"><i class="fa-solid fa-graduation-cap fa-flip-horizontal"></i> IT
-                                    Consultancy</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-briefcase"></i> Business IT Support</a>
-                                <a href="#"><i class="fa-solid fa-cloud"></i> Cloud Service Provider</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-laptop"></i> Office 365 for Business</a>
-                                <a href="#"><i class="fa-solid fa-hard-drive"></i> Data Backup & Disaster Recovery</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- IT Support -->
-                <!-- Digital Marketing -->
-                <div class="digitalmarketing">
-                    <button class="digimarketbtn"><span
-                            class="material-symbols-outlined digipic">signal_cellular_alt</span><br><small>Digital</small><br>Marketing</button>
-                    <div class="digimarket-content">
-                        <div>
-                            <h3 class="content-heading">Our Digital Marketing Services</h3>
-                        </div>
-                        <div class="firstrow">
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search Engine Optimisation
-                                    (SEO)</a>
-                                <a href="#"><i class="fa-solid fa-envelope"></i> Email Marketing</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-money-bill-1"></i> Pay Per Click Advertising (PPC)</a>
-                                <a href="#"><i class="fa-solid fa-users"></i> Social Media Marketing</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-arrow-trend-up"></i> Conversion Rate Optimisation
-                                    (CRO)</a>
-                                <a href="#"><i class="fa-solid fa-pen"></i> Content Marketing</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Digital Marketing -->
-                <!-- Telecoms Services -->
-                <div class="telecomsservices">
-                    <button class="telecomsbtn"><span
-                            class="material-symbols-outlined telepic">phone_in_talk</span><br><small>Telecoms</small><br>Services</button>
-                    <div class="telecoms-content">
-                        <div>
-                            <h3 class="content-heading">Our Telecoms Services</h3>
-                        </div>
-                        <div class="firstrow">
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-ticket fa-flip-horizontal"></i> Business Mobile</a>
-                                <a href="#"><i class='fas fa-tachometer-alt'></i> Business Broadband</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-phone"></i> Hosted VOIP Provider</a>
-                                <a href="#"><i class="fa-regular fa-handshake"></i> Leased Lines Provider</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-square-phone"></i> Business VOIP Systems</a>
-                                <a href="#"><i class="fa-solid fa-phone-volume"></i> 3CX Systems</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Telecoms Services -->
-                <!-- Web Design -->
-                <div class="webdesign">
-                    <button class="webdesignbtn"><i
-                            class="fa-solid fa-code webpic"></i><br><small>Web</small><br>Design</button>
-                    <div class="webdesign-content">
-                        <div>
-                            <h3 class="content-heading">Our Web Design Services</h3>
-                        </div>
-                        <div class="firstrow">
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-pen"></i> Bespoke Website Design</a>
-                                <a href="#"><i class="fa-solid fa-bullhorn"></i> Branding & Design</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i> eCommerce
-                                    Stores</a>
-                                <a href="#"><i class="fa-solid fa-mobile-screen-button"></i> Mobile App Development</a>
-                            </div>
-                            <div class="firstcolum">
-                                <a href="#"><i class="fa-solid fa-desktop"></i> Pay Monthly Websites</a>
-                                <a href="#"><i class="fa-solid fa-cloud"></i> Web Hosting</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Web Design -->
-                <!-- Cyber Security -->
-                <div class="cyber">
-                    <button class="cybersecbtn"><span
-                            class="material-symbols-outlined cyberpic">security</span><br><small>Cyber</small><br>Security</button>
-                    <div class="cyber-content">
-                        <div>
-                            <h3 class="content-heading">Our Cyber Security Services</h3>
-                        </div>
-                        <div class="firstrow">
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-paste"></i> Cyber Security Assessment</a>
-                                <a href="#"><i class="fa-solid fa-graduation-cap fa-flip-horizontal"></i> Cyber
-                                    Essentials Certification</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-regular fa-clock fa-flip-horizontal"></i> Cyber Security
-                                    Management</a>
-                                <a href="#"><span class="material-symbols-outlined">security</span>PCI/DSS
-                                    Compliance</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-flask"></i> Cyber Penetration Testing</a>
-                                <a href="#"><i class="fa-solid fa-lock"></i> Hacker Prevention</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Cyber Security -->
-                <!-- Developer Course -->
-                <div class="devcourse">
-                    <button class="devcoursebtn"><span
-                            class="material-symbols-outlined devpic">school</span><br><small>Developer</small><br>Course</button>
-                    <div class="devcourse-content">
-                        <div>
-                            <h3 class="content-heading">Our Developer Course Services</h3>
-                        </div>
-                        <div class="firstrow">
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-laptop"></i> Train For A Career In Tech</a>
-                                <a href="#"><i class="fa-regular fa-handshake"></i>Scion Collaborators</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-code"></i> Skills Bootcamp</a>
-                            </div>
-                            <div class="firstcolumn">
-                                <a href="#"><i class="fa-solid fa-circle-question"></i> Scion Frequently Asked
-                                    Questions</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </header>
 
+    <!-- Main Body -->
 
-    <!-- Banner -->
-    <div class="main-pic">
-        <!-- Image container -->
-        <div class="banner-image">
-            <img class="headerpic" src="img/asset 3.png" alt="Netmatters Office">
-        </div>
-        <!-- text container -->
-        <div class="container">
-            <div class="top-left"><strong>The East of England's Leading Technology Company</strong><br>
-                <div class="bottom-left">Performance-driven digital and technology services with complete transparency.
+    <main>
+
+        <!-- Banner -->
+        <div class="main-pic">
+            <!-- Image container -->
+            <div class="banner-image">
+                <img class="headerpic" src="img/asset3.png" alt="Netmatters Office">
+            </div>
+            <!-- text container -->
+            <div class="container">
+                <div class="top-left"><strong>The East of England's Leading Technology Company</strong><br>
+                    <div class="bottom-left">Performance-driven digital and technology services with complete
+                        transparency.
+                    </div>
+                    <button class="main-button">why choose us? &rarr;</button>
                 </div>
-                <button class="main-button">why choose us? &rarr;</button>
             </div>
         </div>
-    </div>
-    <!-- Our Services -->
-    
+        <!-- Our Services -->
+
         <div class="servicegrid">
             <div class="serveheadings">
                 <h3>Our Services</h3>
@@ -314,12 +337,12 @@
         </div>
         <!-- Partners -->
         <div class="partners">
-            <img src="img/asset 11.jpeg">
-            <img src="img/asset 12.jpeg">
-            <!-- <img src="img/asset 15.jpeg">
-            <img src="img/asset 24.jpeg">
-            <img src="img/asset 23.jpeg">
-            <img src="img/asset 25.jpeg"> -->
+            <img src="img/asset11.jpeg" alt="Norfolk Carbon Chapter">
+            <img src="img/asset12.jpeg" alt="Prompt Payment Code">
+            <!-- <img src="img/asset15.jpeg">
+            <img src="img/asset24.jpeg">
+            <img src="img/asset23.jpeg">
+            <img src="img/asset25.jpeg"> -->
         </div>
         <!-- Reviews -->
         <div class="reviews">
@@ -343,7 +366,6 @@
                     <button class="btn welcomebtn">Why Choose us? &rarr;</button> <button class="btn welcomebtn">Our
                         Culture
                         &rarr;</button>
-                    </p>
                 </div>
                 <div class="starclient">
                     <h2 class="clients-think">What Our Clients Think</h2>
@@ -355,7 +377,7 @@
                         <span class="fa fa-star checked"></span>
                     </div>
 
-                    <div ckass="review1">
+                    <div class="review1">
                         <p class="ash-review">Netmatters stood out from the start. Great guys and very easy to work
                             with.
                             Both
@@ -388,7 +410,7 @@
             <div class="newsarticles">
                 <article>
                     <section class="tech1">
-                        <div><img class="jobvac" src="img/asset 30.png" alt="Spicerhaart Upskilling Staff"></div>
+                        <div><img class="jobvac" src="img/asset30.png" alt="Spicerhaart Upskilling Staff"></div>
                         <div class="art-details">
                             <h3 class="jobtitle1">Spicerhaart - Upskilling Staff Through the Sk<span
                                     class="dots">...</span><span class="more">ills Bootcamp</span><span class="jobspan">
@@ -403,7 +425,7 @@
                             </div>
                             <button class="btn latestbtn1">Read more</button><br>
                             <div class="dateposted">
-                                <img class="jobpic" src="img/asset 31.png" alt="Netmatters trademark">
+                                <img class="jobpic" src="img/asset31.png" alt="Netmatters trademark">
                                 <div class="postedby">
                                     <p><strong>Posted by Netmatters</strong><br>9th August 2023</p>
                                 </div>
@@ -411,7 +433,7 @@
                         </div>
                     </section>
                     <section class="tech2">
-                        <div><img class="jobvac" src="img/asset 32.png" alt="Green car"></div>
+                        <div><img class="jobvac" src="img/asset32.png" alt="Green car"></div>
                         <div class="art-details">
                             <h3 class="jobtitle2">Busseys - Web Case Study<span class="jobspan"> - 5 minute read</span>
                             </h3>
@@ -427,7 +449,7 @@
                             </div>
                             <button class="btn latestbtn2">Read more</button><br>
                             <div class="dateposted">
-                                <img class="jobpic" src="img/asset 31.png" alt="Netmatters trademark">
+                                <img class="jobpic" src="img/asset31.png" alt="Netmatters trademark">
                                 <div class="postedby">
                                     <p><strong>Posted by Netmatters</strong><br>2nd August 2023</p>
                                 </div>
@@ -435,7 +457,7 @@
                         </div>
                     </section>
                     <section class="receptionist">
-                        <div><img class="jobvac" src="img/asset 33.png" alt="Luxury shoes"></div>
+                        <div><img class="jobvac" src="img/asset33.png" alt="Luxury shoes"></div>
                         <div class="art-details">
                             <h3 class="jobtitle3">Revolutionising Cyber Security - Fairfax & Fa<span
                                     class="dots">...</span><span class="more">vor IT Case Study</span></h3>
@@ -449,7 +471,7 @@
                             </div>
                             <button class="btn latestbtn3">Read more</button><br>
                             <div class="dateposted">
-                                <img class="jobpic" src="img/asset 31.png" alt="Netmatters trademark">
+                                <img class="jobpic" src="img/asset31.png" alt="Netmatters trademark">
                                 <div class="postedby">
                                     <p><strong>Posted by Netmatters</strong><br>28th July 2023</p>
                                 </div>
@@ -465,12 +487,12 @@
         <!-- Clients -->
         <div class="clients">
             <div class="clients-img">
-                <img src="img/asset 35.png">
-                <img src="img/asset 36.png">
-                <!-- <img src="img/asset 38.png"> -->
-                <!-- <img src="img/asset 41.png"> -->
-                <!-- <img src="img/asset 42.png"> -->
-                <!-- <img src="img/asset 44.png"> -->
+                <img src="img/asset35.png" alt="Ashcroft logo">
+                <img src="img/asset36.png" alt="One Traveller logo">
+                <!-- <img src="img/asset38.png"> -->
+                <!-- <img src="img/asset41.png"> -->
+                <!-- <img src="img/asset42.png"> -->
+                <!-- <img src="img/asset44.png"> -->
             </div>
         </div>
         <!-- Newsletter form -->
@@ -512,86 +534,87 @@
             </div>
 
         </div>
-    
+    </main>
+
     <!-- Footer -->
     <footer>
         <div class="footercontainer">
             <div class="main-footer">
                 <div class="container">
 
-                <div class="footer-sections">
-                    <div class="footer-logo">
-                        <img class="light-logo" src="img/asset 48.png">
-                        <h4>Follow us on:</h4>
-                        <div class="social-logos">
-                            <!-- Social media logs -->
-                            <a href="#" class="fa fa-facebook fb-btn"></a>
-                            <a href="#" class="fa fa-linkedin ln-btn "></a>
-                            <a href="#" class="fa fa-twitter tw-btn"></a>
-                            <a href="#" class="fa fa-instagram in-btn"></a>
+                    <div class="footer-sections">
+                        <div class="footer-logo">
+                            <img class="light-logo" src="img/asset48.png" alt="Netmatters logo">
+                            <h4>Follow us on:</h4>
+                            <div class="social-logos">
+                                <!-- Social media logs -->
+                                <a href="#" class="fa fa-facebook fb-btn"></a>
+                                <a href="#" class="fa fa-linkedin ln-btn "></a>
+                                <a href="#" class="fa fa-twitter tw-btn"></a>
+                                <a href="#" class="fa fa-instagram in-btn"></a>
+                            </div>
+                        </div>
+                        <div class="colsforfooter">
+                            <div class="footer-cols">
+                                <h4>About Netmatters</h4>
+                                <ul class="footerlist">
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Our Careers</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Cookie Policy</a></li>
+                                    <li><a href="#">Data Retention & Disposal Policy</a></li>
+                                    <li><a href="#">CCTV Policy</a></li>
+                                    <li><a href="#">Environmental Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-cols">
+                                <h4>Our Services</h4>
+                                <ul class="footerlist">
+                                    <li><a href="#">Bespoke Software</a></li>
+                                    <li><a href="#">IT Support</a></li>
+                                    <li><a href="#">Digital Marketing</a></li>
+                                    <li><a href="#">Telecoms Services</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Cyber Security</a></li>
+                                    <li><a href="#">Developer Training</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-cols">
+                                <h4>Our Industries</h4>
+                                <ul class="footerlist">
+                                    <li><a href="#">Financial Services</a></li>
+                                    <li><a href="#">Construction</a></li>
+                                    <li><a href="#">Retail & E-Commerce</a></li>
+                                    <li><a href="#">Non-Profits</a></li>
+                                    <li><a href="#">SME's</a></li>
+                                    <li><a href="#">Healthcare</a></li>
+                                    <li><a href="#">Education & Training</a></li>
+                                    <li><a href="#">Travel & Leisure</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-cols">
+                                <h4>Our Locations</h4>
+                                <ul class="footerlist">
+                                    <li><a href="#">London Office</a></li>
+                                    <li><a href="#">Cambridge Office</a></li>
+                                    <li><a href="#">Wymondham Office</a></li>
+                                    <li><a href="#">Great Yarmouth Office</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="colsforfooter">
-                        <div class="footer-cols">
-                            <h4>About Netmatters</h4>
-                            <ul class="footerlist">
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Our Careers</a></li>
-                                <li><a href="#">Our Team</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Cookie Policy</a></li>
-                                <li><a href="#">Data Retention & Disposal Policy</a></li>
-                                <li><a href="#">CCTV Policy</a></li>
-                                <li><a href="#">Environmental Policy</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-cols">
-                            <h4>Our Services</h4>
-                            <ul class="footerlist">
-                                <li><a href="#">Bespoke Software</a></li>
-                                <li><a href="#">IT Support</a></li>
-                                <li><a href="#">Digital Marketing</a></li>
-                                <li><a href="#">Telecoms Services</a></li>
-                                <li><a href="#">Web Design</a></li>
-                                <li><a href="#">Cyber Security</a></li>
-                                <li><a href="#">Developer Training</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-cols">
-                            <h4>Our Industries</h4>
-                            <ul class="footerlist">
-                                <li><a href="#">Financial Services</a></li>
-                                <li><a href="#">Construction</a></li>
-                                <li><a href="#">Retail & E-Commerce</a></li>
-                                <li><a href="#">Non-Profits</a></li>
-                                <li><a href="#">SME's</a></li>
-                                <li><a href="#">Healthcare</a></li>
-                                <li><a href="#">Education & Training</a></li>
-                                <li><a href="#">Travel & Leisure</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-cols">
-                            <h4>Our Locations</h4>
-                            <ul class="footerlist">
-                                <li><a href="#">London Office</a></li>
-                                <li><a href="#">Cambridge Office</a></li>
-                                <li><a href="#">Wymondham Office</a></li>
-                                <li><a href="#">Great Yarmouth Office</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-
                 </div>
             </div>
         </div>
+
     </footer>
     <div class="copyright">
         <div class="copyinfo">&copy;Copyright Netmatters 2023. All rights reserved. - <a href="#">
-                Sitemap</a></div>
-    </div>
+                Sitemap</a>
+        </div>
     </div>
 </body>
 
