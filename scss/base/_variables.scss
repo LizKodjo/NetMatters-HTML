@@ -45,3 +45,12 @@ $ebony-clay             : #212330;
     font-size: small;
     letter-spacing: 1px;
 }
+
+// Text
+$base__font-size                : 25px;
+$base__line                     : 40px;
+
+// Calculate em values
+@function em($target, $context: $base__font-size) {
+    @return calc($target / $context) * 1em;
+}
