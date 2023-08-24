@@ -21,5 +21,19 @@
     .container {
         width: 100%;
         padding: 0;
+        .container {
+            width: 1170px;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            .top-help {
+                .itbtn, .contactbtn {
+                    height: 56px;
+                    font-size: 1.125rem;
+                    padding: 5px 15px;
+                    display: inline-block;
+                }
+            }
+        }
     }
 }

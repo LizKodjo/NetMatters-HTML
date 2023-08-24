@@ -54,6 +54,18 @@
   width: 100%;
   padding: 0;
 }
+.inner .container .container {
+  width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inner .container .container .top-help .itbtn, .inner .container .container .top-help .contactbtn {
+  height: 56px;
+  font-size: 1.125rem;
+  padding: 5px 15px;
+  display: inline-block;
+}
 
 /* Media queries */
 @media screen and (max-width: 600px) {
