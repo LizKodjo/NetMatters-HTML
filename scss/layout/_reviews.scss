@@ -4,22 +4,47 @@
     color: $white;
     font-size: 20px;
     letter-spacing: .4px;
-    padding: 20px;
+    padding: 50px 0;
 
+}
+
+.reviews {
+    .trustbtn {
+        margin:20px 0 0;
+        font-size: 20px;
+    }
+    .googlebtn {
+        margin:20px 8px 0 0;
+        padding: 10px 30px;
+    }
+    .intro-review {
+        .welcomenet {
+            p {
+                font-size: 16px;
+            }
+            h2 {
+                font-size: 36px;
+            }
+        }
+    }
 }
 
 .ash-review {
     font-style: italic;
+    font-size: 20.8px;
+    font-weight: 600;
+    margin: 0 0 25px;
 }
 
-.review1 {
-    padding-left: 30px;
-}
+// .review1 {
+//     padding-left: 30px;
+// }
 
 .reviewer {
     color: $primary-warm-col;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
+    margin: 0 0 20px;
 }
 
 .ashllp {
@@ -29,4 +54,9 @@
 
 .stars {
     color: orange;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+.clients-think {
+    font-size: 36px;
 }

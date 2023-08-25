@@ -7,7 +7,7 @@
   border: none;
 }
 
-.welcomebtn, .btn {
+.culture, .choose-us, .btn {
   text-transform: uppercase;
   color: #fff;
   padding: 15px;
@@ -75,9 +75,37 @@ body {
 .container {
   width: 100%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 575px) {
   .topnav .mainmenu {
     display: none;
+  }
+  .reviews .googlebtn {
+    font-size: 18px;
+  }
+  .latestnews .viewheading2 {
+    display: none;
+  }
+  .latestnews .vacancies .art-details {
+    padding: 30px;
+  }
+  .latestnews .jobtitle1,
+  .latestnews .jobtitle2,
+  .latestnews .jobtitle3 {
+    font-weight: 400px;
+    font-size: 15px;
+  }
+  .latestnews .newsheading {
+    font-size: 36px;
+  }
+  .latestnews .viewheading {
+    font-size: 26px;
+  }
+  .clients-img {
+    justify-content: space-around;
+  }
+  .newsletter .col-25 {
+    float: left;
+    margin-top: 6px;
   }
   footer .footerlist {
     font-size: 13px;
@@ -110,9 +138,79 @@ body {
     width: 250px;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 992px) {
+@media screen and (min-width: 575px) {
   .topnav .mainmenu {
     display: none;
+  }
+  .reviews .container {
+    width: 750px;
+  }
+  .reviews .container .intro-review .welcomenet .container p {
+    margin: 0 0 25px;
+  }
+  .reviews .container .intro-review .welcomenet .container h2 {
+    margin: -6px 0 40px;
+  }
+  .reviews .googlebtn {
+    font-size: 20px;
+  }
+  .reviews .trustbtn {
+    padding: 10px 30px;
+  }
+  .reviews .reviewer {
+    font-size: 17.6px;
+    margin: 0;
+  }
+  .reviews .culture {
+    margin-bottom: 17px;
+  }
+  .latestnews .container {
+    width: 750px;
+    padding-top: 50px;
+  }
+  .latestnews .container .lateheadings {
+    display: flex;
+    justify-content: space-between;
+  }
+  .latestnews .container .lateheadings .newsheading,
+  .latestnews .container .lateheadings .viewheading2 {
+    margin: 0;
+  }
+  .latestnews .container .lateheadings .newsheading {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .latestnews .container .lateheadings .viewheading2 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .latestnews .newsarticles .container {
+    width: 750px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .latestnews .newsarticles .container .vacancies {
+    width: 50%;
+    margin: 0 15px;
+  }
+  .latestnews .newsarticles .container .vacancies .container {
+    width: 350px;
+    padding: 30px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  }
+  .viewheading,
+  .lastone {
+    display: none;
+  }
+  .clients-img {
+    justify-content: space-between;
+  }
+  .newsletter .container {
+    width: 750px;
+  }
+  footer .container {
+    width: 750px;
   }
   footer .footerlist {
     font-size: 13px;
@@ -121,6 +219,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  }
+  footer h4 {
+    margin-bottom: 26px;
+  }
+  footer .footer-cols {
+    width: 50%;
+    margin-bottom: 30px;
   }
   .social-logos .container {
     display: flex;
@@ -140,6 +245,104 @@ body {
   }
   footer .container .main-footer .container .footer-sections .footer-logo .light-logo {
     width: 320px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .reviews .container {
+    width: 970px;
+  }
+  .reviews .container .intro-review .starclient .container {
+    width: 50%;
+    float: left;
+  }
+  .reviews .container .intro-review .welcomenet .container {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+  }
+  .clients-img {
+    justify-content: space-between;
+  }
+  .newsletter .container {
+    width: 970px;
+  }
+  .newsletter .tablerows {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .newsletter .tablerows .row {
+    flex: 1 1 450px;
+  }
+  .newsletter .tablerows .row .col-25 {
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 0 15px;
+    font-size: 16px;
+  }
+  .newsletter .tablerows .row .col-75 {
+    float: left;
+    width: 100%;
+    padding: 5px 15px;
+  }
+  .newsletter .tablerows .row input[type=text] {
+    height: 47px;
+    padding: 5px 15px;
+  }
+  footer .container {
+    width: 970px;
+  }
+  footer .colsforfooter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  footer .footer-cols {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews .container {
+    width: 1170px;
+  }
+  .latestnews .container {
+    width: 1170px;
+  }
+  .latestnews .container .newsarticles .container {
+    width: 1170px;
+  }
+  .latestnews .lastone {
+    display: unset;
+  }
+  .clients-img {
+    justify-content: space-between;
+  }
+  .newsletter .container {
+    width: 1170px;
+  }
+  footer .container {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer-sections {
+    display: flex;
+    width: 1170px;
+  }
+  footer .footer-logo {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+  footer .footer-cols {
+    padding: 0 15px;
+    margin-bottom: 40px;
+  }
+  footer .colsforfooter {
+    display: flex;
+    justify-content: space-between;
   }
 }
 footer {
@@ -460,21 +663,36 @@ a[class$=-content] {
   color: #fff;
   font-size: 20px;
   letter-spacing: 0.4px;
-  padding: 20px;
+  padding: 50px 0;
+}
+
+.reviews .trustbtn {
+  margin: 20px 0 0;
+  font-size: 20px;
+}
+.reviews .googlebtn {
+  margin: 20px 8px 0 0;
+  padding: 10px 30px;
+}
+.reviews .intro-review .welcomenet p {
+  font-size: 16px;
+}
+.reviews .intro-review .welcomenet h2 {
+  font-size: 36px;
 }
 
 .ash-review {
   font-style: italic;
-}
-
-.review1 {
-  padding-left: 30px;
+  font-size: 20.8px;
+  font-weight: 600;
+  margin: 0 0 25px;
 }
 
 .reviewer {
   color: #a3a8ac;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
+  margin: 0 0 20px;
 }
 
 .ashllp {
@@ -484,11 +702,16 @@ a[class$=-content] {
 
 .stars {
   color: orange;
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+
+.clients-think {
+  font-size: 36px;
 }
 
 .clients {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 15px;
 }
 
 .clients-img:hover,
@@ -528,30 +751,16 @@ a[class$=-content] {
   color: #666;
   padding: 50px 15px;
 }
-
-.privacy {
+.newsletter .privacy-label {
+  vertical-align: top;
+  font-size: 16px;
+  display: table-cell;
+}
+.newsletter .privacy-label .privacy {
   color: inherit;
   text-decoration: underline;
 }
-
-.news-inputs {
-  display: flex;
-  flex-direction: column;
-  border: none;
-}
-
-.newsform {
-  margin-bottom: 15px;
-}
-
-.privacy-label {
-  line-height: 32px;
-  margin-bottom: 15px;
-  display: table;
-  font-size: 18px;
-}
-
-.private-check {
+.newsletter .private-check {
   position: relative;
   border-radius: 3px;
   border: 3px solid #333645;
@@ -560,23 +769,10 @@ a[class$=-content] {
   float: left;
   margin-right: 20px;
 }
-
-.left {
-  float: left;
+.newsletter .row {
+  padding: 0 15px;
 }
-
-h2 {
-  font-weight: 400;
-  margin: 0 0 15px;
-  color: #333645;
-}
-
-label {
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.row input[type=text] {
+.newsletter .row input[type=text] {
   width: 100%;
   padding: 12px;
   border: none;
@@ -584,34 +780,24 @@ label {
   resize: vertical;
   margin-bottom: 10px;
 }
-
-.col-25 {
+.newsletter .marketinfo {
+  margin-bottom: 15px;
+}
+.newsletter .col-25 {
   float: left;
-  width: 26%;
   margin-top: 6px;
 }
-
-.col-75 {
+.newsletter .col-75 {
+  float: left;
   width: 100%;
   margin-top: 6px;
 }
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.newsform {
-  width: 100%;
-}
-
-.webdesignbtn .webpic {
-  font-size: 26px;
-}
-
-.art-details {
-  padding: 15px;
+.newsletter h2 {
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: #333645;
+  font-size: 32px;
+  text-align: left;
 }
 
 section {
@@ -664,7 +850,6 @@ h2 {
   align-items: center;
   height: auto;
   flex-wrap: nowrap;
-  justify-content: space-between;
   vertical-align: middle;
   padding: 0 20px;
   filter: grayscale(100%);
@@ -674,6 +859,7 @@ h2 {
 }
 
 .jobvac {
+  position: relative;
   width: 100%;
 }
 
@@ -758,10 +944,19 @@ h2 {
   margin-bottom: 10px;
 }
 
-.welcomebtn {
+.culture, .choose-us {
   background-color: #272936;
   border-color: #272936;
-  margin-bottom: 20px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.choose-us {
+  margin-bottom: 17px;
+}
+
+.culture {
+  margin-bottom: 50px;
 }
 
 .latestbtn {

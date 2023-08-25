@@ -51,7 +51,7 @@ h2 {
     align-items: center;
     height: auto;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    // justify-content: space-between;
     vertical-align: middle;
     padding: 0 20px;
     filter: grayscale(100%);
@@ -61,6 +61,7 @@ h2 {
 }
 
 .jobvac {
+    position: relative;
     width: 100%;
 }
 

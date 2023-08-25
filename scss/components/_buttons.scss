@@ -5,7 +5,7 @@
     line-height: 35px;
     padding: 5px 15px;
     text-transform: uppercase;
-    font-size: 15px;;
+    font-size: 15px;
     border-radius: 3px;
     white-space: normal;
     color: $white;
@@ -73,10 +73,18 @@
     @include havelock;  
     margin-bottom: 10px;
 }
-.welcomebtn {
+.culture, .choose-us {
     @extend %btnwhitett;
     @include charade;
-    margin-bottom: 20px;
+    // margin-bottom: 50px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+.choose-us {
+    margin-bottom: 17px;
+}
+.culture {
+    margin-bottom: 50px;
 }
 .latestbtn {
     @include havelock;
