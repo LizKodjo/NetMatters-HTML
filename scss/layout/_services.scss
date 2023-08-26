@@ -1,7 +1,16 @@
 // Our Service
 
-.service-subheading {
-    color: black;
+.servicegrid {
+    padding: 20px;
+   
+    h3 {
+        font-size: 43px;
+        font-weight: 600;
+    }
+
+    a, h3 {
+        color: $primary-dark-col;
+    }
 }
 
 .service {
@@ -10,12 +19,12 @@
     border-radius: 10px;
     text-align: center;
     padding: 15px;
+    // border-radius: 0 0 3px 3px;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+
 }
 
-.servicegrid {
-    padding: 20px;
-    color: $primary-dark-col;
-}
+
 
 .bespoke-block:hover {
     background-color: $hoki;

@@ -21,6 +21,93 @@
         }
     }
 
+    .main-pic {
+        position: relative;
+        text-align: center;
+        color: $white;
+
+        .container {
+            .top-left {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+                font-weight: 400;
+
+                .bottom-left {
+                    font-size: 16px;
+                    font-weight: bolder;
+                    letter-spacing: .1rem;
+                    margin-bottom: 15px;
+                }
+
+                .main-button {
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding: 15px;
+                    border-radius: 5px;
+                    border: none;
+                    color: $white;
+                    background-color: $wisteria;
+                }
+            }
+
+        }
+
+        .banner-image {
+
+            .headerpic {
+                height: 60vh;
+                width: 100%;
+                background-color: black;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .servicegrid {
+        .upper-row {
+            .container {
+                .container {
+                    padding: 0;
+                }
+            }
+        }
+
+        .lower-row {
+            .container {
+                .container {
+                    padding: 0;
+
+                }
+
+            }
+        }
+
+        .serveheadings {
+            .service-subheading {
+                display: none;
+            }
+        }
+    }
+
+
+
+
     .reviews {
         .googlebtn {
             font-size: 18px;
@@ -28,237 +115,310 @@
     }
 
 
-
-
-.latestnews {
-    .viewheading2 {
-        display: none;
-    }
-
-    .vacancies {
-        .art-details {
-            padding: 30px;
+    .latestnews {
+        .viewheading2 {
+            display: none;
         }
-    }
 
-    .jobtitle1,
-    .jobtitle2,
-    .jobtitle3 {
-        font-weight: 400px;
-        font-size: 15px;
-    }
-
-    .newsheading {
-        font-size: 36px;
-    }
-
-    .viewheading {
-        font-size: 26px;
-    }
-}
-
-.clients-img {
-    justify-content: space-around;
-}
-
-.newsletter {
-    .col-25 {
-        float: left;
-        margin-top: 6px;
-    }
-
-}
-
-footer {
-    .footerlist {
-        font-size: 13px;
-    }
-
-    .footer-cols {
-        margin-bottom: 30px;
-    }
-
-    h4 {
-        margin-bottom: 26px;
-    }
-
-    .social-logos {
-        .container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            padding-left: 0;
-
-            [class$="-btn"] {
-                padding: 12px 22px 16px;
-                background-color: $ebony-clay;
-                font-size: 26px;
-                line-height: 26px;
-                color: $white;
-                width: 35%;
-                margin-right: 10px;
-                margin-bottom: 10px;
-                text-align: center;
+        .vacancies {
+            .art-details {
+                padding: 30px;
             }
         }
+
+        .jobtitle1,
+        .jobtitle2,
+        .jobtitle3 {
+            font-weight: 400px;
+            font-size: 15px;
+        }
+
+        .newsheading {
+            font-size: 36px;
+        }
+
+        .viewheading {
+            font-size: 26px;
+        }
     }
 
-    .container {
-        .main-footer {
+    .clients-img {
+        justify-content: space-around;
+    }
+
+    .newsletter {
+        .col-25 {
+            float: left;
+            margin-top: 6px;
+        }
+
+    }
+
+    footer {
+        .footerlist {
+            font-size: 13px;
+        }
+
+        .footer-cols {
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            margin-bottom: 26px;
+        }
+
+        .social-logos {
             .container {
-                .footer-sections {
-                    .footer-logo {
-                        .light-logo {
-                            width: 250px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+                padding-left: 0;
+
+                [class$="-btn"] {
+                    padding: 12px 22px 16px;
+                    background-color: $ebony-clay;
+                    font-size: 26px;
+                    line-height: 26px;
+                    color: $white;
+                    width: 35%;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .container {
+            .main-footer {
+                .container {
+                    .footer-sections {
+                        .footer-logo {
+                            .light-logo {
+                                width: 250px;
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
 
 
 
-// .topnav,
-// .bespoke .bespokebtn,
-// .itsupport .itsupportbtn,
-// .digitalmarketing .digimarketbtn,
-// .telecomsservices .telecomsbtn,
-// .webdesign .webdesignbtn,
-// .cyber .cybersecbtn,
-// .devcourse .devcoursebtn,
-// .top-help,
-// .itbtn,
-// .contactbtn,
-// .service-subheading,
-// .viewheading2 {
-//     display: none;
-// }
+    // .topnav,
+    // .bespoke .bespokebtn,
+    // .itsupport .itsupportbtn,
+    // .digitalmarketing .digimarketbtn,
+    // .telecomsservices .telecomsbtn,
+    // .webdesign .webdesignbtn,
+    // .cyber .cybersecbtn,
+    // .devcourse .devcoursebtn,
+    // .top-help,
+    // .itbtn,
+    // .contactbtn,
+    // .service-subheading,
+    // .viewheading2 {
+    //     display: none;
+    // }
 
-// .latestnews {
-//     margin: 15px;
-// }
+    // .latestnews {
+    //     margin: 15px;
+    // }
 
-// .topnav a.icon {
-//     float: right;
-//     display: block;
-// }
-
-// .headerpic {
-//     height: 60vh;
-//     width: 100%;
-//     background-color: black;
-// }
+    // .topnav a.icon {
+    //     float: right;
+    //     display: block;
+    // }
 
 
-// .main-pic {
-//     position: relative;
-//     text-align: center;
-//     color: $white;
-// }
 
-// .top-left {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     font-size: 30px;
-//     font-weight: 400;
-// }
 
-// .bottom-left {
-//     font-size: 16px;
-//     font-weight: bolder;
-//     letter-spacing: .1rem;
-//     margin-bottom: 15px;
-// }
 
-// .main-button {
-//     text-transform: uppercase;
-//     font-size: 15px;
-//     font-weight: bold;
-//     padding: 15px;
-//     border-radius: 5px;
-//     border: none;
-//     color: $white;
-//     background-color: $wisteria;
-// }
 
-// .colsforfooter {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//     padding-left: 0;
-//     margin-right: 0;
-// }
+    // .colsforfooter {
+    //     display: flex;
+    //     flex-direction: column;
+    //     flex-wrap: wrap;
+    //     padding-left: 0;
+    //     margin-right: 0;
+    // }
 
-// .footer-sections {
-//     flex-direction: row;
-//     flex-wrap: wrap;
-// }
+    // .footer-sections {
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    // }
 
-// .smallnav,
-// .smallnavtop {
-//     @include flexevencenter;
-//     align-items: center;
-//     margin: 10px;
+    // .smallnav,
+    // .smallnavtop {
+    //     @include flexevencenter;
+    //     align-items: center;
+    //     margin: 10px;
 
-//     .logo {
-//         width: 60%;
-//     }
-// }
+    //     .logo {
+    //         width: 60%;
+    //     }
+    // }
 
-// .searchbar input {
-//     background-color: $alto;
-//     border: none;
-// }
+    // .searchbar input {
+    //     background-color: $alto;
+    //     border: none;
+    // }
 
-// .searchform {
-//     @include flexevencenter;
-//     align-content: center;
-// }
+    // .searchform {
+    //     @include flexevencenter;
+    //     align-content: center;
+    // }
 
-// .searchbar {
-//     border: 1px solid $primary-warm-col;
-// }
+    // .searchbar {
+    //     border: 1px solid $primary-warm-col;
+    // }
 
-// .searchbar button {
-//     background: $alto;
-// }
+    // .searchbar button {
+    //     background: $alto;
+    // }
 
-// .light-logo {
-//     width: 60%;
-// }
+    // .light-logo {
+    //     width: 60%;
+    // }
 
-// .partners,
-// .clients-img {
-//     width: 100%;
-//     align-items: center;
-//     display: flex;
-//     justify-content: space-around;
-//     margin-bottom: 10px;
-// }
+    // .partners,
+    // .clients-img {
+    //     width: 100%;
+    //     align-items: center;
+    //     display: flex;
+    //     justify-content: space-around;
+    //     margin-bottom: 10px;
+    // }
 
-// .newsform h2 {
-//     text-align: left;
-//     font-size: 40px;
-//     font-weight: lighter;
-// }
+    // .newsform h2 {
+    //     text-align: left;
+    //     font-size: 40px;
+    //     font-weight: lighter;
+    // }
 
-// .col-25,
-// .col-75 {
-//     width: 100%;
-//     margin-top: 0;
-// }
+    // .col-25,
+    // .col-75 {
+    //     width: 100%;
+    //     margin-top: 0;
+    // }
 }
 
 // mobile landscape
 @media screen and (min-width: 575px) {
 
-    .topnav {
-        .mainmenu {
+    // .topnav {
+    //     display: none;
+    // }
+
+    // .topnav,
+    // .bespoke .bespokebtn,
+    // .itsupport .itsupportbtn,
+    // .digitalmarketing .digimarketbtn,
+    // .telecomsservices .telecomsbtn,
+    // .webdesign .webdesignbtn,
+    // .cyber .cybersecbtn,
+    // .devcourse .devcoursebtn,
+    // .smallnav,
+    // .itbtn,
+    // .contactbtn,
+    // .smallsearchphone,
+    // .service-subheading2,
+    // .viewheading2 {
+    //     display: none;
+    // }
+
+
+
+    .main-pic {
+        position: relative;
+        text-align: center;
+        color: $white;
+
+        .banner-image {
+            .headerpic {
+                height: 550px;
+                background-color: black;
+            }
+        }
+
+        .container {
+            width: 750px;
+
+            .top-left {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                width: 100%;
+
+                .bottom-left {
+                    font-size: 16px;
+                    font-weight: bolder;
+                    letter-spacing: .1rem;
+                    margin-bottom: 15px;
+                }
+
+                .main-button {
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding: 15px;
+                    border-radius: 5px;
+                    border: none;
+                    color: $white;
+                    background-color: $wisteria;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .servicegrid {
+        .container {
+            width: 750px;
+
+            .serveheadings {
+                .container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+
+        // .upper-row {
+        //     .container {
+        //         .service-blocks {
+        //             .container {
+        //                 margin: 0;
+        //             }
+        //         }
+        //     }
+        // }
+        .lower-row {
+            display: flex;
+            flex-direction: column;
+
+            .container {
+                display: flex;
+            }
+        }
+
+        .service-subheading2 {
             display: none;
         }
     }
@@ -266,12 +426,14 @@ footer {
     .reviews {
         .container {
             width: 750px;
+
             .intro-review {
                 .welcomenet {
                     .container {
                         p {
                             margin: 0 0 25px;
                         }
+
                         h2 {
                             margin: -6px 0 40px;
                         }
@@ -283,21 +445,20 @@ footer {
         .googlebtn {
             font-size: 20px;
         }
+
         .trustbtn {
             padding: 10px 30px;
         }
+
         .reviewer {
-            font-size:17.6px;
+            font-size: 17.6px;
             margin: 0;
         }
+
         .culture {
             margin-bottom: 17px;
         }
     }
-
-
-
-
 
 
     .latestnews {
@@ -429,27 +590,9 @@ footer {
         }
     }
 
-    // .topnav,
-    // .bespoke .bespokebtn,
-    // .itsupport .itsupportbtn,
-    // .digitalmarketing .digimarketbtn,
-    // .telecomsservices .telecomsbtn,
-    // .webdesign .webdesignbtn,
-    // .cyber .cybersecbtn,
-    // .devcourse .devcoursebtn,
-    // .smallnav,
-    // .itbtn,
-    // .contactbtn,
-    // .smallsearchphone,
-    // .service-subheading2,
-    // .viewheading2 {
-    //     display: none;
-    // }
+    
 
-    // .headerpic {
-    //     height: 550px;
-    //     background-color: black;
-    // }
+
 
 
     // .topnav a.icon {
@@ -483,39 +626,7 @@ footer {
     //     background: $primary-warm-col;
     // }
 
-    // .main-pic {
-    //     position: relative;
-    //     text-align: center;
-    //     color: $white;
-    // }
 
-    // .top-left {
-    //     position: absolute;
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
-    //     font-size: 30px;
-    //     font-weight: 400;
-    //     letter-spacing: 2px;
-    // }
-
-    // .bottom-left {
-    //     font-size: 16px;
-    //     font-weight: bolder;
-    //     letter-spacing: .1rem;
-    //     margin-bottom: 15px;
-    // }
-
-    // .main-button {
-    //     text-transform: uppercase;
-    //     font-size: 15px;
-    //     font-weight: bold;
-    //     padding: 15px;
-    //     border-radius: 5px;
-    //     border: none;
-    //     color: $white;
-    //     background-color: $wisteria;
-    // }
 
     // .serveheadings {
     //     display: flex;
@@ -603,10 +714,87 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
+    .main-topnav {
+        .topnav {
+            .mainmenu {
+                .container {
+                    width:970px;
+                }
+            }
+        }
+    }
+
+    .main-pic {
+        position: relative;
+        text-align: left;
+        color: $white;
+
+        .container {
+            width: 970px;
+
+            .top-left {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-45%, -50%);
+                font-size: 54px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                width: 100%;
+
+                .bottom-left {
+                    font-size: 20px;
+                    font-weight: bolder;
+                    letter-spacing: .1rem;
+                    margin-bottom: 15px;
+                }
+
+                .main-button {
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding: 15px;
+                    border-radius: 5px;
+                    border: none;
+                    color: $white;
+                    background-color: $wisteria;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+    .servicegrid {
+        .container {
+            width: 970px;
+
+            .serveheadings {
+                .container {
+                    width: 970px;
+                }
+            }
+
+            .service-blocks {
+                .upper-row {
+                    .container {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
 
     .reviews {
         .container {
             width: 970px;
+
             .intro-review {
                 .starclient {
                     .container {
@@ -614,6 +802,7 @@ footer {
                         float: left;
                     }
                 }
+
                 .welcomenet {
                     .container {
                         width: 50%;
@@ -669,6 +858,7 @@ footer {
         .container {
             width: 970px;
         }
+
         .colsforfooter {
             display: flex;
             flex-wrap: wrap;
@@ -684,15 +874,120 @@ footer {
     }
 
 }
+@media screen and (max-width: 800px) {
+    .topnav {
+        .mainmenu {
+            display: none;
+        }
+       
+    }
+}
+
 
 @media screen and (min-width: 1200px) {
+
+    .mainmenu {
+        display: flex;
+        margin: 0 365px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .main-pic {
+        position: relative;
+        text-align: left;
+        color: $white;
+
+        .container {
+            position: relative;
+            width: 1170px;
+
+            .top-left {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-93%, -136%);
+                font-size: 50px;
+                font-weight: 400;
+                width: 50%;
+
+                .bottom-left {
+                    font-size: 26px;
+                    font-weight: bold;
+                    letter-spacing: .1rem;
+                    margin-bottom: 15px;
+                }
+
+                .main-button {
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding: 15px;
+                    border-radius: 5px;
+                    border: none;
+                    color: $white;
+                    background-color: $wisteria;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    .servicegrid {
+        .container {
+            width: 1170px;
+
+            .service-blocks {
+                .lower-row {
+                    flex-direction: row;
+                    justify-content: space-around;
+
+                    .lower-first {
+                        padding-right: 0;
+                    }
+
+                    .lower-second {
+                        padding-left: 0;
+                    }
+
+                    .container {
+                        width: 50%;
+                    }
+                }
+            }
+
+            .serveheadings {
+                .container {
+                    width: 1170px;
+                }
+            }
+        }
+    }
+
+
     .reviews {
         .container {
             width: 1170px;
         }
     }
 
-    
+    .trustbtn {
+        position: absolute;
+        max-width: fit-content;
+        display: inline-flex;
+    }
+
+
     .latestnews {
         .container {
             width: 1170px;
@@ -792,47 +1087,9 @@ footer {
     //     display: none;
     // }
 
-    // .main-pic {
-    //     position: relative;
-    //     text-align: left;
-    //     color: $white;
-    // }
 
-    // .top-left {
-    //     position: absolute;
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translate(-70%, -70%);
-    //     font-size: 50px;
-    //     font-weight: 400;
-    // }
 
-    // .bottom-left {
-    //     font-size: 26px;
-    //     font-weight: bold;
-    //     letter-spacing: .1rem;
-    //     margin-bottom: 15px;
-    // }
 
-    // .main-button {
-    //     text-transform: uppercase;
-    //     font-size: 15px;
-    //     font-weight: bold;
-    //     padding: 15px;
-    //     border-radius: 5px;
-    //     border: none;
-    //     color: $white;
-    //     background-color: $wisteria;
-    // }
-
-    // .mainmenu {
-    //     display: flex;
-    //     margin: 0 365px;
-    //     width: 100%;
-    //     align-items: center;
-    //     justify-content: space-around;
-
-    // }
 
     // .servicegrid h3,
     // .service-subheading {

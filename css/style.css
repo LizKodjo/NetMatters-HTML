@@ -79,6 +79,49 @@ body {
   .topnav .mainmenu {
     display: none;
   }
+  .main-pic {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  .main-pic .container .top-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .main-pic .container .top-left .bottom-left {
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+  }
+  .main-pic .container .top-left .main-button {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #926fb1;
+  }
+  .main-pic .banner-image .headerpic {
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+  }
+  .servicegrid .upper-row .container .container {
+    padding: 0;
+  }
+  .servicegrid .lower-row .container .container {
+    padding: 0;
+  }
+  .servicegrid .serveheadings .service-subheading {
+    display: none;
+  }
   .reviews .googlebtn {
     font-size: 18px;
   }
@@ -139,7 +182,60 @@ body {
   }
 }
 @media screen and (min-width: 575px) {
-  .topnav .mainmenu {
+  .main-pic {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  .main-pic .banner-image .headerpic {
+    height: 550px;
+    background-color: black;
+  }
+  .main-pic .container {
+    width: 750px;
+  }
+  .main-pic .container .top-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+  .main-pic .container .top-left .bottom-left {
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+  }
+  .main-pic .container .top-left .main-button {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #926fb1;
+  }
+  .servicegrid .container {
+    width: 750px;
+  }
+  .servicegrid .container .serveheadings .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .servicegrid .lower-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicegrid .lower-row .container {
+    display: flex;
+  }
+  .servicegrid .service-subheading2 {
     display: none;
   }
   .reviews .container {
@@ -248,6 +344,52 @@ body {
   }
 }
 @media screen and (min-width: 992px) {
+  .main-topnav .topnav .mainmenu .container {
+    width: 970px;
+  }
+  .main-pic {
+    position: relative;
+    text-align: left;
+    color: #fff;
+  }
+  .main-pic .container {
+    width: 970px;
+  }
+  .main-pic .container .top-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    font-size: 54px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+  .main-pic .container .top-left .bottom-left {
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+  }
+  .main-pic .container .top-left .main-button {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #926fb1;
+  }
+  .servicegrid .container {
+    width: 970px;
+  }
+  .servicegrid .container .serveheadings .container {
+    width: 970px;
+  }
+  .servicegrid .container .service-blocks .upper-row .container {
+    display: flex;
+  }
   .reviews .container {
     width: 970px;
   }
@@ -304,9 +446,79 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 800px) {
+  .topnav .mainmenu {
+    display: none;
+  }
+}
 @media screen and (min-width: 1200px) {
+  .mainmenu {
+    display: flex;
+    margin: 0 365px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main-pic {
+    position: relative;
+    text-align: left;
+    color: #fff;
+  }
+  .main-pic .container {
+    position: relative;
+    width: 1170px;
+  }
+  .main-pic .container .top-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-93%, -136%);
+    font-size: 50px;
+    font-weight: 400;
+    width: 50%;
+  }
+  .main-pic .container .top-left .bottom-left {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+  }
+  .main-pic .container .top-left .main-button {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #926fb1;
+  }
+  .servicegrid .container {
+    width: 1170px;
+  }
+  .servicegrid .container .service-blocks .lower-row {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .servicegrid .container .service-blocks .lower-row .lower-first {
+    padding-right: 0;
+  }
+  .servicegrid .container .service-blocks .lower-row .lower-second {
+    padding-left: 0;
+  }
+  .servicegrid .container .service-blocks .lower-row .container {
+    width: 50%;
+  }
+  .servicegrid .container .serveheadings .container {
+    width: 1170px;
+  }
   .reviews .container {
     width: 1170px;
+  }
+  .trustbtn {
+    position: absolute;
+    max-width: fit-content;
+    display: inline-flex;
   }
   .latestnews .container {
     width: 1170px;
@@ -571,8 +783,15 @@ a[class$=-content] {
   width: 100%;
 }
 
-.service-subheading {
-  color: black;
+.servicegrid {
+  padding: 20px;
+}
+.servicegrid h3 {
+  font-size: 43px;
+  font-weight: 600;
+}
+.servicegrid a, .servicegrid h3 {
+  color: #333645;
 }
 
 .service {
@@ -581,11 +800,7 @@ a[class$=-content] {
   border-radius: 10px;
   text-align: center;
   padding: 15px;
-}
-
-.servicegrid {
-  padding: 20px;
-  color: #333645;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
 .bespoke-block:hover {
@@ -850,6 +1065,7 @@ h2 {
   align-items: center;
   height: auto;
   flex-wrap: nowrap;
+  justify-content: center;
   vertical-align: middle;
   padding: 0 20px;
   filter: grayscale(100%);
@@ -989,7 +1205,7 @@ h2 {
 [class$=-icon] {
   padding: 15px;
   border-radius: 50%;
-  font-size: 40px;
+  font-size: 30px;
   color: #fff;
 }
 
