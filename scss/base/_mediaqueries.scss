@@ -15,6 +15,64 @@
 
 // hide nav on small screens
 @media screen and (max-width:575px) {
+
+    .inner {
+        .main-topnav {
+            .top-help {
+                display: none;
+            }
+        }
+    }
+     .smallnav,
+    .smallnavtop {
+        @include flexevencenter;
+        // align-items: center;
+        margin: 10px 0;
+       
+
+        .logo {
+            width: 60%;
+        }
+    }
+    .smallnav {
+        width: 100%;
+        .container {
+            width: 320px;
+            .searchform {
+                .searchbar {
+                    .searchbtn {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .smallnavtop {
+                width: 320px;
+                .smallsearchphone {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+
+    .searchbar input {
+        background-color: $alto;
+        border: none;
+    }
+
+    .searchform {
+        @include flexevencenter;
+        align-content: center;
+    }
+
+    .searchbar {
+        border: 1px solid $primary-warm-col;
+    }
+
+    .searchbar button {
+        background: $alto;
+    }
+
+
     .topnav {
         .mainmenu {
             display: none;
@@ -65,19 +123,6 @@
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .servicegrid {
         .upper-row {
@@ -249,34 +294,7 @@
     //     flex-wrap: wrap;
     // }
 
-    // .smallnav,
-    // .smallnavtop {
-    //     @include flexevencenter;
-    //     align-items: center;
-    //     margin: 10px;
-
-    //     .logo {
-    //         width: 60%;
-    //     }
-    // }
-
-    // .searchbar input {
-    //     background-color: $alto;
-    //     border: none;
-    // }
-
-    // .searchform {
-    //     @include flexevencenter;
-    //     align-content: center;
-    // }
-
-    // .searchbar {
-    //     border: 1px solid $primary-warm-col;
-    // }
-
-    // .searchbar button {
-    //     background: $alto;
-    // }
+   
 
     // .light-logo {
     //     width: 60%;
@@ -306,9 +324,73 @@
 
 // mobile landscape
 @media screen and (min-width: 575px) {
+    .inner {
+        .main-topnav {
+            .container {
+                width: 750px;
+                .top-help {
+                    width: 100%;
+                    .itbtn, .contactbtn,
+                    .smallsearchphone { 
+                        display:none;
+                    }
+                }
+            }
+            .smallnav, .topnav {
+                display:none;
+            }
+        }
+    }
+    
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .top-help {
+        float: right;
+    }
+
+    .top-help {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 15px 0 15px 0;
+        // margin: 0 50px;
+    }
+
+    .top-help .logo {
+        width: 50%;
+    }
+
+    .searchbar input {
+        width: 150px;
+        font-size: small;
+    }
+
+    .searchbar button {
+        color: $white;
+        background: $primary-warm-col;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     // .topnav {
-    //     display: none;
+    //     .mainmenu {
+
+    //         display: none;
+    //     }
+        
     // }
 
     // .topnav,
@@ -375,14 +457,6 @@
             }
         }
     }
-
-
-
-
-
-
-
-
 
 
 
@@ -595,36 +669,6 @@
 
 
 
-    // .topnav a.icon {
-    //     float: right;
-    //     display: block;
-    // }
-
-    // .top-help {
-    //     float: right;
-    // }
-
-    // .top-help {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: space-evenly;
-    //     padding: 15px 0 15px 0;
-    //     margin: 0 50px;
-    // }
-
-    // .top-help .logo {
-    //     width: 50%;
-    // }
-
-    // .searchbar input {
-    //     width: 150px;
-    //     font-size: small;
-    // }
-
-    // .searchbar button {
-    //     color: $white;
-    //     background: $primary-warm-col;
-    // }
 
 
 
@@ -714,11 +758,38 @@
 }
 
 @media screen and (min-width: 992px) {
+   
+
+
+    .smallnav, .smallsearchphone,
+    .searchbar input {
+        display:none;
+    }
+
+    .inner {
+        .main-topnav {
+            .container {
+                width:970px;
+                .top-help {
+                    display:flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
     .main-topnav {
         .topnav {
+            width: 100%;
             .mainmenu {
                 .container {
                     width:970px;
+                    .menu-breakdown {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
                 }
             }
         }
@@ -874,11 +945,11 @@
     }
 
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .topnav {
-        .mainmenu {
+      
             display: none;
-        }
+   
        
     }
 }
@@ -886,13 +957,44 @@
 
 @media screen and (min-width: 1200px) {
 
-    .mainmenu {
-        display: flex;
-        margin: 0 365px;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
+    .inner {
+        .main-topnav {
+            .container {
+                 width: 1170px;
+                 .top-help {
+                    .searchbar {
+                        display: block;
+                    }
+                 }
+            }
+        }
+    }
 
+    .smallnav {
+        display: none;
+    }
+
+    .main-topnav {
+        .topnav {
+            .mainmenu {
+                .container {
+                    width: 1170px;
+                    .menu-breakdown {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .dropdown-bespoke {
+                            width: 100%;
+                        }
+                        .firstrow {
+                            width: auto;
+                            padding-left:30px;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .main-pic {
@@ -1052,6 +1154,40 @@
         //     }
         // }
     }
+
+
+
+
+
+
+
+
+    .inner {
+        .container {
+            width: 100%;
+            padding: 0;
+            .container {
+                width: 1170px;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                .top-help {
+                    .itbtn, .contactbtn {
+                        height: 56px;
+                        font-size: 1.125rem;
+                        padding: 5px 15px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
 
     // .top-help {
     //     display: flex;

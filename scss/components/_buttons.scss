@@ -15,13 +15,25 @@
 .itbtn {
     @extend %topcontactbtn;
     background-color: $havelock-blue;
-    font-size: 15px;
+    font-size: 18px;
+    height: 56px;
+    line-height: 46px;
+    font-size: 18px;
+    float:left;
+    vertical-align: middle;
+    padding: 5px 15px;
 }
 
 .contactbtn {
     @extend %topcontactbtn;
     background-color: $primary-warm-col;
-    font-size: 15px;
+    font-size: 18px;
+    height: 56px;
+    line-height: 46px;
+    font-size: 18px;
+    float:left;
+    vertical-align: middle;
+    padding: 5px 15px;
 }
 
 .searchbtn {
@@ -31,7 +43,13 @@
     border:0;
     padding: 15px;
     cursor: pointer;
+    font-size: 25px;
+    color: $white;
+    background-color: $primary-warm-col;
+    border-radius: 3px;
 }
+
+// topnav
 .bespoke .bespokebtn,
 .itsupport .itsupportbtn,
 .digitalmarketing .digimarketbtn,
