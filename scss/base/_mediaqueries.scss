@@ -23,21 +23,25 @@
             }
         }
     }
-     .smallnav,
+
+    .smallnav,
     .smallnavtop {
         @include flexevencenter;
         // align-items: center;
         margin: 10px 0;
-       
+
 
         .logo {
             width: 60%;
         }
     }
+
     .smallnav {
         width: 100%;
+
         .container {
             width: 320px;
+
             .searchform {
                 .searchbar {
                     .searchbtn {
@@ -45,8 +49,10 @@
                     }
                 }
             }
+
             .smallnavtop {
                 width: 320px;
+
                 .smallsearchphone {
                     font-size: 35px;
                 }
@@ -161,11 +167,18 @@
 
 
     .latestnews {
+        padding: 0 15px;
+
         .viewheading2 {
             display: none;
         }
 
         .vacancies {
+            .container {
+                border-radius: 0 0 3px 3px;
+                box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+            }
+
             .art-details {
                 padding: 30px;
             }
@@ -249,6 +262,8 @@
         }
     }
 
+    
+
 
 
     // .topnav,
@@ -294,7 +309,7 @@
     //     flex-wrap: wrap;
     // }
 
-   
+
 
     // .light-logo {
     //     width: 60%;
@@ -328,20 +343,24 @@
         .main-topnav {
             .container {
                 width: 750px;
+
                 .top-help {
                     width: 100%;
-                    .itbtn, .contactbtn,
-                    .smallsearchphone { 
-                        display:none;
+
+                    .itbtn,
+                    .contactbtn,
+                    .smallsearchphone {
+                        display: none;
                     }
                 }
             }
-            .smallnav, .topnav {
-                display:none;
+
+            .smallnav {
+                display: none;
             }
         }
     }
-    
+
     .topnav a.icon {
         float: right;
         display: block;
@@ -385,30 +404,6 @@
 
 
 
-    // .topnav {
-    //     .mainmenu {
-
-    //         display: none;
-    //     }
-        
-    // }
-
-    // .topnav,
-    // .bespoke .bespokebtn,
-    // .itsupport .itsupportbtn,
-    // .digitalmarketing .digimarketbtn,
-    // .telecomsservices .telecomsbtn,
-    // .webdesign .webdesignbtn,
-    // .cyber .cybersecbtn,
-    // .devcourse .devcoursebtn,
-    // .smallnav,
-    // .itbtn,
-    // .contactbtn,
-    // .smallsearchphone,
-    // .service-subheading2,
-    // .viewheading2 {
-    //     display: none;
-    // }
 
 
 
@@ -664,7 +659,7 @@
         }
     }
 
-    
+
 
 
 
@@ -757,34 +752,85 @@
     // }
 }
 
+@media screen and (min-width:768px) {
+    .servicegrid {
+        .container {
+            .service-blocks {
+                .upper-row {
+
+                    .bespoke-b,
+                    .it-b,
+                    .digital-b {
+                        width: 720px;
+                    }
+                }
+            }
+
+            .serveheadings {
+                .container {
+                    display: block;
+
+                    h3 {
+                        float: left;
+                    }
+
+                    .service-subheading {
+                        float: right;
+                    }
+                }
+
+                width: 750px;
+            }
+        }
+    }
+
+    .copyright {
+        .container {
+            width: 750px;
+        }
+    }
+}
+
 @media screen and (min-width: 992px) {
-   
 
 
-    .smallnav, .smallsearchphone,
+
+    .smallnav,
+    .smallsearchphone,
     .searchbar input {
-        display:none;
+        display: none;
     }
 
     .inner {
         .main-topnav {
             .container {
-                width:970px;
+                width: 970px;
+
                 .top-help {
-                    display:flex;
+                    display: flex;
                     justify-content: space-around;
                     align-items: center;
                     margin: 20px 0;
+                    width: 970px;
+                    padding: 0;
+
+                    .itbtn,
+                    .contactbtn {
+                        display: block;
+                    }
                 }
             }
         }
     }
+
     .main-topnav {
         .topnav {
             width: 100%;
+
             .mainmenu {
                 .container {
-                    width:970px;
+                    width: 970px;
+
                     .menu-breakdown {
                         width: 100%;
                         display: flex;
@@ -847,8 +893,9 @@
             width: 970px;
 
             .serveheadings {
+                width: 945px;
                 .container {
-                    width: 970px;
+                    width: 945px;
                 }
             }
 
@@ -944,13 +991,22 @@
         }
     }
 
+    .copyright {
+        .container {
+            width: 970px;
+        }
+    }
+
+
+
 }
-@media screen and (max-width: 900px) {
+
+@media screen and (min-width:575px) and (max-width: 970px) {
     .topnav {
-      
+        .mainmenu {
             display: none;
-   
-       
+
+        }
     }
 }
 
@@ -960,12 +1016,18 @@
     .inner {
         .main-topnav {
             .container {
-                 width: 1170px;
-                 .top-help {
-                    .searchbar {
+                width: 1170px;
+
+                .top-help {
+                    .logo {
+                        width:35%;
+                    }
+                    width: 100%;
+
+                    .searchbar input {
                         display: block;
                     }
-                 }
+                }
             }
         }
     }
@@ -979,16 +1041,19 @@
             .mainmenu {
                 .container {
                     width: 1170px;
+
                     .menu-breakdown {
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
+
                         .dropdown-bespoke {
                             width: 100%;
                         }
+
                         .firstrow {
                             width: auto;
-                            padding-left:30px;
+                            padding-left: 30px;
                             align-items: center;
                         }
                     }
@@ -1070,7 +1135,7 @@
 
             .serveheadings {
                 .container {
-                    width: 1170px;
+                    width: 1130px;
                 }
             }
         }
@@ -1087,11 +1152,15 @@
         position: absolute;
         max-width: fit-content;
         display: inline-flex;
+        font-size: 18px;
     }
 
 
     .latestnews {
         .container {
+            .lateheadings {
+                width:1120px;
+            }
             width: 1170px;
 
             .newsarticles {
@@ -1102,8 +1171,11 @@
         }
 
         .lastone {
-            display: unset;
+            .art-details {
+                height: 288.13px;
+            }
 
+            display: block;
         }
     }
 
@@ -1124,6 +1196,7 @@
         .container {
             display: flex;
             justify-content: center;
+            width: 1170px;
         }
 
         .footer-sections {
@@ -1136,6 +1209,13 @@
             // justify-content: space-evenly;
             flex-direction: column;
             width: 400px;
+
+            .social-logos {
+                .container {
+                    width: 400px;
+                    justify-content: flex-start;
+                }
+            }
         }
 
         .footer-cols {
@@ -1155,6 +1235,12 @@
         // }
     }
 
+    .copyright {
+        .container {
+            width: 1170px;
+        }
+    }
+
 
 
 
@@ -1166,13 +1252,17 @@
         .container {
             width: 100%;
             padding: 0;
+
             .container {
                 width: 1170px;
-                display:flex;
+                display: flex;
                 align-items: center;
                 justify-content: space-between;
+
                 .top-help {
-                    .itbtn, .contactbtn {
+
+                    .itbtn,
+                    .contactbtn {
                         height: 56px;
                         font-size: 1.125rem;
                         padding: 5px 15px;

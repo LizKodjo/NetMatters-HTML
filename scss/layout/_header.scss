@@ -83,11 +83,14 @@ a[class$="-content"] {
 
 // styling background on links and the dropdown hover
 .bespoke a:hover,
-.bespoke:hover .bespokebtn,
 .bespoke-content {
     background-color: $hoki;
     color: $white;
     text-decoration: underline;
+}
+
+.bespoke:hover .bespokebtn {
+    background-color: lighten($hoki, 10);
 }
 
 .bespokepic {
@@ -121,10 +124,13 @@ a[class$="-content"] {
   }
 
 .itsupport a:hover,
-.itsupport:hover .itsupportbtn,
 .itsupport-content {
     @extend %linkunderline;
     background-color: $havelock-blue;
+}
+
+.itsupport:hover .itsupportbtn {
+    background-color: lighten($havelock-blue, 10);
 }
 
 .itpic {
@@ -135,10 +141,13 @@ a[class$="-content"] {
 }
 
 .digitalmarketing a:hover,
-.digitalmarketing:hover .digimarketbtn,
 .digimarket-content {
     @extend %linkunderline;
     background-color: $shamrock;
+}
+
+.digitalmarketing:hover .digimarketbtn {
+    background-color: lighten($shamrock, 10);
 }
 
 .digipic {
@@ -149,10 +158,13 @@ a[class$="-content"] {
 }
 
 .telecomsservices a:hover,
-.telecomsservices:hover .telecomsbtn,
 .telecoms-content {
     @extend %linkunderline;
     background-color: $valencia;
+}
+
+.telecomsservices:hover .telecomsbtn {
+    background-color: lighten($valencia, 10);
 }
 
 .telepic {
@@ -163,13 +175,17 @@ a[class$="-content"] {
 }
 
 .webdesign a:hover,
-.webdesign:hover .webdesignbtn,
 .webdesign-content {
     @extend %linkunderline;
     background-color: $wisteria;
 }
 
+.webdesign:hover .webdesignbtn {
+    background-color: lighten($wisteria, 10);
+}
+
 .webpic {
+    font-size:24px;
     color: $wisteria;
     &:hover {
         color: $white;
@@ -177,10 +193,12 @@ a[class$="-content"] {
 }
 
 .cyber a:hover,
-.cyber:hover .cybersecbtn,
 .cyber-content {
     @extend %linkunderline;
     background-color: $radical-red;
+}
+.cyber:hover .cybersecbtn {
+    background-color: lighten($radical-red, 10);
 }
 
 .cyberpic {
@@ -191,10 +209,13 @@ a[class$="-content"] {
 }
 
 .devcourse a:hover,
-.devcourse:hover .devcoursebtn,
 .devcourse-content {
     @extend %linkunderline;
     background-color: $punch;    
+}
+
+.devcourse:hover .devcoursebtn {
+    background-color: lighten($punch, 10);
 }
 
 .devpic {

@@ -15,17 +15,11 @@
 }
 
 .devcourse a:hover,
-.devcourse:hover .devcoursebtn,
 .devcourse-content, .cyber a:hover,
-.cyber:hover .cybersecbtn,
 .cyber-content, .webdesign a:hover,
-.webdesign:hover .webdesignbtn,
 .webdesign-content, .telecomsservices a:hover,
-.telecomsservices:hover .telecomsbtn,
 .telecoms-content, .digitalmarketing a:hover,
-.digitalmarketing:hover .digimarketbtn,
 .digimarket-content, .itsupport a:hover,
-.itsupport:hover .itsupportbtn,
 .itsupport-content {
   color: #fff;
   text-decoration: underline;
@@ -55,6 +49,10 @@ body {
 }
 
 .banner-image {
+  position: relative;
+}
+
+.servicegrid .container .serveheadings {
   position: relative;
 }
 
@@ -157,8 +155,15 @@ body {
   .reviews .googlebtn {
     font-size: 18px;
   }
+  .latestnews {
+    padding: 0 15px;
+  }
   .latestnews .viewheading2 {
     display: none;
+  }
+  .latestnews .vacancies .container {
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   }
   .latestnews .vacancies .art-details {
     padding: 30px;
@@ -220,11 +225,12 @@ body {
   .inner .main-topnav .container .top-help {
     width: 100%;
   }
-  .inner .main-topnav .container .top-help .itbtn, .inner .main-topnav .container .top-help .contactbtn,
+  .inner .main-topnav .container .top-help .itbtn,
+  .inner .main-topnav .container .top-help .contactbtn,
   .inner .main-topnav .container .top-help .smallsearchphone {
     display: none;
   }
-  .inner .main-topnav .smallnav, .inner .main-topnav .topnav {
+  .inner .main-topnav .smallnav {
     display: none;
   }
   .topnav a.icon {
@@ -412,8 +418,31 @@ body {
     width: 320px;
   }
 }
+@media screen and (min-width: 768px) {
+  .servicegrid .container .service-blocks .upper-row .bespoke-b,
+  .servicegrid .container .service-blocks .upper-row .it-b,
+  .servicegrid .container .service-blocks .upper-row .digital-b {
+    width: 720px;
+  }
+  .servicegrid .container .serveheadings {
+    width: 750px;
+  }
+  .servicegrid .container .serveheadings .container {
+    display: block;
+  }
+  .servicegrid .container .serveheadings .container h3 {
+    float: left;
+  }
+  .servicegrid .container .serveheadings .container .service-subheading {
+    float: right;
+  }
+  .copyright .container {
+    width: 750px;
+  }
+}
 @media screen and (min-width: 992px) {
-  .smallnav, .smallsearchphone,
+  .smallnav,
+  .smallsearchphone,
   .searchbar input {
     display: none;
   }
@@ -425,6 +454,12 @@ body {
     justify-content: space-around;
     align-items: center;
     margin: 20px 0;
+    width: 970px;
+    padding: 0;
+  }
+  .inner .main-topnav .container .top-help .itbtn,
+  .inner .main-topnav .container .top-help .contactbtn {
+    display: block;
   }
   .main-topnav .topnav {
     width: 100%;
@@ -474,8 +509,11 @@ body {
   .servicegrid .container {
     width: 970px;
   }
+  .servicegrid .container .serveheadings {
+    width: 945px;
+  }
   .servicegrid .container .serveheadings .container {
-    width: 970px;
+    width: 945px;
   }
   .servicegrid .container .service-blocks .upper-row .container {
     display: flex;
@@ -535,9 +573,12 @@ body {
     width: 25%;
     margin-bottom: 30px;
   }
+  .copyright .container {
+    width: 970px;
+  }
 }
-@media screen and (max-width: 900px) {
-  .topnav {
+@media screen and (min-width: 575px) and (max-width: 970px) {
+  .topnav .mainmenu {
     display: none;
   }
 }
@@ -545,7 +586,13 @@ body {
   .inner .main-topnav .container {
     width: 1170px;
   }
-  .inner .main-topnav .container .top-help .searchbar {
+  .inner .main-topnav .container .top-help {
+    width: 100%;
+  }
+  .inner .main-topnav .container .top-help .logo {
+    width: 35%;
+  }
+  .inner .main-topnav .container .top-help .searchbar input {
     display: block;
   }
   .smallnav {
@@ -618,7 +665,7 @@ body {
     width: 50%;
   }
   .servicegrid .container .serveheadings .container {
-    width: 1170px;
+    width: 1130px;
   }
   .reviews .container {
     width: 1170px;
@@ -627,15 +674,22 @@ body {
     position: absolute;
     max-width: fit-content;
     display: inline-flex;
+    font-size: 18px;
   }
   .latestnews .container {
     width: 1170px;
+  }
+  .latestnews .container .lateheadings {
+    width: 1120px;
   }
   .latestnews .container .newsarticles .container {
     width: 1170px;
   }
   .latestnews .lastone {
-    display: unset;
+    display: block;
+  }
+  .latestnews .lastone .art-details {
+    height: 288.13px;
   }
   .clients-img {
     justify-content: space-between;
@@ -646,6 +700,7 @@ body {
   footer .container {
     display: flex;
     justify-content: center;
+    width: 1170px;
   }
   footer .footer-sections {
     display: flex;
@@ -656,6 +711,10 @@ body {
     flex-direction: column;
     width: 400px;
   }
+  footer .footer-logo .social-logos .container {
+    width: 400px;
+    justify-content: flex-start;
+  }
   footer .footer-cols {
     padding: 0 15px;
     margin-bottom: 40px;
@@ -663,6 +722,9 @@ body {
   footer .colsforfooter {
     display: flex;
     justify-content: space-between;
+  }
+  .copyright .container {
+    width: 1170px;
   }
   .inner .container {
     width: 100%;
@@ -674,7 +736,8 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-  .inner .container .container .top-help .itbtn, .inner .container .container .top-help .contactbtn {
+  .inner .container .container .top-help .itbtn,
+  .inner .container .container .top-help .contactbtn {
     height: 56px;
     font-size: 1.125rem;
     padding: 5px 15px;
@@ -785,11 +848,14 @@ a[class$=-content] {
 }
 
 .bespoke a:hover,
-.bespoke:hover .bespokebtn,
 .bespoke-content {
   background-color: #67809f;
   color: #fff;
   text-decoration: underline;
+}
+
+.bespoke:hover .bespokebtn {
+  background-color: #869ab3;
 }
 
 .bespokepic {
@@ -824,9 +890,12 @@ a[class$=-content] {
 }
 
 .itsupport a:hover,
-.itsupport:hover .itsupportbtn,
 .itsupport-content {
   background-color: #4183d7;
+}
+
+.itsupport:hover .itsupportbtn {
+  background-color: #6b9ee0;
 }
 
 .itpic {
@@ -837,9 +906,12 @@ a[class$=-content] {
 }
 
 .digitalmarketing a:hover,
-.digitalmarketing:hover .digimarketbtn,
 .digimarket-content {
   background-color: #2ecc71;
+}
+
+.digitalmarketing:hover .digimarketbtn {
+  background-color: #54d98c;
 }
 
 .digipic {
@@ -850,9 +922,12 @@ a[class$=-content] {
 }
 
 .telecomsservices a:hover,
-.telecomsservices:hover .telecomsbtn,
 .telecoms-content {
   background-color: #d64541;
+}
+
+.telecomsservices:hover .telecomsbtn {
+  background-color: #df6e6b;
 }
 
 .telepic {
@@ -863,12 +938,16 @@ a[class$=-content] {
 }
 
 .webdesign a:hover,
-.webdesign:hover .webdesignbtn,
 .webdesign-content {
   background-color: #926fb1;
 }
 
+.webdesign:hover .webdesignbtn {
+  background-color: #ab90c3;
+}
+
 .webpic {
+  font-size: 24px;
   color: #926fb1;
 }
 .webpic:hover {
@@ -876,9 +955,12 @@ a[class$=-content] {
 }
 
 .cyber a:hover,
-.cyber:hover .cybersecbtn,
 .cyber-content {
   background-color: #f62459;
+}
+
+.cyber:hover .cybersecbtn {
+  background-color: #f8557e;
 }
 
 .cyberpic {
@@ -889,9 +971,12 @@ a[class$=-content] {
 }
 
 .devcourse a:hover,
-.devcourse:hover .devcoursebtn,
 .devcourse-content {
   background-color: #ce4125;
+}
+
+.devcourse:hover .devcoursebtn {
+  background-color: #de6148;
 }
 
 .devpic {
@@ -933,6 +1018,7 @@ a[class$=-content] {
 .bespoke-block:hover {
   background-color: #67809f;
   color: #fff;
+  transform: translate(0, -15px);
 }
 
 .servebespoke:hover {
@@ -948,11 +1034,13 @@ a[class$=-content] {
 .it-block:hover {
   background-color: #4183d7;
   color: #fff;
+  transform: translate(0, -15px);
 }
 
 .digital-block:hover {
   background-color: #2ecc71;
   color: #fff;
+  transform: translate(0, -15px);
 }
 
 .servedigital:hover {
@@ -963,6 +1051,7 @@ a[class$=-content] {
 .dev-block:hover {
   background-color: #ce4125;
   color: #fff;
+  transform: translate(0, -15px);
 }
 
 .servedev:hover {
@@ -973,6 +1062,7 @@ a[class$=-content] {
 .cyber-block:hover {
   background-color: #f62459;
   color: #fff;
+  transform: translate(0, -15px);
 }
 
 .servecyber:hover {
@@ -983,6 +1073,7 @@ a[class$=-content] {
 .web-block:hover {
   background-color: #926fb1;
   color: #fff;
+  transform: translate(0, -15px);
 }
 
 .serveweb:hover {
@@ -993,6 +1084,7 @@ a[class$=-content] {
 .telecoms-block:hover {
   background-color: #d64541;
   color: #fff;
+  transform: translate(0, -15px);
 }
 
 .servetelecoms:hover {
@@ -1010,7 +1102,7 @@ a[class$=-content] {
 
 .reviews .trustbtn {
   margin: 20px 0 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 .reviews .googlebtn {
   margin: 20px 8px 0 0;
