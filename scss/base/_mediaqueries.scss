@@ -261,81 +261,9 @@
             }
         }
     }
-
-
-
-
-
-    // .topnav,
-    // .bespoke .bespokebtn,
-    // .itsupport .itsupportbtn,
-    // .digitalmarketing .digimarketbtn,
-    // .telecomsservices .telecomsbtn,
-    // .webdesign .webdesignbtn,
-    // .cyber .cybersecbtn,
-    // .devcourse .devcoursebtn,
-    // .top-help,
-    // .itbtn,
-    // .contactbtn,
-    // .service-subheading,
-    // .viewheading2 {
-    //     display: none;
-    // }
-
-    // .latestnews {
-    //     margin: 15px;
-    // }
-
-    // .topnav a.icon {
-    //     float: right;
-    //     display: block;
-    // }
-
-
-
-
-
-
-    // .colsforfooter {
-    //     display: flex;
-    //     flex-direction: column;
-    //     flex-wrap: wrap;
-    //     padding-left: 0;
-    //     margin-right: 0;
-    // }
-
-    // .footer-sections {
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-    // }
-
-
-
-    // .light-logo {
-    //     width: 60%;
-    // }
-
-    // .partners,
-    // .clients-img {
-    //     width: 100%;
-    //     align-items: center;
-    //     display: flex;
-    //     justify-content: space-around;
-    //     margin-bottom: 10px;
-    // }
-
-    // .newsform h2 {
-    //     text-align: left;
-    //     font-size: 40px;
-    //     font-weight: lighter;
-    // }
-
-    // .col-25,
-    // .col-75 {
-    //     width: 100%;
-    //     margin-top: 0;
-    // }
 }
+
+
 
 // mobile landscape
 @media screen and (min-width: 575px) {
@@ -469,15 +397,7 @@
             }
         }
 
-        // .upper-row {
-        //     .container {
-        //         .service-blocks {
-        //             .container {
-        //                 margin: 0;
-        //             }
-        //         }
-        //     }
-        // }
+       
         .lower-row {
             display: flex;
             flex-direction: column;
@@ -658,98 +578,6 @@
             }
         }
     }
-
-
-
-
-
-
-
-
-
-    // .serveheadings {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    // }
-
-    // .service-blocks {
-    //     display: grid;
-    //     max-width: 600px;
-    //     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    //     grid-template-rows: 300px;
-    //     grid-gap: 15px 20px;
-
-    // }
-
-    // .bespoke-block,
-    // .it-block,
-    // .digital-block {
-    //     grid-column: 1 / -1;
-    // }
-
-    // .service-subheading {
-    //     text-align: end;
-    //     font-weight: bold;
-    // }
-
-    // .servicegrid {
-    //     margin: 0 100px;
-    // }
-
-    // .servicegrid h3 {
-    //     font-weight: bold;
-    //     font-size: 30px;
-    // }
-
-    // .partners {
-    //     margin: 0 100px;
-    //     padding-bottom: 20px;
-    // }
-
-    // .intro-review,
-    // .latestnews {
-    //     margin: 20px 100px;
-    // }
-
-    // .stars {
-    //     font-size: 30px;
-    // }
-
-    // article {
-    //     display: grid;
-    //     max-width: 100%;
-    //     grid-template-columns: auto auto;
-    //     grid-gap: 15px;
-    // }
-
-    // .receptionist {
-    //     display: none;
-    // }
-
-    // .news-section {
-    //     margin: 0 100px;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: space-around;
-    //     align-items: flex-start;
-    // }
-
-    // .form-sections input {
-    //     width: 150%;
-    //     font-size: 25px;
-    // }
-
-    // .newsform h2 {
-    //     text-align: left;
-    //     font-size: 35px;
-    // }
-
-    // .col-25,
-    // .col-75 {
-    //     width: 100%;
-    //     margin-top: 0;
-    // }
 }
 
 @media screen and (min-width:768px) {

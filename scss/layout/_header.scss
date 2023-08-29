@@ -5,6 +5,7 @@
     font-size: 20px;
     padding: 13px;
 }
+
 .searchbar {
     display: flex;
 }
@@ -27,7 +28,7 @@
 // styling navigation and the links inside
 .topnav {
     background-color: $primary-dark-col;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -55,17 +56,21 @@
 .webdesign,
 .cyber,
 .devcourse {
-    float:left;
+    &:hover {
+        overflow: visible;
+    }
+    float: left;
     overflow: hidden;
 }
 
 // style the dropdown content
 [class$="-content"] {
+    padding-top: 25px;
     display: none;
     position: absolute;
-    width: 100%;   
-    left:0;
-    z-index:1;
+    width: 100%;
+    left: 0;
+    z-index: 1;
 }
 
 // styling links inside the dropdown
@@ -76,29 +81,52 @@ a[class$="-content"] {
     text-decoration: none;
     display: block;
     // text-align: center;
-    text-align:left;
+    text-align: left;
 }
+
+.topnav {
+    .mainmenu {
+        .container {
+            .menu-breakdown {
+                // Adjust the heading of the dropdown menu
+                .dropdown-heading {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
 
 
 
 // styling background on links and the dropdown hover
 .bespoke a:hover,
 .bespoke-content {
-    background-color: $hoki;
+    background-color: darken($hoki, 10);
     color: $white;
     text-decoration: underline;
+    
 }
 
 .bespoke:hover .bespokebtn {
-    background-color: lighten($hoki, 10);
+    background-color: $hoki;
+    .bespokepic {
+        color: $white;
+    }   
 }
 
 .bespokepic {
-    color: $hoki;
-    &:hover {
-        color:$white;
-    }
+    color: $hoki;    
 }
+
+.bespokebtn::before{
+    @include triangle($hoki);
+}
+
+
+
+
 
 .bespoke:hover .bespoke-content,
 .itsupport:hover .itsupport-content,
@@ -112,117 +140,148 @@ a[class$="-content"] {
 
 .firstcolumn {
     float: left;
-    width:33.33%;
-    padding:10px;
+    width: 33.33%;
+    padding: 10px;
     height: auto;
 }
+
 /* Clear floats after the columns */
 .firstrow:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
 .itsupport a:hover,
 .itsupport-content {
     @extend %linkunderline;
-    background-color: $havelock-blue;
+    background-color: darken($havelock-blue,10);
+}
+.itsupportbtn::before {
+    @include triangle($havelock-blue);
+    border-width: 35px 46.5px 0;
 }
 
 .itsupport:hover .itsupportbtn {
-    background-color: lighten($havelock-blue, 10);
+    background-color: $havelock-blue;
+    .itpic {
+        color: $white;
+    }
 }
 
 .itpic {
     color: $havelock-blue;
-    &:hover {
-        color:$white;
-    }
+
 }
 
 .digitalmarketing a:hover,
 .digimarket-content {
     @extend %linkunderline;
-    background-color: $shamrock;
+    background-color: darken($shamrock, 10);
+}
+
+.digimarketbtn::before {
+    @include triangle($shamrock);
+    border-width: 35px 53.5px 0;
 }
 
 .digitalmarketing:hover .digimarketbtn {
-    background-color: lighten($shamrock, 10);
+    background-color: $shamrock;
+    .digipic {
+        color: $white;
+    }
 }
 
 .digipic {
     color: $shamrock;
-    &:hover {
-        color: $white;
-    }
 }
 
 .telecomsservices a:hover,
 .telecoms-content {
     @extend %linkunderline;
-    background-color: $valencia;
+    background-color: darken($valencia, 10);
+}
+
+.telecomsbtn::before {
+    @include triangle($valencia);
+    border-width: 35px 47.5px 0;
 }
 
 .telecomsservices:hover .telecomsbtn {
-    background-color: lighten($valencia, 10);
+    background-color: $valencia;
+    .telepic {
+        color: $white;
+    }
 }
 
 .telepic {
     color: $valencia;
-    &:hover {
-        color: $white;
-    }
 }
 
 .webdesign a:hover,
 .webdesign-content {
     @extend %linkunderline;
-    background-color: $wisteria;
+    background-color: darken($wisteria, 10);
+}
+
+.webdesignbtn::before {
+    @include triangle($wisteria);
+    border-width: 35px 40.5px 0;
 }
 
 .webdesign:hover .webdesignbtn {
-    background-color: lighten($wisteria, 10);
+    background-color: $wisteria;
+    .webpic {
+        color: $white;
+    }
 }
 
 .webpic {
-    font-size:24px;
+    font-size: 24px;
     color: $wisteria;
-    &:hover {
-        color: $white;
-    }
 }
 
 .cyber a:hover,
 .cyber-content {
     @extend %linkunderline;
-    background-color: $radical-red;
+    background-color: darken($radical-red, 10);
 }
+.cybersecbtn::before {
+    @include triangle($radical-red);
+    border-width: 35px 47.5px 0;
+}
+
 .cyber:hover .cybersecbtn {
-    background-color: lighten($radical-red, 10);
+    background-color: $radical-red;
+    .cyberpic {
+        color: $white;
+    }
 }
 
 .cyberpic {
     color: $radical-red;
-    &:hover {
-        color: $white;
-    }
 }
 
 .devcourse a:hover,
 .devcourse-content {
     @extend %linkunderline;
-    background-color: $punch;    
+    background-color: darken($punch, 10);
+}
+
+.devcoursebtn::before {
+    @include triangle($punch);
+    border-width: 35px 46.5px 0;
 }
 
 .devcourse:hover .devcoursebtn {
-    background-color: lighten($punch, 10);
+    background-color: $punch;
+    .devpic {
+        color: $white;
+    }
 }
 
 .devpic {
     color: $punch;
-    &:hover {
-        color: $white;
-    }
 }
 
 .content-heading {

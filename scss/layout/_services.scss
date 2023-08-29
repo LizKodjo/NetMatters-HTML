@@ -21,6 +21,38 @@
     padding: 15px;
     // border-radius: 0 0 3px 3px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+    transition: all 0.5s;
+    &:hover {
+        .servedigital, .digital-icon,
+        .serveit, .it-icon,
+        .servebespoke, .bespoke-icon,
+         .servetelecoms, .tele-icon,
+        .serveweb, .web-icon, 
+        .servecyber, .cyber-icon, 
+         .servedev, .dev-icon {
+            background-color: $white;
+        }
+        .servebespoke, .bespoke-icon {
+            color: $hoki;
+        }
+        .serveit, .it-icon {
+            color: $havelock-blue;
+        }.servedigital, .digital-icon {
+            color: $shamrock;
+        }
+        .servetelecoms, .tele-icon {
+            color: $valencia;
+        }
+        .serveweb, .web-icon {
+            color: $wisteria;
+        }
+        .servecyber, .cyber-icon {
+            color: $radical-red;
+        }
+        .servedev, .dev-icon {
+            color: $punch;
+        }
+    }
 
 }
 
@@ -33,12 +65,10 @@
 }
 
 .servebespoke:hover {
-    background-color: $white;
     color: $hoki;
 }
 
 .serveit:hover {
-    background-color: $white;
     color: $havelock-blue;
 }
 
@@ -55,7 +85,7 @@
 }
 
 .servedigital:hover {
-    background-color: $white;
+    
     color: $shamrock;
 }
 
@@ -66,7 +96,6 @@
 }
 
 .servedev:hover {
-    background-color: $white;
     color: $punch;
 }
 
@@ -78,7 +107,6 @@
 }
 
 .servecyber:hover {
-    background-color: $white;
     color: $radical-red;
 }
 
@@ -90,7 +118,6 @@
 }
 
 .serveweb:hover {
-    background-color: $white;
     color: $wisteria;
 }
 
@@ -102,6 +129,5 @@
 }
 
 .servetelecoms:hover {
-    background-color: $white;
     color: $valencia;
 }
