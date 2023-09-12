@@ -103,25 +103,25 @@ a[class$="-content"] {
 // styling background on links and the dropdown hover
 .bespoke a:hover,
 .bespoke-content {
-    background-color: darken($hoki, 10);
+    background-color: darken($bespoke, 10);
     color: $white;
     text-decoration: underline;
     
 }
 
 .bespoke:hover .bespokebtn {
-    background-color: $hoki;
+    background-color: $bespoke;
     .bespokepic {
         color: $white;
     }   
 }
 
 .bespokepic {
-    color: $hoki;    
+    color: $bespoke;    
 }
 
 .bespokebtn::before{
-    @include triangle($hoki);
+    @include triangle($bespoke);
 }
 
 
@@ -155,82 +155,82 @@ a[class$="-content"] {
 .itsupport a:hover,
 .itsupport-content {
     @extend %linkunderline;
-    background-color: darken($havelock-blue,10);
+    background-color: darken($it-support,10);
 }
 .itsupportbtn::before {
-    @include triangle($havelock-blue);
+    @include triangle($it-support);
     border-width: 35px 46.5px 0;
 }
 
 .itsupport:hover .itsupportbtn {
-    background-color: $havelock-blue;
+    background-color: $it-support;
     .itpic {
         color: $white;
     }
 }
 
 .itpic {
-    color: $havelock-blue;
+    color: $it-support;
 
 }
 
 .digitalmarketing a:hover,
 .digimarket-content {
     @extend %linkunderline;
-    background-color: darken($shamrock, 10);
+    background-color: darken($digital-market, 10);
 }
 
 .digimarketbtn::before {
-    @include triangle($shamrock);
+    @include triangle($digital-market);
     border-width: 35px 53.5px 0;
 }
 
 .digitalmarketing:hover .digimarketbtn {
-    background-color: $shamrock;
+    background-color: $digital-market;
     .digipic {
         color: $white;
     }
 }
 
 .digipic {
-    color: $shamrock;
+    color: $digital-market;
 }
 
 .telecomsservices a:hover,
 .telecoms-content {
     @extend %linkunderline;
-    background-color: darken($valencia, 10);
+    background-color: darken($telecoms, 10);
 }
 
 .telecomsbtn::before {
-    @include triangle($valencia);
+    @include triangle($telecoms);
     border-width: 35px 47.5px 0;
 }
 
 .telecomsservices:hover .telecomsbtn {
-    background-color: $valencia;
+    background-color: $telecoms;
     .telepic {
         color: $white;
     }
 }
 
 .telepic {
-    color: $valencia;
+    color: $telecoms;
 }
 
 .webdesign a:hover,
 .webdesign-content {
     @extend %linkunderline;
-    background-color: darken($wisteria, 10);
+    background-color: darken($web-design, 10);
 }
 
 .webdesignbtn::before {
-    @include triangle($wisteria);
+    @include triangle($web-design);
     border-width: 35px 40.5px 0;
 }
 
 .webdesign:hover .webdesignbtn {
-    background-color: $wisteria;
+    background-color: $web-design;
     .webpic {
         color: $white;
     }
@@ -238,50 +238,50 @@ a[class$="-content"] {
 
 .webpic {
     font-size: 24px;
-    color: $wisteria;
+    color: $web-design;
 }
 
 .cyber a:hover,
 .cyber-content {
     @extend %linkunderline;
-    background-color: darken($radical-red, 10);
+    background-color: darken($cyber, 10);
 }
 .cybersecbtn::before {
-    @include triangle($radical-red);
+    @include triangle($cyber);
     border-width: 35px 47.5px 0;
 }
 
 .cyber:hover .cybersecbtn {
-    background-color: $radical-red;
+    background-color: $cyber;
     .cyberpic {
         color: $white;
     }
 }
 
 .cyberpic {
-    color: $radical-red;
+    color: $cyber;
 }
 
 .devcourse a:hover,
 .devcourse-content {
     @extend %linkunderline;
-    background-color: darken($punch, 10);
+    background-color: darken($developer, 10);
 }
 
 .devcoursebtn::before {
-    @include triangle($punch);
+    @include triangle($developer);
     border-width: 35px 46.5px 0;
 }
 
 .devcourse:hover .devcoursebtn {
-    background-color: $punch;
+    background-color: $developer;
     .devpic {
         color: $white;
     }
 }
 
 .devpic {
-    color: $punch;
+    color: $developer;
 }
 
 .content-heading {

@@ -33,24 +33,24 @@
             background-color: $white;
         }
         .servebespoke, .bespoke-icon {
-            color: $hoki;
+            color: $bespoke;
         }
         .serveit, .it-icon {
-            color: $havelock-blue;
+            color: $it-support;
         }.servedigital, .digital-icon {
-            color: $shamrock;
+            color: $digital-market;
         }
         .servetelecoms, .tele-icon {
-            color: $valencia;
+            color: $telecoms;
         }
         .serveweb, .web-icon {
-            color: $wisteria;
+            color: $web-design;
         }
         .servecyber, .cyber-icon {
-            color: $radical-red;
+            color: $cyber;
         }
         .servedev, .dev-icon {
-            color: $punch;
+            color: $developer;
         }
     }
 
@@ -59,75 +59,75 @@
 
 
 .bespoke-block:hover {
-    background-color: $hoki;
+    background-color: $bespoke;
     color: $white;
     transform: translate(0, -15px);    
 }
 
 .servebespoke:hover {
-    color: $hoki;
+    color: $bespoke;
 }
 
 .serveit:hover {
-    color: $havelock-blue;
+    color: $it-support;
 }
 
 .it-block:hover {
-    background-color: $havelock-blue;
+    background-color: $it-support;
     color: $white;
     transform: translate(0, -15px);
 }
 
 .digital-block:hover {
-    background-color: $shamrock;
+    background-color: $digital-market;
     color: $white;
     transform: translate(0, -15px);
 }
 
 .servedigital:hover {
     
-    color: $shamrock;
+    color: $digital-market;
 }
 
 .dev-block:hover {
-    background-color: $punch;
+    background-color: $developer;
     color: $white;
     transform: translate(0, -15px);
 }
 
 .servedev:hover {
-    color: $punch;
+    color: $developer;
 }
 
 
 .cyber-block:hover {
-    background-color: $radical-red;
+    background-color: $cyber;
     color: $white;
     transform: translate(0, -15px);
 }
 
 .servecyber:hover {
-    color: $radical-red;
+    color: $cyber;
 }
 
 
 .web-block:hover {
-    background-color: $wisteria;
+    background-color: $web-design;
     color: $white;
     transform: translate(0, -15px);
 }
 
 .serveweb:hover {
-    color: $wisteria;
+    color: $web-design;
 }
 
 
 .telecoms-block:hover {
-    background-color: $valencia;
+    background-color: $telecoms;
     color: $white;
     transform: translate(0, -15px);
 }
 
 .servetelecoms:hover {
-    color: $valencia;
+    color: $telecoms;
 }

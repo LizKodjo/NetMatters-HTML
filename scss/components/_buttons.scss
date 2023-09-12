@@ -14,7 +14,7 @@
 // Navigation buttons
 .itbtn {
     @extend %topcontactbtn;
-    background-color: $havelock-blue;
+    background-color: $it-support;
     font-size: 18px;
     height: 56px;
     line-height: 46px;
@@ -46,7 +46,7 @@
     font-size: 25px;
     color: $white;
     background-color: $primary-warm-col;
-    border-radius: 3px;
+    // border-radius: 3px;
 }
 
 // topnav
@@ -115,11 +115,11 @@
     margin-bottom: 20px;
 }
 .latestbtn1 {
-    background-color: $hoki;
+    background-color: $bespoke;
 }
 .latestbtn2 {
-    background-color: $wisteria;
+    background-color: $web-design;
 }
 .latestbtn3 {
-    background-color: $havelock-blue;
+    background-color: $it-support;
 }
