@@ -41,14 +41,15 @@ body {
 .creatingbox {
     display: block;
     position: relative;
-    padding-left: 35px;
+    // padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 16px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select:none;
     user-select: none;
+    padding-left: 50px;
 }
 .creatingbox input {
     position: absolute;
@@ -64,9 +65,11 @@ body {
     left: 0;
     height: 32px;
     width:32px;
-    background-color: $white;
+    background-color: $alto;
     border: 3px solid $primary-dark-col;
     border-radius: 3px;
+    padding-right: 20px;
+    // margin-left: -20px;
 }
 .creatingbox input:checked ~ .checkmark {
     background-color: $primary-dark-col;
@@ -86,9 +89,14 @@ body {
     top: 5px;
     width:5px;
     height: 10px;
-    border: solid white;
+    border: solid $white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.privacy {
+    color: $dove-gray;
+    text-decoration: underline;
 }
