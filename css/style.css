@@ -61,6 +61,9 @@ body {
   width: 100%;
 }
 @media screen and (max-width: 575px) {
+  .smallnav .container {
+    padding: 0;
+  }
   .inner .main-topnav .top-help {
     display: none;
   }
@@ -68,7 +71,8 @@ body {
   .smallnavtop {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px 0;
   }
   .smallnav .logo,
@@ -97,7 +101,6 @@ body {
   .searchform {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-content: center;
   }
   .searchbar {
@@ -414,6 +417,22 @@ body {
     margin-bottom: 10px;
     text-align: center;
   }
+  .social-logos .container .fb-btn:hover {
+    background-color: #3b5998;
+    text-decoration: none;
+  }
+  .social-logos .container .ln-btn:hover {
+    background-color: #0077b5;
+    text-decoration: none;
+  }
+  .social-logos .container .tw-btn:hover {
+    background-color: #00aced;
+    text-decoration: none;
+  }
+  .social-logos .container .in-btn:hover {
+    background-color: #d93175;
+    text-decoration: none;
+  }
   footer .container .main-footer .container .footer-sections .footer-logo .light-logo {
     width: 320px;
   }
@@ -612,6 +631,7 @@ body {
   }
   .inner .main-topnav .container .top-help .searchbar input {
     display: block;
+    width: 240px;
   }
   .smallnav {
     display: none;
