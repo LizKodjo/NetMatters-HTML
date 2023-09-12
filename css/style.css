@@ -56,6 +56,64 @@ body {
   position: relative;
 }
 
+.creatingbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.creatingbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  border: 3px solid #333645;
+  border-radius: 3px;
+}
+
+.creatingbox input:checked ~ .checkmark {
+  background-color: #333645;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.creatingbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.creatingbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 /* Media queries */
 .container {
   width: 100%;
@@ -216,6 +274,22 @@ body {
     margin-right: 10px;
     margin-bottom: 10px;
     text-align: center;
+  }
+  footer .social-logos .container .fb-btn:hover {
+    background-color: #3b5998;
+    text-decoration: none;
+  }
+  footer .social-logos .container .ln-btn:hover {
+    background-color: #0077b5;
+    text-decoration: none;
+  }
+  footer .social-logos .container .tw-btn:hover {
+    background-color: #00aced;
+    text-decoration: none;
+  }
+  footer .social-logos .container .in-btn:hover {
+    background-color: #d93175;
+    text-decoration: none;
   }
   footer .container .main-footer .container .footer-sections .footer-logo .light-logo {
     width: 250px;
