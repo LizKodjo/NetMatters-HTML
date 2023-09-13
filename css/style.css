@@ -37,6 +37,7 @@
 
 body {
   font-size: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .more {
@@ -530,9 +531,6 @@ body {
   .newsletter .container {
     width: 750px;
   }
-  footer .container {
-    width: 750px;
-  }
   footer .footerlist {
     font-size: 13px;
   }
@@ -584,14 +582,14 @@ body {
     width: 320px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .servicegrid .container .serveheadings .container {
+    width: 720px;
+  }
   .servicegrid .container .service-blocks .upper-row .bespoke-b,
   .servicegrid .container .service-blocks .upper-row .it-b,
   .servicegrid .container .service-blocks .upper-row .digital-b {
     width: 720px;
-  }
-  .servicegrid .container .serveheadings {
-    width: 750px;
   }
   .servicegrid .container .serveheadings .container {
     display: block;
@@ -605,7 +603,7 @@ body {
   .copyright .container {
     width: 750px;
   }
-  .newsarticles .container .vacancies .latestImg {
+  .latestnews .newsarticles .container .vacancies .latestImg {
     padding: 0;
   }
 }
@@ -686,9 +684,6 @@ body {
   }
   .latestnews .newsarticles .container .vacancies .container {
     width: 100%;
-  }
-  .latestnews .container {
-    width: 970px;
   }
   .servicegrid .container {
     width: 970px;
@@ -773,7 +768,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .inner .main-topnav .container {
-    width: 1170px;
+    width: 1120px;
   }
   .inner .main-topnav .container .top-help {
     width: 100%;
@@ -987,6 +982,10 @@ footer .footerlist a {
   height: 56px;
   line-height: 46px;
   float: left;
+}
+
+.menu:hover {
+  background-color: #1d1f28;
 }
 
 .topnav {
@@ -1654,6 +1653,10 @@ h2 {
   color: #fff;
 }
 
+.sub-btn:hover {
+  background-color: #1d1f28;
+}
+
 .itbtn {
   background-color: #4183d7;
   font-size: 18px;
@@ -1663,6 +1666,10 @@ h2 {
   float: left;
   vertical-align: middle;
   padding: 5px 15px;
+}
+
+.itbtn:hover {
+  background-color: #286abd;
 }
 
 .contactbtn {
@@ -1676,6 +1683,10 @@ h2 {
   padding: 5px 15px;
 }
 
+.contactbtn:hover {
+  background-color: #888f94;
+}
+
 .searchbtn {
   width: 25px;
 }
@@ -1687,6 +1698,10 @@ h2 {
   font-size: 25px;
   color: #fff;
   background-color: #a3a8ac;
+}
+
+.searchbar button:hover {
+  background-color: #888f94;
 }
 
 .bespoke .bespokebtn,

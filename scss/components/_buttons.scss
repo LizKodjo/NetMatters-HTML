@@ -10,6 +10,9 @@
     white-space: normal;
     color: $white;
 }
+.sub-btn:hover {
+    background-color: darken($primary-dark-col, 10);
+}
 
 // Navigation buttons
 .itbtn {
@@ -22,6 +25,9 @@
     float:left;
     vertical-align: middle;
     padding: 5px 15px;
+}
+.itbtn:hover {
+    background-color: darken($it-support, 10);
 }
 
 .contactbtn {
@@ -36,6 +42,11 @@
     padding: 5px 15px;
 }
 
+.contactbtn:hover {
+    background-color: darken($primary-warm-col, 10);
+}
+
+
 .searchbtn {
     width: 25px;
 }
@@ -47,6 +58,9 @@
     color: $white;
     background-color: $primary-warm-col;
     // border-radius: 3px;
+}
+.searchbar button:hover{
+    background-color: darken($primary-warm-col, 10);
 }
 
 // topnav

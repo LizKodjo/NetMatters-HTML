@@ -24,6 +24,9 @@
     line-height: 46px;
     float: left;
 }
+.menu:hover {
+    background-color: darken($primary-dark-col, 10);
+}
 
 // styling navigation and the links inside
 .topnav {
