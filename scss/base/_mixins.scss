@@ -67,3 +67,17 @@
     border-style: solid;
     border-width: 35px 51.5px 0;
 }
+
+@mixin imgOverlay {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: $white;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    a {
+        color: $white;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}

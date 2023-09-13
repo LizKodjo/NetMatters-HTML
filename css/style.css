@@ -121,6 +121,63 @@ body {
   text-decoration: underline;
 }
 
+.latestImg {
+  position: relative;
+}
+
+.text-block1 {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #fff;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background-color: #2ecc71;
+}
+.text-block1 a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.text-block2 {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #fff;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background-color: #926fb1;
+}
+.text-block2 a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.text-block3 {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #fff;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background-color: #ce4125;
+}
+.text-block3 a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.vacancies:hover {
+  transform: translate(0, -15px);
+}
+
+.vacancies {
+  transition: all 0.5s;
+}
+
 /* Media queries */
 .container {
   width: 100%;
@@ -248,6 +305,9 @@ body {
   .latestnews .viewheading {
     font-size: 26px;
   }
+  .newsarticles .container .vacancies .latestImg {
+    padding: 0;
+  }
   .clients-img {
     justify-content: space-around;
   }
@@ -340,6 +400,9 @@ body {
   .searchbar button {
     color: #fff;
     background: #a3a8ac;
+  }
+  .newsarticles .container .vacancies .latestImg {
+    padding: 0;
   }
   .main-pic {
     position: relative;
@@ -448,6 +511,9 @@ body {
     width: 50%;
     margin: 0 15px;
   }
+  .latestnews .newsarticles .container .vacancies .latestImg {
+    padding: 0;
+  }
   .latestnews .newsarticles .container .vacancies .container {
     width: 350px;
     padding: 30px;
@@ -539,6 +605,9 @@ body {
   .copyright .container {
     width: 750px;
   }
+  .newsarticles .container .vacancies .latestImg {
+    padding: 0;
+  }
 }
 @media screen and (min-width: 992px) {
   .smallnav,
@@ -612,9 +681,11 @@ body {
   .latestnews .newsarticles .container {
     width: 940px;
   }
+  .latestnews .newsarticles .container .vacancies .latestImg {
+    padding: 0;
+  }
   .latestnews .newsarticles .container .vacancies .container {
     width: 100%;
-    height: 329.56px;
   }
   .latestnews .container {
     width: 970px;

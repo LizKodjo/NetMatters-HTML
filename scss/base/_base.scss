@@ -100,3 +100,31 @@ body {
     color: $dove-gray;
     text-decoration: underline;
 }
+
+
+// Image to hold the text
+.latestImg {
+    position: relative;
+}
+
+.text-block1 {
+    @include imgOverlay;
+    background-color:$digital-market;
+}
+
+.text-block2 {
+    @include imgOverlay;
+    background-color: $web-design;
+}
+
+.text-block3 {
+    @include imgOverlay;
+    background-color: $developer;
+}
+
+.vacancies:hover {
+    transform: translate(0, -15px)
+}
+.vacancies {
+    transition: all 0.5s;
+}
