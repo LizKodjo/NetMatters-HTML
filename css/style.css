@@ -1727,11 +1727,30 @@ h2 {
   margin-bottom: 10px;
 }
 
+.googlebtn:hover,
+.trustbtn:hover {
+  color: #fff;
+}
+
+.googlebtn:hover {
+  background-color: #286abd;
+}
+
+.trustbtn:hover {
+  background-color: #008359;
+}
+
 .culture, .choose-us {
   background-color: #272936;
   border-color: #272936;
   padding: 10px 30px;
   font-size: 20px;
+}
+
+.choose-us:hover,
+.culture:hover {
+  color: #fff;
+  background-color: #121318;
 }
 
 .choose-us {

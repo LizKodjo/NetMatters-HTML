@@ -92,12 +92,29 @@
     @include havelock;  
     margin-bottom: 10px;
 }
+.googlebtn:hover,
+.trustbtn:hover {
+    color: $white;
+}
+.googlebtn:hover{
+    background-color: darken($it-support, 10);
+}
+.trustbtn:hover {
+    background-color: darken($jade, 10);
+}
+
 .culture, .choose-us {
     @extend %btnwhitett;
     @include charade;
     // margin-bottom: 50px;
     padding: 10px 30px;
-    font-size: 20px;
+    font-size: 20px;    
+}
+
+.choose-us:hover, 
+.culture:hover {
+    color: $white;
+    background-color: darken($charade, 10);
 }
 .choose-us {
     margin-bottom: 17px;
