@@ -140,3 +140,13 @@
 .latestbtn3 {
     background-color: $developer;
 }
+
+.main-pic {
+    .container {
+        .top-left {
+            .main-button:hover {
+                background-color: darken($web-design, 10);
+            }
+        }
+    }
+}
