@@ -147,12 +147,17 @@
 }
 .latestbtn1 {
     background-color: $digital-market;
-}
+   
+    }
 .latestbtn2 {
     background-color: $web-design;
 }
 .latestbtn3 {
     background-color: $developer;
+}
+
+.btn:hover {
+    color: $white;
 }
 
 .main-pic {

@@ -1836,6 +1836,10 @@ h2 {
   background-color: #ce4125;
 }
 
+.btn:hover {
+  color: #fff;
+}
+
 .main-pic .container .top-left .main-button:hover {
   background-color: #79539a;
 }
