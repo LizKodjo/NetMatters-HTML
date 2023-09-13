@@ -462,7 +462,7 @@ body {
     display: none;
   }
   .reviews .container {
-    width: 750px;
+    width: 720px;
   }
   .reviews .container .intro-review .welcomenet .container p {
     margin: 0 0 25px;
@@ -529,7 +529,7 @@ body {
     justify-content: space-between;
   }
   .newsletter .container {
-    width: 750px;
+    width: 720px;
   }
   footer .footerlist {
     font-size: 13px;
@@ -582,9 +582,14 @@ body {
     width: 320px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
+  .servicegrid .container .serveheadings {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+  }
   .servicegrid .container .serveheadings .container {
-    width: 720px;
+    width: 700px;
   }
   .servicegrid .container .service-blocks .upper-row .bespoke-b,
   .servicegrid .container .service-blocks .upper-row .it-b,
@@ -605,6 +610,9 @@ body {
   }
   .latestnews .newsarticles .container .vacancies .latestImg {
     padding: 0;
+  }
+  .newsletter .new-section {
+    width: 720px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -756,6 +764,20 @@ body {
     width: 970px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+  .servicegrid .container {
+    width: 970px;
+  }
+  .servicegrid .container .serveheadings {
+    width: 945px;
+  }
+  .servicegrid .container .serveheadings .container {
+    width: 945px;
+  }
+  .servicegrid .container .service-blocks .upper-row .container {
+    display: flex;
+  }
+}
 @media screen and (min-width: 575px) and (max-width: 750px) {
   .inner .main-topnav .container {
     width: 550px;
@@ -848,7 +870,15 @@ body {
   .servicegrid .container .service-blocks .lower-row .container {
     width: 50%;
   }
-  .servicegrid .container .serveheadings .container {
+  .servicegrid .container .servicegrid .container .serveheadings {
+    width: 1170px;
+  }
+  .servicegrid .container {
+    width: 1170px;
+  }
+  .servicegrid .container .serveheadings {
+    display: flex;
+    justify-content: space-between;
     width: 1130px;
   }
   .reviews .container {

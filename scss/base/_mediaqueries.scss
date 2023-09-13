@@ -449,7 +449,7 @@
 
     .reviews {
         .container {
-            width: 750px;
+            width: 720px;
 
             .intro-review {
                 .welcomenet {
@@ -551,7 +551,7 @@
 
     .newsletter {
         .container {
-            width: 750px;
+            width: 720px;
         }
     }
 
@@ -639,12 +639,15 @@
     }
 }
 
-@media screen and (min-width:768px) and (max-width: 992px) {
+@media screen and (min-width:768px)  {
     .servicegrid {
         .container {
             .serveheadings {
+                display:flex;
+                justify-content: space-between;
+                width: 700px;
                 .container {
-                    width: 720px;
+                    width: 700px;
                 }
             }
             .service-blocks {
@@ -691,6 +694,12 @@
                     }
                 }
             }
+        }
+    }
+
+    .newsletter {
+        .new-section {
+            width: 720px;
         }
     }
 
@@ -943,6 +952,30 @@
 
 }
 
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+    .servicegrid {
+        .container {
+            width: 970px;
+
+            .serveheadings {
+                width: 945px;
+
+                .container {
+                    width: 945px;
+                }
+            }
+
+            .service-blocks {
+                .upper-row {
+                    .container {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 575px) and (max-width:750px) {
     .inner {
         .main-topnav {
@@ -1078,13 +1111,40 @@
                 }
             }
 
-            .serveheadings {
+            .servicegrid {
                 .container {
-                    width: 1130px;
+                    .serveheadings {
+                        width: 1170px;
+                    }
                 }
+            }
+
+            // .serveheadings {
+            //     .container {
+            //         width: 1130px;
+            //     }
+            // }
+        }
+    }
+
+
+    .servicegrid {
+        .container {
+            width: 1170px;
+            .serveheadings {
+                display:flex;
+                justify-content: space-between;
+                width: 1130px;
             }
         }
     }
+
+
+    
+
+ 
+
+
 
 
     .reviews {
