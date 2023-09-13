@@ -1315,13 +1315,14 @@ a[class$=-content] {
 }
 
 .service {
-  border: 1px solid #a3a8ac;
+  border: 1px solid #ccc;
   margin-bottom: 15px;
   border-radius: 10px;
   text-align: center;
   padding: 15px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
+  cursor: pointer;
 }
 .service:hover .servedigital, .service:hover .digital-icon,
 .service:hover .serveit, .service:hover .it-icon,
@@ -1422,6 +1423,13 @@ a[class$=-content] {
 
 .servetelecoms:hover {
   color: #d64541;
+}
+
+.servicegrid .container .serveheadings .container {
+  padding-bottom: 20px;
+}
+.servicegrid .container .serveheadings .container .service-subheading {
+  font-weight: 600;
 }
 
 .reviews {

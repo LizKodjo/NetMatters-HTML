@@ -14,7 +14,7 @@
 }
 
 .service {
-    border: 1px solid $primary-warm-col;
+    border: 1px solid #ccc;
     margin-bottom: 15px;
     border-radius: 10px;
     text-align: center;
@@ -22,6 +22,7 @@
     // border-radius: 0 0 3px 3px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
     transition: all 0.5s;
+    cursor: pointer;
     &:hover {
         .servedigital, .digital-icon,
         .serveit, .it-icon,
@@ -130,4 +131,17 @@
 
 .servetelecoms:hover {
     color: $telecoms;
+}
+
+.servicegrid {
+    .container {
+        .serveheadings {
+            .container {
+                padding-bottom: 20px;
+                .service-subheading {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }
