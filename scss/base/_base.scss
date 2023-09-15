@@ -48,16 +48,17 @@ body {
     font-size: 16px;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select:none;
+    -ms-user-select: none;
     user-select: none;
     padding-left: 50px;
 }
+
 .creatingbox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height:0;
-    width:0;
+    height: 0;
+    width: 0;
 }
 
 .checkmark {
@@ -65,30 +66,32 @@ body {
     top: 0;
     left: 0;
     height: 32px;
-    width:32px;
+    width: 32px;
     background-color: $alto;
     border: 3px solid $primary-dark-col;
     border-radius: 3px;
     padding-right: 20px;
     // margin-left: -20px;
 }
-.creatingbox input:checked ~ .checkmark {
+
+.creatingbox input:checked~.checkmark {
     background-color: $primary-dark-col;
 }
+
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-.creatingbox input:checked ~ .checkmark:after {
+.creatingbox input:checked~.checkmark:after {
     display: block;
 }
 
 .creatingbox .checkmark:after {
     left: 9px;
     top: 5px;
-    width:5px;
+    width: 5px;
     height: 10px;
     border: solid $white;
     border-width: 0 3px 3px 0;
@@ -110,7 +113,7 @@ body {
 
 .text-block1 {
     @include imgOverlay;
-    background-color:$digital-market;
+    background-color: $digital-market;
 }
 
 .text-block2 {
@@ -126,6 +129,7 @@ body {
 .vacancies:hover {
     transform: translate(0, -15px)
 }
+
 .vacancies {
     transition: all 0.5s;
 }
@@ -168,16 +172,42 @@ body {
     overflow-x: auto;
     transition: 0.5s;
     padding-top: 20px;
-   
+
+
+
+    .submenu {
+        margin: 0 0 15px;
+    }
+
+    .mob-submenu {
+        padding: 20px 0 0 0;
+        width: auto;
+
+        li:not(:first-child) {
+            border-top: 1px solid rgba(0, 0, 0, .45);
+        }
+
+        li {
+            padding: 0;
+
+            a {
+                background-color: rgba(0, 0, 0, .25);
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+
 
     ul {
         padding: 21px;
         font-size: 18px;
         text-transform: uppercase;
         margin: -20px 0 0;
+
         li {
             color: $white;
-            list-style:none;
+            list-style: none;
             padding: 20px 0 0;
 
             a {
@@ -193,16 +223,36 @@ body {
                 border: 1px solid hsla(0, 0%, 100%, .1);
             }
         }
-
-        
-        
     }
 }
+
+.new-subsection {
+    li {
+        border-top: 1px solid hsla(0, 0%, 100%, .1);
+        border-bottom: 1px solid rgba(0, 0, 0, .25);
+    }
+
+    .submenu {
+        li {
+            a {
+                font-size: 14px;
+                border-top: 1px solid hsla(0, 0%, 100%, .5);
+                background-color: rgba(0, 0, 0, .25);
+                padding: 15px 20px;
+                position: relative;
+            }
+        }
+    }
+}
+
+
+
 
 @media screen and (max-height:450px) {
     .sidenav {
         padding-top: 15px;
     }
+
     .sidenav a {
         font-size: 18px;
     }
