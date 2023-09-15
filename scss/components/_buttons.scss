@@ -160,11 +160,27 @@
     color: $white;
 }
 
+// Banner slider buttons
+
+// .main-pic {
+//     .banner-image {
+//         .imgText {
+//             .top-left {
+//                 .btn-developer {
+//                     @include bg-colors(bespoke);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
 .main-pic {
     .container {
         .top-left {
             .main-button:hover {
-                background-color: darken($web-design, 10);
+                background-color: shade(web, dark);
             }
         }
     }

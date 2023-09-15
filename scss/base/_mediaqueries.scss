@@ -106,24 +106,25 @@
                 font-size: 40px;
                 font-weight: 400;
                 line-height: 1.2;
+                padding: 0 30px;
 
                 .bottom-left {
-                    font-size: 21px;
+                    font-size: 20px;
                     font-weight: bolder;
                     letter-spacing: .1rem;
                     margin-bottom: 15px;
                 }
 
-                .main-button {
-                    text-transform: uppercase;
-                    font-size: 15px;
-                    font-weight: bold;
-                    padding: 15px;
-                    border-radius: 5px;
-                    border: none;
-                    color: $white;
-                    background-color: $web-design;
-                }
+                // .main-button {
+                //     text-transform: uppercase;
+                //     font-size: 15px;
+                //     font-weight: bold;
+                //     padding: 15px;
+                //     border-radius: 5px;
+                //     border: none;
+                //     color: $white;
+                //     // background-color: $web-design;
+                // }
             }
 
         }
@@ -140,8 +141,9 @@
 
     .dotCounter {
         position:absolute;
-        bottom: 10px;
-        left: 120px;
+        bottom: 40px;
+        // left: 120px;
+        transform: translate(100%, 20%);
     }
 
     .servicegrid {
@@ -409,16 +411,16 @@
                     margin-bottom: 15px;
                 }
 
-                .main-button {
-                    text-transform: uppercase;
-                    font-size: 15px;
-                    font-weight: bold;
-                    padding: 15px;
-                    border-radius: 5px;
-                    border: none;
-                    color: $white;
-                    background-color: $web-design;
-                }
+                // .main-button {
+                //     text-transform: uppercase;
+                //     font-size: 15px;
+                //     font-weight: bold;
+                //     padding: 15px;
+                //     border-radius: 5px;
+                //     border: none;
+                //     color: $white;
+                //     background-color: $web-design;
+                // }
             }
         }
     }
@@ -647,6 +649,30 @@
 }
 
 @media screen and (min-width:768px)  {
+
+    .main-pic {
+        .dotCounter {
+            position: absolute;
+            bottom: 50px;
+            right: 50%;
+            transform: translate(50%, 50%);
+        }
+        .banner-image {
+            .imgText {
+                .top-left {
+                    font-size: 40px;
+                    .bottom-left {
+                        font-size: 20px;
+                    }
+                    .main-button {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+
     .servicegrid {
         .container {
             .serveheadings {
@@ -724,6 +750,8 @@
 
 
 
+
+
     .smallnav,
     .smallsearchphone,
     .searchbar input {
@@ -770,6 +798,21 @@
         }
     }
 
+    // Banner slider
+
+    .main-pic {
+        .banner-image {
+            .imgText {
+                .top-left {
+                    font-size: 64px;
+                    .bottom-left {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+
     .main-pic {
         position: relative;
         text-align: left;
@@ -783,10 +826,10 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-45%, -50%);
-                font-size: 54px;
+                font-size: 64px;
                 font-weight: 400;
                 letter-spacing: 2px;
-                width: 100%;
+                width: 970px;
 
                 .bottom-left {
                     font-size: 20px;
@@ -795,16 +838,16 @@
                     margin-bottom: 15px;
                 }
 
-                .main-button {
-                    text-transform: uppercase;
-                    font-size: 15px;
-                    font-weight: bold;
-                    padding: 15px;
-                    border-radius: 5px;
-                    border: none;
-                    color: $white;
-                    background-color: $web-design;
-                }
+                // .main-button {
+                //     text-transform: uppercase;
+                //     font-size: 15px;
+                //     // font-weight: bold;
+                //     padding: 15px;
+                //     border-radius: 5px;
+                //     border: none;
+                //     color: $white;
+                //     background-color: $web-design;
+                // }
             }
         }
     }

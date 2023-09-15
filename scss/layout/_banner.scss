@@ -7,6 +7,7 @@
 .headerpic {
     vertical-align: middle;
     object-fit: cover;
+    filter: brightness(0.5);
 }
 
 .dot {
@@ -19,7 +20,22 @@
     transition: background-color 0.6s ease;
 }
 
-.active {
+// .prev, .next {
+//     cursor: pointer;
+//     position: absolute;
+//     top: 50%;
+//     width: auto;
+//     margin-top: -22px;
+//     padding: 16px;
+//     color: $white;
+//     font-weight: bold;
+//     font-size: 18px;
+//     transition: 0.6s ease;
+//     border-radius: 0 3px 3px 0;
+//     user-select: none;
+// }
+
+.active, .dot:hover {
     background-color: #717171;
 }
 

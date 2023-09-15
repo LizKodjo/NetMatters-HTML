@@ -1,25 +1,79 @@
 // Fonts
-$primary-font           : 'Poppins', sans-serif;
+$primary-font : 'Poppins',
+sans-serif;
 
 // Colors
-$primary-dark-col       : #333645;
-$primary-warm-col       : #a3a8ac;
-$mineshaft              : #333;
-$white                  : #fff;
-$bespoke                : #67809f;
-$it-support             : #4183d7;
-$digital-market         : #2ecc71;
-$telecoms               : #d64541;
-$web-design             : #926fb1;
-$cyber                  : #f62459;
-$developer              : #ce4125;
-$jade                   : #00b67b;
-$charade                : #272936;
-$alto                   : #ddd;
-$dove-gray              : #666;
-$emperor                : #555;
-$tuna                   : #323544;
-$ebony-clay             : #212330;
+$primary-dark-col : #333645;
+$primary-warm-col : #a3a8ac;
+$mineshaft : #333;
+$white : #fff;
+$bespoke : #67809f;
+$it-support : #4183d7;
+$digital-market : #2ecc71;
+$telecoms : #d64541;
+$web-design : #926fb1;
+$cyber : #f62459;
+$developer : #ce4125;
+$jade : #00b67b;
+$charade : #272936;
+$alto : #ddd;
+$dove-gray : #666;
+$emperor : #555;
+$tuna : #323544;
+$ebony-clay : #212330;
+
+// Color shades
+
+$colorShades: (
+    bespoke: (dark : darken($bespoke, 10%),
+        base: $bespoke,
+    ),
+    it-support: (dark : darken($it-support, 10%),
+        base: $it-support,
+    ),
+    digital: (dark : darken($digital-market, 10%),
+        base: $digital-market,
+    ),
+    telecoms: (dark : darken($telecoms, 10%),
+        base: $telecoms,
+    ),
+    web : (dark: darken($web-design, 10%),
+        base: $web-design,
+    ),
+    cyber: (dark : darken($cyber, 10%),
+        base: $cyber,
+    ),
+    developer: (dark: darken($developer, 10%),
+        base: $developer,
+    ),
+);
+
+// Call color shades
+
+@function shade($colorShade, $shade: 'base') {
+    @return map-get(map-get($colorShades, $colorShade), $shade);
+
+}
+
+// Main colors
+$section-colors: (
+    bespoke : $bespoke,
+    digital : $digital-market,
+    it-support : $it-support,
+    telecoms : $telecoms,
+    web : $web-design,
+    cyber : $cyber,
+    developer : $developer
+);
+
+// mixin for colors
+@mixin bg-colors($map) {
+    @each $theme, $color in $map {
+        &--#{$theme} {
+            background-color: $color;
+        }
+    }
+}
 
 
 
@@ -29,18 +83,21 @@ $ebony-clay             : #212330;
     font-weight: 300;
     text-transform: uppercase;
     padding: 12px;
-    border:none;
+    border: none;
 }
+
 %btnwhitett {
     text-transform: uppercase;
-    color:$white;
+    color: $white;
     padding: 15px;
     border-style: none;
 }
+
 %linkunderline {
     color: $white;
-    text-decoration:underline;
+    text-decoration: underline;
 }
+
 %smallspacing {
     font-size: 15px;
     letter-spacing: 1px;
@@ -48,8 +105,8 @@ $ebony-clay             : #212330;
 }
 
 // Text
-$base__font-size                : 25px;
-$base__line                     : 40px;
+$base__font-size : 25px;
+$base__line : 40px;
 
 // Calculate em values
 @function em($target, $context: $base__font-size) {
