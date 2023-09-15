@@ -1110,11 +1110,12 @@
 
             .top-left {
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-44%, -136%);
+                // top: 50%;
+                // left: 50%;
+                transform: translate(-52%, -120%);
                 font-size: 60px;
                 font-weight: 400;
+                line-height: normal;
                 // width: 50%;
 
                 .bottom-left {

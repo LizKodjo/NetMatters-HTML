@@ -214,6 +214,19 @@ body {
   margin-top: 20px;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: aqua;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
 /* Media queries */
 .container {
   width: 100%;
@@ -864,11 +877,10 @@ body {
   }
   .main-pic .container .top-left {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-44%, -136%);
+    transform: translate(-52%, -120%);
     font-size: 60px;
     font-weight: 400;
+    line-height: normal;
   }
   .main-pic .container .top-left .bottom-left {
     font-size: 26px;
@@ -1700,6 +1712,10 @@ h2 {
 
 .tablerows {
   font-size: 18px;
+}
+
+.banner-image {
+  display: none;
 }
 
 .headerpic {
