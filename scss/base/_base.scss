@@ -152,10 +152,10 @@ body {
 
 // Mobile menu
 
-// #main{
-//     transition: margin-left .5s;
-//     padding: 16px;
-// }
+#main {
+    transition: margin-right .5s;
+    // padding: 16px;
+}
 
 .sidenav {
     height: 100%;
@@ -163,10 +163,47 @@ body {
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
-    background-color: aqua;
-    overflow-x: hidden;
+    right: 0;
+    background-color: $primary-dark-col;
+    overflow-x: auto;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 20px;
+   
+
+    ul {
+        padding: 21px;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin: -20px 0 0;
+        li {
+            color: $white;
+            list-style:none;
+            padding: 20px 0 0;
+
+            a {
+                padding: 19px 0 18px;
+                text-decoration: none;
+                font-size: 18px;
+                color: $white;
+                display: block;
+                transition: 0.3s;
+                border-radius: 3px;
+                text-align: center;
+                outline: 1px solid rgba(0, 0, 0, .25);
+                border: 1px solid hsla(0, 0%, 100%, .1);
+            }
+        }
+
+        
+        
+    }
 }
 
+@media screen and (max-height:450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

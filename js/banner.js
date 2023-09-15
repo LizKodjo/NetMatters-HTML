@@ -27,11 +27,13 @@ function showSlides() {
 // Mobile nav
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.width = "275px";
+    document.getElementById("main").style.marginLeft = "-275px";
+    document.getElementsByTagName("body").margineLeft = "-250px";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft ="0";
+    document.getElementsByTagName("body").style.marginLeft = "0";
 }
