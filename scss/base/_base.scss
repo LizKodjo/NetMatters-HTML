@@ -226,14 +226,17 @@ body {
     }
 }
 
-.new-subsection {
-    li {
-        border-top: 1px solid hsla(0, 0%, 100%, .1);
-        border-bottom: 1px solid rgba(0, 0, 0, .25);
-    }
+.sidenav {
+    .new-subsection {
+        .lower-submenu {
+            border-top: 1px solid hsla(0, 0%, 100%, .1);
+            border-bottom: 1px solid rgba(0, 0, 0, .25);
+        }
 
-    .submenu {
-        li {
+        .mini-menu {
+        
+                padding: 0;
+            
             a {
                 font-size: 14px;
                 border-top: 1px solid hsla(0, 0%, 100%, .5);
@@ -242,6 +245,7 @@ body {
                 position: relative;
             }
         }
+
     }
 }
 
@@ -256,4 +260,10 @@ body {
     .sidenav a {
         font-size: 18px;
     }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

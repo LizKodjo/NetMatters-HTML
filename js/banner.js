@@ -37,3 +37,38 @@ function closeNav() {
     document.getElementById("main").style.marginLeft ="0";
     document.getElementsByTagName("body").style.marginLeft = "0";
 }
+
+// Tablet nav
+
+function openTabNav() {
+    document.getElementById("tabSidenav").style.width = "275px";
+    document.getElementById("main").style.marginLeft = "-275px";
+}
+
+function closeTabNav() {
+    document.getElementById("tabSidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+
+// Sticky header
+
+// When user scrolls
+
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("smallnav");
+
+// Get the offset position
+
+var sticky = header.offsetTop;
+
+// Add sticky class to the header when you reach its scroll position
+
+function myFunction() {
+    if(window.scrollY > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
