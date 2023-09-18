@@ -1,8 +1,10 @@
 * {
+    
     box-sizing: border-box;
 }
 
 body {
+   
     font-size: 1rem;
     font-family: $primary-font;
 }
@@ -266,4 +268,34 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 5;
+}
+
+.smallnav {
+    margin-top: 0;
+}
+
+// slick styles for banner image
+
+.slick-dots {
+    bottom: 20px;
+    
+
+    li button:before {
+        font-size: 16px;
+        color: #d6d6d6;
+    }
+    
+    li.slick-active button:before {
+        opacity: .75;
+        color: $white;
+        border-radius: 50%;
+        border: 1px solid $white;
+    }
+}
+
+.partners {
+    img {
+        height: 100px;
+    }
 }

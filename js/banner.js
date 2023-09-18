@@ -57,7 +57,7 @@ function closeTabNav() {
 window.onscroll = function() {myFunction()};
 
 // Get the header
-var header = document.getElementById("smallnav");
+var header = document.getElementById("main-topnav");
 
 // Get the offset position
 
@@ -71,4 +71,8 @@ function myFunction() {
     } else {
         header.classList.remove("sticky");
     }
+}
+
+function testHeader() {
+    $("#main-topnav").slideDown();
 }
