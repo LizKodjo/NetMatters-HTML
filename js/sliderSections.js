@@ -8,7 +8,7 @@ $('.main-pic').slick({
 $('.partners').slick({
     arrows: false,
     autoplay: true,
-    slidesToShow: 9,
+    slidesToShow: 8,
     responsive: [
         {
             breakpoint: 1200,
@@ -37,6 +37,41 @@ $('.partners').slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll:1
+            }
+        }
+    ]
+});
+
+// Clients slider
+$('.clients-img').slick ({
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 8,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll:1,
+                infinite: true
+            }
+        },
+        {
+            breakpoint: 996,
+            settings: {
+                slidesToShow:3
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow:2
             }
         }
     ]

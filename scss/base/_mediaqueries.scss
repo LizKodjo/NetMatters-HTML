@@ -650,6 +650,13 @@
 
 @media screen and (min-width:768px)  {
 
+    .banner {
+        max-width: 100%;
+        .bannerSlideshow {
+            max-width: 100%;
+        }
+    }
+
     .main-pic {
         .dotCounter {
             position: absolute;

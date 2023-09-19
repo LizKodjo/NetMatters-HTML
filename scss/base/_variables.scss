@@ -21,6 +21,8 @@ $dove-gray : #666;
 $emperor : #555;
 $tuna : #323544;
 $ebony-clay : #212330;
+$consent: #75788a;
+$consent-change: #999aa2;
 
 // Color shades
 
@@ -63,7 +65,9 @@ $section-colors: (
     telecoms : $telecoms,
     web : $web-design,
     cyber : $cyber,
-    developer : $developer
+    developer : $developer,
+    consent: $consent,
+    consent-change: $consent-change
 );
 
 // mixin for colors

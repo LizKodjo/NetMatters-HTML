@@ -299,3 +299,82 @@ body {
         height: 100px;
     }
 }
+
+.clients {
+    .clients-img {
+        img {
+            height: 100px;
+        }
+    }
+}
+
+// Consent button
+.cookiebtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    line-height: 22px;
+    z-index: 4;
+    background: $consent;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: solid $consent;
+    border-width: 1px 1px 0 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    &:hover, &:focus {
+        background-color: $consent;
+        border-color: $consent;
+    }
+}
+
+.modal-title {
+    font-size: 26px;
+}
+
+.modal-header {
+    justify-content: flex-start;
+}
+
+.modal-body {
+    font-size: 16px;
+    margin: 0 0 25px;
+    color: $dove-gray;
+    line-height: 1.875;
+    letter-spacing: .4px;
+    .privacy {
+        text-decoration: none;
+        color: $primary-dark-col;
+    }
+}
+
+.modal-footer {
+    .btn {
+        height: auto;
+        line-height: 35px;
+        padding: 5px 15px;
+        font-size: 17px;
+        border-radius: 3px;
+        white-space: normal;
+        display: block;
+        width: 100%;
+    }
+}
+
+.modal-dialog {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, .7);
+}
