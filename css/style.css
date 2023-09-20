@@ -224,7 +224,7 @@ body {
   transition: margin-right 0.5s;
 }
 
-.sidenav {
+.sidenav, .mobile-nav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -236,36 +236,36 @@ body {
   transition: 0.5s;
   padding-top: 20px;
 }
-.sidenav .submenu {
+.sidenav .submenu, .mobile-nav .submenu {
   margin: 0 0 15px;
 }
-.sidenav .mob-submenu {
+.sidenav .mob-submenu, .mobile-nav .mob-submenu {
   padding: 20px 0 0 0;
   width: auto;
 }
-.sidenav .mob-submenu li:not(:first-child) {
+.sidenav .mob-submenu li:not(:first-child), .mobile-nav .mob-submenu li:not(:first-child) {
   border-top: 1px solid rgba(0, 0, 0, 0.45);
 }
-.sidenav .mob-submenu li {
+.sidenav .mob-submenu li, .mobile-nav .mob-submenu li {
   padding: 0;
 }
-.sidenav .mob-submenu li a {
+.sidenav .mob-submenu li a, .mobile-nav .mob-submenu li a {
   background-color: rgba(0, 0, 0, 0.25);
   padding: 10px;
   font-size: 16px;
 }
-.sidenav ul {
+.sidenav ul, .mobile-nav ul {
   padding: 21px;
   font-size: 18px;
   text-transform: uppercase;
   margin: -20px 0 0;
 }
-.sidenav ul li {
+.sidenav ul li, .mobile-nav ul li {
   color: #fff;
   list-style: none;
   padding: 20px 0 0;
 }
-.sidenav ul li a {
+.sidenav ul li a, .mobile-nav ul li a {
   padding: 19px 0 18px;
   text-decoration: none;
   font-size: 18px;
@@ -399,7 +399,55 @@ body {
   align-items: center;
   justify-content: center;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.smallnav {
+  background-color: #fff;
+  margin: 0;
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: red;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav.is-active {
+  right: 50%;
+}
+
+#main-topnavHide {
+  position: fixed;
+  top: -200px;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 5;
 }
 
 /* Media queries */
@@ -419,7 +467,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
+    padding: 10px 0;
   }
   .smallnav .logo,
   .smallnavtop .logo {
@@ -792,6 +840,22 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .main-topnav {
+    background-color: #fff;
+  }
+  .modal-dialog {
+    padding: 0;
+  }
+  .modal-footer {
+    margin: 0;
+    padding: 19px 20px 20px;
+    text-align: right;
+    align-items: baseline;
+    flex-wrap: nowrap;
+  }
+  .modal-footer .btn {
+    width: 50%;
+  }
   .banner {
     max-width: 100%;
   }

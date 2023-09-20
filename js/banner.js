@@ -1,26 +1,3 @@
-// let slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//     let i;
-//     let slides = document.getElementsByClassName('banner-image');
-//     let dots = document.getElementsByClassName('dot');
-
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = 'none';
-//     }
-
-//     slideIndex++;
-//     if (slideIndex > slides.length) {
-//         slideIndex = 1
-//     }
-//     for (i = 0; i < dots[i].length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
-//     slides[slideIndex-1].style.display = "block";
-//     dots[slideIndex-1].className += " active";
-//     setTimeout(showSlides, 3000);
-// }
 
 
 
@@ -34,7 +11,7 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft ="0";
+    document.getElementById("main").style.marginLeft = "0";
     document.getElementsByTagName("body").style.marginLeft = "0";
 }
 
@@ -54,25 +31,48 @@ function closeTabNav() {
 
 // When user scrolls
 
-window.onscroll = function() {myFunction()};
+// window.onscroll = function () { myFunction() };
 
-// Get the header
-var header = document.getElementById("main-topnav");
+window.onscroll = function() {scrollFunction()};
 
-// Get the offset position
-
-var sticky = header.offsetTop;
-
-// Add sticky class to the header when you reach its scroll position
-
-function myFunction() {
-    if(window.scrollY > sticky) {
-        header.classList.add("sticky");
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("main-topnavHide").style.top = "0";
     } else {
-        header.classList.remove("sticky");
+        document.getElementById("main-topnavHide").style.top = "-220px";
     }
 }
 
+
+
+// // Get the header
+// var header = document.getElementById("main-topnav");
+
+// // Get the offset position
+
+// var sticky = header.offsetTop;
+
+// // Add sticky class to the header when you reach its scroll position
+
+// function myFunction() {
+//     if (window.scrollY > sticky) {
+//         header.classList.add("sticky");
+//     } else {
+//         header.classList.remove("sticky");
+//     }
+// }
+
 function testHeader() {
     $("#main-topnav").slideDown();
+}
+
+// side nav
+window.onload = function () {
+    const menu_btn = document.querySelector('.hamburger');
+    const mobile_nav = document.querySelector('.sidenav');
+
+    menu_btn.addEventListener('click', function () {
+        menu_btn.classList.toggle('is-active');
+        mobile_nav.classList.toggle('is-active');
+    });
 }

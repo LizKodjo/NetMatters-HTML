@@ -35,7 +35,7 @@
         @include flexevencenter;
         justify-content: space-between;
         align-items: center;
-        margin: 10px 0;
+        padding: 10px 0;
 
 
         .logo {
@@ -649,6 +649,25 @@
 }
 
 @media screen and (min-width:768px)  {
+
+    .main-topnav {
+        background-color: $white;
+    }
+
+    .modal-dialog {
+        padding:0;
+    }
+
+    .modal-footer {
+        margin: 0;
+        padding: 19px 20px 20px;
+        text-align: right;
+        align-items: baseline;
+        flex-wrap: nowrap;
+        .btn {
+            width: 50%;
+        }
+    }
 
     .banner {
         max-width: 100%;

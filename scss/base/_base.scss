@@ -163,7 +163,7 @@ body {
     // padding: 16px;
 }
 
-.sidenav {
+.sidenav, .mobile-nav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -376,5 +376,71 @@ body {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    background-color: rgba(0, 0, 0, .7);
+    // background-color: rgba(0, 0, 0, .7);
+}
+
+.smallnav {
+    background-color: $white;
+    margin: 0;
+}
+
+// Menu icon for sliding nav
+
+.hamburger {
+    position:relative;
+    display: block;
+    width: 35px;
+    // height: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+
+    .bar, &:after, &:before {
+        content: '';
+        display:block;
+        width: 100%;
+        height: 5px;
+        background-color: red;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+   
+}
+
+// .hamburger .bar, .hamburger:after, .hamburger:before {
+//     content: '';
+//     display:block;
+//     width: 100%;
+//     height: 5px;
+//     background-color: red;
+//     margin: 6px 0px;
+//     transition: 0.4s;
+// }
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform:rotate(45deg) translate(-9px, -8px);
+}
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+
+.mobile-nav.is-active {
+    right:50%;
+}
+
+// Hidden menu needed to slide down
+#main-topnavHide {
+    position: fixed;
+    top: -200px;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 5;
 }
