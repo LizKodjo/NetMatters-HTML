@@ -6,7 +6,7 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "275px";
     document.getElementById("main").style.marginLeft = "-275px";
-    document.getElementsByTagName("body").margineLeft = "-250px";
+    document.getElementsByTagName("body").style.margineLeft = "-250px";
 }
 
 function closeNav() {
@@ -45,29 +45,13 @@ function scrollFunction() {
 
 
 
-// // Get the header
-// var header = document.getElementById("main-topnav");
-
-// // Get the offset position
-
-// var sticky = header.offsetTop;
-
-// // Add sticky class to the header when you reach its scroll position
-
-// function myFunction() {
-//     if (window.scrollY > sticky) {
-//         header.classList.add("sticky");
-//     } else {
-//         header.classList.remove("sticky");
-//     }
-// }
 
 function testHeader() {
     $("#main-topnav").slideDown();
 }
 
 // side nav
-window.onload = function () {
+// window.onload = function () {
     const menu_btn = document.querySelector('.hamburger');
     const mobile_nav = document.querySelector('.sidenav');
 
@@ -75,7 +59,7 @@ window.onload = function () {
         menu_btn.classList.toggle('is-active');
         mobile_nav.classList.toggle('is-active');
     });
-}
+// }
 
 // Clients tooltip script
 
@@ -83,3 +67,44 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+// Creating cookie
+// Function to create cookie
+setCookie = (cName, cValue, expDays) => {
+    let date = new Date();
+    // calculate date
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    // create and save cookie at root
+    document.cookie = cName + "=" + cValue + ";" + expires + "; path=/";
+}
+
+// Function to check if cookie is available
+getCookie = (cName) => {
+    const name = cName + "=";
+    const cDecoded = decodeURIComponent(document.cookie);
+    const cArr = cDecoded.split("; ");
+
+    let value;
+    cArr.forEach(val => {
+        if(val.indexOf(name) === 0) value = val.substring(name.length);
+    })
+
+    return value;
+
+}
+
+// Message disappeares when cookie is accepted
+document.querySelector('#acceptcookie').addEventListener("click", () => {
+    document.querySelector("#myModal").style.display = "none";
+
+    setCookie("cookieLiz", true, 10);
+})
+
+// check cookie
+
+cookieMessage = () => {
+    if (!getCookie("cookieLiz"))
+    document.querySelector('#myModal').style.display = "block";
+}
+window.addEventListener("load", cookieMessage);

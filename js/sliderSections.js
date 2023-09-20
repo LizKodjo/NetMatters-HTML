@@ -8,7 +8,8 @@ $('.main-pic').slick({
 $('.partners').slick({
     arrows: false,
     autoplay: true,
-    slidesToShow: 8,
+    slidesToShow: 7,
+    variableWidth: true,
     responsive: [
         {
             breakpoint: 1200,
@@ -46,7 +47,8 @@ $('.partners').slick({
 $('.clients-img').slick ({
     arrows: false,
     autoplay: true,
-    slidesToShow: 8,
+    slidesToShow: 7,
+    variableWidth: true,
     responsive: [
         {
             breakpoint: 1200,
