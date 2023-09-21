@@ -447,20 +447,18 @@ body {
 
 
 
-.tooltiptesting {
+.tooltipimg{
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted yellow;
-    
-
-   
+    border-bottom: 1px solid yellow;   
 }
 
-.tooltiptesttext {
+.tooltipimg .imgtext {
     visibility: hidden;
     width: 120px;
-    height: 30px;
+    // height: 30px;
     background-color: red;
+    color: $white;
   
     text-align: center;
     padding: 5px 0;
@@ -468,19 +466,31 @@ body {
     
     position: absolute;
     z-index: 10;
-
-    
-}
-
-.tooltiptesting:hover .tooltiptesttext {
-    visibility: visible;
-    font-size: 20px;
-    color: pink;
-}
-
-.tooltiptesting .tooltiptesttext {
-    width: 120px;
-    bottom: 100%;
+    bottom: 125%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -60px;    
+}
+
+.tooltipimg .imgtext::after {
+    content: "";
+    position:absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltipimg:hover .imgtext {
+   visibility: visible;
+   opacity: 1;
+}
+
+.btn--consent-change:hover {
+    background-color: $consent-change;
+}
+
+.btn-danger:hover {
+    background-color: $web-design;
 }
