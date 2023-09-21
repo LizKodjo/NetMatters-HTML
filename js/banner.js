@@ -4,14 +4,14 @@
 // Mobile nav
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "275px";
-    document.getElementById("main").style.marginLeft = "-275px";
+    // document.getElementById("mySidenav").style.width = "275px";
+    document.getElementsByClassName("innerSection").style.left = "-275px";
     // document.getElementsByTagName("body").style.margineLeft = "-250px";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    // document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("innerSection").style.left = "0";
     // document.getElementsByTagName("body").style.marginLeft = "0";
 }
 
@@ -20,13 +20,13 @@ function closeNav() {
 // Tablet nav
 
 function openTabNav() {
-    document.getElementById("tabSidenav").style.width = "275px";
-    document.getElementById("main").style.marginLeft = "-275px";
+    // document.getElementById("tabSidenav").style.width = "275px";
+    document.getElementById("innerSection").style.left = "-275px";
 }
 
 function closeTabNav() {
-    document.getElementById("tabSidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    // document.getElementById("tabSidenav").style.width = "0";
+    document.getElementById("innerSection").style.left = "0";
 }
 
 // Sticky header

@@ -9,6 +9,12 @@ body {
     font-family: $primary-font;
 }
 
+.outermain {
+   position: absolute;
+   z-index: 1000;
+   overflow: hidden;
+}
+
 // Main page
 
 // Body
@@ -165,14 +171,14 @@ body {
 
 .sidenav, .mobile-nav {
     height: 100%;
-    width: 0;
+    width: 275px;
     position: fixed;
-    z-index: 1;
+    // z-index: -1;
     top: 0;
     right: 0;
     background-color: $primary-dark-col;
     overflow-x: auto;
-    transition: 0.5s;
+    // transition: 0.5s;
     padding-top: 20px;
 
 
@@ -443,6 +449,7 @@ body {
     width: 100%;
     transition: top 0.3s;
     z-index: 5;
+    background-color: $white;
 }
 
 
@@ -494,3 +501,4 @@ body {
 .btn-danger:hover {
     background-color: $web-design;
 }
+

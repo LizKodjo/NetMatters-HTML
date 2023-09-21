@@ -40,6 +40,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.outermain {
+  position: absolute;
+  z-index: 1000;
+  overflow: hidden;
+}
+
 .more {
   display: none;
 }
@@ -226,14 +232,12 @@ body {
 
 .sidenav, .mobile-nav {
   height: 100%;
-  width: 0;
+  width: 275px;
   position: fixed;
-  z-index: 1;
   top: 0;
   right: 0;
   background-color: #333645;
   overflow-x: auto;
-  transition: 0.5s;
   padding-top: 20px;
 }
 .sidenav .submenu, .mobile-nav .submenu {
@@ -448,6 +452,7 @@ body {
   width: 100%;
   transition: top 0.3s;
   z-index: 5;
+  background-color: #fff;
 }
 
 .tooltipimg {
@@ -824,7 +829,8 @@ body {
     box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   }
   .viewheading,
-  .lastone {
+  .lastone,
+  .secone {
     display: none;
   }
   .clients-img {
