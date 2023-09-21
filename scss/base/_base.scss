@@ -10,9 +10,16 @@ body {
 }
 
 .outermain {
+    background-color: $white;
+    max-width: 100%;
    position: absolute;
    z-index: 1000;
    overflow: hidden;
+   padding: 0;
+   top: 0;
+}
+.main-topnav {
+    top: 0;
 }
 
 // Main page
@@ -445,7 +452,7 @@ body {
 // Hidden menu needed to slide down
 #main-topnavHide {
     position: fixed;
-    top: -200px;
+    top: -220px;
     width: 100%;
     transition: top 0.3s;
     z-index: 5;
