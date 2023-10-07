@@ -291,11 +291,14 @@ body {
 // slick styles for banner image
 
 .slick-dots {
-    bottom: 20px;
+    bottom: 35px;
     
 
     li button:before {
-        font-size: 16px;
+        font-size: 11px;
+        // width:10px;
+        // height:10px;
+        
         color: #d6d6d6;
     }
     
@@ -304,6 +307,9 @@ body {
         color: $white;
         border-radius: 50%;
         border: 1px solid $white;
+        // width:11px;
+        // height:11px;
+        // margin:5px 7px;
     }
 }
 

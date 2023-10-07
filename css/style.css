@@ -325,10 +325,10 @@ body {
 }
 
 .slick-dots {
-  bottom: 20px;
+  bottom: 35px;
 }
 .slick-dots li button:before {
-  font-size: 16px;
+  font-size: 11px;
   color: #d6d6d6;
 }
 .slick-dots li.slick-active button:before {
@@ -1185,6 +1185,9 @@ body {
     font-weight: 400;
     line-height: normal;
   }
+  .main-pic .container .top-left.compactHeading {
+    transform: translate(-50%, -150%);
+  }
   .main-pic .container .top-left .bottom-left {
     font-size: 26px;
     font-weight: bold;
@@ -1194,12 +1197,10 @@ body {
   .main-pic .container .top-left .main-button {
     text-transform: uppercase;
     font-size: 15px;
-    font-weight: bold;
     padding: 15px;
     border-radius: 5px;
     border: none;
     color: #fff;
-    background-color: #926fb1;
   }
   .servicegrid .container {
     width: 1170px;
@@ -1929,18 +1930,7 @@ h2 {
 
 .headerpic {
   vertical-align: middle;
-  object-fit: cover;
-  filter: brightness(0.5);
-}
-
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0.2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  background: linear-gradient(270deg, transparent 25%, black);
 }
 
 .active, .dot:hover {
@@ -2230,8 +2220,23 @@ small {
   color: #fff;
 }
 
-.main-pic .container .top-left .main-button:hover {
+.main-pic .container .top-left .btn--bespoke:hover {
+  background-color: #526781;
+}
+.main-pic .container .top-left .btn--it-support:hover {
+  background-color: #286abd;
+}
+.main-pic .container .top-left .btn--digital:hover {
+  background-color: #25a25a;
+}
+.main-pic .container .top-left .btn--telecoms:hover {
+  background-color: #bc2c28;
+}
+.main-pic .container .top-left .btn--web:hover {
   background-color: #79539a;
+}
+.main-pic .container .top-left .btn--cyber:hover {
+  background-color: #de093f;
 }
 
 .dev-icon {

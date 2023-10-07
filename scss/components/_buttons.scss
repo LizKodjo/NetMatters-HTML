@@ -182,12 +182,27 @@ small {
 // }
 
 
-
+// The hover effect colours for banner images buttons
 .main-pic {
     .container {
         .top-left {
-            .main-button:hover {
+            .btn--bespoke:hover {
+                background-color: shade(bespoke, dark);
+            }
+            .btn--it-support:hover {
+                background-color: shade(it-support,dark);
+            }
+            .btn--digital:hover {
+                background-color: shade(digital, dark);
+            }
+            .btn--telecoms:hover {
+                background-color: shade(telecoms, dark);
+            }
+            .btn--web:hover {
                 background-color: shade(web, dark);
+            }
+            .btn--cyber:hover {
+                background-color: shade(cyber, dark);
             }
         }
     }
