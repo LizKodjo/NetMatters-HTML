@@ -1,0 +1,35 @@
+// Menu dropdown triangle settings
+
+.bespokebtn::before{
+    @include triangle($bespoke);
+}
+
+.itsupportbtn::before {
+    @include triangle($it-support);
+    // border-width: 35px 46.5px 0;
+}
+
+.digimarketbtn::before {
+    @include triangle($digital-market);
+    // border-width: 35px 53.5px 0;
+}
+
+.telecomsbtn::before {
+    @include triangle($telecoms);
+    // border-width: 35px 47.5px 0;
+}
+
+.webdesignbtn::before {
+    @include triangle($web-design);
+    // border-width: 35px 40.5px 0;
+}
+
+.cybersecbtn::before {
+    @include triangle($cyber);
+    // border-width: 35px 47.5px 0;
+}
+
+.devcoursebtn::before {
+    @include triangle($developer);
+    // border-width: 35px 46.5px 0;
+}

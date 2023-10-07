@@ -57,7 +57,7 @@
     font-size: 25px;
     color: $white;
     background-color: $primary-warm-col;
-    // border-radius: 3px;
+    border-radius: 0 3px 3px 0;
 }
 .searchbar button:hover{
     background-color: darken($primary-warm-col, 10);
@@ -72,15 +72,22 @@
 .cyber .cybersecbtn,
 .devcourse .devcoursebtn {
     position: relative;
-    font-size: 12px;
+    font-size: 18px;
     border: none;
     outline: none;
     color: $white;
-    padding: 14px 16px;
+    padding: 19px 0 18px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
     text-transform:uppercase;
+    line-height: 1;
+    width: 134px;
+    // height: 62px;
+}
+
+small {
+    font-size: 10px;
 }
 .bespoke:hover .bespokebtn, 
 .itsupport:hover .itsupportbtn,

@@ -4,6 +4,13 @@
     border: 1px solid $primary-warm-col;
     font-size: 20px;
     padding: 13px;
+
+    &:focus {
+        border-color: #5bc0de;
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+        0 0 8px rgba(91, 192, 222, .6);
+    }
 }
 
 .searchbar {
@@ -23,6 +30,7 @@
     height: 56px;
     line-height: 46px;
     float: left;
+    cursor:pointer;
 }
 .menu:hover {
     background-color: darken($primary-dark-col, 10);
@@ -43,7 +51,9 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 19.2px;
+        margin-left:10px;
+        padding:10px 15.08px 10px 0;
     }
 
     .icon {
@@ -123,9 +133,7 @@ a[class$="-content"] {
     color: $bespoke;    
 }
 
-.bespokebtn::before{
-    @include triangle($bespoke);
-}
+
 
 
 
@@ -160,10 +168,7 @@ a[class$="-content"] {
     @extend %linkunderline;
     background-color: darken($it-support,10);
 }
-.itsupportbtn::before {
-    @include triangle($it-support);
-    border-width: 35px 46.5px 0;
-}
+
 
 .itsupport:hover .itsupportbtn {
     background-color: $it-support;
@@ -183,10 +188,7 @@ a[class$="-content"] {
     background-color: darken($digital-market, 10);
 }
 
-.digimarketbtn::before {
-    @include triangle($digital-market);
-    border-width: 35px 53.5px 0;
-}
+
 
 .digitalmarketing:hover .digimarketbtn {
     background-color: $digital-market;
@@ -205,10 +207,7 @@ a[class$="-content"] {
     background-color: darken($telecoms, 10);
 }
 
-.telecomsbtn::before {
-    @include triangle($telecoms);
-    border-width: 35px 47.5px 0;
-}
+
 
 .telecomsservices:hover .telecomsbtn {
     background-color: $telecoms;
@@ -227,10 +226,7 @@ a[class$="-content"] {
     background-color: darken($web-design, 10);
 }
 
-.webdesignbtn::before {
-    @include triangle($web-design);
-    border-width: 35px 40.5px 0;
-}
+
 
 .webdesign:hover .webdesignbtn {
     background-color: $web-design;
@@ -249,10 +245,7 @@ a[class$="-content"] {
     @extend %linkunderline;
     background-color: darken($cyber, 10);
 }
-.cybersecbtn::before {
-    @include triangle($cyber);
-    border-width: 35px 47.5px 0;
-}
+
 
 .cyber:hover .cybersecbtn {
     background-color: $cyber;
@@ -271,10 +264,7 @@ a[class$="-content"] {
     background-color: darken($developer, 10);
 }
 
-.devcoursebtn::before {
-    @include triangle($developer);
-    border-width: 35px 46.5px 0;
-}
+
 
 .devcourse:hover .devcoursebtn {
     background-color: $developer;
@@ -287,9 +277,20 @@ a[class$="-content"] {
     color: $developer;
 }
 
-.content-heading {
-    text-decoration: none;
-    padding-left: 50px;
+.topnav {
+    .content-heading {
+        font-size: 32px;
+        text-decoration: none;
+        padding-left: 40px;
+
+        a {
+            text-decoration: none;
+        }
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 

@@ -1144,7 +1144,7 @@ body {
     width: 100%;
   }
   .inner .main-topnav .container .top-help .logo {
-    width: 35%;
+    width: 25%;
   }
   .inner .main-topnav .container .top-help .searchbar input {
     display: block;
@@ -1159,7 +1159,7 @@ body {
   .main-topnav .topnav .mainmenu .container .menu-breakdown {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .main-topnav .topnav .mainmenu .container .menu-breakdown .dropdown-bespoke {
     width: 100%;
@@ -1340,6 +1340,11 @@ footer .footerlist a {
   font-size: 20px;
   padding: 13px;
 }
+.searchbar input:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
 
 .searchbar {
   display: flex;
@@ -1359,6 +1364,7 @@ footer .footerlist a {
   height: 56px;
   line-height: 46px;
   float: left;
+  cursor: pointer;
 }
 
 .menu:hover {
@@ -1378,7 +1384,9 @@ footer .footerlist a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 19.2px;
+  margin-left: 10px;
+  padding: 10px 15.08px 10px 0;
 }
 .topnav .icon {
   display: none;
@@ -1444,20 +1452,6 @@ a[class$=-content] {
   color: #67809f;
 }
 
-.bespokebtn::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -35px;
-  transform: translateX(-50%);
-  z-index: 90;
-  width: 0;
-  height: 0;
-  border-color: #67809f transparent transparent;
-  border-style: solid;
-  border-width: 35px 51.5px 0;
-}
-
 .bespoke:hover .bespoke-content,
 .itsupport:hover .itsupport-content,
 .digitalmarketing:hover .digimarket-content,
@@ -1487,21 +1481,6 @@ a[class$=-content] {
   background-color: #286abd;
 }
 
-.itsupportbtn::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -35px;
-  transform: translateX(-50%);
-  z-index: 90;
-  width: 0;
-  height: 0;
-  border-color: #4183d7 transparent transparent;
-  border-style: solid;
-  border-width: 35px 51.5px 0;
-  border-width: 35px 46.5px 0;
-}
-
 .itsupport:hover .itsupportbtn {
   background-color: #4183d7;
 }
@@ -1516,21 +1495,6 @@ a[class$=-content] {
 .digitalmarketing a:hover,
 .digimarket-content {
   background-color: #25a25a;
-}
-
-.digimarketbtn::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -35px;
-  transform: translateX(-50%);
-  z-index: 90;
-  width: 0;
-  height: 0;
-  border-color: #2ecc71 transparent transparent;
-  border-style: solid;
-  border-width: 35px 51.5px 0;
-  border-width: 35px 53.5px 0;
 }
 
 .digitalmarketing:hover .digimarketbtn {
@@ -1549,21 +1513,6 @@ a[class$=-content] {
   background-color: #bc2c28;
 }
 
-.telecomsbtn::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -35px;
-  transform: translateX(-50%);
-  z-index: 90;
-  width: 0;
-  height: 0;
-  border-color: #d64541 transparent transparent;
-  border-style: solid;
-  border-width: 35px 51.5px 0;
-  border-width: 35px 47.5px 0;
-}
-
 .telecomsservices:hover .telecomsbtn {
   background-color: #d64541;
 }
@@ -1578,21 +1527,6 @@ a[class$=-content] {
 .webdesign a:hover,
 .webdesign-content {
   background-color: #79539a;
-}
-
-.webdesignbtn::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -35px;
-  transform: translateX(-50%);
-  z-index: 90;
-  width: 0;
-  height: 0;
-  border-color: #926fb1 transparent transparent;
-  border-style: solid;
-  border-width: 35px 51.5px 0;
-  border-width: 35px 40.5px 0;
 }
 
 .webdesign:hover .webdesignbtn {
@@ -1612,21 +1546,6 @@ a[class$=-content] {
   background-color: #de093f;
 }
 
-.cybersecbtn::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -35px;
-  transform: translateX(-50%);
-  z-index: 90;
-  width: 0;
-  height: 0;
-  border-color: #f62459 transparent transparent;
-  border-style: solid;
-  border-width: 35px 51.5px 0;
-  border-width: 35px 47.5px 0;
-}
-
 .cyber:hover .cybersecbtn {
   background-color: #f62459;
 }
@@ -1643,21 +1562,6 @@ a[class$=-content] {
   background-color: #a3331d;
 }
 
-.devcoursebtn::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -35px;
-  transform: translateX(-50%);
-  z-index: 90;
-  width: 0;
-  height: 0;
-  border-color: #ce4125 transparent transparent;
-  border-style: solid;
-  border-width: 35px 51.5px 0;
-  border-width: 35px 46.5px 0;
-}
-
 .devcourse:hover .devcoursebtn {
   background-color: #ce4125;
 }
@@ -1669,9 +1573,16 @@ a[class$=-content] {
   color: #ce4125;
 }
 
-.content-heading {
+.topnav .content-heading {
+  font-size: 32px;
   text-decoration: none;
-  padding-left: 50px;
+  padding-left: 40px;
+}
+.topnav .content-heading a {
+  text-decoration: none;
+}
+.topnav .content-heading:hover {
+  text-decoration: none;
 }
 
 .headerpic {
@@ -2040,6 +1951,108 @@ h2 {
   padding: 0;
 }
 
+.link-text {
+  margin-left: 10px;
+}
+
+.bespokebtn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 0;
+  height: 0;
+  border-color: #67809f transparent transparent;
+  border-style: solid;
+  border-width: 35px 67.5px 0;
+}
+
+.itsupportbtn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 0;
+  height: 0;
+  border-color: #4183d7 transparent transparent;
+  border-style: solid;
+  border-width: 35px 67.5px 0;
+}
+
+.digimarketbtn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 0;
+  height: 0;
+  border-color: #2ecc71 transparent transparent;
+  border-style: solid;
+  border-width: 35px 67.5px 0;
+}
+
+.telecomsbtn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 0;
+  height: 0;
+  border-color: #d64541 transparent transparent;
+  border-style: solid;
+  border-width: 35px 67.5px 0;
+}
+
+.webdesignbtn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 0;
+  height: 0;
+  border-color: #926fb1 transparent transparent;
+  border-style: solid;
+  border-width: 35px 67.5px 0;
+}
+
+.cybersecbtn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 0;
+  height: 0;
+  border-color: #f62459 transparent transparent;
+  border-style: solid;
+  border-width: 35px 67.5px 0;
+}
+
+.devcoursebtn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 0;
+  height: 0;
+  border-color: #ce4125 transparent transparent;
+  border-style: solid;
+  border-width: 35px 67.5px 0;
+}
+
 .sub-btn {
   background-color: #333645;
   border-color: #333645;
@@ -2098,6 +2111,7 @@ h2 {
   font-size: 25px;
   color: #fff;
   background-color: #a3a8ac;
+  border-radius: 0 3px 3px 0;
 }
 
 .searchbar button:hover {
@@ -2112,15 +2126,21 @@ h2 {
 .cyber .cybersecbtn,
 .devcourse .devcoursebtn {
   position: relative;
-  font-size: 12px;
+  font-size: 18px;
   border: none;
   outline: none;
   color: #fff;
-  padding: 14px 16px;
+  padding: 19px 0 18px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
   text-transform: uppercase;
+  line-height: 1;
+  width: 134px;
+}
+
+small {
+  font-size: 10px;
 }
 
 .bespoke:hover .bespokebtn,
