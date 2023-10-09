@@ -2,13 +2,14 @@
 
 .servicegrid {
     padding: 20px;
-   
+
     h3 {
         font-size: 43px;
         font-weight: 600;
     }
 
-    a, h3 {
+    a,
+    h3 {
         color: $primary-dark-col;
     }
 }
@@ -23,38 +24,61 @@
     box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
     transition: all 0.5s;
     cursor: pointer;
+
     &:hover {
-        .servedigital, .digital-icon,
-        .serveit, .it-icon,
-        .servebespoke, .bespoke-icon,
-         .servetelecoms, .tele-icon,
-        .serveweb, .web-icon, 
-        .servecyber, .cyber-icon, 
-         .servedev, .dev-icon {
+
+        .servedigital,
+        .digital-icon,
+        .serveit,
+        .it-icon,
+        .servebespoke,
+        .bespoke-icon,
+        .servetelecoms,
+        .tele-icon,
+        .serveweb,
+        .web-icon,
+        .servecyber,
+        .cyber-icon,
+        .servedev,
+        .dev-icon {
             background-color: $white;
         }
-        .servebespoke, .bespoke-icon {
+
+        .servebespoke,
+        .bespoke-icon {
             color: $bespoke;
         }
-        .serveit, .it-icon {
+
+        .serveit,
+        .it-icon {
             color: $it-support;
-        }.servedigital, .digital-icon {
+        }
+
+        .servedigital,
+        .digital-icon {
             color: $digital-market;
         }
-        .servetelecoms, .tele-icon {
+
+        .servetelecoms,
+        .tele-icon {
             color: $telecoms;
         }
-        .serveweb, .web-icon {
+
+        .serveweb,
+        .web-icon {
             color: $web-design;
         }
-        .servecyber, .cyber-icon {
+
+        .servecyber,
+        .cyber-icon {
             color: $cyber;
         }
-        .servedev, .dev-icon {
+
+        .servedev,
+        .dev-icon {
             color: $developer;
         }
     }
-
 }
 
 
@@ -62,11 +86,21 @@
 .bespoke-block:hover {
     background-color: $bespoke;
     color: $white;
-    transform: translate(0, -15px);    
+    transform: translate(0, -15px);
 }
 
 .servebespoke:hover {
     color: $bespoke;
+}
+.servebespoke:active:focus,
+.serveit:active:focus,
+.servedigital:active:focus,
+.servedev:active:focus,
+.serveweb:active:focus,
+.servecyber:active:focus,
+.servetelecoms:active:focus
+ {
+    outline: none;
 }
 
 .serveit:hover {
@@ -86,7 +120,7 @@
 }
 
 .servedigital:hover {
-    
+
     color: $digital-market;
 }
 
@@ -138,6 +172,7 @@
         .serveheadings {
             .container {
                 padding-bottom: 20px;
+
                 .service-subheading {
                     font-weight: 600;
                 }

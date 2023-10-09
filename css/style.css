@@ -1597,7 +1597,8 @@ a[class$=-content] {
   font-size: 43px;
   font-weight: 600;
 }
-.servicegrid a, .servicegrid h3 {
+.servicegrid a,
+.servicegrid h3 {
   color: #333645;
 }
 
@@ -1611,34 +1612,48 @@ a[class$=-content] {
   transition: all 0.5s;
   cursor: pointer;
 }
-.service:hover .servedigital, .service:hover .digital-icon,
-.service:hover .serveit, .service:hover .it-icon,
-.service:hover .servebespoke, .service:hover .bespoke-icon,
-.service:hover .servetelecoms, .service:hover .tele-icon,
-.service:hover .serveweb, .service:hover .web-icon,
-.service:hover .servecyber, .service:hover .cyber-icon,
-.service:hover .servedev, .service:hover .dev-icon {
+.service:hover .servedigital,
+.service:hover .digital-icon,
+.service:hover .serveit,
+.service:hover .it-icon,
+.service:hover .servebespoke,
+.service:hover .bespoke-icon,
+.service:hover .servetelecoms,
+.service:hover .tele-icon,
+.service:hover .serveweb,
+.service:hover .web-icon,
+.service:hover .servecyber,
+.service:hover .cyber-icon,
+.service:hover .servedev,
+.service:hover .dev-icon {
   background-color: #fff;
 }
-.service:hover .servebespoke, .service:hover .bespoke-icon {
+.service:hover .servebespoke,
+.service:hover .bespoke-icon {
   color: #67809f;
 }
-.service:hover .serveit, .service:hover .it-icon {
+.service:hover .serveit,
+.service:hover .it-icon {
   color: #4183d7;
 }
-.service:hover .servedigital, .service:hover .digital-icon {
+.service:hover .servedigital,
+.service:hover .digital-icon {
   color: #2ecc71;
 }
-.service:hover .servetelecoms, .service:hover .tele-icon {
+.service:hover .servetelecoms,
+.service:hover .tele-icon {
   color: #d64541;
 }
-.service:hover .serveweb, .service:hover .web-icon {
+.service:hover .serveweb,
+.service:hover .web-icon {
   color: #926fb1;
 }
-.service:hover .servecyber, .service:hover .cyber-icon {
+.service:hover .servecyber,
+.service:hover .cyber-icon {
   color: #f62459;
 }
-.service:hover .servedev, .service:hover .dev-icon {
+.service:hover .servedev,
+.service:hover .dev-icon {
   color: #ce4125;
 }
 
@@ -1650,6 +1665,16 @@ a[class$=-content] {
 
 .servebespoke:hover {
   color: #67809f;
+}
+
+.servebespoke:active:focus,
+.serveit:active:focus,
+.servedigital:active:focus,
+.servedev:active:focus,
+.serveweb:active:focus,
+.servecyber:active:focus,
+.servetelecoms:active:focus {
+  outline: none;
 }
 
 .serveit:hover {
