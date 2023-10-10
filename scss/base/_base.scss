@@ -147,6 +147,7 @@ body {
 
 .vacancies {
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 
@@ -513,5 +514,39 @@ body {
 
 .btn-danger:hover {
     background-color: $web-design;
+}
+
+
+
+.welcome, .clients-think {
+    margin: -6px 0 40px;
+}
+
+.reviews {
+    .container {
+        .intro-review {
+            .welcomenet {
+                .col-md-6 {
+                    p {
+                        line-height: 1.8;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.latestnews {
+    .container {
+        .lateheadings {
+            .viewheading2 {
+                color: $mineshaft;
+            }
+            .newsheading {
+                font-size: 43px;
+            }
+        }
+    }
 }
 

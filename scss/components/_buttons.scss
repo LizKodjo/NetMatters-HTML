@@ -102,7 +102,11 @@ small {
 .btn {
     @extend %btnwhitett;
     margin: 15px 0;
-    border-radius: 5px;
+    border-radius: 3px;
+    line-height: 35px;
+    padding: 5px 15px;
+    white-space: normal;
+    height: auto;
 }
 .trustbtn {
     @extend %topcontactbtn;

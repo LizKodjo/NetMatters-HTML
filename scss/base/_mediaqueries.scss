@@ -472,7 +472,7 @@
                             margin: 0 0 25px;
                         }
 
-                        h2 {
+                        h2, .clients-think {
                             margin: -6px 0 40px;
                         }
                     }
@@ -507,6 +507,7 @@
             .lateheadings {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
 
                 .newsheading,
                 .viewheading2 {
@@ -514,7 +515,7 @@
                 }
 
                 .newsheading {
-                    font-size: 30px;
+                    // font-size: 30px;
                     font-weight: 600;
                 }
 
@@ -540,7 +541,7 @@
                     margin: 0 15px;
 
                     .container {
-                        width: 350px;
+                        width: 345px;
                         padding: 30px;
                         border-radius: 0 0 3px 3px;
                         box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
@@ -767,17 +768,37 @@
         }
     }
 
-    // .reviews {
-    //     .container {
-    //         width: 750px;
-    //     }
-    // }
+    .reviews {
+        .container {
+            padding: 0;
+            .intro-review {
+                .welcomenet, .starclient {
+                    .col-md-6 {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 
 
     
 }
 
 @media screen and (min-width: 992px) {
+
+    .reviews {
+        .container {
+            padding: 0;
+            .intro-review {
+                .welcomenet, .starclient {
+                    .col-md-6 {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
 
 
 
@@ -948,6 +969,9 @@
             .intro-review {
                 .starclient {
                     .container {
+                        .clients-think {
+                            margin-top: 0;
+                        }
                         width: 50%;
                         float: left;
                     }
