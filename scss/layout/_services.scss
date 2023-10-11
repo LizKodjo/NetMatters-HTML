@@ -19,7 +19,7 @@
     margin: 30px 0 0;
     border-radius: 10px;
     text-align: center;
-    padding: 15px;
+    padding: 30px;
     // border-radius: 0 0 3px 3px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
     transition: all 0.5s;
@@ -81,6 +81,17 @@
     }
 }
 
+.service-topic {
+    font-size: 20px;
+    padding: 0 0 10px;
+    margin: 0 0 11px;
+}
+
+.service-info {
+    font-size: 13px;
+    letter-spacing: .4px;
+    margin: 0 0 13px;
+}
 
 
 .bespoke-block:hover {
@@ -194,4 +205,15 @@
 
 .servicesubheading {
     font-size: 26px;
+    font-weight: bold;
+}
+
+.servicegrid {
+    .container {
+        .service-blocks {
+            .btn {
+                margin: 0;
+            }
+        }
+    }
 }

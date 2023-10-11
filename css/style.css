@@ -38,13 +38,14 @@
 body {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 0.4px;
 }
 
 .outermain {
   background-color: #fff;
   max-width: 100%;
   position: absolute;
-  z-index: 1000;
+  z-index: 1;
   overflow: hidden;
   padding: 0;
   top: 0;
@@ -70,70 +71,6 @@ body {
 
 .servicegrid .container .serveheadings {
   position: relative;
-}
-
-.creatingbox {
-  display: block;
-  position: relative;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 16px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  padding-left: 50px;
-}
-
-.creatingbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 32px;
-  width: 32px;
-  background-color: #ddd;
-  border: 3px solid #333645;
-  border-radius: 3px;
-  padding-right: 20px;
-}
-
-.creatingbox input:checked ~ .checkmark {
-  background-color: #333645;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.creatingbox input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.creatingbox .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid #fff;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.privacy {
-  color: #666;
-  text-decoration: underline;
 }
 
 .latestImg {
@@ -239,7 +176,8 @@ body {
   transition: margin-right 0.5s;
 }
 
-.sidenav, .mobile-nav {
+.sidenav,
+.mobile-nav {
   height: 100%;
   width: 275px;
   position: fixed;
@@ -249,36 +187,44 @@ body {
   overflow-x: auto;
   padding-top: 20px;
 }
-.sidenav .submenu, .mobile-nav .submenu {
+.sidenav .submenu,
+.mobile-nav .submenu {
   margin: 0 0 15px;
 }
-.sidenav .mob-submenu, .mobile-nav .mob-submenu {
+.sidenav .mob-submenu,
+.mobile-nav .mob-submenu {
   padding: 20px 0 0 0;
   width: auto;
 }
-.sidenav .mob-submenu li:not(:first-child), .mobile-nav .mob-submenu li:not(:first-child) {
+.sidenav .mob-submenu li:not(:first-child),
+.mobile-nav .mob-submenu li:not(:first-child) {
   border-top: 1px solid rgba(0, 0, 0, 0.45);
 }
-.sidenav .mob-submenu li, .mobile-nav .mob-submenu li {
+.sidenav .mob-submenu li,
+.mobile-nav .mob-submenu li {
   padding: 0;
 }
-.sidenav .mob-submenu li a, .mobile-nav .mob-submenu li a {
+.sidenav .mob-submenu li a,
+.mobile-nav .mob-submenu li a {
   background-color: rgba(0, 0, 0, 0.25);
   padding: 10px;
   font-size: 16px;
 }
-.sidenav ul, .mobile-nav ul {
+.sidenav ul,
+.mobile-nav ul {
   padding: 21px;
   font-size: 18px;
   text-transform: uppercase;
   margin: -20px 0 0;
 }
-.sidenav ul li, .mobile-nav ul li {
+.sidenav ul li,
+.mobile-nav ul li {
   color: #fff;
   list-style: none;
   padding: 20px 0 0;
 }
-.sidenav ul li a, .mobile-nav ul li a {
+.sidenav ul li a,
+.mobile-nav ul li a {
   padding: 19px 0 18px;
   text-decoration: none;
   font-size: 18px;
@@ -509,7 +455,8 @@ body {
   background-color: #926fb1;
 }
 
-.welcome, .clients-think {
+.welcome,
+.clients-think {
   margin: -6px 0 40px;
 }
 
@@ -529,6 +476,9 @@ body {
   width: 100%;
 }
 @media screen and (max-width: 575px) {
+  .postedby {
+    font-size: 14px;
+  }
   .smallnav .container {
     padding: 0;
   }
@@ -663,9 +613,6 @@ body {
   footer .footerlist {
     font-size: 13px;
   }
-  footer .footer-cols {
-    margin-bottom: 30px;
-  }
   footer h4 {
     margin-bottom: 26px;
   }
@@ -708,6 +655,9 @@ body {
   }
 }
 @media screen and (min-width: 575px) {
+  .postedby {
+    font-size: 15px;
+  }
   .inner .main-topnav .container {
     width: 750px;
   }
@@ -851,7 +801,7 @@ body {
   }
   .latestnews .newsarticles .container .vacancies .container {
     width: 345px;
-    padding: 30px;
+    padding: 30px 30px 0;
     border-radius: 0 0 3px 3px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   }
@@ -878,7 +828,6 @@ body {
   }
   footer .footer-cols {
     width: 50%;
-    margin-bottom: 30px;
   }
   .social-logos .container {
     display: flex;
@@ -1031,7 +980,7 @@ body {
     justify-content: space-between;
   }
   .main-pic .banner-image .imgText .top-left {
-    font-size: 64px;
+    font-size: 62px;
   }
   .main-pic .banner-image .imgText .top-left .bottom-left {
     font-size: 26px;
@@ -1070,7 +1019,7 @@ body {
     padding: 0;
   }
   .latestnews .newsarticles .container .vacancies .container {
-    width: 100%;
+    width: 350px;
   }
   .servicegrid .container {
     width: 970px;
@@ -1284,9 +1233,6 @@ body {
   .latestnews .lastone {
     display: block;
   }
-  .latestnews .lastone .art-details {
-    height: 288.13px;
-  }
   .clients-img {
     justify-content: space-between;
   }
@@ -1347,13 +1293,19 @@ footer {
   color: #fff;
   padding: 27px 0 0;
 }
+footer .footer-sections {
+  letter-spacing: 0.4px;
+}
 footer h4 {
+  margin: 24px 0 26px;
   text-transform: uppercase;
   font-size: 16px;
 }
 footer .footerlist {
   list-style: none;
   padding: 0;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 footer .footerlist a {
   color: white;
@@ -1641,7 +1593,7 @@ a[class$=-content] {
   margin: 30px 0 0;
   border-radius: 10px;
   text-align: center;
-  padding: 15px;
+  padding: 30px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
   cursor: pointer;
@@ -1689,6 +1641,18 @@ a[class$=-content] {
 .service:hover .servedev,
 .service:hover .dev-icon {
   color: #ce4125;
+}
+
+.service-topic {
+  font-size: 20px;
+  padding: 0 0 10px;
+  margin: 0 0 11px;
+}
+
+.service-info {
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  margin: 0 0 13px;
 }
 
 .bespoke-block:hover {
@@ -1791,6 +1755,11 @@ a[class$=-content] {
 
 .servicesubheading {
   font-size: 26px;
+  font-weight: bold;
+}
+
+.servicegrid .container .service-blocks .btn {
+  margin: 0;
 }
 
 .reviews {
@@ -1883,7 +1852,7 @@ a[class$=-content] {
 
 .newsletter {
   background-color: #ddd;
-  color: #666;
+  color: #333645;
   padding: 50px 15px;
 }
 .newsletter .privacy-label {
@@ -1951,6 +1920,8 @@ h2 {
 
 .jobpic {
   border-radius: 100%;
+  position: relative;
+  vertical-align: baseline;
 }
 
 .jobtitle {
@@ -1958,7 +1929,6 @@ h2 {
 }
 
 .postedby {
-  font-size: 15px;
   display: inline-block;
   padding: 15px;
 }
@@ -1967,10 +1937,13 @@ h2 {
   color: #ddd;
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: 400;
 }
 
 .dateposted {
+  padding-top: 15px;
   border-top: 1px solid #ddd;
+  margin-top: 15px;
 }
 
 .jobspec {
@@ -2124,7 +2097,7 @@ h2 {
   line-height: 35px;
   padding: 5px 15px;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 17px;
   border-radius: 3px;
   white-space: normal;
   color: #fff;
@@ -2224,6 +2197,8 @@ small {
   padding: 5px 15px;
   white-space: normal;
   height: auto;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .trustbtn {
@@ -2285,16 +2260,24 @@ small {
 .latestbtn1 {
   background-color: #2ecc71;
 }
+.latestbtn1:hover {
+  background-color: #2ecc71;
+  color: #fff;
+}
 
 .latestbtn2 {
   background-color: #926fb1;
+}
+.latestbtn2:hover {
+  background-color: #926fb1;
+  color: #fff;
 }
 
 .latestbtn3 {
   background-color: #ce4125;
 }
-
-.btn:hover {
+.latestbtn3:hover {
+  background-color: #ce4125;
   color: #fff;
 }
 
@@ -2390,15 +2373,6 @@ body {
   color: #ce4125;
 }
 
-.service-topic {
-  font-size: 20px;
-}
-
-.service-info {
-  font-size: 14px;
-  letter-spacing: 0.4px;
-}
-
 .clients-think {
   color: #fff;
   text-align: left;
@@ -2409,6 +2383,82 @@ body {
   color: #fff;
   text-align: left;
   font-weight: bold;
+}
+
+.col-75 #yourname:focus,
+.col-75 #email:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+.privacy {
+  color: #333645;
+  text-decoration: underline;
+}
+.privacy:hover {
+  color: #333645;
+}
+
+.creatingbox {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 50px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+}
+
+.creatingbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: 32px;
+  background-color: #ddd;
+  border: 4px solid #333645;
+  border-radius: 3px;
+  padding-right: 20px;
+}
+
+.creatingbox input:checked ~ .checkmark {
+  background-color: #333645;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.creatingbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.creatingbox .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 7px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=style.css.map */

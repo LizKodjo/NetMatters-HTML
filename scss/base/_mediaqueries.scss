@@ -16,6 +16,10 @@
 // hide nav on small screens
 @media screen and (max-width:575px) {
 
+    .postedby {
+        font-size: 14px;
+    }
+
     .smallnav {
         .container {
             padding: 0;
@@ -250,9 +254,9 @@
             font-size: 13px;
         }
 
-        .footer-cols {
-            margin-bottom: 30px;
-        }
+        // .footer-cols {
+        //     margin-bottom: 30px;
+        // }
 
         h4 {
             margin-bottom: 26px;
@@ -316,10 +320,12 @@
     }
 }
 
-
-
 // mobile landscape
 @media screen and (min-width: 575px) {
+    .postedby {
+        font-size: 15px;
+       
+    }
     .inner {
         .main-topnav {
             .container {
@@ -542,7 +548,7 @@
 
                     .container {
                         width: 345px;
-                        padding: 30px;
+                        padding: 30px 30px 0;
                         border-radius: 0 0 3px 3px;
                         box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
                     }
@@ -591,7 +597,7 @@
 
         .footer-cols {
             width: 50%;
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
         }
     }
 
@@ -856,7 +862,7 @@
         .banner-image {
             .imgText {
                 .top-left {
-                    font-size: 64px;
+                    font-size: 62px;
                     .bottom-left {
                         font-size: 26px;
                     }
@@ -917,7 +923,7 @@
                     }
 
                     .container {
-                        width: 100%;
+                        width: 350px;
                         // height: 329.56px;
                     }
                 }
@@ -931,13 +937,6 @@
         //     width: 970px;
         // }
     }
-
-
-
-
-
-
-
 
 
     .servicegrid {
@@ -1298,9 +1297,9 @@
         }
 
         .lastone {
-            .art-details {
-                height: 288.13px;
-            }
+            // .art-details {
+            //     height: 288.13px;
+            // }
 
             display: block;
         }

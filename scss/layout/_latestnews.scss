@@ -15,6 +15,8 @@ h2 {
 
 .jobpic {
     border-radius: 100%;
+    position: relative;
+    vertical-align: baseline;
 }
 
 
@@ -23,7 +25,7 @@ h2 {
 }
 
 .postedby {
-    font-size: 15px;
+    // font-size: 15px;
     display: inline-block;
     padding: 15px;
 }
@@ -32,11 +34,14 @@ h2 {
     color: $alto;
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: 400;
 }
 
 
 .dateposted {
+    padding-top: 15px;
     border-top: 1px solid $alto;
+    margin-top: 15px;
 }
 
 .jobspec {

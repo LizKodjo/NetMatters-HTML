@@ -5,13 +5,15 @@
     line-height: 35px;
     padding: 5px 15px;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 17px;
     border-radius: 3px;
     white-space: normal;
     color: $white;
 }
 .sub-btn:hover {
     background-color: darken($primary-dark-col, 10);
+    // border: none;
+    // border-style: initial;
 }
 
 // Navigation buttons
@@ -107,6 +109,8 @@ small {
     padding: 5px 15px;
     white-space: normal;
     height: auto;
+    font-weight: 400;
+    font-size: 18px;
 }
 .trustbtn {
     @extend %topcontactbtn;
@@ -159,18 +163,30 @@ small {
 }
 .latestbtn1 {
     background-color: $digital-market;
+    &:hover {
+        background-color: $digital-market;
+        color:$white;
+    }
    
     }
 .latestbtn2 {
     background-color: $web-design;
+    &:hover {
+        background-color: $web-design;
+        color: $white;
+    }
 }
 .latestbtn3 {
     background-color: $developer;
+    &:hover {
+        background-color: $developer;
+        color: $white;
+    }
 }
 
-.btn:hover {
-    color: $white;
-}
+// .btn:hover {
+//     color: $white;
+// }
 
 // Banner slider buttons
 
