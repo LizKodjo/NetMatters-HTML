@@ -23,6 +23,37 @@
     .smallnav {
         .container {
             padding: 0;
+            .searchform {
+                .searchbar input {
+                    // background-color: $alto;
+                    // border: none;
+            
+                    border: 2px solid rgba(0, 0, 0, .1);
+                    font-size: 20px;
+                    padding: 5px 40px 5px 15px;
+                    background-color: rgba(0, 0, 0, .1);
+                    outline: 1px solid hsla(0, 0%, 100%, .2);
+                    transition: none;
+                    
+                    
+                    // ::placeholder {
+                    //     font-size: 12px;
+                    // }
+                    
+                }
+                .searchbar button {
+                    background: none;
+                    border: none;
+                    color: $primary-dark-col;
+                    position: absolute;
+                    right: 37px;
+                    top: 67px;
+                    line-height: 47px;
+                    font-size: 20px;
+                    outline: none;
+                }
+
+            }
         }
     }
 
@@ -71,10 +102,7 @@
         }
     }
 
-    .searchbar input {
-        background-color: $alto;
-        border: none;
-    }
+    
 
     .searchform {
         @include flexevencenter;
@@ -205,7 +233,7 @@
             }
 
             .art-details {
-                padding: 30px;
+                padding: 30px 30px 0;
             }
         }
 
@@ -219,10 +247,12 @@
 
         .newsheading {
             font-size: 36px;
+            padding: 50px 0 0;
         }
 
         .viewheading {
             font-size: 26px;
+            margin: 0 0 15px;
         }
     }
 
@@ -254,12 +284,12 @@
             font-size: 13px;
         }
 
-        // .footer-cols {
-        //     margin-bottom: 30px;
-        // }
+        .footer-cols {
+            margin-bottom: 30px;
+        }
 
         h4 {
-            margin-bottom: 26px;
+            margin: 0 0 26px;
         }
 
         .social-logos {

@@ -67,8 +67,8 @@
 
     <div class="container sidebar">
         <div id="mySidenav" class="sidenav mobile-nav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                &times;</a>
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                &times;</a> -->
             <ul>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#"><span class="material-symbols-outlined bespokepic">monitor</span><br>
@@ -671,9 +671,14 @@
                                     <input type="text" placeholder="Search..." name="q">
                                     <button type="submit"><i class="fa fa-search searchbtn"></i></button>
                                 </form>
-                                <div>
-                                    <span onclick="openTabNav()"><i class="fa-solid fa-bars menu"></i></span>
+                                <div class="hamburger-menu active">
+                                    <div class="ham-bar bar-top"></div>
+                                    <div class="ham-bar bar-mid"></div>
+                                    <div class="ham-bar bar-bottom"></div>
                                 </div>
+                                <!-- <div>
+                                    <span onclick="openTabNav()"><i class="fa-solid fa-bars menu"></i></span>
+                                </div> -->
 
                             </div>
 
@@ -687,7 +692,19 @@
 
                                     <img class="logo" src="img/asset0.png" alt="Netmatters Dark logo">
                                     <span class="material-symbols-outlined smallsearchphone">phone_in_talk</span>
-                                    <span onclick="openNav()"><i class="fa-solid fa-bars menu"></i></span>
+                                    <div class="hamburger-menu active">
+                                        <div class="ham-bar bar-top"></div>
+                                        <div class="ham-bar bar-mid"></div>
+                                        <div class="ham-bar bar-bottom"></div>
+                                    </div>
+                                    <!-- <span onclick="openNav()"><i class="fa-solid fa-bars menu"></i></span> -->
+
+                                    <!-- Humburger menu -->
+
+                                    <!-- <nav> -->
+
+                                    <!-- </nav> -->
+
                                     <!-- <button class="hamburger" onclick="openNav()">
                                         <div class="bar"></div>
                                     </button> -->
@@ -1066,9 +1083,14 @@
                                     <input type="text" placeholder="Search..." name="q">
                                     <button type="submit"><i class="fa fa-search searchbtn"></i></button>
                                 </form>
-                                <div>
-                                    <span onclick="openTabNav()"><i class="fa-solid fa-bars menu"></i></span>
+                                <div class="hamburger-menu active">
+                                    <div class="ham-bar bar-top"></div>
+                                    <div class="ham-bar bar-mid"></div>
+                                    <div class="ham-bar bar-bottom"></div>
                                 </div>
+                                <!-- <div>
+                                    <span onclick="openTabNav()"><i class="fa-solid fa-bars menu"></i></span>
+                                </div> -->
 
                             </div>
 
@@ -1082,7 +1104,12 @@
 
                                     <img class="logo" src="img/asset0.png" alt="Netmatters Dark logo">
                                     <span class="material-symbols-outlined smallsearchphone">phone_in_talk</span>
-                                    <span onclick="openNav()"><i class="fa-solid fa-bars menu"></i></span>
+                                    <div class="hamburger-menu active">
+                                        <div class="ham-bar bar-top"></div>
+                                        <div class="ham-bar bar-mid"></div>
+                                        <div class="ham-bar bar-bottom"></div>
+                                    </div>
+                                    <!-- <span onclick="openNav()"><i class="fa-solid fa-bars menu"></i></span> -->
                                     <!-- <button class="hamburger" onclick="openNav()">
                                         <div class="bar"></div>
                                     </button> -->
@@ -1684,7 +1711,8 @@
                                 </div>
                             </div>
                         </div>
-                        <h2 class="service-subheading2"><a href="#">View our Work &rarr;</a></h2>
+                        <h2 class="service-subheading2"><a href="#">View our Work <i
+                                    class="fa-solid fa-arrow-right"></i></a></h2>
                     </div>
                 </div>
                 <!-- Partners -->
@@ -1806,77 +1834,82 @@
                     <div class="newsarticles">
                         <div class="container">
                             <section class="vacancies"><a href="#">
-                                <div class="container latestImg">
-                                    <div><img class="jobvac" src="img/asset30.png" alt="Black Friday, 3 Top Tips"></div>
-                                    <div class="text-block1">
-                                        <a href="#">Insights</a>
-                                    </div>
-                                </div>
-                                <div class="container">
-                                    <div class="art-details">
-                                        <h3 class="jobtitle1">Black Friday: 3 Top Tips to Optimise Your E-c<span
-                                                class="dots">...</span><span class="more">ommerce Business for Black
-                                                Friday</span><span class="jobspan">
-                                                - 4 minute read</span></h3>
-                                        <div class="jobspec">
-                                            <p>With Black Friday and Cyber Week on the horizon, businesses around the
-                                                world
-                                                are
-                                                looking to
-                                                implemen<span class="dots">...</span><span class="more"> ent the best
-                                                    e-commerce
-                                                    strategies
-                                                    to capitalise on prospect opportunities, creating a lasting buzz to
-                                                    see
-                                                    them
-                                                    through to
-                                                    the new year.
-                                                </span>
-                                            </p>
+                                    <div class="container latestImg">
+                                        <div><img class="jobvac" src="img/asset30.png" alt="Black Friday, 3 Top Tips">
                                         </div>
-                                        <button class="btn latestbtn1">Read more</button><br>
-                                        <div class="dateposted">
-                                            <img class="jobpic" src="img/asset31.png" alt="Netmatters trademark">
-                                            <div class="postedby">
-                                                <p><strong>Posted by Netmatters</strong><br>12th September 2023</p>
+                                        <div class="text-block1">
+                                            <a href="#">Insights</a>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="art-details">
+                                            <h3 class="jobtitle1">Black Friday: 3 Top Tips to Optimise Your E-c<span
+                                                    class="dots">...</span><span class="more">ommerce Business for Black
+                                                    Friday</span><span class="jobspan">
+                                                    - 4 minute read</span></h3>
+                                            <div class="jobspec">
+                                                <p>With Black Friday and Cyber Week on the horizon, businesses around
+                                                    the
+                                                    world
+                                                    are
+                                                    looking to
+                                                    implemen<span class="dots">...</span><span class="more"> ent the
+                                                        best
+                                                        e-commerce
+                                                        strategies
+                                                        to capitalise on prospect opportunities, creating a lasting buzz
+                                                        to
+                                                        see
+                                                        them
+                                                        through to
+                                                        the new year.
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <button class="btn latestbtn1">Read more</button><br>
+                                            <div class="dateposted">
+                                                <img class="jobpic" src="img/asset31.png" alt="Netmatters trademark">
+                                                <div class="postedby">
+                                                    <p><strong>Posted by Netmatters</strong><br>12th September 2023</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a></section>
+                                </a></section>
                             <section class="vacancies secone"><a href="#">
-                                <div class="container latestImg">
-                                    <div><img class="jobvac" src="img/asset32.png" alt="Congratulations Rob Anthony">
-                                    </div>
-                                    <div class="text-block2">
-                                        <a href="#">News</a>
-                                    </div>
-                                </div>
-                                <div class="container">
-                                    <div class="art-details">
-                                        <h3 class="jobtitle2">Rob Anthony - Netmatters 5 Year Legend<span
-                                                class="jobspan"></span>
-                                        </h3>
-                                        <div class="jobspec">
-                                            <p>Today we celebrate the amazing achievements of Rob Anthony as he
-                                                champions
-                                                the
-                                                Netmatters
-                                                long Servi<span class="dots">...</span><span class="more">ce Award,
-                                                    entering
-                                                    the hall of fame as our latest <italics>'Legend'.</italics>
-                                                </span></p>
+                                    <div class="container latestImg">
+                                        <div><img class="jobvac" src="img/asset32.png"
+                                                alt="Congratulations Rob Anthony">
                                         </div>
-                                        <button class="btn latestbtn2">Read more</button><br>
-                                        <div class="dateposted">
-                                            <img class="jobpic" src="img/asset31.png" alt="Netmatters trademark">
-                                            <div class="postedby">
-                                                <p><strong>Posted by Netmatters</strong><br>8th September 2023</p>
+                                        <div class="text-block2">
+                                            <a href="#">News</a>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="art-details">
+                                            <h3 class="jobtitle2">Rob Anthony - Netmatters 5 Year Legend<span
+                                                    class="jobspan"></span>
+                                            </h3>
+                                            <div class="jobspec">
+                                                <p>Today we celebrate the amazing achievements of Rob Anthony as he
+                                                    champions
+                                                    the
+                                                    Netmatters
+                                                    long Servi<span class="dots">...</span><span class="more">ce Award,
+                                                        entering
+                                                        the hall of fame as our latest <italics>'Legend'.</italics>
+                                                    </span></p>
+                                            </div>
+                                            <button class="btn latestbtn2">Read more</button><br>
+                                            <div class="dateposted">
+                                                <img class="jobpic" src="img/asset31.png" alt="Netmatters trademark">
+                                                <div class="postedby">
+                                                    <p><strong>Posted by Netmatters</strong><br>8th September 2023</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a></section>
+                                </a></section>
                             <section class="vacancies lastone">
                                 <div class="container latestImg">
                                     <div><img class="jobvac" src="img/asset33.png"
@@ -1911,7 +1944,7 @@
                             </section>
                         </div>
                     </div>
-                    <h2 class="viewheading">View All &rarr;</h2>
+                    <h2 class="viewheading">View All <i class="fa-solid fa-arrow-right"></i></h2>
                 </div>
                 <!-- Clients -->
                 <div class="clients">
@@ -2107,6 +2140,7 @@
     <script src="js/sliderSections.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/hamburgerMenu.js"></script>
 </body>
 
 </html>

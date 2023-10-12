@@ -365,38 +365,6 @@ body {
   margin: 0;
 }
 
-.hamburger {
-  position: relative;
-  display: block;
-  width: 35px;
-  cursor: pointer;
-  appearance: none;
-  background: none;
-  outline: none;
-  border: none;
-}
-.hamburger .bar, .hamburger:after, .hamburger:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 5px;
-  background-color: red;
-  margin: 6px 0px;
-  transition: 0.4s;
-}
-
-.hamburger.is-active:before {
-  transform: rotate(-45deg) translate(-8px, 6px);
-}
-
-.hamburger.is-active:after {
-  transform: rotate(45deg) translate(-9px, -8px);
-}
-
-.hamburger.is-active .bar {
-  opacity: 0;
-}
-
 .mobile-nav.is-active {
   right: 50%;
 }
@@ -464,13 +432,6 @@ body {
   line-height: 1.8;
 }
 
-.latestnews .container .lateheadings .viewheading2 {
-  color: #333;
-}
-.latestnews .container .lateheadings .newsheading {
-  font-size: 43px;
-}
-
 /* Media queries */
 .container {
   width: 100%;
@@ -481,6 +442,25 @@ body {
   }
   .smallnav .container {
     padding: 0;
+  }
+  .smallnav .container .searchform .searchbar input {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    padding: 5px 40px 5px 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: 1px solid hsla(0, 0%, 100%, 0.2);
+    transition: none;
+  }
+  .smallnav .container .searchform .searchbar button {
+    background: none;
+    border: none;
+    color: #333645;
+    position: absolute;
+    right: 37px;
+    top: 67px;
+    line-height: 47px;
+    font-size: 20px;
+    outline: none;
   }
   .inner .main-topnav .top-help {
     display: none;
@@ -511,10 +491,6 @@ body {
   }
   .smallnav .container .smallnavtop .smallsearchphone {
     font-size: 35px;
-  }
-  .searchbar input {
-    background-color: #ddd;
-    border: none;
   }
   .searchform {
     display: flex;
@@ -586,7 +562,7 @@ body {
     box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   }
   .latestnews .vacancies .art-details {
-    padding: 30px;
+    padding: 30px 30px 0;
   }
   .latestnews .jobtitle1,
   .latestnews .jobtitle2,
@@ -596,9 +572,11 @@ body {
   }
   .latestnews .newsheading {
     font-size: 36px;
+    padding: 50px 0 0;
   }
   .latestnews .viewheading {
     font-size: 26px;
+    margin: 0 0 15px;
   }
   .newsarticles .container .vacancies .latestImg {
     padding: 0;
@@ -613,8 +591,11 @@ body {
   footer .footerlist {
     font-size: 13px;
   }
+  footer .footer-cols {
+    margin-bottom: 30px;
+  }
   footer h4 {
-    margin-bottom: 26px;
+    margin: 0 0 26px;
   }
   footer .social-logos .container {
     display: flex;
@@ -1296,6 +1277,9 @@ footer {
 footer .footer-sections {
   letter-spacing: 0.4px;
 }
+footer .footer-sections .footer-cols h4 {
+  margin: 0 0 26px;
+}
 footer h4 {
   margin: 24px 0 26px;
   text-transform: uppercase;
@@ -1322,11 +1306,6 @@ footer .footerlist a {
   color: #fff;
 }
 
-.searchbar input {
-  border: 1px solid #a3a8ac;
-  font-size: 20px;
-  padding: 13px;
-}
 .searchbar input:focus {
   border-color: #5bc0de;
   outline: 0;
@@ -1577,7 +1556,7 @@ a[class$=-content] {
 }
 
 .servicegrid {
-  padding: 20px;
+  padding: 50px 15px;
 }
 .servicegrid h3 {
   font-size: 43px;
@@ -1758,6 +1737,9 @@ a[class$=-content] {
   font-weight: bold;
 }
 
+.servicegrid .container .service-blocks {
+  margin-top: 20px;
+}
 .servicegrid .container .service-blocks .btn {
   margin: 0;
 }
@@ -1772,7 +1754,8 @@ a[class$=-content] {
 
 .reviews .trustbtn {
   margin: 20px 0 0;
-  font-size: 18px;
+  padding: 10px 30px;
+  font-size: 20px;
 }
 .reviews .googlebtn {
   margin: 20px 8px 0 0;
@@ -1815,7 +1798,7 @@ a[class$=-content] {
 }
 
 .clients {
-  padding: 20px 15px;
+  padding: 50px 0;
 }
 
 .clients-img:hover,
@@ -1853,7 +1836,7 @@ a[class$=-content] {
 .newsletter {
   background-color: #ddd;
   color: #333645;
-  padding: 50px 15px;
+  padding: 50px 0;
 }
 .newsletter .privacy-label {
   vertical-align: top;
@@ -1911,11 +1894,16 @@ section {
 
 h2 {
   text-align: center;
+  font-weight: bold;
 }
 
 .latestnews {
   display: flex;
   flex-direction: column;
+}
+
+.newsarticles .container {
+  padding: 15px 0 0;
 }
 
 .jobpic {
@@ -1973,6 +1961,13 @@ h2 {
 
 .tablerows {
   font-size: 18px;
+}
+
+.latestnews .container .lateheadings .viewheading2 {
+  color: #333;
+}
+.latestnews .container .lateheadings .newsheading {
+  font-weight: bold;
 }
 
 .headerpic {
@@ -2090,6 +2085,62 @@ h2 {
   border-width: 35px 67.5px 0;
 }
 
+.partners {
+  padding: 50px 0;
+}
+
+.hamburger-menu {
+  background-color: #333645;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.ham-bar {
+  width: 70%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s, opacity 0.8s, top 0.6s;
+}
+
+.bar-top {
+  top: 25%;
+}
+
+.bar-bottom {
+  top: 75%;
+}
+
+.hamburger-menu.active .bar-top {
+  transform: translate(-50%, -50%) rotate(-315deg);
+  top: 50%;
+}
+
+.hamburger-menu.active .bar-mid {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar-bottom {
+  transform: translate(-50%, -50%) rotate(-225deg);
+  top: 50%;
+}
+
+.outermain {
+  right: 275px;
+  transition: right 0.5s;
+}
+
+.outermain.active {
+  right: 0;
+}
+
 .sub-btn {
   background-color: #333645;
   border-color: #333645;
@@ -2101,6 +2152,7 @@ h2 {
   border-radius: 3px;
   white-space: normal;
   color: #fff;
+  border: 1px solid transparent;
 }
 
 .sub-btn:hover {
@@ -2403,7 +2455,7 @@ body {
 .creatingbox {
   display: block;
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   cursor: pointer;
   font-size: 16px;
   -webkit-user-select: none;

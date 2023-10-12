@@ -1,3 +1,5 @@
+// Main banner slider
+
 $('.main-pic').slick({
     arrows: false,
     autoplay: true,

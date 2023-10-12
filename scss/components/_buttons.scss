@@ -9,6 +9,7 @@
     border-radius: 3px;
     white-space: normal;
     color: $white;
+    border: 1px solid transparent;
 }
 .sub-btn:hover {
     background-color: darken($primary-dark-col, 10);

@@ -350,31 +350,31 @@ body {
 
 // Menu icon for sliding nav
 
-.hamburger {
-    position: relative;
-    display: block;
-    width: 35px;
-    // height: 35px;
-    cursor: pointer;
+// .hamburger {
+//     position: relative;
+//     display: block;
+//     width: 35px;
+//     // height: 35px;
+//     cursor: pointer;
 
-    appearance: none;
-    background: none;
-    outline: none;
-    border: none;
+//     appearance: none;
+//     background: none;
+//     outline: none;
+//     border: none;
 
-    .bar,
-    &:after,
-    &:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 5px;
-        background-color: red;
-        margin: 6px 0px;
-        transition: 0.4s;
-    }
+//     .bar,
+//     &:after,
+//     &:before {
+//         content: '';
+//         display: block;
+//         width: 100%;
+//         height: 5px;
+//         background-color: red;
+//         margin: 6px 0px;
+//         transition: 0.4s;
+//     }
 
-}
+// }
 
 // .hamburger .bar, .hamburger:after, .hamburger:before {
 //     content: '';
@@ -386,17 +386,17 @@ body {
 //     transition: 0.4s;
 // }
 
-.hamburger.is-active:before {
-    transform: rotate(-45deg) translate(-8px, 6px);
-}
+// .hamburger.is-active:before {
+//     transform: rotate(-45deg) translate(-8px, 6px);
+// }
 
-.hamburger.is-active:after {
-    transform: rotate(45deg) translate(-9px, -8px);
-}
+// .hamburger.is-active:after {
+//     transform: rotate(45deg) translate(-9px, -8px);
+// }
 
-.hamburger.is-active .bar {
-    opacity: 0;
-}
+// .hamburger.is-active .bar {
+//     opacity: 0;
+// }
 
 
 .mobile-nav.is-active {
@@ -485,16 +485,3 @@ body {
     }
 }
 
-.latestnews {
-    .container {
-        .lateheadings {
-            .viewheading2 {
-                color: $mineshaft;
-            }
-
-            .newsheading {
-                font-size: 43px;
-            }
-        }
-    }
-}

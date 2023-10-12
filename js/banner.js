@@ -54,13 +54,13 @@ function testHeader() {
 
 // side nav
 // window.onload = function () {
-    const menu_btn = document.querySelector('.hamburger');
-    const mobile_nav = document.querySelector('.sidenav');
+    // const menu_btn = document.querySelector('.hamburger');
+    // const mobile_nav = document.querySelector('.sidenav');
 
-    menu_btn.addEventListener('click', function () {
-        menu_btn.classList.toggle('is-active');
-        mobile_nav.classList.toggle('is-active');
-    });
+    // menu_btn.addEventListener('click', function () {
+    //     menu_btn.classList.toggle('is-active');
+    //     mobile_nav.classList.toggle('is-active');
+    // });
 // }
 
 // Clients tooltip script

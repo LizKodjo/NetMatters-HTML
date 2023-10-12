@@ -6,12 +6,21 @@ section {
 
 h2 {
     text-align: center;
+    font-weight: bold;
 }
 
 .latestnews {
     display: flex;
     flex-direction: column;
 }
+
+
+.newsarticles {
+    .container {
+        padding: 15px 0 0;
+    }
+}
+
 
 .jobpic {
     border-radius: 100%;
@@ -72,4 +81,19 @@ h2 {
 
 .tablerows {
     font-size: 18px;
+}
+
+.latestnews {
+    .container {
+        .lateheadings {
+            .viewheading2 {
+                color: $mineshaft;
+            }
+
+            .newsheading {
+                // font-size: 43px;
+                font-weight: bold;
+            }
+        }
+    }
 }
