@@ -3,31 +3,31 @@
 
 // Mobile nav
 
-function openNav() {
-    // document.getElementById("mySidenav").style.width = "275px";
-    document.getElementById("outermain").style.right = "275px";
-    // document.getElementsByTagName("body").style.margineLeft = "-250px";
-}
+// function openNav() {
+//     // document.getElementById("mySidenav").style.width = "275px";
+//     document.getElementById("outermain").style.right = "275px";
+//     // document.getElementsByTagName("body").style.margineLeft = "-250px";
+// }
 
-function closeNav() {
-    // document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("outermain").style.right = "0";
-    // document.getElementsByTagName("body").style.marginLeft = "0";
-}
+// function closeNav() {
+//     // document.getElementById("mySidenav").style.width = "0";
+//     document.getElementById("outermain").style.right = "0";
+//     // document.getElementsByTagName("body").style.marginLeft = "0";
+// }
 
 
 
-// Tablet nav
+// // Tablet nav
 
-function openTabNav() {
-    // document.getElementById("tabSidenav").style.width = "275px";
-    document.getElementById("outermain").style.right = "275px";
-}
+// function openTabNav() {
+//     // document.getElementById("tabSidenav").style.width = "275px";
+//     document.getElementById("outermain").style.right = "275px";
+// }
 
-function closeTabNav() {
-    // document.getElementById("tabSidenav").style.width = "0";
-    document.getElementById("outermain").style.right = "0";
-}
+// function closeTabNav() {
+//     // document.getElementById("tabSidenav").style.width = "0";
+//     document.getElementById("outermain").style.right = "0";
+// }
 
 // Sticky header
 
@@ -52,16 +52,7 @@ function testHeader() {
     $("#main-topnav").slideDown();
 }
 
-// side nav
-// window.onload = function () {
-    // const menu_btn = document.querySelector('.hamburger');
-    // const mobile_nav = document.querySelector('.sidenav');
 
-    // menu_btn.addEventListener('click', function () {
-    //     menu_btn.classList.toggle('is-active');
-    //     mobile_nav.classList.toggle('is-active');
-    // });
-// }
 
 // Clients tooltip script
 

@@ -692,6 +692,20 @@
 
 @media screen and (min-width:768px)  {
 
+    
+
+    .reviewer {
+        padding: 0 0 25px;
+    }
+
+    .news-section {
+        padding: 0;
+    }
+    .footer-cols {
+        margin: 0 0 30px;
+        padding: 0 15px;
+    }
+
     .main-topnav {
         background-color: $white;
     }
@@ -742,14 +756,15 @@
 
 
     .servicegrid {
+        margin:0;
         .container {
             .serveheadings {
                 display:flex;
                 justify-content: space-between;
-                width: 700px;
-                .container {
-                    width: 700px;
-                }
+                // width: 700px;
+                // .container {
+                //     width: 700px;
+                // }
             }
             .service-blocks {
                 .upper-row {
@@ -811,6 +826,12 @@
                 .welcomenet, .starclient {
                     .col-md-6 {
                         width: 100%;
+                        .culture, .choose-us {
+                            margin: 0 0 50px;
+                        }
+                        p {
+                            margin: 0 0 25px;
+                        }
                     }
                 }
             }

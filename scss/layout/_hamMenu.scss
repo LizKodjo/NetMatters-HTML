@@ -2,7 +2,7 @@
 .hamburger-menu {
     background-color: $primary-dark-col;
     height: 50px;
-    width:50px;
+    width: 50px;
     position: relative;
     cursor: pointer;
     padding: 1rem;
@@ -10,7 +10,7 @@
 
 // Burger menu bars
 .ham-bar {
-    width:70%;
+    width: 70%;
     height: 4px;
     background-color: $white;
     border-radius: 25px;
@@ -35,6 +35,7 @@
     transform: translate(-50%, -50%) rotate(-315deg);
     top: 50%;
 }
+
 .hamburger-menu.active .bar-mid {
     opacity: 0;
 }
@@ -44,13 +45,33 @@
     top: 50%;
 }
 
+
 .outermain {
     // position: fixed;
-    right: 275px;
-    transition: right .5s;    
+    // top: 0;
+    right: 0;
+    
+    // height: 100vh;
+    // width: 75%;
+    transition: right .5s;
 }
 
 .outermain.active {
-    right: 0;
-   
+    right: 275px;
+    // filter: brightness(.5);
+    // background-color: linear-gradient(0, 0, 0, rgba(255, 255, 255, .6));
+    // height: 100%;
+    // width:100%
+    opacity: 1;
 }
+// .outermain {
+//     // position: fixed;
+//     right: 0;
+// }
+
+
+// .outermain.active {
+//     right: 275px;
+//     background-color: pink;    
+// }
+
