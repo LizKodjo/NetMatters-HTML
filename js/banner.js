@@ -1,33 +1,7 @@
 
 
 
-// Mobile nav
 
-// function openNav() {
-//     // document.getElementById("mySidenav").style.width = "275px";
-//     document.getElementById("outermain").style.right = "275px";
-//     // document.getElementsByTagName("body").style.margineLeft = "-250px";
-// }
-
-// function closeNav() {
-//     // document.getElementById("mySidenav").style.width = "0";
-//     document.getElementById("outermain").style.right = "0";
-//     // document.getElementsByTagName("body").style.marginLeft = "0";
-// }
-
-
-
-// // Tablet nav
-
-// function openTabNav() {
-//     // document.getElementById("tabSidenav").style.width = "275px";
-//     document.getElementById("outermain").style.right = "275px";
-// }
-
-// function closeTabNav() {
-//     // document.getElementById("tabSidenav").style.width = "0";
-//     document.getElementById("outermain").style.right = "0";
-// }
 
 // Sticky header
 

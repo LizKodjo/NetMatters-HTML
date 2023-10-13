@@ -31,15 +31,18 @@
     top: 75%;
 }
 
+// Change top bar when clicked
 .hamburger-menu.active .bar-top {
     transform: translate(-50%, -50%) rotate(-315deg);
     top: 50%;
 }
 
+// Make middle bar fade out
 .hamburger-menu.active .bar-mid {
     opacity: 0;
 }
 
+// Make bottom bar change when click to form an 'X' with the top bar
 .hamburger-menu.active .bar-bottom {
     transform: translate(-50%, -50%) rotate(-225deg);
     top: 50%;

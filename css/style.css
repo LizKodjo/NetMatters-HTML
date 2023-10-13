@@ -444,9 +444,6 @@ body {
   .postedby {
     font-size: 14px;
   }
-  .smallnav .container {
-    padding: 0;
-  }
   .smallnav .container .searchform .searchbar input {
     border: 2px solid rgba(0, 0, 0, 0.1);
     font-size: 20px;
@@ -454,6 +451,7 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     outline: 1px solid hsla(0, 0%, 100%, 0.2);
     transition: none;
+    position: relative;
   }
   .smallnav .container .searchform .searchbar button {
     background: none;
@@ -461,7 +459,7 @@ body {
     color: #333645;
     position: absolute;
     right: 37px;
-    top: 67px;
+    top: 63px;
     line-height: 47px;
     font-size: 20px;
     outline: none;
@@ -471,11 +469,7 @@ body {
   }
   .smallnav,
   .smallnavtop {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
+    padding: 20px 0;
   }
   .smallnav .logo,
   .smallnavtop .logo {
@@ -484,14 +478,13 @@ body {
   .smallnav {
     width: 100%;
   }
-  .smallnav .container {
-    width: 320px;
-  }
   .smallnav .container .searchform .searchbar .searchbtn {
     font-size: 20px;
   }
   .smallnav .container .smallnavtop {
-    width: 320px;
+    display: table;
+    width: 100%;
+    margin: 0;
   }
   .smallnav .container .smallnavtop .smallsearchphone {
     font-size: 35px;
@@ -540,10 +533,7 @@ body {
     bottom: 40px;
     transform: translate(100%, 20%);
   }
-  .servicegrid .upper-row .container .container {
-    padding: 0;
-  }
-  .servicegrid .lower-row .container .container {
+  .servicegrid .container .service-blocks {
     padding: 0;
   }
   .servicegrid .serveheadings .topHeadings .servicesubheading {
@@ -711,9 +701,6 @@ body {
     font-weight: bolder;
     letter-spacing: 0.1rem;
     margin-bottom: 15px;
-  }
-  .servicegrid .container {
-    width: 750px;
   }
   .servicegrid .container .serveheadings .container {
     display: flex;
@@ -908,7 +895,7 @@ body {
   .servicegrid .container .service-blocks .upper-row .bespoke-b,
   .servicegrid .container .service-blocks .upper-row .it-b,
   .servicegrid .container .service-blocks .upper-row .digital-b {
-    width: 720px;
+    width: 750px;
   }
   .servicegrid .container .serveheadings .container {
     display: block;
@@ -1589,7 +1576,7 @@ a[class$=-content] {
 .service {
   border: 1px solid #ccc;
   margin: 30px 0 0;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: center;
   padding: 30px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);

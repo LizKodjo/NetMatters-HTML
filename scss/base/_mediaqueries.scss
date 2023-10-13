@@ -22,7 +22,7 @@
 
     .smallnav {
         .container {
-            padding: 0;
+            // padding: 0;
             .searchform {
                 .searchbar input {
                     // background-color: $alto;
@@ -34,6 +34,7 @@
                     background-color: rgba(0, 0, 0, .1);
                     outline: 1px solid hsla(0, 0%, 100%, .2);
                     transition: none;
+                    position:relative;
                     
                     
                     // ::placeholder {
@@ -47,7 +48,7 @@
                     color: $primary-dark-col;
                     position: absolute;
                     right: 37px;
-                    top: 67px;
+                    top: 63px;
                     line-height: 47px;
                     font-size: 20px;
                     outline: none;
@@ -67,10 +68,10 @@
 
     .smallnav,
     .smallnavtop {
-        @include flexevencenter;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 0;
+        // @include flexevencenter;
+        // justify-content: space-between;
+        // align-items: center;
+        padding: 20px 0;
 
 
         .logo {
@@ -82,7 +83,7 @@
         width: 100%;
 
         .container {
-            width: 320px;
+            // width: 320px;
 
             .searchform {
                 .searchbar {
@@ -93,7 +94,9 @@
             }
 
             .smallnavtop {
-                width: 320px;
+                display: table;
+                width: 100%;
+                margin:0;
 
                 .smallsearchphone {
                     font-size: 35px;
@@ -179,23 +182,29 @@
     }
 
     .servicegrid {
-        .upper-row {
-            .container {
-                .container {
-                    padding: 0;
-                }
+        .container {
+            // padding: 0;
+            .service-blocks {
+                padding: 0;
             }
         }
+        // .upper-row {
+        //     .container {
+        //         .container {
+        //             padding: 0;
+        //         }
+        //     }
+        // }
 
-        .lower-row {
-            .container {
-                .container {
-                    padding: 0;
+        // .lower-row {
+        //     .container {
+        //         .container {
+        //             padding: 0;
 
-                }
+        //         }
 
-            }
-        }
+        //     }
+        // }
 
         .serveheadings {
             .topHeadings {
@@ -471,7 +480,7 @@
 
     .servicegrid {
         .container {
-            width: 750px;
+            // width: 750px;
 
             .serveheadings {
                 .container {
@@ -772,7 +781,7 @@
                     .bespoke-b,
                     .it-b,
                     .digital-b {
-                        width: 720px;
+                        width: 750px;
                     }
                 }
             }
