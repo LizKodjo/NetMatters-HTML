@@ -260,13 +260,6 @@ body {
     font-size: 18px;
   }
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-}
-
 .smallnav {
   margin-top: 0;
 }
@@ -369,15 +362,6 @@ body {
   right: 50%;
 }
 
-#main-topnavHide {
-  position: fixed;
-  top: -220px;
-  width: 100%;
-  transition: top 0.3s;
-  z-index: 5;
-  background-color: #fff;
-}
-
 .tooltipimg {
   position: relative;
   display: inline-block;
@@ -444,36 +428,60 @@ body {
   .postedby {
     font-size: 14px;
   }
-  .smallnav .container .searchform .searchbar input {
+  .smallnav .container .smallnavtop .col-xs-6 {
+    padding: 0;
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .smallnav .container .smallnavtop .mobile-container {
+    padding: 0;
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .smallnav .container .smallnavtop .hamburger-container {
+    padding: 5px 15px;
+  }
+  .smallnav .container .searchform {
+    margin-top: 11px;
+    position: relative;
+  }
+  .smallnav .container .searchform .searchbar {
     border: 2px solid rgba(0, 0, 0, 0.1);
-    font-size: 20px;
     padding: 5px 40px 5px 15px;
     background-color: rgba(0, 0, 0, 0.1);
     outline: 1px solid hsla(0, 0%, 100%, 0.2);
-    transition: none;
+    width: 100%;
     position: relative;
+    transition: none;
+  }
+  .smallnav .container .searchform .searchbar input {
+    visibility: hidden;
   }
   .smallnav .container .searchform .searchbar button {
     background: none;
     border: none;
     color: #333645;
     position: absolute;
-    right: 37px;
-    top: 63px;
+    right: 5px;
+    bottom: -10px;
     line-height: 47px;
     font-size: 20px;
     outline: none;
+    padding: 1px 5px;
   }
   .inner .main-topnav .top-help {
     display: none;
   }
-  .smallnav,
-  .smallnavtop {
+  .smallnav {
     padding: 20px 0;
   }
-  .smallnav .logo,
-  .smallnavtop .logo {
-    width: 60%;
+  .smallnav .logo {
+    max-width: 100%;
+    display: block;
   }
   .smallnav {
     width: 100%;
@@ -633,6 +641,40 @@ body {
   .postedby {
     font-size: 15px;
   }
+  .smallnav .container .smallnavtop .col-xs-6 {
+    padding: 0;
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .smallnav .container .searchform {
+    margin-top: 11px;
+    position: relative;
+  }
+  .smallnav .container .searchform .searchbar {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 40px 5px 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: 1px solid hsla(0, 0%, 100%, 0.2);
+    width: 100%;
+    position: relative;
+    transition: none;
+  }
+  .smallnav .container .searchform .searchbar input {
+    visibility: hidden;
+  }
+  .smallnav .container .searchform .searchbar button {
+    background: none;
+    border: none;
+    color: #333645;
+    position: absolute;
+    right: 5px;
+    line-height: 47px;
+    font-size: 20px;
+    outline: none;
+    padding: 1px 5px;
+  }
   .inner .main-topnav .container {
     width: 750px;
   }
@@ -723,7 +765,8 @@ body {
   .reviews .container .intro-review .welcomenet .container p {
     margin: 0 0 25px;
   }
-  .reviews .container .intro-review .welcomenet .container h2, .reviews .container .intro-review .welcomenet .container .clients-think {
+  .reviews .container .intro-review .welcomenet .container h2,
+  .reviews .container .intro-review .welcomenet .container .clients-think {
     margin: -6px 0 40px;
   }
   .reviews .googlebtn {
@@ -918,13 +961,18 @@ body {
   .reviews .container {
     padding: 0;
   }
-  .reviews .container .intro-review .welcomenet .col-md-6, .reviews .container .intro-review .starclient .col-md-6 {
+  .reviews .container .intro-review .welcomenet .col-md-6,
+  .reviews .container .intro-review .starclient .col-md-6 {
     width: 100%;
   }
-  .reviews .container .intro-review .welcomenet .col-md-6 .culture, .reviews .container .intro-review .welcomenet .col-md-6 .choose-us, .reviews .container .intro-review .starclient .col-md-6 .culture, .reviews .container .intro-review .starclient .col-md-6 .choose-us {
+  .reviews .container .intro-review .welcomenet .col-md-6 .culture,
+  .reviews .container .intro-review .welcomenet .col-md-6 .choose-us,
+  .reviews .container .intro-review .starclient .col-md-6 .culture,
+  .reviews .container .intro-review .starclient .col-md-6 .choose-us {
     margin: 0 0 50px;
   }
-  .reviews .container .intro-review .welcomenet .col-md-6 p, .reviews .container .intro-review .starclient .col-md-6 p {
+  .reviews .container .intro-review .welcomenet .col-md-6 p,
+  .reviews .container .intro-review .starclient .col-md-6 p {
     margin: 0 0 25px;
   }
 }
@@ -932,7 +980,8 @@ body {
   .reviews .container {
     padding: 0;
   }
-  .reviews .container .intro-review .welcomenet .col-md-6, .reviews .container .intro-review .starclient .col-md-6 {
+  .reviews .container .intro-review .welcomenet .col-md-6,
+  .reviews .container .intro-review .starclient .col-md-6 {
     width: 50%;
   }
   .smallnav,
@@ -1316,10 +1365,6 @@ footer .footerlist a {
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
-}
-
-.searchbar {
-  display: flex;
 }
 
 ::placeholder {
@@ -1979,6 +2024,7 @@ h2 {
 .headerpic {
   vertical-align: middle;
   background: linear-gradient(270deg, transparent 25%, black);
+  filter: brightness(0.5);
 }
 
 .banner, .bannerSlideshow {
@@ -2100,8 +2146,17 @@ h2 {
   padding: 1rem;
 }
 
+.burger-menu {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  cursor: pointer;
+  padding: 1rem;
+}
+
 .ham-bar {
-  width: 70%;
+  width: 33px;
   height: 4px;
   background-color: #fff;
   border-radius: 25px;
@@ -2124,17 +2179,34 @@ h2 {
   transform: translate(-50%, -50%) rotate(-315deg);
   top: 50%;
 }
-
 .hamburger-menu.active .bar-mid {
   opacity: 0;
 }
-
 .hamburger-menu.active .bar-bottom {
   transform: translate(-50%, -50%) rotate(-225deg);
   top: 50%;
 }
 
-.outermain {
+.hamburger-menu.active .outermain {
+  right: 0;
+  transition: right 0.5s;
+}
+
+.burger-menu.active .bar-top {
+  transform: translate(-50%, -50%) rotate(-315deg);
+  top: 50%;
+}
+
+.burger-menu.active .bar-mid {
+  opacity: 0;
+}
+
+.burger-menu.active .bar-bottom {
+  transform: translate(-50%, -50%) rotate(-225deg);
+  top: 50%;
+}
+
+.burger-menu.active .outermain {
   right: 0;
   transition: right 0.5s;
 }
@@ -2142,6 +2214,21 @@ h2 {
 .outermain.active {
   right: 275px;
   opacity: 1;
+}
+
+#main-topnavHide {
+  position: fixed;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 5;
+  background-color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 .sub-btn {

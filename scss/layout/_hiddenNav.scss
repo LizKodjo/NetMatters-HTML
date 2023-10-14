@@ -1,0 +1,16 @@
+// Hidden menu needed to slide down
+#main-topnavHide {
+    position: fixed;
+    // top: -220px;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 5;
+    background-color: $white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}

@@ -22,38 +22,61 @@
 
     .smallnav {
         .container {
+            .smallnavtop {
+                .col-xs-6 {
+                    padding: 0;
+                    display: table-cell;
+                    float: none;
+                    vertical-align: middle;
+                    width: 100%;
+                }
+                .mobile-container {
+                    padding: 0;
+                    display: table-cell;
+                    float: none;
+                    vertical-align: middle;
+                    width: 100%;
+                }
+                .hamburger-container {
+                    padding: 5px 15px;
+                }
+            }
+
             // padding: 0;
             .searchform {
-                .searchbar input {
+                margin-top: 11px;
+                position: relative;
+
+                .searchbar {
                     // background-color: $alto;
                     // border: none;
-            
+
                     border: 2px solid rgba(0, 0, 0, .1);
-                    font-size: 20px;
+                    // font-size: 20px;
                     padding: 5px 40px 5px 15px;
                     background-color: rgba(0, 0, 0, .1);
                     outline: 1px solid hsla(0, 0%, 100%, .2);
+                    width: 100%;
+                    position: relative;
                     transition: none;
-                    position:relative;
-                    
-                    
-                    // ::placeholder {
-                    //     font-size: 12px;
-                    // }
-                    
+
+                    input {
+                        visibility: hidden;
+                    }                   
                 }
+
                 .searchbar button {
                     background: none;
                     border: none;
                     color: $primary-dark-col;
                     position: absolute;
-                    right: 37px;
-                    top: 63px;
+                    right: 5px;
+                    bottom: -10px;
                     line-height: 47px;
                     font-size: 20px;
                     outline: none;
+                    padding: 1px 5px;
                 }
-
             }
         }
     }
@@ -66,8 +89,7 @@
         }
     }
 
-    .smallnav,
-    .smallnavtop {
+    .smallnav {
         // @include flexevencenter;
         // justify-content: space-between;
         // align-items: center;
@@ -75,7 +97,8 @@
 
 
         .logo {
-            width: 60%;
+            max-width: 100%;
+            display: block;
         }
     }
 
@@ -96,7 +119,7 @@
             .smallnavtop {
                 display: table;
                 width: 100%;
-                margin:0;
+                margin: 0;
 
                 .smallsearchphone {
                     font-size: 35px;
@@ -105,7 +128,7 @@
         }
     }
 
-    
+
 
     .searchform {
         @include flexevencenter;
@@ -175,7 +198,7 @@
     }
 
     .dotCounter {
-        position:absolute;
+        position: absolute;
         bottom: 40px;
         // left: 120px;
         transform: translate(100%, 20%);
@@ -183,11 +206,13 @@
 
     .servicegrid {
         .container {
+
             // padding: 0;
             .service-blocks {
                 padding: 0;
             }
         }
+
         // .upper-row {
         //     .container {
         //         .container {
@@ -212,6 +237,7 @@
                     display: none;
                 }
             }
+
             .service-subheading {
                 display: none;
             }
@@ -363,8 +389,69 @@
 @media screen and (min-width: 575px) {
     .postedby {
         font-size: 15px;
-       
+
     }
+
+    .smallnav {
+        .container {
+            .smallnavtop {
+                .col-xs-6 {
+                    padding: 0;
+                    display: table-cell;
+                    float: none;
+                    vertical-align: middle;
+                    width: 100%;
+                }
+            }
+
+            // padding: 0;
+            .searchform {
+                margin-top: 11px;
+                position: relative;
+
+                .searchbar {
+                    // background-color: $alto;
+                    // border: none;
+
+                    border: 2px solid rgba(0, 0, 0, .1);
+                    // font-size: 20px;
+                    padding: 5px 40px 5px 15px;
+                    background-color: rgba(0, 0, 0, .1);
+                    outline: 1px solid hsla(0, 0%, 100%, .2);
+                    width: 100%;
+                    position: relative;
+                    transition: none;
+
+                    input {
+                        visibility: hidden;
+                    }
+
+                    // position:relative;
+
+
+                    // ::placeholder {
+                    //     font-size: 12px;
+                    // }
+
+                }
+
+                .searchbar button {
+                    background: none;
+                    border: none;
+                    color: $primary-dark-col;
+                    position: absolute;
+                    right: 5px;
+                    // top: 102px;
+                    line-height: 47px;
+                    font-size: 20px;
+                    outline: none;
+                    padding: 1px 5px;
+                }
+
+            }
+        }
+    }
+
     .inner {
         .main-topnav {
             .container {
@@ -517,7 +604,8 @@
                             margin: 0 0 25px;
                         }
 
-                        h2, .clients-think {
+                        h2,
+                        .clients-think {
                             margin: -6px 0 40px;
                         }
                     }
@@ -699,9 +787,9 @@
     }
 }
 
-@media screen and (min-width:768px)  {
+@media screen and (min-width:768px) {
 
-    
+
 
     .reviewer {
         padding: 0 0 25px;
@@ -710,6 +798,7 @@
     .news-section {
         padding: 0;
     }
+
     .footer-cols {
         margin: 0 0 30px;
         padding: 0 15px;
@@ -720,7 +809,7 @@
     }
 
     .modal-dialog {
-        padding:0;
+        padding: 0;
     }
 
     .modal-footer {
@@ -729,6 +818,7 @@
         text-align: right;
         align-items: baseline;
         flex-wrap: nowrap;
+
         .btn {
             width: 50%;
         }
@@ -736,6 +826,7 @@
 
     .banner {
         max-width: 100%;
+
         .bannerSlideshow {
             max-width: 100%;
         }
@@ -748,13 +839,16 @@
             right: 50%;
             transform: translate(50%, 50%);
         }
+
         .banner-image {
             .imgText {
                 .top-left {
                     font-size: 40px;
+
                     .bottom-left {
                         font-size: 20px;
                     }
+
                     .main-button {
                         font-size: 20px;
                     }
@@ -765,16 +859,18 @@
 
 
     .servicegrid {
-        margin:0;
+        margin: 0;
+
         .container {
             .serveheadings {
-                display:flex;
+                display: flex;
                 justify-content: space-between;
                 // width: 700px;
                 // .container {
                 //     width: 700px;
                 // }
             }
+
             .service-blocks {
                 .upper-row {
 
@@ -831,13 +927,19 @@
     .reviews {
         .container {
             padding: 0;
+
             .intro-review {
-                .welcomenet, .starclient {
+
+                .welcomenet,
+                .starclient {
                     .col-md-6 {
                         width: 100%;
-                        .culture, .choose-us {
+
+                        .culture,
+                        .choose-us {
                             margin: 0 0 50px;
                         }
+
                         p {
                             margin: 0 0 25px;
                         }
@@ -848,7 +950,7 @@
     }
 
 
-    
+
 }
 
 @media screen and (min-width: 992px) {
@@ -856,8 +958,11 @@
     .reviews {
         .container {
             padding: 0;
+
             .intro-review {
-                .welcomenet, .starclient {
+
+                .welcomenet,
+                .starclient {
                     .col-md-6 {
                         width: 50%;
                     }
@@ -923,6 +1028,7 @@
             .imgText {
                 .top-left {
                     font-size: 62px;
+
                     .bottom-left {
                         font-size: 26px;
                     }
@@ -1031,6 +1137,7 @@
                         .clients-think {
                             margin-top: 0;
                         }
+
                         width: 50%;
                         float: left;
                     }
@@ -1162,7 +1269,7 @@
 
 @media screen and (min-width: 1200px) {
 
-    
+
     .inner {
         .main-topnav {
             .container {
@@ -1232,10 +1339,10 @@
             // }
 
             .top-left {
-                &.compactHeading{
-                    transform:translate(-50%, -150%);
+                &.compactHeading {
+                    transform: translate(-50%, -150%);
                 }
-                
+
                 position: absolute;
                 // top: 50%;
                 // left: 50%;
@@ -1309,8 +1416,9 @@
     .servicegrid {
         .container {
             width: 1170px;
+
             .serveheadings {
-                display:flex;
+                display: flex;
                 justify-content: space-between;
                 width: 1130px;
             }
@@ -1318,9 +1426,9 @@
     }
 
 
-    
 
- 
+
+
 
 
 

@@ -8,9 +8,28 @@
     padding: 1rem;
 }
 
+.burger-menu {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+// .hiddenBurger-menu {
+//     background-color: green;
+//     height: 50px;
+//     width: 50px;
+//     position: relative;
+//     cursor: pointer;
+//     padding: 1rem;
+// }
+
+
 // Burger menu bars
 .ham-bar {
-    width: 70%;
+    width: 33px;
     height: 4px;
     background-color: $white;
     border-radius: 25px;
@@ -31,33 +50,77 @@
     top: 75%;
 }
 
-// Change top bar when clicked
-.hamburger-menu.active .bar-top {
+// Tablets and desktops
+
+.hamburger-menu.active {
+
+    // Change top bar when clicked
+    .bar-top {
+        transform: translate(-50%, -50%) rotate(-315deg);
+        top: 50%;
+    }
+
+    // Make middle bar fade out
+    .bar-mid {
+        opacity: 0;
+    }
+
+    // Make bottom bar change when click to form an 'X' with the top bar
+    .bar-bottom {
+        transform: translate(-50%, -50%) rotate(-225deg);
+        top: 50%;
+    }
+}
+
+
+.hamburger-menu.active .outermain {
+    right: 0;
+    transition: right .5s;
+}
+
+
+// Small devices
+
+.burger-menu.active .bar-top {
     transform: translate(-50%, -50%) rotate(-315deg);
     top: 50%;
 }
 
-// Make middle bar fade out
-.hamburger-menu.active .bar-mid {
+.burger-menu.active .bar-mid {
     opacity: 0;
 }
 
-// Make bottom bar change when click to form an 'X' with the top bar
-.hamburger-menu.active .bar-bottom {
+.burger-menu.active .bar-bottom {
     transform: translate(-50%, -50%) rotate(-225deg);
     top: 50%;
 }
 
-
-.outermain {
+.burger-menu.active .outermain {
     // position: fixed;
     // top: 0;
     right: 0;
-    
+
     // height: 100vh;
     // width: 75%;
     transition: right .5s;
 }
+
+
+// .hiddenBurger-menu.active .bar-top {
+//     transform: translate(-50%, -50%) rotate(-315deg);
+//     top: 50%;
+// }
+
+// .hiddenBurger-menu.active .bar-mid {
+//     opacity: 0;
+// }
+
+// .hiddenBurger-menu.active .bar-bottom {
+//     transform: translate(-50%, -50%) rotate(-225deg);
+//     top: 50%;
+// }
+
+
 
 .outermain.active {
     right: 275px;
@@ -67,6 +130,7 @@
     // width:100%
     opacity: 1;
 }
+
 // .outermain {
 //     // position: fixed;
 //     right: 0;
@@ -77,4 +141,3 @@
 //     right: 275px;
 //     background-color: pink;    
 // }
-

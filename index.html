@@ -255,22 +255,30 @@
                         <div id="smallnav" class="smallnav">
                             <div class="container">
                                 <div class="row smallnavtop">
-                                    <img class="logo" src="img/asset0.png" alt="Netmatters Dark logo">
-                                    <span class="material-symbols-outlined smallsearchphone">phone_in_talk</span>
-
-                                    <div class="hamburger-menu">
-                                        <div class="ham-bar bar-top"></div>
-                                        <div class="ham-bar bar-mid"></div>
-                                        <div class="ham-bar bar-bottom"></div>
+                                    <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
+                                        <div class="logo-container">
+                                            <img class="logo" src="img/asset0.png" alt="Netmatters Dark logo">
+                                        </div>
                                     </div>
+                                    <div class="col-xs-3 hidden-sm hidden-md hidden-lg mobile-container">
+                                        <span class="material-symbols-outlined smallsearchphone">phone_in_talk</span>
+                                    </div>
+                                    <!-- Burger menu -->
+                                    <div class="col-xs-3 col-sm-6 col-md-7 col-lg-8 hamburger-container">
+                                        <div class="burger-menu">
+                                            <div class="ham-bar bar-top"></div>
+                                            <div class="ham-bar bar-mid"></div>
+                                            <div class="ham-bar bar-bottom"></div>
+                                        </div>
+                                    </div>
+                                   
                                 </div>
-                                <div>
-                                    <div class="searchform">
-                                        <form class="searchbar">
-                                            <input type="text" placeholder="Search..." name="q">
-                                            <button type="submit"><i class="fa fa-search searchbtn"></i></button>
-                                        </form>
-                                    </div>
+                                <div class="searchform">
+                                    <form class="searchbar">
+                                        <label for="search-input">Search...</label>
+                                        <input class="search-input" type="text" placeholder="Search..." name="q" id="search-input">
+                                        <button type="submit"><i class="fa fa-search searchbtn"></i></button>
+                                    </form>
                                 </div>
                             </div>
 
@@ -663,17 +671,23 @@
                                             <img class="logo" src="img/asset0.png" alt="Netmatters Dark logo">
                                         </div>
                                     </div>
-                                    <span class="material-symbols-outlined smallsearchphone">phone_in_talk</span>
-                                    <!-- Burger menu -->
-                                    <div class="hamburger-menu">
-                                        <div class="ham-bar bar-top"></div>
-                                        <div class="ham-bar bar-mid"></div>
-                                        <div class="ham-bar bar-bottom"></div>
+                                    <div class="col-xs-3 hidden-sm hidden-md hidden-lg mobile-container">
+                                        <span class="material-symbols-outlined smallsearchphone">phone_in_talk</span>
                                     </div>
+                                    <!-- Burger menu -->
+                                    <div class="col-xs-3 col-sm-6 col-md-7 col-lg-8 hamburger-container">
+                                        <div class="burger-menu">
+                                            <div class="ham-bar bar-top"></div>
+                                            <div class="ham-bar bar-mid"></div>
+                                            <div class="ham-bar bar-bottom"></div>
+                                        </div>
+                                    </div>
+                                   
                                 </div>
                                 <div class="searchform">
                                     <form class="searchbar">
-                                        <input type="text" placeholder="Search..." name="q">
+                                        <label for="search-input">Search...</label>
+                                        <input class="search-input" type="text" placeholder="Search..." name="q" id="search-input">
                                         <button type="submit"><i class="fa fa-search searchbtn"></i></button>
                                     </form>
                                 </div>
