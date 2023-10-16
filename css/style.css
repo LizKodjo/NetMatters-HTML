@@ -910,7 +910,6 @@ body {
     width: 174px;
     height: 56px;
     border-color: #ccc;
-    display: inline-block !important;
     border: 1px solid #e5e5e5;
   }
   .main-topnav .container .searchMenu .btn {
@@ -1028,20 +1027,31 @@ body {
   .searchbar input {
     display: none;
   }
+  .inner .main-topnav {
+    padding: 0;
+  }
   .inner .main-topnav .container {
     width: 970px;
   }
   .inner .main-topnav .container .top-help {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0;
-    width: 970px;
-    padding: 0;
+    width: 100%;
+    padding: 20px 0;
   }
   .inner .main-topnav .container .top-help .itbtn,
   .inner .main-topnav .container .top-help .contactbtn {
+    padding: 5px 15px;
     display: block;
+  }
+  .inner .main-topnav .container .top-help .itbtn:hover,
+  .inner .main-topnav .container .top-help .contactbtn:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  .inner .main-topnav .container .top-help .contactbtn {
+    margin-left: 20px;
+  }
+  .inner .main-topnav .container .top-help .col-md-7 .searchMenu .searchInput .searchbar button {
+    border-radius: 3px;
   }
   .main-topnav .topnav {
     width: 100%;
@@ -1170,7 +1180,12 @@ body {
     width: 970px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1100px) {
+@media screen and (min-width: 992px) and (max-width: 1190px) {
+  .col-md-7 .searchMenu .searchInput .searchbar input {
+    width: 300px;
+    height: 56px;
+    display: none;
+  }
   .servicegrid .container {
     width: 970px;
   }
@@ -1196,17 +1211,21 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .inner .main-topnav .container {
-    width: 1120px;
+    width: 1170px;
   }
   .inner .main-topnav .container .top-help {
     width: 100%;
   }
-  .inner .main-topnav .container .top-help .logo {
-    width: 25%;
-  }
   .inner .main-topnav .container .top-help .searchbar input {
     display: block;
     width: 240px;
+  }
+  .inner .main-topnav .container .top-help .col-md-7 .searchMenu .searchInput .searchbar input {
+    width: 240px;
+    display: inline-block !important;
+  }
+  .inner .main-topnav .container .top-help .col-md-7 .searchMenu .searchInput .searchbar button {
+    border-radius: 3px;
   }
   .smallnav {
     display: none;
