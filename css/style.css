@@ -2276,18 +2276,12 @@ h2 {
 
 #main-topnavHide {
   position: fixed;
-  top: -220px;
-  width: 100%;
-  transition: top 0.3s;
-  z-index: 5;
-  background-color: #fff;
-}
-
-.sticky {
-  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 5;
+  transition: top 0.3s;
+  z-index: 1;
+  background-color: #fff;
+  transition: all 500ms ease;
 }
 
 .sub-btn {

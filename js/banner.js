@@ -2,22 +2,21 @@
 
 
 
-
 // Sticky header
 
 // When user scrolls
 
 // window.onscroll = function () { myFunction() };
 
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("main-topnavHide").style.top = "0";
-    } else {
-        document.getElementById("main-topnavHide").style.top = "-220px";
-    }
-}
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         document.getElementById("main-topnavHide").style.top = "0";
+//     } else {
+//         document.getElementById("main-topnavHide").style.top = "0";
+//     }
+// }
 
 
 
