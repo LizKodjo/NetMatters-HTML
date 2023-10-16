@@ -51,10 +51,6 @@ body {
   top: 0;
 }
 
-.main-topnav {
-  top: 0;
-}
-
 .more {
   display: none;
 }
@@ -675,12 +671,6 @@ body {
     outline: none;
     padding: 1px 5px;
   }
-  .inner .main-topnav .container {
-    width: 750px;
-  }
-  .inner .main-topnav .container .top-help {
-    width: 100%;
-  }
   .inner .main-topnav .container .top-help .itbtn,
   .inner .main-topnav .container .top-help .contactbtn,
   .inner .main-topnav .container .top-help .smallsearchphone {
@@ -701,9 +691,6 @@ body {
     align-items: center;
     justify-content: space-evenly;
     padding: 15px 0 15px 0;
-  }
-  .top-help .logo {
-    width: 50%;
   }
   .searchbar input {
     width: 150px;
@@ -881,6 +868,58 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  header .main-topnav {
+    padding: 20px 0;
+  }
+  .main-topnav .container {
+    width: 750px;
+  }
+  .main-topnav .container .top-help {
+    width: 750px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0;
+    display: block;
+  }
+  .main-topnav .container .top-help .col-sm-6 .container-headerLogo {
+    display: table;
+    table-layout: fixed;
+  }
+  .main-topnav .container .top-help .col-sm-6 .container-headerLogo .logo {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 100%;
+  }
+  .main-topnav .container .searchMenu {
+    float: right;
+    padding: 7px 0;
+  }
+  .main-topnav .container .searchMenu .searchInput {
+    margin-left: 20px;
+  }
+  .main-topnav .container .searchMenu .searchInput float:left .pull-left {
+    float: left !important;
+  }
+  .main-topnav .container .searchMenu .searchInput .searchbar .hidden {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .main-topnav .container .searchMenu .searchInput .searchbar #search-tablet {
+    padding: 5px 15px;
+    border-radius: 0;
+    width: 174px;
+    height: 56px;
+    border-color: #ccc;
+    display: inline-block !important;
+    border: 1px solid #e5e5e5;
+  }
+  .main-topnav .container .searchMenu .btn {
+    height: 56px;
+    line-height: 46px;
+    float: left;
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
   .reviewer {
     padding: 0 0 25px;
   }
@@ -2139,8 +2178,8 @@ h2 {
 
 .hamburger-menu {
   background-color: #333645;
-  height: 50px;
-  width: 50px;
+  height: 56px;
+  width: 56px;
   position: relative;
   cursor: pointer;
   padding: 1rem;
@@ -2218,6 +2257,7 @@ h2 {
 
 #main-topnavHide {
   position: fixed;
+  top: -220px;
   width: 100%;
   transition: top 0.3s;
   z-index: 5;
@@ -2284,13 +2324,15 @@ h2 {
 }
 
 .searchbar button {
-  border: 0;
-  padding: 15px;
-  cursor: pointer;
-  font-size: 25px;
+  border: none;
+  padding: 7px 20px 3px;
+  height: 56px;
+  font-size: 23px;
+  vertical-align: bottom;
   color: #fff;
-  background-color: #a3a8ac;
+  background-color: #999aa2;
   border-radius: 0 3px 3px 0;
+  outline: none;
 }
 
 .searchbar button:hover {

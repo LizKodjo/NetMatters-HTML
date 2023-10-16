@@ -30,6 +30,7 @@
                     vertical-align: middle;
                     width: 100%;
                 }
+
                 .mobile-container {
                     padding: 0;
                     display: table-cell;
@@ -37,6 +38,7 @@
                     vertical-align: middle;
                     width: 100%;
                 }
+
                 .hamburger-container {
                     padding: 5px 15px;
                 }
@@ -62,7 +64,7 @@
 
                     input {
                         visibility: hidden;
-                    }                   
+                    }
                 }
 
                 .searchbar button {
@@ -455,10 +457,10 @@
     .inner {
         .main-topnav {
             .container {
-                width: 750px;
+                // width: 750px;
 
                 .top-help {
-                    width: 100%;
+                    // width: 100%;
 
                     .itbtn,
                     .contactbtn,
@@ -491,9 +493,9 @@
         // margin: 0 50px;
     }
 
-    .top-help .logo {
-        width: 50%;
-    }
+    // .top-help .logo {
+    //     width: 50%;
+    // }
 
     .searchbar input {
         width: 150px;
@@ -788,6 +790,85 @@
 }
 
 @media screen and (min-width:768px) {
+    header .main-topnav {
+        padding: 20px 0;
+    }
+
+    .main-topnav {
+        .container {
+            width: 750px;
+
+            .top-help {
+                width: 750px;
+                margin-left: -15px;
+                margin-right: -15px;
+                padding: 0;
+                display: block;
+
+                .col-sm-6 {
+
+                    // width: 50%;
+                    // float: left;
+                    .container-headerLogo {
+                        display: table;
+                        table-layout: fixed;
+
+                        .logo {
+                            display: table-cell;
+                            vertical-align: middle;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+
+            // .col-sm-6 {
+            .searchMenu {
+                float: right;
+                padding: 7px 0;
+
+                .searchInput {
+                    margin-left: 20px;
+
+                    float:left .pull-left {
+                        float: left !important;
+                    }
+
+                    .searchbar {
+                        .hidden {
+                            display: none !important;
+                            visibility: hidden !important;
+                        }
+
+                        #search-tablet {
+                            padding: 5px 15px;
+                            border-radius: 0;
+                            width: 174px;
+                            height: 56px;
+                            border-color: #ccc;
+                            display: inline-block !important;
+                            border: 1px solid #e5e5e5;
+                        }
+                    }
+                }
+
+                .btn {
+                    height: 56px;
+                    line-height: 46px;
+                    float:left;
+                    margin: 0 0 0 20px;
+                    padding:0;
+                }
+            }
+        }
+
+    }
+
+
+
+    // }
+
+
 
 
 
@@ -806,6 +887,7 @@
 
     .main-topnav {
         background-color: $white;
+        // padding: 20px 0;
     }
 
     .modal-dialog {
