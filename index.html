@@ -24,41 +24,47 @@
 
     <!-- Consent Policy -->
 
-    <div>
-
-        <div class="container mt-3">
-            <button type="button" class="btn-primary btn--bespoke cookiebtn" data-bs-toggle="modal"
-                data-bs-target="#myModal">Manage Consent</button>
-        </div>
-
-        <!-- Consent Modal -->
-
-        <div id="myModal" class="modal">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content cookie-popup">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Cookies Policy</h4>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <p>
-                            Our website uses cookies. This helps us provide you with a good
-                            experience on our website. To see what cookies we use and what they do,
-                            and to opt-in on non-essential cookies click "change settings". For
-                            a detailed explanation, click on <a class="privacy" href="#">"Privacy Policy"</a> otherwise
-                            click "Accept
-                            Cookies" to enter.
-                        </p>
-
-                    </div>
-                    <!-- Modal Footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn--consent-change" data-bs-dismiss="modal">Change
-                            Settings</button>
-                        <button id="acceptcookie" type="button" class="btn btn-danger btn--web"
-                            data-bs-dismiss="modal">Accept cookies</button>
+    <div class="cookieSettings">
+        <div class="cookieSections">
+            <!-- <div class="container mt-3"> -->
+                <button type="button" class="btn-primary btn--bespoke cookiebtn" data-bs-toggle="modal"
+                    data-bs-target="#myModal">Manage Consent</button>
+            <!-- </div> -->
+    
+            <!-- Consent Modal -->
+    
+            <div id="myModal" class="modal ">
+                <div id="consentPolicy" class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content cookie-popup">
+    
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Cookies Policy</h4>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <p>
+                                Our website uses cookies. This helps us provide you with a good
+                                experience on our website. To see what cookies we use and what they do,
+                                and to opt-in on non-essential cookies click "change settings". For
+                                a detailed explanation, click on <a class="privacy" href="#">"Privacy Policy"</a> otherwise
+                                click "Accept
+                                Cookies" to enter.
+                            </p>
+    
+                        </div>
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a href="#" type="button" class="btn btn--consent-change" data-bs-dismiss="modal">Change Settings</a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" id="acceptcookie" type="button" class="btn btn--web"
+                                    data-bs-dismiss="modal">Accept cookies</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1205,109 +1211,111 @@
 
                 <!-- Our Services -->
                 <div class="container servicegrid">
-                    <div class="container">
-                        <div class="container serveheadings">
-                            <div class="topHeadings">
-                                <span class="serviceheading"><strong>Our Services</strong></span>
-                                <span class="servicesubheading"><a href="#">View Our Work <i
-                                            class="fa-solid fa-arrow-right"></i></a></span>
+                    <div class="serviceSections">
+                        <div>
+                            <div class="container serveheadings">
+                                <div class="topHeadings">
+                                    <span class="serviceheading"><strong>Our Services</strong></span>
+                                    <span class="servicesubheading"><a href="#">View Our Work <i
+                                                class="fa-solid fa-arrow-right"></i></a></span>
+                                </div>
                             </div>
+    
+                            <div class="container service-blocks">
+                                <div class="row upper-row">
+                                    <div class="container">
+                                        <div class="container col-sm bespoke-b">
+                                            <div class="service bespoke-block"><span
+                                                    class="material-symbols-outlined bespoke-icon">monitor</span>
+                                                <p class="service-topic">Bespoke Software</p>
+                                                <p class="service-info">Bespoke software solutions for all your business
+                                                    needs
+                                                    including
+                                                    integrations
+                                                    and reporting.</p> <button class="btn servebespoke">Read more</button>
+                                            </div>
+                                        </div>
+                                        <div class="container col-sm it-b">
+                                            <div class="service it-block"><span
+                                                    class="material-symbols-outlined it-icon">monitor</span>
+                                                <p class="service-topic">IT Support</p>
+                                                <p class="service-info">Fully managed IT support and consultancy packages
+                                                    tailored
+                                                    to
+                                                    meet
+                                                    your
+                                                    exact
+                                                    business needs.</p><button class="btn serveit">Read more</button>
+                                            </div>
+                                        </div>
+                                        <div class="container col-sm digital-b">
+                                            <div class="service digital-block"><span
+                                                    class="material-symbols-outlined digital-icon">signal_cellular_alt</span>
+                                                <p class="service-topic">Digital Marketing</p>
+                                                <p class="service-info">Driven brand awareness & ROI through creative
+                                                    digital
+                                                    marketing
+                                                    campaigns.
+                                                </p>
+                                                <button class="btn servedigital">Read more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row lower-row">
+                                    <div class="container lower-first">
+                                        <div class="container col-sm telecoms-b">
+                                            <div class="service telecoms-block"><span
+                                                    class="material-symbols-outlined tele-icon">phone_in_talk</span>
+                                                <p class="service-topic">Telecoms Services</p>
+                                                <p class="service-info">Business telephony solutions including mobile &
+                                                    connectivity
+                                                    solutions.
+                                                </p>
+                                                <button class="btn servetelecoms">Read more</button>
+                                            </div>
+                                        </div>
+                                        <div class="container col-sm web-b">
+                                            <div class="service web-block"><i class="fa-solid fa-code web-icon"></i>
+                                                <p class="service-topic">Web Design</p>
+                                                <p class="service-info">User-centric design for businesses looking to make a
+                                                    lasting
+                                                    impression.
+                                                </p>
+                                                <button class="btn serveweb">Read more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container lower-second">
+                                        <div class="container col-sm cyber-b">
+                                            <div class="service cyber-block"><span
+                                                    class="material-symbols-outlined cyber-icon">security</span>
+                                                <p class="service-topic">Cyber Security</p>
+                                                <p class="service-info">Prevention, testing, consultancy & breach management
+                                                    services.
+                                                </p>
+                                                <button class="btn servecyber">Read more</button>
+                                            </div>
+                                        </div>
+                                        <div class="container col-sm dev-b">
+                                            <div class="service dev-block"><span
+                                                    class="material-symbols-outlined dev-icon">school</span>
+                                                <p class="service-topic">Developer Training</p>
+                                                <p class="service-info">Web design & software training courses designed to
+                                                    secure a
+                                                    job
+                                                    in
+                                                    tech.
+                                                </p>
+                                                <button class="btn servedev">Read more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="service-subheading2"><a href="#">View our Work <i
+                                        class="fa-solid fa-arrow-right"></i></a></h2>
                         </div>
-
-                        <div class="container service-blocks">
-                            <div class="row upper-row">
-                                <div class="container">
-                                    <div class="container col-sm bespoke-b">
-                                        <div class="service bespoke-block"><span
-                                                class="material-symbols-outlined bespoke-icon">monitor</span>
-                                            <p class="service-topic">Bespoke Software</p>
-                                            <p class="service-info">Bespoke software solutions for all your business
-                                                needs
-                                                including
-                                                integrations
-                                                and reporting.</p> <button class="btn servebespoke">Read more</button>
-                                        </div>
-                                    </div>
-                                    <div class="container col-sm it-b">
-                                        <div class="service it-block"><span
-                                                class="material-symbols-outlined it-icon">monitor</span>
-                                            <p class="service-topic">IT Support</p>
-                                            <p class="service-info">Fully managed IT support and consultancy packages
-                                                tailored
-                                                to
-                                                meet
-                                                your
-                                                exact
-                                                business needs.</p><button class="btn serveit">Read more</button>
-                                        </div>
-                                    </div>
-                                    <div class="container col-sm digital-b">
-                                        <div class="service digital-block"><span
-                                                class="material-symbols-outlined digital-icon">signal_cellular_alt</span>
-                                            <p class="service-topic">Digital Marketing</p>
-                                            <p class="service-info">Driven brand awareness & ROI through creative
-                                                digital
-                                                marketing
-                                                campaigns.
-                                            </p>
-                                            <button class="btn servedigital">Read more</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row lower-row">
-                                <div class="container lower-first">
-                                    <div class="container col-sm telecoms-b">
-                                        <div class="service telecoms-block"><span
-                                                class="material-symbols-outlined tele-icon">phone_in_talk</span>
-                                            <p class="service-topic">Telecoms Services</p>
-                                            <p class="service-info">Business telephony solutions including mobile &
-                                                connectivity
-                                                solutions.
-                                            </p>
-                                            <button class="btn servetelecoms">Read more</button>
-                                        </div>
-                                    </div>
-                                    <div class="container col-sm web-b">
-                                        <div class="service web-block"><i class="fa-solid fa-code web-icon"></i>
-                                            <p class="service-topic">Web Design</p>
-                                            <p class="service-info">User-centric design for businesses looking to make a
-                                                lasting
-                                                impression.
-                                            </p>
-                                            <button class="btn serveweb">Read more</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container lower-second">
-                                    <div class="container col-sm cyber-b">
-                                        <div class="service cyber-block"><span
-                                                class="material-symbols-outlined cyber-icon">security</span>
-                                            <p class="service-topic">Cyber Security</p>
-                                            <p class="service-info">Prevention, testing, consultancy & breach management
-                                                services.
-                                            </p>
-                                            <button class="btn servecyber">Read more</button>
-                                        </div>
-                                    </div>
-                                    <div class="container col-sm dev-b">
-                                        <div class="service dev-block"><span
-                                                class="material-symbols-outlined dev-icon">school</span>
-                                            <p class="service-topic">Developer Training</p>
-                                            <p class="service-info">Web design & software training courses designed to
-                                                secure a
-                                                job
-                                                in
-                                                tech.
-                                            </p>
-                                            <button class="btn servedev">Read more</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h2 class="service-subheading2"><a href="#">View our Work <i
-                                    class="fa-solid fa-arrow-right"></i></a></h2>
                     </div>
                 </div>
                 <!-- Partners -->
@@ -1737,6 +1745,7 @@
     <script src="js/banner.js"></script>
     <script src="js/hamburgerMenu.js"></script>
     <script src="js/stickyNav.js"></script>
+    <script src="js/cookie.js"></script>
 </body>
 
 </html>
