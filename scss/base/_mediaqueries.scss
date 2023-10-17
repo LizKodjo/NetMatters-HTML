@@ -130,8 +130,6 @@
         }
     }
 
-
-
     .searchform {
         @include flexevencenter;
         align-content: center;
@@ -144,7 +142,6 @@
     .searchbar button {
         background: $alto;
     }
-
 
     .topnav {
         .mainmenu {
@@ -246,18 +243,14 @@
         }
     }
 
-
-
-
     .reviews {
         .googlebtn {
             font-size: 18px;
         }
     }
 
-
     .latestnews {
-        padding: 0 15px;
+        // padding: 0 15px;
 
         .viewheading2 {
             display: none;
@@ -636,7 +629,7 @@
 
     .latestnews {
         .container {
-            width: 750px;
+            // width: 750px;
             padding-top: 50px;
 
             .lateheadings {
@@ -663,7 +656,7 @@
 
         .newsarticles {
             .container {
-                width: 750px;
+                // width: 750px;
                 display: flex;
                 justify-content: space-around;
 
@@ -672,8 +665,8 @@
                         padding: 0;
                     }
 
-                    width: 50%;
-                    margin: 0 15px;
+                    // width: 50%;
+                    // margin: 0 15px;
 
                     .container {
                         width: 345px;
@@ -868,10 +861,6 @@
 
     // }
 
-
-
-
-
     .reviewer {
         padding: 0 0 25px;
     }
@@ -941,47 +930,58 @@
 
 
     .servicegrid {
-        margin: 0 9px;
-        padding: 50px 15px;
-        width: 750px;
+        // margin: 0 9px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        max-width: 750px;
 
-        .container {
-            .serveheadings {
-                display: flex;
-                justify-content: space-between;
-                // width: 700px;
-                // .container {
-                //     width: 700px;
-                // }
-            }
+        // .servicebreakdown {
+            // margin-top: 20px;
+            // .row {
+            //     .col-md-4 {
+            //         width: auto;
+            //     }
+            // }
+            // .container {
+            //     // .serveheadings {
+            //     //     display: flex;
+            //     //     justify-content: space-between;
+            //     //     // width: 700px;
+            //     //     // .container {
+            //     //     //     width: 700px;
+            //     //     // }
+            //     // }
+    
+            //     // .service-blocks {
+            //     //     .upper-row {
+    
+            //     //         .bespoke-b,
+            //     //         .it-b,
+            //     //         .digital-b {
+            //     //             width: 750px;
+            //     //         }
+            //     //     }
+            //     // }
+    
+            //     .serveheadings {
+            //         .container {
+            //             display: block;
+    
+            //             h3 {
+            //                 float: left;
+            //             }
+    
+            //             .service-subheading {
+            //                 float: right;
+            //             }
+            //         }
+    
+            //         // width: 750px;
+            //     }
+            // }
+        // }
 
-            .service-blocks {
-                .upper-row {
-
-                    .bespoke-b,
-                    .it-b,
-                    .digital-b {
-                        width: 750px;
-                    }
-                }
-            }
-
-            .serveheadings {
-                .container {
-                    display: block;
-
-                    h3 {
-                        float: left;
-                    }
-
-                    .service-subheading {
-                        float: right;
-                    }
-                }
-
-                // width: 750px;
-            }
-        }
+       
     }
 
     .copyright {
@@ -993,6 +993,7 @@
     .latestnews {
         .newsarticles {
             .container {
+                max-width: 750px;
                 .vacancies {
                     .latestImg {
                         padding: 0;
@@ -1037,7 +1038,27 @@
 
 }
 
+@media screen and (min-width:768px) and (max-width:992px) {
+    .servicegrid{
+        .servicebreakdown {
+            .row {
+                display: block;
+                .col-md-4 {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 992px) {
+
+    .servicegrid {
+        // margin: 0 9px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        max-width: 970px;
+    }
 
     .reviews {
         .container {
@@ -1186,23 +1207,25 @@
 
     .latestnews {
         .container {
-            width: 930px;
+            width: 970px;
         }
 
         .newsarticles {
             .container {
+                max-width: 970px;
+                display: block;
                 .vacancies {
                     .latestImg {
                         padding: 0;
                     }
 
                     .container {
-                        width: 350px;
+                        width: auto;
                         // height: 329.56px;
                     }
                 }
 
-                width: 940px;
+                
             }
         }
 
@@ -1392,7 +1415,7 @@
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
 
    
 
@@ -1544,7 +1567,7 @@
             .servicegrid {
                 .container {
                     .serveheadings {
-                        width: 1170px;
+                        width: 1200px;
                     }
                 }
             }
@@ -1557,18 +1580,28 @@
         }
     }
 
-
     .servicegrid {
-        .container {
-            width: 1170px;
-
-            .serveheadings {
-                display: flex;
-                justify-content: space-between;
-                width: 1130px;
-            }
+        // margin: 0 9px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        max-width: 1200px;
+        .row {
+            display:flex;
         }
     }
+
+
+    // .servicegrid {
+    //     .container {
+    //         width: 1170px;
+
+    //         .serveheadings {
+    //             display: flex;
+    //             justify-content: space-between;
+    //             width: 1130px;
+    //         }
+    //     }
+    // }
 
 
 
@@ -1595,7 +1628,7 @@
     .latestnews {
         .newsarticles {
             .container {
-                width: 1170px;
+                max-width: 1170px;
             }
         }
 
@@ -1713,4 +1746,20 @@
 
 
 
+}
+
+@media screen and (min-width: 768px) and (max-width:1259px) {
+    .latestnews {
+        .latest-sections {
+            .container {
+                .vacancy-list {
+                    .row {
+                        .col-lg-4:last-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

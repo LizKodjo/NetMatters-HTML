@@ -1,11 +1,34 @@
 // Our Service
 
 .servicegrid {
+    .servicebreakdown {
+        margin-top: 20px;
+        .row {
+            // display: block;
+            .btn {
+                margin: 0;
+            }
+            // .col-md-4 {
+            //     width: auto;
+            // }
+        }
+    }
     // padding: 50px 15px;
+
+    .serviceheading{
+        margin-bottom: 15px;
+        float:left;
+        // margin-left: 20px;
+    }
+
+    .servicesubheading {
+        float: right;
+        margin-left: 20px;
+    }
     
 
     h3 {
-        font-size: 43px;
+        // font-size: 43px;
         font-weight: 600;
     }
 
@@ -201,7 +224,7 @@
 }
 
 .serviceheading {
-    font-size: 43px;
+    margin-bottom: 15px;
 }
 
 .servicesubheading {

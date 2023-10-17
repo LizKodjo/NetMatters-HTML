@@ -123,8 +123,11 @@ body {
 }
 
 .vacancies {
-  transition: all 0.5s;
+  margin-top: 30px;
+  top: 0;
+  transition: all 0.5s ease;
   cursor: pointer;
+  position: relative;
 }
 
 .btn--bespoke {
@@ -482,9 +485,6 @@ body {
   .reviews .googlebtn {
     font-size: 18px;
   }
-  .latestnews {
-    padding: 0 15px;
-  }
   .latestnews .viewheading2 {
     display: none;
   }
@@ -703,7 +703,6 @@ body {
     margin-bottom: 17px;
   }
   .latestnews .container {
-    width: 750px;
     padding-top: 50px;
   }
   .latestnews .container .lateheadings {
@@ -723,13 +722,8 @@ body {
     font-weight: 600;
   }
   .latestnews .newsarticles .container {
-    width: 750px;
     display: flex;
     justify-content: space-around;
-  }
-  .latestnews .newsarticles .container .vacancies {
-    width: 50%;
-    margin: 0 15px;
   }
   .latestnews .newsarticles .container .vacancies .latestImg {
     padding: 0;
@@ -900,30 +894,15 @@ body {
     font-size: 20px;
   }
   .servicegrid {
-    margin: 0 9px;
-    padding: 50px 15px;
-    width: 750px;
-  }
-  .servicegrid .container .serveheadings {
-    display: flex;
-    justify-content: space-between;
-  }
-  .servicegrid .container .service-blocks .upper-row .bespoke-b,
-  .servicegrid .container .service-blocks .upper-row .it-b,
-  .servicegrid .container .service-blocks .upper-row .digital-b {
-    width: 750px;
-  }
-  .servicegrid .container .serveheadings .container {
-    display: block;
-  }
-  .servicegrid .container .serveheadings .container h3 {
-    float: left;
-  }
-  .servicegrid .container .serveheadings .container .service-subheading {
-    float: right;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 750px;
   }
   .copyright .container {
     width: 750px;
+  }
+  .latestnews .newsarticles .container {
+    max-width: 750px;
   }
   .latestnews .newsarticles .container .vacancies .latestImg {
     padding: 0;
@@ -949,7 +928,20 @@ body {
     margin: 0 0 25px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .servicegrid .servicebreakdown .row {
+    display: block;
+  }
+  .servicegrid .servicebreakdown .row .col-md-4 {
+    width: auto;
+  }
+}
 @media screen and (min-width: 992px) {
+  .servicegrid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 970px;
+  }
   .reviews .container {
     padding: 0;
   }
@@ -1030,16 +1022,17 @@ body {
     margin-bottom: 15px;
   }
   .latestnews .container {
-    width: 930px;
+    width: 970px;
   }
   .latestnews .newsarticles .container {
-    width: 940px;
+    max-width: 970px;
+    display: block;
   }
   .latestnews .newsarticles .container .vacancies .latestImg {
     padding: 0;
   }
   .latestnews .newsarticles .container .vacancies .container {
-    width: 350px;
+    width: auto;
   }
   .servicegrid .container {
     width: 970px;
@@ -1144,7 +1137,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .inner .main-topnav .container {
     width: 1170px;
   }
@@ -1231,15 +1224,15 @@ body {
     width: 50%;
   }
   .servicegrid .container .servicegrid .container .serveheadings {
-    width: 1170px;
+    width: 1200px;
   }
-  .servicegrid .container {
-    width: 1170px;
+  .servicegrid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 1200px;
   }
-  .servicegrid .container .serveheadings {
+  .servicegrid .row {
     display: flex;
-    justify-content: space-between;
-    width: 1130px;
   }
   .reviews .container {
     width: 1170px;
@@ -1251,7 +1244,7 @@ body {
     font-size: 18px;
   }
   .latestnews .newsarticles .container {
-    width: 1170px;
+    max-width: 1170px;
   }
   .latestnews .container {
     width: 1170px;
@@ -1313,6 +1306,11 @@ body {
     font-size: 1.125rem;
     padding: 5px 15px;
     display: inline-block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1259px) {
+  .latestnews .latest-sections .container .vacancy-list .row .col-lg-4:last-child {
+    display: none;
   }
 }
 footer {
@@ -1599,8 +1597,21 @@ a[class$=-content] {
   width: 100%;
 }
 
+.servicegrid .servicebreakdown {
+  margin-top: 20px;
+}
+.servicegrid .servicebreakdown .row .btn {
+  margin: 0;
+}
+.servicegrid .serviceheading {
+  margin-bottom: 15px;
+  float: left;
+}
+.servicegrid .servicesubheading {
+  float: right;
+  margin-left: 20px;
+}
 .servicegrid h3 {
-  font-size: 43px;
   font-weight: 600;
 }
 .servicegrid a,
@@ -1770,7 +1781,7 @@ a[class$=-content] {
 }
 
 .serviceheading {
-  font-size: 43px;
+  margin-bottom: 15px;
 }
 
 .servicesubheading {
@@ -1928,6 +1939,10 @@ a[class$=-content] {
   text-align: left;
 }
 
+.latestnews .latest-sections .newsarticles .container .vacancy-list .row {
+  margin-top: -30px;
+}
+
 section {
   border: 1px solid #ddd;
   margin-bottom: 20px;
@@ -1936,15 +1951,6 @@ section {
 h2 {
   text-align: center;
   font-weight: bold;
-}
-
-.latestnews {
-  display: flex;
-  flex-direction: column;
-}
-
-.newsarticles .container {
-  padding: 15px 0 0;
 }
 
 .jobpic {
@@ -2126,6 +2132,15 @@ h2 {
 .partners {
   padding: 50px 0;
 }
+.partners img {
+  position: relative;
+  vertical-align: middle;
+  padding: 0 20px;
+  max-height: 70px;
+  height: 70px;
+  width: auto;
+  display: flex;
+}
 
 .hamburger-menu {
   background-color: #333645;
@@ -2137,7 +2152,7 @@ h2 {
 }
 
 .burger-menu {
-  background-color: red;
+  background-color: #333645;
   height: 50px;
   width: 50px;
   position: relative;
@@ -2206,7 +2221,7 @@ h2 {
   opacity: 1;
 }
 
-#main-topnavHide {
+#main-topnav {
   position: fixed;
   top: 0;
   width: 100%;

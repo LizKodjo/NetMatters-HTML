@@ -27,16 +27,16 @@
     <div class="cookieSettings">
         <div class="cookieSections">
             <!-- <div class="container mt-3"> -->
-                <button type="button" class="btn-primary btn--bespoke cookiebtn" data-bs-toggle="modal"
-                    data-bs-target="#myModal">Manage Consent</button>
+            <button type="button" class="btn-primary btn--bespoke cookiebtn" data-bs-toggle="modal"
+                data-bs-target="#myModal">Manage Consent</button>
             <!-- </div> -->
-    
+
             <!-- Consent Modal -->
-    
+
             <div id="myModal" class="modal ">
                 <div id="consentPolicy" class="modal-dialog modal-dialog-centered">
                     <div class="modal-content cookie-popup">
-    
+
                         <!-- Modal Header -->
                         <div class="modal-header">
                             <h4 class="modal-title">Cookies Policy</h4>
@@ -47,28 +47,30 @@
                                 Our website uses cookies. This helps us provide you with a good
                                 experience on our website. To see what cookies we use and what they do,
                                 and to opt-in on non-essential cookies click "change settings". For
-                                a detailed explanation, click on <a class="privacy" href="#">"Privacy Policy"</a> otherwise
+                                a detailed explanation, click on <a class="privacy" href="#">"Privacy Policy"</a>
+                                otherwise
                                 click "Accept
                                 Cookies" to enter.
                             </p>
-    
+
                         </div>
                         <!-- Modal Footer -->
                         <div class="modal-footer">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <a href="#" type="button" class="btn btn--consent-change" data-bs-dismiss="modal">Change Settings</a>
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="#" id="acceptcookie" type="button" class="btn btn--web"
-                                    data-bs-dismiss="modal">Accept cookies</a>
-                                </div>
-                            </div>
+                            <!-- <div class="row">
+                                <div class="col-sm-6"> -->
+                            <a href="#" type="button" class="btn btn--consent-change" data-bs-dismiss="modal">Change
+                                Settings</a>
+                            <!-- </div> -->
+                            <!-- <div class="col-sm-6"> -->
+                            <a href="#" id="acceptcookie" type="button" class="btn btn--web"
+                                data-bs-dismiss="modal">Accept cookies</a>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Hidden side menu -->
@@ -214,8 +216,6 @@
         </div>
     </div>
 
-
-
     <!-- Main Body -->
 
     <div id="outermain" class="container outermain">
@@ -243,7 +243,8 @@
 
                                 <div class="col-xs-3 col-sm-6 col-md-7 col-lg-8">
                                     <div class="searchMenu">
-                                        <a href="#" class="btn topcontactbtn itbtn"><i class="fa-solid fa-computer-mouse"></i>
+                                        <a href="#" class="btn topcontactbtn itbtn"><i
+                                                class="fa-solid fa-computer-mouse"></i>
                                             Support
                                         </a>
                                         <a href="#" class="topcontactbtn contactbtn"><i
@@ -670,7 +671,8 @@
 
                                 <div class="col-xs-3 col-sm-6 col-md-7 col-lg-8">
                                     <div class="searchMenu">
-                                        <a href="#" class="btn topcontactbtn itbtn"><i class="fa-solid fa-computer-mouse"></i>
+                                        <a href="#" class="btn topcontactbtn itbtn"><i
+                                                class="fa-solid fa-computer-mouse"></i>
                                             Support
                                         </a>
                                         <a href="#" class="topcontactbtn contactbtn"><i
@@ -1212,107 +1214,120 @@
                 <!-- Our Services -->
                 <div class="container servicegrid">
                     <div class="serviceSections">
-                        <div>
-                            <div class="container serveheadings">
-                                <div class="topHeadings">
-                                    <span class="serviceheading"><strong>Our Services</strong></span>
-                                    <span class="servicesubheading"><a href="#">View Our Work <i
-                                                class="fa-solid fa-arrow-right"></i></a></span>
+                        <div class="servicebreakdown">
+
+                            <div class="row">
+                                <div class="col-md-12 clearfix serveheadings">
+                                    <!-- <div class="topHeadings"> -->
+                                    <h2 class="h1 float-left-sm serviceheading"><strong>Our Services</strong></h2>
+                                    <h3 class="float-right-sm hidden-xs servicesubheading"><a href="#">View Our Work <i
+                                                class="fa-solid fa-arrow-right"></i></a></h3>
+                                    <!-- </div> -->
                                 </div>
+
+                                <!-- <div class="container service-blocks"> -->
+                                <!-- <div class="row upper-row">
+                                        <div class="container"> -->
+                                <div class="col-md-4 bespoke-b">
+                                    <div class="service bespoke-block"><span
+                                            class="material-symbols-outlined bespoke-icon">monitor</span>
+                                        <p class="service-topic">Bespoke Software</p>
+                                        <p class="service-info">Bespoke software solutions for all your
+                                            business
+                                            needs
+                                            including
+                                            integrations
+                                            and reporting.</p> <button class="btn servebespoke">Read
+                                            more</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 it-b">
+                                    <div class="service it-block"><span
+                                            class="material-symbols-outlined it-icon">monitor</span>
+                                        <p class="service-topic">IT Support</p>
+                                        <p class="service-info">Fully managed IT support and consultancy
+                                            packages
+                                            tailored
+                                            to
+                                            meet
+                                            your
+                                            exact
+                                            business needs.</p><button class="btn serveit">Read
+                                            more</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 digital-b">
+                                    <div class="service digital-block"><span
+                                            class="material-symbols-outlined digital-icon">signal_cellular_alt</span>
+                                        <p class="service-topic">Digital Marketing</p>
+                                        <p class="service-info">Driven brand awareness & ROI through
+                                            creative
+                                            digital
+                                            marketing
+                                            campaigns.
+                                        </p>
+                                        <button class="btn servedigital">Read more</button>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                                <!-- </div> -->
+                                <!-- <div class="row lower-row"> -->
+                                <!-- <div class="container lower-first"> -->
+                                <div class="col-lg-3 col-md-6 col-sm-6 telecoms-b">
+                                    <div class="service telecoms-block"><span
+                                            class="material-symbols-outlined tele-icon">phone_in_talk</span>
+                                        <p class="service-topic">Telecoms Services</p>
+                                        <p class="service-info">Business telephony solutions including
+                                            mobile &
+                                            connectivity
+                                            solutions.
+                                        </p>
+                                        <button class="btn servetelecoms">Read more</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 web-b">
+                                    <div class="service web-block"><i class="fa-solid fa-code web-icon"></i>
+                                        <p class="service-topic">Web Design</p>
+                                        <p class="service-info">User-centric design for businesses looking
+                                            to make a
+                                            lasting
+                                            impression.
+                                        </p>
+                                        <button class="btn serveweb">Read more</button>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                                <!-- <div class="container lower-second"> -->
+                                <div class="col-lg-3 col-md-6 col-sm-6 cyber-b">
+                                    <div class="service cyber-block"><span
+                                            class="material-symbols-outlined cyber-icon">security</span>
+                                        <p class="service-topic">Cyber Security</p>
+                                        <p class="service-info">Prevention, testing, consultancy & breach
+                                            management
+                                            services.
+                                        </p>
+                                        <button class="btn servecyber">Read more</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 dev-b">
+                                    <div class="service dev-block"><span
+                                            class="material-symbols-outlined dev-icon">school</span>
+                                        <p class="service-topic">Developer Training</p>
+                                        <p class="service-info">Web design & software training courses
+                                            designed to
+                                            secure a
+                                            job
+                                            in
+                                            tech.
+                                        </p>
+                                        <button class="btn servedev">Read more</button>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                                <!-- </div> -->
+                                <!-- </div> -->
                             </div>
-    
-                            <div class="container service-blocks">
-                                <div class="row upper-row">
-                                    <div class="container">
-                                        <div class="container col-sm bespoke-b">
-                                            <div class="service bespoke-block"><span
-                                                    class="material-symbols-outlined bespoke-icon">monitor</span>
-                                                <p class="service-topic">Bespoke Software</p>
-                                                <p class="service-info">Bespoke software solutions for all your business
-                                                    needs
-                                                    including
-                                                    integrations
-                                                    and reporting.</p> <button class="btn servebespoke">Read more</button>
-                                            </div>
-                                        </div>
-                                        <div class="container col-sm it-b">
-                                            <div class="service it-block"><span
-                                                    class="material-symbols-outlined it-icon">monitor</span>
-                                                <p class="service-topic">IT Support</p>
-                                                <p class="service-info">Fully managed IT support and consultancy packages
-                                                    tailored
-                                                    to
-                                                    meet
-                                                    your
-                                                    exact
-                                                    business needs.</p><button class="btn serveit">Read more</button>
-                                            </div>
-                                        </div>
-                                        <div class="container col-sm digital-b">
-                                            <div class="service digital-block"><span
-                                                    class="material-symbols-outlined digital-icon">signal_cellular_alt</span>
-                                                <p class="service-topic">Digital Marketing</p>
-                                                <p class="service-info">Driven brand awareness & ROI through creative
-                                                    digital
-                                                    marketing
-                                                    campaigns.
-                                                </p>
-                                                <button class="btn servedigital">Read more</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row lower-row">
-                                    <div class="container lower-first">
-                                        <div class="container col-sm telecoms-b">
-                                            <div class="service telecoms-block"><span
-                                                    class="material-symbols-outlined tele-icon">phone_in_talk</span>
-                                                <p class="service-topic">Telecoms Services</p>
-                                                <p class="service-info">Business telephony solutions including mobile &
-                                                    connectivity
-                                                    solutions.
-                                                </p>
-                                                <button class="btn servetelecoms">Read more</button>
-                                            </div>
-                                        </div>
-                                        <div class="container col-sm web-b">
-                                            <div class="service web-block"><i class="fa-solid fa-code web-icon"></i>
-                                                <p class="service-topic">Web Design</p>
-                                                <p class="service-info">User-centric design for businesses looking to make a
-                                                    lasting
-                                                    impression.
-                                                </p>
-                                                <button class="btn serveweb">Read more</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="container lower-second">
-                                        <div class="container col-sm cyber-b">
-                                            <div class="service cyber-block"><span
-                                                    class="material-symbols-outlined cyber-icon">security</span>
-                                                <p class="service-topic">Cyber Security</p>
-                                                <p class="service-info">Prevention, testing, consultancy & breach management
-                                                    services.
-                                                </p>
-                                                <button class="btn servecyber">Read more</button>
-                                            </div>
-                                        </div>
-                                        <div class="container col-sm dev-b">
-                                            <div class="service dev-block"><span
-                                                    class="material-symbols-outlined dev-icon">school</span>
-                                                <p class="service-topic">Developer Training</p>
-                                                <p class="service-info">Web design & software training courses designed to
-                                                    secure a
-                                                    job
-                                                    in
-                                                    tech.
-                                                </p>
-                                                <button class="btn servedev">Read more</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <h2 class="service-subheading2"><a href="#">View our Work <i
                                         class="fa-solid fa-arrow-right"></i></a></h2>
                         </div>
@@ -1320,17 +1335,19 @@
                 </div>
                 <!-- Partners -->
                 <div class="partners">
-                    <img src="img/asset9.jpeg" alt="Investing in Future Growth Winner Awards Barclays">
-                    <img src="img/asset11.jpeg" alt="Norfolk Carbon Chapter">
-                    <img src="img/asset13.jpeg" alt="Prompt Payment Code">
-                    <img src="img/asset15.jpeg" alt="Princess Royal Training Award 2020">
-                    <img src="img/asset17.jpeg" alt="Future 50 Member">
-                    <img src="img/asset19.jpeg" alt="QMS ISO 9001 : 2015 Registered">
-                    <img src="img/asset21.jpeg" alt="IS0 27001 : 2013 Registered">
-                    <img src="img/asset23.jpeg" alt="Skills of Tomorrow Winner, Barclays">
-                    <img src="img/asset25.jpeg" alt="Google Partner">
-                    <img src="img/asset27.png" alt="We are a Living Wage Employer">
-                    <img src="img/asset29.png" alt="Norfolk ProHelp">
+                    
+                            <img src="img/asset9.jpeg" alt="Investing in Future Growth Winner Awards Barclays">
+                            <img src="img/asset11.jpeg" alt="Norfolk Carbon Chapter">
+                            <img src="img/asset13.jpeg" alt="Prompt Payment Code">
+                            <img src="img/asset15.jpeg" alt="Princess Royal Training Award 2020">
+                            <img src="img/asset17.jpeg" alt="Future 50 Member">
+                            <img src="img/asset19.jpeg" alt="QMS ISO 9001 : 2015 Registered">
+                            <img src="img/asset21.jpeg" alt="IS0 27001 : 2013 Registered">
+                            <img src="img/asset23.jpeg" alt="Skills of Tomorrow Winner, Barclays">
+                            <img src="img/asset25.jpeg" alt="Google Partner">
+                            <img src="img/asset27.png" alt="We are a Living Wage Employer">
+                            <img src="img/asset29.png" alt="Norfolk ProHelp">
+                    
 
                 </div>
                 <!-- Reviews -->
@@ -1422,131 +1439,162 @@
                 </div>
                 <!-- Latest news -->
                 <div class="latestnews">
-                    <div class="container">
-                        <div class="lateheadings">
-                            <div>
-                                <h3 class="newsheading">Latest News</h3>
-                            </div>
-                            <div>
-                                <a href="#" class="viewheading2">View All <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="newsarticles">
+                    <div class="latest-sections">
                         <div class="container">
-                            <section class="vacancies"><a href="#">
-                                    <div class="container latestImg">
-                                        <div><img class="jobvac" src="img/asset30.png" alt="Black Friday, 3 Top Tips">
+                            <div class="lateheadings">
+                                <div>
+                                    <h3 class="newsheading">Latest News</h3>
+                                </div>
+                                <div>
+                                    <a href="#" class="viewheading2">View All <i
+                                            class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="newsarticles">
+                            <div class="container">
+                                <div class="vacancy-list">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-6">
+                                            <section class="vacancies"><a href="#">
+                                                    <div class="container latestImg">
+                                                        <div><img class="jobvac" src="img/asset30.png"
+                                                                alt="Black Friday, 3 Top Tips">
+                                                        </div>
+                                                        <div class="text-block1">
+                                                            <a href="#">Insights</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container">
+                                                        <div class="art-details">
+                                                            <h3 class="jobtitle1">Black Friday: 3 Top Tips to Optimise
+                                                                Your E-c<span class="dots">...</span><span
+                                                                    class="more">ommerce Business for Black
+                                                                    Friday</span><span class="jobspan">
+                                                                    - 4 minute read</span></h3>
+                                                            <div class="jobspec">
+                                                                <p>With Black Friday and Cyber Week on the horizon,
+                                                                    businesses around
+                                                                    the
+                                                                    world
+                                                                    are
+                                                                    looking to
+                                                                    implemen<span class="dots">...</span><span
+                                                                        class="more"> ent the
+                                                                        best
+                                                                        e-commerce
+                                                                        strategies
+                                                                        to capitalise on prospect opportunities,
+                                                                        creating a lasting buzz
+                                                                        to
+                                                                        see
+                                                                        them
+                                                                        through to
+                                                                        the new year.
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                            <button class="btn latestbtn1">Read more</button><br>
+                                                            <div class="dateposted">
+                                                                <img class="jobpic" src="img/asset31.png"
+                                                                    alt="Netmatters trademark">
+                                                                <div class="postedby">
+                                                                    <p><strong>Posted by Netmatters</strong><br>12th
+                                                                        September 2023</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a></section>
                                         </div>
-                                        <div class="text-block1">
-                                            <a href="#">Insights</a>
+                                        <div class="col-lg-4 col-sm-6">
+                                            <section class="vacancies secone"><a href="#">
+                                                    <div class="container latestImg">
+                                                        <div><img class="jobvac" src="img/asset32.png"
+                                                                alt="Congratulations Rob Anthony">
+                                                        </div>
+                                                        <div class="text-block2">
+                                                            <a href="#">News</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container">
+                                                        <div class="art-details">
+                                                            <h3 class="jobtitle2">Rob Anthony - Netmatters 5 Year
+                                                                Legend<span class="jobspan"></span>
+                                                            </h3>
+                                                            <div class="jobspec">
+                                                                <p>Today we celebrate the amazing achievements of Rob
+                                                                    Anthony as he
+                                                                    champions
+                                                                    the
+                                                                    Netmatters
+                                                                    long Servi<span class="dots">...</span><span
+                                                                        class="more">ce Award,
+                                                                        entering
+                                                                        the hall of fame as our latest <italics>
+                                                                            'Legend'.</italics>
+                                                                    </span></p>
+                                                            </div>
+                                                            <button class="btn latestbtn2">Read more</button><br>
+                                                            <div class="dateposted">
+                                                                <img class="jobpic" src="img/asset31.png"
+                                                                    alt="Netmatters trademark">
+                                                                <div class="postedby">
+                                                                    <p><strong>Posted by Netmatters</strong><br>8th
+                                                                        September 2023</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a></section>
                                         </div>
-                                    </div>
-                                    <div class="container">
-                                        <div class="art-details">
-                                            <h3 class="jobtitle1">Black Friday: 3 Top Tips to Optimise Your E-c<span
-                                                    class="dots">...</span><span class="more">ommerce Business for Black
-                                                    Friday</span><span class="jobspan">
-                                                    - 4 minute read</span></h3>
-                                            <div class="jobspec">
-                                                <p>With Black Friday and Cyber Week on the horizon, businesses around
-                                                    the
-                                                    world
-                                                    are
-                                                    looking to
-                                                    implemen<span class="dots">...</span><span class="more"> ent the
-                                                        best
-                                                        e-commerce
-                                                        strategies
-                                                        to capitalise on prospect opportunities, creating a lasting buzz
-                                                        to
-                                                        see
-                                                        them
-                                                        through to
-                                                        the new year.
-                                                    </span>
-                                                </p>
-                                            </div>
-                                            <button class="btn latestbtn1">Read more</button><br>
-                                            <div class="dateposted">
-                                                <img class="jobpic" src="img/asset31.png" alt="Netmatters trademark">
-                                                <div class="postedby">
-                                                    <p><strong>Posted by Netmatters</strong><br>12th September 2023</p>
+                                        <div class="col-lg-4 col-sm-6">
+                                            <section class="vacancies lastone">
+                                                <div class="container latestImg">
+                                                    <div><img class="jobvac" src="img/asset33.png"
+                                                            alt="Princess Royal Training Award 2023">
+                                                        <div class="text-block3">
+                                                            <a href="#">News</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a></section>
-                            <section class="vacancies secone"><a href="#">
-                                    <div class="container latestImg">
-                                        <div><img class="jobvac" src="img/asset32.png"
-                                                alt="Congratulations Rob Anthony">
-                                        </div>
-                                        <div class="text-block2">
-                                            <a href="#">News</a>
-                                        </div>
-                                    </div>
-                                    <div class="container">
-                                        <div class="art-details">
-                                            <h3 class="jobtitle2">Rob Anthony - Netmatters 5 Year Legend<span
-                                                    class="jobspan"></span>
-                                            </h3>
-                                            <div class="jobspec">
-                                                <p>Today we celebrate the amazing achievements of Rob Anthony as he
-                                                    champions
-                                                    the
-                                                    Netmatters
-                                                    long Servi<span class="dots">...</span><span class="more">ce Award,
-                                                        entering
-                                                        the hall of fame as our latest <italics>'Legend'.</italics>
-                                                    </span></p>
-                                            </div>
-                                            <button class="btn latestbtn2">Read more</button><br>
-                                            <div class="dateposted">
-                                                <img class="jobpic" src="img/asset31.png" alt="Netmatters trademark">
-                                                <div class="postedby">
-                                                    <p><strong>Posted by Netmatters</strong><br>8th September 2023</p>
+                                                <div class="container">
+                                                    <div class="art-details">
+                                                        <h3 class="jobtitle3">Netmatters Celebrate the Princess Royal
+                                                            Train<span class="dots">...</span><span class="more">ing
+                                                                Award 2023</span></h3>
+                                                        <div class="jobspec">
+                                                            <p>With a royal seal of approval, today we are proud to
+                                                                champion the
+                                                                Princess
+                                                                Royal Training Award. Net<span
+                                                                    class="dots">...</span><span class="more">matters
+                                                                    Celebrate
+                                                                    the Princess Royal Training Award 2023.</span>
+                                                            </p>
+                                                        </div>
+                                                        <button class="btn latestbtn3">Read more</button><br>
+                                                        <div class="dateposted">
+                                                            <img class="jobpic" src="img/asset31.png"
+                                                                alt="Netmatters trademark">
+                                                            <div class="postedby">
+                                                                <p><strong>Posted by Netmatters</strong><br>5th
+                                                                    September 2023</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </section>
                                         </div>
-                                    </div>
-                                </a></section>
-                            <section class="vacancies lastone">
-                                <div class="container latestImg">
-                                    <div><img class="jobvac" src="img/asset33.png"
-                                            alt="Princess Royal Training Award 2023">
-                                        <div class="text-block3">
-                                            <a href="#">News</a>
-                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="container">
-                                    <div class="art-details">
-                                        <h3 class="jobtitle3">Netmatters Celebrate the Princess Royal Train<span
-                                                class="dots">...</span><span class="more">ing Award 2023</span></h3>
-                                        <div class="jobspec">
-                                            <p>With a royal seal of approval, today we are proud to champion the
-                                                Princess
-                                                Royal Training Award. Net<span class="dots">...</span><span
-                                                    class="more">matters
-                                                    Celebrate
-                                                    the Princess Royal Training Award 2023.</span>
-                                            </p>
-                                        </div>
-                                        <button class="btn latestbtn3">Read more</button><br>
-                                        <div class="dateposted">
-                                            <img class="jobpic" src="img/asset31.png" alt="Netmatters trademark">
-                                            <div class="postedby">
-                                                <p><strong>Posted by Netmatters</strong><br>5th September 2023</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+                            </div>
                         </div>
                     </div>
+
                     <h2 class="viewheading">View All <i class="fa-solid fa-arrow-right"></i></h2>
                 </div>
                 <!-- Clients -->
@@ -1745,7 +1793,6 @@
     <script src="js/banner.js"></script>
     <script src="js/hamburgerMenu.js"></script>
     <script src="js/stickyNav.js"></script>
-    <script src="js/cookie.js"></script>
 </body>
 
 </html>

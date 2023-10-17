@@ -84,8 +84,11 @@ body {
 }
 
 .vacancies {
-    transition: all 0.5s;
+    margin-top:30px;
+    top:0;
+    transition: all 0.5s ease;
     cursor: pointer;
+    position: relative;
 }
 
 
