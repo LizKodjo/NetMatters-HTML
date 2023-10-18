@@ -789,7 +789,7 @@
 
     .main-topnav {
         .container {
-            width: 750px;
+            // max-width: 750px;
 
             .top-help {
                 width: 750px;
@@ -833,7 +833,7 @@
                             visibility: hidden !important;
                         }
 
-                        #search-tablet {
+                        input {
                             padding: 5px 15px;
                             border-radius: 0;
                             width: 174px;
@@ -1088,7 +1088,8 @@
             padding: 0;
 
             .container {
-                width: 970px;
+                // width: 970px;
+                // padding: 0;
 
                 .top-help {
                     width: 100%;
@@ -1134,14 +1135,14 @@
 
     .main-topnav {
         .topnav {
-            width: 100%;
+            // width: 100%;
 
             .mainmenu {
                 .container {
-                    width: 970px;
+                    // width: 970px;
 
                     .menu-breakdown {
-                        width: 100%;
+                        // width: 100%;
                         display: flex;
                         justify-content: space-between;
                     }
@@ -1156,7 +1157,7 @@
         .banner-image {
             .imgText {
                 .top-left {
-                    font-size: 62px;
+                    font-size: 64px;
 
                     .bottom-left {
                         font-size: 26px;
@@ -1354,7 +1355,18 @@
 
 }
 
-@media screen and (min-width: 992px) and (max-width: 1190px) {
+@media screen and (min-width: 992px) and (max-width: 1260px) {
+
+    .inner {
+        .main-topnav {
+            padding: 0;
+
+            .container {
+                width: 970px;
+                padding: 0;
+            }
+        }
+    }
 
     .col-md-7 {
         .searchMenu {
@@ -1395,17 +1407,90 @@
     }
 }
 
-@media screen and (min-width: 575px) and (max-width:750px) {
-    .inner {
-        .main-topnav {
-            .container {
-                width: 550px;
+@media screen and (min-width: 575px) and (max-width:768px) {
+
+    // .inner {
+    //     .main-topnav {
+    //         .top-help {
+    //             display: none;
+    //         }
+    //     }
+    // }
+
+    .smallnav {
+        .container {
+            .smallnavtop {
+                .col-xs-6 {
+                    padding: 0;
+                    display: table-cell;
+                    float: none;
+                    vertical-align: middle;
+                    width: 100%;
+                }
+
+                .mobile-container {
+                    padding: 0;
+                    display: table-cell;
+                    float: none;
+                    vertical-align: middle;
+                    width: 100%;
+                }
+
+                .hamburger-container {
+                    padding: 5px 15px;
+                }
+            }
+
+            // padding: 0;
+            .searchform {
+                margin-top: 11px;
+                position: relative;
+
+                .searchbar {
+                    // background-color: $alto;
+                    // border: none;
+
+                    border: 2px solid rgba(0, 0, 0, .1);
+                    // font-size: 20px;
+                    padding: 5px 40px 5px 15px;
+                    background-color: rgba(0, 0, 0, .1);
+                    outline: 1px solid hsla(0, 0%, 100%, .2);
+                    width: 100%;
+                    position: relative;
+                    transition: none;
+
+                    input {
+                        visibility: hidden;
+                    }
+                }
+
+                .searchbar button {
+                    background: none;
+                    border: none;
+                    color: $primary-dark-col;
+                    position: absolute;
+                    right: 5px;
+                    bottom: -10px;
+                    line-height: 47px;
+                    font-size: 20px;
+                    outline: none;
+                    padding: 1px 5px;
+                }
             }
         }
     }
+
+    
+    // .inner {
+    //     .main-topnav {
+    //         .container {
+    //             width: 550px;
+    //         }
+    //     }
+    // }
 }
 
-@media screen and (min-width:575px) and (max-width: 970px) {
+@media screen and (min-width:575px) and (max-width: 992px) {
     .topnav {
         .mainmenu {
             display: none;
@@ -1423,7 +1508,7 @@
     .inner {
         .main-topnav {
             .container {
-                width: 1170px;
+                width: 1200px;
 
                 .top-help {
                     // .logo {
@@ -1467,7 +1552,7 @@
         .topnav {
             .mainmenu {
                 .container {
-                    width: 1170px;
+                    width: 1200px;
 
                     .menu-breakdown {
                         width: 100%;

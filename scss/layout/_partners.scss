@@ -1,19 +1,9 @@
 // Partners top and bottom padding
 .partners {
     padding: 50px 0;
-            img {
-                position: relative;
-                vertical-align: middle;
-                padding: 0 20px;
-                max-height: 70px;
-                height: 70px;
-                width: auto;
-                display: flex;
-            }
-    // .partnerImg {
-    //     .images-container {
-            
-    //     }
-    // }
-    
+    display: flex;
+
+    img {
+        @include clientPartnerImgs;
+    }
 }

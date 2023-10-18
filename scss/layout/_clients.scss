@@ -1,42 +1,96 @@
 // Clients
 .clients {
     padding: 50px 0;
-}
+    display: flex;
+    
 
-
-.clients-img:hover,
-.partners:hover {
-    filter: grayscale(10%);
-}
-
-// Tooltip container and tooltip text
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-
-    .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: $emperor;
-        color: $white;
-        text-align: center;
-        padding: 5px 0;
-        border-radius: 6px;
-        // Postion the tooltip text
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -60px;
-        // Fade in tooltip
-        opacity: 0;
-        transition: opacity 0.3s;
+    img {
+        @include clientPartnerImgs;     
     }
 }
 
-// tooltip arrow
-.tooltip:hover .tooltiptext {
+.slick-list {
+    overflow: visible;
+}
+
+// Tooltip container and tooltip text
+
+.tooltipimg {
+    position: relative;
+    display: inline-block;
+    .btn {
+        font-size: 16px;
+        // &:hover {
+        //     // background-color: darken($color, 10%);
+        // }
+    }
+}
+
+.tooltipimg .imgtext {
+    visibility: hidden;
+    width: 280px;
+    // height: 30px;
+    font-size: 12px;
+    background-color: $primary-dark-col;
+    color: $white;
+
+    text-align: center;
+    padding: 20px;
+    // border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin: 0 0 50px -140px;
+}
+
+
+// Arrow
+.tooltipimg .imgtext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -30px;
+    border-width: 30px;
+    border-style: solid;
+    border-color: $primary-dark-col transparent transparent transparent;
+}
+
+.tooltipimg:hover .imgtext {
     visibility: visible;
     opacity: 1;
 }
+
+
+// .tooltip {
+//     position: relative;
+//     display: inline-block;
+//     border-bottom: 1px dotted black;
+
+//     .tooltiptext {
+//         visibility: hidden;
+//         width: 120px;
+//         background-color: $emperor;
+//         color: $white;
+//         text-align: center;
+//         padding: 5px 0;
+//         border-radius: 6px;
+//         // Postion the tooltip text
+//         position: absolute;
+//         z-index: 1;
+//         bottom: 125%;
+//         left: 50%;
+//         margin-left: -60px;
+//         // Fade in tooltip
+//         opacity: 0;
+//         transition: opacity 0.3s;
+//     }
+// }
+
+// // tooltip arrow
+// .tooltip:hover .tooltiptext {
+//     visibility: visible;
+//     opacity: 1;
+// }

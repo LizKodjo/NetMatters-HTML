@@ -11,6 +11,7 @@ $('.partners').slick({
     arrows: false,
     autoplay: true,
     slidesToShow: 7,
+    draggable: false,
     variableWidth: true,
     responsive: [
         {
@@ -50,6 +51,7 @@ $('.clients-img').slick ({
     arrows: false,
     autoplay: true,
     slidesToShow: 7,
+    draggable: false,
     variableWidth: true,
     responsive: [
         {

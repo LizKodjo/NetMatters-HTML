@@ -3,58 +3,70 @@
     background-color: $it-support;
     border-color: $it-support;
 }
+
 @mixin wisteria {
     background-color: $web-design;
     border-color: $web-design;
 }
+
 @mixin primarydark {
     background-color: $primary-dark-col;
     border-color: $primary-dark-col;
 }
+
 @mixin shamrock {
     background-color: $digital-market;
-    border-color:$digital-market;
+    border-color: $digital-market;
 }
+
 @mixin punch {
     background-color: $developer;
-    border-color:$developer;
+    border-color: $developer;
 }
+
 @mixin radicalred {
     background-color: $cyber;
     border-color: $cyber;
 }
+
 @mixin valencia {
     background-color: $telecoms;
     border-color: $telecoms;
 }
+
 @mixin hoki {
     background-color: $bespoke;
     border-color: $bespoke;
 }
+
 @mixin jade {
     background-color: $jade;
     border-color: $jade;
 }
+
 @mixin charade {
-    background-color:$charade;
-    border-color:$charade;
+    background-color: $charade;
+    border-color: $charade;
 }
+
 @mixin boldleft {
     color: $white;
     text-align: left;
     font-weight: bold;
 }
+
 @mixin justifyflexstart {
-    display:flex;
-    justify-content:flex-start;
+    display: flex;
+    justify-content: flex-start;
 }
+
 @mixin flexevencenter {
     display: flex;
     flex-wrap: wrap;
     // justify-content: space-evenly;
 }
 
-@mixin triangle($color){
+@mixin triangle($color) {
     content: "";
     position: absolute;
     left: 50%;
@@ -75,9 +87,25 @@
     color: $white;
     padding: 0 10px;
     text-transform: uppercase;
+
     a {
         color: $white;
         font-weight: 600;
         font-size: 12px;
+    }
+}
+
+@mixin clientPartnerImgs {
+    position: relative;
+    vertical-align: middle;
+    padding: 0 20px;
+    max-height: 70px;
+    height: 70px;
+    width: auto;
+    align-items: center;
+    filter: grayscale(100%);
+
+    &:hover {
+        filter: grayscale(0);
     }
 }
