@@ -436,9 +436,6 @@ body {
   .reviews .googlebtn {
     font-size: 18px;
   }
-  .latestnews .viewheading2 {
-    display: none;
-  }
   .latestnews .vacancies .container {
     border-radius: 0 0 3px 3px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
@@ -454,11 +451,6 @@ body {
   }
   .latestnews .newsheading {
     font-size: 36px;
-    padding: 50px 0 0;
-  }
-  .latestnews .viewheading {
-    font-size: 26px;
-    margin: 0 0 15px;
   }
   .newsarticles .container .vacancies .latestImg {
     padding: 0;
@@ -617,12 +609,6 @@ body {
   .servicegrid .lower-row .container {
     display: flex;
   }
-  .servicegrid .service-subheading2 {
-    display: none;
-  }
-  .reviews .container {
-    width: 720px;
-  }
   .reviews .container .intro-review .welcomenet .container p {
     margin: 0 0 25px;
   }
@@ -643,9 +629,6 @@ body {
   .reviews .culture {
     margin-bottom: 17px;
   }
-  .latestnews .container {
-    padding-top: 50px;
-  }
   .latestnews .container .lateheadings {
     display: flex;
     justify-content: space-between;
@@ -662,36 +645,19 @@ body {
     font-size: 26px;
     font-weight: 600;
   }
-  .latestnews .newsarticles .container {
-    display: flex;
-    justify-content: space-around;
-  }
   .latestnews .newsarticles .container .vacancies .latestImg {
     padding: 0;
   }
   .latestnews .newsarticles .container .vacancies .container {
-    width: 345px;
     padding: 30px 30px 0;
     border-radius: 0 0 3px 3px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   }
-  .viewheading,
-  .lastone {
-    display: none;
-  }
   .clients-img {
     justify-content: space-between;
   }
-  .newsletter .container {
-    width: 720px;
-  }
   footer .footerlist {
     font-size: 13px;
-  }
-  footer .colsforfooter {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
   }
   footer h4 {
     margin-bottom: 26px;
@@ -736,7 +702,8 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .inner .main-topnav .top-help, .inner .main-topnav .smallnav {
+  .inner .main-topnav .top-help,
+  .inner .main-topnav .smallnav {
     display: none;
   }
   header .main-topnav {
@@ -834,6 +801,9 @@ body {
   .main-pic .banner-image .imgText .top-left .main-button {
     font-size: 20px;
   }
+  .service-subheading2 {
+    display: none;
+  }
   .servicegrid {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -841,6 +811,12 @@ body {
   }
   .copyright .container {
     width: 750px;
+  }
+  .latestnews .viewheading {
+    display: none;
+  }
+  .latestnews .container {
+    padding-top: 50px;
   }
   .latestnews .newsarticles .container {
     max-width: 750px;
@@ -1149,8 +1125,58 @@ body {
   .banner {
     position: relative;
   }
-  .banner .bannerSlideshow .main-pic {
-    height: 550px;
+  .servicegrid {
+    max-width: 100%;
+  }
+  .servicegrid .serviceSections .servicebreakdown .row .col-sm-6 {
+    width: 100%;
+  }
+  .reviews .container {
+    max-width: 100%;
+  }
+  .reviews .container .intro-review .welcomenet {
+    margin-bottom: 50px;
+  }
+  .latestnews .viewheading {
+    font-size: 26px;
+    margin: 0 0 15px;
+  }
+  .latestnews .latest-sections .container {
+    max-width: 100%;
+    padding-top: 50px;
+  }
+  .latestnews .latest-sections .container .lateheadings .viewheading2 {
+    display: none;
+  }
+  .latestnews .latest-sections .newsarticles .container .vacancy-list .row {
+    display: block;
+  }
+  .latestnews .latest-sections .newsarticles .container .vacancy-list .row .col-sm-6 {
+    width: 100%;
+  }
+  .latestnews .latest-sections .newsarticles .container .vacancy-list .row .col-sm-6 .vacancies .latestImg {
+    width: 100%;
+    padding: 0;
+  }
+  .newsletter .container {
+    max-width: 100%;
+  }
+  footer .container {
+    max-width: 100%;
+  }
+  footer .container .main-footer {
+    max-width: 100%;
+  }
+  footer .container .main-footer .footer-sections .footer-logo .social-logos {
+    display: inline-block;
+  }
+  footer .container .main-footer .footer-sections .colsforfooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .copyright .container {
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 575px) and (max-width: 992px) {
@@ -1899,6 +1925,9 @@ a[class$=-content] {
 .tooltipimg .btn {
   font-size: 16px;
 }
+.tooltipimg .btn:hover {
+  color: #fff;
+}
 
 .tooltipimg .imgtext {
   visibility: hidden;
@@ -1985,9 +2014,6 @@ a[class$=-content] {
   text-align: left;
 }
 
-.latestnews .latest-sections .newsarticles .container {
-  padding-bottom: 50px;
-}
 .latestnews .latest-sections .newsarticles .container .vacancy-list .row {
   margin-top: -30px;
 }
@@ -2233,7 +2259,7 @@ h2 {
 
 .hamburger-menu.active .outermain {
   right: 0;
-  transition: right 0.5s;
+  transition: right 15s linear ease;
 }
 
 .burger-menu.active .bar-top {
@@ -2252,12 +2278,13 @@ h2 {
 
 .burger-menu.active .outermain {
   right: 0;
-  transition: right 0.5s;
 }
 
 .outermain.active {
   right: 275px;
-  opacity: 1;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  transition: all 500ms ease;
 }
 
 #main-topnav {
