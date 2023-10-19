@@ -521,13 +521,6 @@ body {
   .postedby {
     font-size: 15px;
   }
-  .smallnav .container .smallnavtop .col-xs-6 {
-    padding: 0;
-    display: table-cell;
-    float: none;
-    vertical-align: middle;
-    width: 100%;
-  }
   .smallnav .container .searchform {
     margin-top: 11px;
     position: relative;
@@ -558,9 +551,6 @@ body {
   .inner .main-topnav .container .top-help .itbtn,
   .inner .main-topnav .container .top-help .contactbtn,
   .inner .main-topnav .container .top-help .smallsearchphone {
-    display: none;
-  }
-  .inner .main-topnav .smallnav {
     display: none;
   }
   .topnav a.icon {
@@ -746,6 +736,9 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .inner .main-topnav .top-help, .inner .main-topnav .smallnav {
+    display: none;
+  }
   header .main-topnav {
     padding: 20px 0;
   }
@@ -1072,13 +1065,35 @@ body {
     display: flex;
   }
 }
-@media screen and (min-width: 575px) and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .inner .main-topnav .top-help {
+    display: none;
+  }
+  .smallnav {
+    padding: 20px 0;
+  }
+  .smallnav .container {
+    max-width: 100%;
+  }
+  .smallnav .container .smallnavtop {
+    display: table;
+    margin: 0;
+    width: 100%;
+  }
   .smallnav .container .smallnavtop .col-xs-6 {
     padding: 0;
     display: table-cell;
     float: none;
     vertical-align: middle;
     width: 100%;
+  }
+  .smallnav .container .smallnavtop .col-xs-6 .logo-container {
+    display: table;
+    table-layout: fixed;
+  }
+  .smallnav .container .smallnavtop .col-xs-6 .logo-container img {
+    display: block;
+    max-width: 100%;
   }
   .smallnav .container .smallnavtop .mobile-container {
     padding: 0;
@@ -1087,8 +1102,21 @@ body {
     vertical-align: middle;
     width: 100%;
   }
+  .smallnav .container .smallnavtop .mobile-container .smallsearchphone {
+    font-size: 32px;
+    margin-left: 15px;
+  }
   .smallnav .container .smallnavtop .hamburger-container {
-    padding: 5px 15px;
+    padding: 0;
+    display: table-cell;
+    float: none;
+    width: 1%;
+    vertical-align: middle;
+  }
+  .smallnav .container .smallnavtop .hamburger-container .burger-container {
+    float: right;
+    padding: 7px 0;
+    margin-left: 20px;
   }
   .smallnav .container .searchform {
     margin-top: 11px;
@@ -1117,6 +1145,12 @@ body {
     font-size: 20px;
     outline: none;
     padding: 1px 5px;
+  }
+  .banner {
+    position: relative;
+  }
+  .banner .bannerSlideshow .main-pic {
+    height: 550px;
   }
 }
 @media screen and (min-width: 575px) and (max-width: 992px) {
@@ -2021,10 +2055,6 @@ h2 {
   vertical-align: middle;
   background: linear-gradient(270deg, transparent 25%, black);
   filter: brightness(0.5);
-}
-
-.banner, .bannerSlideshow {
-  padding: 0;
 }
 
 .slick-dotted.slick-slider {

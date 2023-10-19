@@ -389,15 +389,15 @@
 
     .smallnav {
         .container {
-            .smallnavtop {
-                .col-xs-6 {
-                    padding: 0;
-                    display: table-cell;
-                    float: none;
-                    vertical-align: middle;
-                    width: 100%;
-                }
-            }
+            // .smallnavtop {
+            //     .col-xs-6 {
+            //         padding: 0;
+            //         display: table-cell;
+            //         float: none;
+            //         vertical-align: middle;
+            //         width: 100%;
+            //     }
+            // }
 
             // padding: 0;
             .searchform {
@@ -463,9 +463,7 @@
                 }
             }
 
-            .smallnav {
-                display: none;
-            }
+            
         }
     }
 
@@ -783,6 +781,16 @@
 }
 
 @media screen and (min-width:768px) {
+
+   
+
+    .inner {
+        .main-topnav {
+            .top-help, .smallnav {
+                display: none;
+            }
+        }
+    }    
     header .main-topnav {
         padding: 20px 0;
     }
@@ -1407,25 +1415,43 @@
     }
 }
 
-@media screen and (min-width: 575px) and (max-width:768px) {
+@media screen and (max-width:991px) {
 
-    // .inner {
-    //     .main-topnav {
-    //         .top-help {
-    //             display: none;
-    //         }
-    //     }
-    // }
+}
 
+@media screen and (max-width:767px) {
+
+    .inner {
+        .main-topnav {
+            .top-help {
+                display: none;
+            }
+        }
+    }  
+   
     .smallnav {
+        padding: 20px 0;
         .container {
+            max-width: 100%;
             .smallnavtop {
+                display: table;
+                margin: 0; 
+                width: 100%;
                 .col-xs-6 {
                     padding: 0;
                     display: table-cell;
                     float: none;
                     vertical-align: middle;
                     width: 100%;
+                    .logo-container {
+                        display: table;
+                        table-layout: fixed;
+
+                        img {
+                            display: block;
+                            max-width: 100%;
+                        }
+                    }
                 }
 
                 .mobile-container {
@@ -1434,10 +1460,25 @@
                     float: none;
                     vertical-align: middle;
                     width: 100%;
+
+                    .smallsearchphone {
+                        font-size: 32px;
+                        margin-left: 15px;
+                    }
                 }
 
                 .hamburger-container {
-                    padding: 5px 15px;
+                    padding: 0;
+                    display: table-cell;
+                    float: none;
+                    width: 1%;
+                    vertical-align: middle;
+
+                    .burger-container {
+                        float: right;
+                        padding: 7px 0;
+                        margin-left: 20px;
+                    }
                 }
             }
 
@@ -1480,14 +1521,21 @@
         }
     }
 
+    .banner {
+        position: relative;
+        .bannerSlideshow {
+            .main-pic {
+                // position:relative;
+                // text-align: center;
+                height: 550px;
+                // color: $white;
+            }
+        }
+
+    }
+
     
-    // .inner {
-    //     .main-topnav {
-    //         .container {
-    //             width: 550px;
-    //         }
-    //     }
-    // }
+   
 }
 
 @media screen and (min-width:575px) and (max-width: 992px) {
