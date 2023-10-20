@@ -66,7 +66,6 @@
 
 .hamburger-menu.active .outermain {
     right: 0;
-    transition: right 15s linear ease;
 }
 
 
@@ -87,24 +86,19 @@
 }
 
 .burger-menu.active .outermain {
-    // position: fixed;
-    // top: 0;
     right: 0;
-
-    // height: 100vh;
-    // width: 75%;
-   
 }
-
-
-
-
 
 
 .outermain.active {
     right: 275px;
-    opacity: 0.5;
+    opacity: .5;
     transition: opacity .5s;
-    transition: all 500ms ease;
+    // background-color: rgba(0, 0, 0, .4);
+    // z-index: 35;
+    
 }
 
+.outermain-lg.active {
+    right: 350px;
+}
