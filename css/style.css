@@ -2308,6 +2308,8 @@ h2 {
 .outermain.active {
   right: 275px;
   filter: brightness(50%);
+  height: 100%;
+  width: 100%;
 }
 
 .outermain-lg.active {
