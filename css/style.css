@@ -1447,7 +1447,7 @@ footer .footerlist a {
 .topnav a {
   float: left;
   color: #fff;
-  text-align: center;
+  text-align: left;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 19.2px;
@@ -1456,6 +1456,10 @@ footer .footerlist a {
 }
 .topnav .icon {
   display: none;
+}
+
+.topnav .topnav-sublink .link-text {
+  align-items: start;
 }
 
 .bespoke,
