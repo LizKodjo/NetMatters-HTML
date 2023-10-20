@@ -1939,6 +1939,21 @@ a[class$=-content] {
 .tooltipimg .btn:hover {
   color: #fff;
 }
+.tooltipimg .btn:active {
+  outline: none;
+}
+.tooltipimg .btn--web:hover {
+  background-color: #79539a;
+}
+.tooltipimg .btn--digital:hover {
+  background-color: #25a25a;
+}
+.tooltipimg .btn--bespoke:hover {
+  background-color: #526781;
+}
+.tooltipimg .btn--it-support:hover {
+  background-color: #286abd;
+}
 
 .tooltipimg .imgtext {
   visibility: hidden;
@@ -2365,6 +2380,20 @@ h2 {
   white-space: normal;
   display: block;
   width: 100%;
+}
+.modal-footer .btn--consent-change:hover,
+.modal-footer .btn--consent-change:active:focus,
+.modal-footer .btn--consent-change:focus {
+  background-color: #7e808a;
+  color: #fff;
+  outline: none;
+}
+.modal-footer .btn--web:hover,
+.modal-footer .btn--web:active:focus,
+.modal-footer .btn--web:focus {
+  background-color: #79539a;
+  color: #fff;
+  outline: none;
 }
 
 #consentPolicy {

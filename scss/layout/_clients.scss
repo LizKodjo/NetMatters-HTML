@@ -23,6 +23,23 @@
         &:hover {
             color: $white;
         }
+        &:active {
+            outline: none;
+        }
+    }
+    .btn--web:hover {
+        background-color: shade(web, dark);
+    }
+    .btn--digital:hover {
+        background-color: shade(digital, dark);
+    }
+
+    .btn--bespoke:hover {
+        background-color: shade(bespoke, dark);
+    }
+
+    .btn--it-support:hover {
+        background-color: shade(it-support, dark);
     }
 }
 
@@ -64,33 +81,3 @@
 }
 
 
-// .tooltip {
-//     position: relative;
-//     display: inline-block;
-//     border-bottom: 1px dotted black;
-
-//     .tooltiptext {
-//         visibility: hidden;
-//         width: 120px;
-//         background-color: $emperor;
-//         color: $white;
-//         text-align: center;
-//         padding: 5px 0;
-//         border-radius: 6px;
-//         // Postion the tooltip text
-//         position: absolute;
-//         z-index: 1;
-//         bottom: 125%;
-//         left: 50%;
-//         margin-left: -60px;
-//         // Fade in tooltip
-//         opacity: 0;
-//         transition: opacity 0.3s;
-//     }
-// }
-
-// // tooltip arrow
-// .tooltip:hover .tooltiptext {
-//     visibility: visible;
-//     opacity: 1;
-// }
