@@ -6,6 +6,7 @@
     position: relative;
     cursor: pointer;
     padding: 1rem;
+    border-radius: 3px;
 }
 
 .burger-menu {
@@ -20,7 +21,7 @@
 
 // Burger menu bars
 .ham-bar {
-    width: 33px;
+    width: 30px;
     height: 4px;
     background-color: $white;
     border-radius: 25px;
@@ -33,12 +34,12 @@
 
 // Top bar positioning
 .bar-top {
-    top: 25%;
+    top: 35%;
 }
 
 // Bottom bar positioning
 .bar-bottom {
-    top: 75%;
+    top: 65%;
 }
 
 // Tablets and desktops

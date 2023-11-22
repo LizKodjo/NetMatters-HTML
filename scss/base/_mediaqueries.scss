@@ -513,7 +513,7 @@
         color: $white;
 
         .banner-image {
-           
+
             .headerpic {
                 height: 550px;
                 background-color: black;
@@ -1568,7 +1568,7 @@
     }
 
     .banner {
-        position: relative;       
+        position: relative;
 
     }
 
@@ -1657,14 +1657,17 @@
     footer {
         .container {
             max-width: 100%;
+
             .main-footer {
                 max-width: 100%;
+
                 .footer-sections {
                     .footer-logo {
                         .social-logos {
                             display: inline-block;
                         }
                     }
+
                     .colsforfooter {
                         display: flex;
                         flex-wrap: wrap;
@@ -1778,14 +1781,6 @@
             position: relative;
             width: 1170px;
 
-            // .compactHeading {
-            //     position: absolute;
-            //     transform:translate(-50%, -150%);
-            //     font-size: 60px;
-            //     font-weight:400;
-            //     line-height: normal;
-            // }
-
             .top-left {
                 &.compactHeading {
                     transform: translate(-50%, -150%);
@@ -1851,12 +1846,6 @@
                     }
                 }
             }
-
-            // .serveheadings {
-            //     .container {
-            //         width: 1130px;
-            //     }
-            // }
         }
     }
 
@@ -1870,27 +1859,6 @@
             display: flex;
         }
     }
-
-
-    // .servicegrid {
-    //     .container {
-    //         width: 1170px;
-
-    //         .serveheadings {
-    //             display: flex;
-    //             justify-content: space-between;
-    //             width: 1130px;
-    //         }
-    //     }
-    // }
-
-
-
-
-
-
-
-
 
     .reviews {
         .container {
@@ -1919,15 +1887,9 @@
             }
 
             width: 1170px;
-
-
         }
 
         .lastone {
-            // .art-details {
-            //     height: 288.13px;
-            // }
-
             display: block;
         }
     }
@@ -1980,12 +1942,6 @@
             display: flex;
             justify-content: space-between;
         }
-
-        // .main-footer {
-        //     .container {
-        //         display:flex;
-        //     }
-        // }
     }
 
     .copyright {
@@ -2019,13 +1975,6 @@
             }
         }
     }
-
-
-
-
-
-
-
 
 }
 
