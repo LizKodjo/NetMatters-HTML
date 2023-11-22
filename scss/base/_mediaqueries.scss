@@ -382,22 +382,10 @@
 @media screen and (min-width: 575px) {
     .postedby {
         font-size: 15px;
-
     }
 
     .smallnav {
         .container {
-            // .smallnavtop {
-            //     .col-xs-6 {
-            //         padding: 0;
-            //         display: table-cell;
-            //         float: none;
-            //         vertical-align: middle;
-            //         width: 100%;
-            //     }
-            // }
-
-            // padding: 0;
             .searchform {
                 margin-top: 11px;
                 position: relative;
@@ -515,7 +503,7 @@
         .banner-image {
 
             .headerpic {
-                height: 550px;
+                //height: 550px;
                 background-color: black;
             }
         }
@@ -1700,9 +1688,6 @@
 
 @media screen and (min-width: 1260px) {
 
-
-
-
     .inner {
         .main-topnav {
             .container {
@@ -1954,7 +1939,7 @@
     .inner {
         .container {
             width: 100%;
-            padding: 0;
+            //padding: 0;
 
             .container {
                 width: 1170px;
