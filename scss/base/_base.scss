@@ -22,6 +22,7 @@ body {
 
 
 
+
 // Main page
 
 // Body
@@ -208,20 +209,6 @@ body {
 }
 
 
-
-
-@media screen and (max-height:450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
-
-
 .smallnav {
     margin-top: 0;
 }
@@ -251,54 +238,14 @@ body {
     }
 }
 
-// .clients-img,
-// .partners {
-//     // max-width: 50%;
-    
-//     // align-items: center;
-//     // height: auto;
-//     // flex-wrap: nowrap;
-//     // justify-content: center;
-//     // vertical-align: middle;
-//     // padding: 0 20px;
-    
-//     // margin-right: auto;
-//     // margin-left: auto;
-//     // margin-bottom: 10px;
-// }
-
-// .partners {
-//     img {
-//         height: 75px;
-//     }
-// }
-
-// .clients {
-//     .clients-img {
-//         img {
-//             height: 75px;
-//         }
-//     }
-// }
-
-
-
 .smallnav {
     background-color: $white;
     margin: 0;
 }
 
-
-
-
 .mobile-nav.is-active {
     right: 50%;
 }
-
-
-
-
-
 
 
 .btn--consent-change:hover {
@@ -308,8 +255,6 @@ body {
 .btn-danger:hover {
     background-color: $web-design;
 }
-
-
 
 .welcome,
 .clients-think {
@@ -330,10 +275,4 @@ body {
 
     }
 }
-
-// .newsarticles {
-//     padding: 15px 0 50px
-// }
-
-// tablet header 
 

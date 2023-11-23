@@ -13,6 +13,16 @@
     width:100%;
 }
 
+@media screen and (max-height:450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
 // hide nav on small screens
 @media screen and (max-width:575px) {
 
@@ -853,10 +863,6 @@
 
     }
 
-
-
-    // }
-
     .reviewer {
         padding: 0 0 25px;
     }
@@ -934,56 +940,6 @@
         padding-top: 50px;
         padding-bottom: 50px;
         max-width: 750px;
-
-
-
-        // .servicebreakdown {
-        // margin-top: 20px;
-        // .row {
-        //     .col-md-4 {
-        //         width: auto;
-        //     }
-        // }
-        // .container {
-        //     // .serveheadings {
-        //     //     display: flex;
-        //     //     justify-content: space-between;
-        //     //     // width: 700px;
-        //     //     // .container {
-        //     //     //     width: 700px;
-        //     //     // }
-        //     // }
-
-        //     // .service-blocks {
-        //     //     .upper-row {
-
-        //     //         .bespoke-b,
-        //     //         .it-b,
-        //     //         .digital-b {
-        //     //             width: 750px;
-        //     //         }
-        //     //     }
-        //     // }
-
-        //     .serveheadings {
-        //         .container {
-        //             display: block;
-
-        //             h3 {
-        //                 float: left;
-        //             }
-
-        //             .service-subheading {
-        //                 float: right;
-        //             }
-        //         }
-
-        //         // width: 750px;
-        //     }
-        // }
-        // }
-
-
     }
 
     .copyright {
@@ -1032,10 +988,10 @@
                     .col-md-6 {
                         width: 100%;
 
-                        .culture,
-                        .choose-us {
-                            margin: 0 0 50px;
-                        }
+                        // .culture,
+                        // .choose-us {
+                        //     //margin: 0 0 50px;
+                        // }
 
                         p {
                             margin: 0 0 25px;
@@ -1398,6 +1354,12 @@
         }
     }
 
+    .reviews {
+        .culture {
+            margin-top: 0;
+        }
+    }
+
     .col-md-7 {
         .searchMenu {
             .searchInput {
@@ -1694,9 +1656,7 @@
                 width: 1200px;
 
                 .top-help {
-                    // .logo {
-                    //     width: 25%;
-                    // }
+
 
                     width: 100%;
 
