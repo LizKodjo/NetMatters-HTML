@@ -11,7 +11,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 setCookie = (cName, cValue, expDays) => {
     let date = new Date();
     // calculate date
-    date.setTime(date.getTime() + (expDays * 24 * 60 * 1000));
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
     const expires = "expires=" + date.toUTCString();
     // create and save cookie at root
     document.cookie = cName + "=" + cValue + ";" + expires + "; path=/";
@@ -19,9 +19,9 @@ setCookie = (cName, cValue, expDays) => {
 
 // Function to check if cookie is available
 getCookie = (cName) => {
-    const name = cName + "=";
-    const cDecoded = decodeURIComponent(document.cookie);
-    const cArr = cDecoded.split("; ");
+    let name = cName + "=";
+    let cDecoded = decodeURIComponent(document.cookie);
+    let cArr = cDecoded.split("; ");
 
     let value;
     cArr.forEach(val => {

@@ -11,11 +11,18 @@
 
 .burger-menu {
     background-color: $primary-dark-col;
-    height: 50px;
-    width: 50px;
+    height: 56px;
+    width: 56px;
     position: relative;
     cursor: pointer;
     padding: 1rem;
+    border-radius: 3px;
+    .bar-top {
+        top: 30%;
+    }
+    .bar-bottom {
+        top: 70%;
+    }
 }
 
 
@@ -92,15 +99,8 @@
 }
 
 
-.outermain.active {
-    right: 275px;   
-    filter:brightness(50%);
-    height: 100%;
-    width: 100%;
-    
-}
+.outermain {
+    transition: ease-in-out;
+    transition-duration: .500s;
 
-.outermain-lg.active {
-    right: 350px;
-    filter: brightness(50%);
 }
