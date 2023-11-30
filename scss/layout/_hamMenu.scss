@@ -7,6 +7,7 @@
     cursor: pointer;
     padding: 1rem;
     border-radius: 3px;
+   
 }
 
 .burger-menu {
@@ -17,9 +18,12 @@
     cursor: pointer;
     padding: 1rem;
     border-radius: 3px;
+   
+
     .bar-top {
         top: 30%;
     }
+
     .bar-bottom {
         top: 70%;
     }
@@ -53,6 +57,8 @@
 
 .hamburger-menu.active {
 
+    
+
     // Change top bar when clicked
     .bar-top {
         transform: translate(-50%, -50%) rotate(-315deg);
@@ -73,7 +79,7 @@
 
 
 .hamburger-menu.active .outermain {
-   
+    
     right: 0;
 }
 
@@ -95,6 +101,7 @@
 }
 
 .burger-menu.active .outermain {
+    transition: 0.5s ease-out;
     right: 0;
 }
 

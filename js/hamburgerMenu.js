@@ -8,7 +8,6 @@ const sidebar = document.querySelector('sidebar');
 // Transform menu button when clicked
 hamMenu.addEventListener('click', () => {
     hamMenu.classList.toggle('active');
-
     moveScreen.classList.toggle('active');
 });
 
@@ -25,25 +24,17 @@ lgMenu.addEventListener('click', () => {
     moveScreen.classList.toggle('active');
 });
 
-// moveScreen.addEventListener('click', () => {
-//     if (!smallMenu.contains(target)) {
-//         moveScreen.classList.remove('active');
-//     }
-// })
-
-
+// Close side nav by clicking anywhere on the page
 document.onclick = function (e) {
-    if (!moveScreen.contains(e.target) && !smallMenu.contains(e.target)) {
+    if (moveScreen.contains(e.target) && !smallMenu.contains(e.target)
+        && !hamMenu.contains(e.target) && !lgMenu.contains(e.target)) {
         moveScreen.classList.remove('active');
         smallMenu.classList.remove('active');
         hamMenu.classList.remove('active');
         lgMenu.classList.remove('active');
-        document.remove('active');
 
     }
-    // if (!smallMenu.contains(e.target)) {
-        
-    // }
-        
-    
 }
+
+
+

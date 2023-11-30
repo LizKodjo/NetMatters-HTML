@@ -387,7 +387,7 @@ body {
     text-align: center;
     color: #fff;
   }
-  .main-pic .container .top-left {
+  .main-pic .banner-image .imgText .top-left {
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
@@ -396,7 +396,7 @@ body {
     line-height: 1.2;
     padding: 0 30px;
   }
-  .main-pic .container .top-left .bottom-left {
+  .main-pic .banner-image .imgText .top-left .bottom-left {
     font-size: 20px;
     font-weight: bolder;
     letter-spacing: 0.1rem;
@@ -553,17 +553,13 @@ body {
     padding: 0;
   }
   .main-pic {
-    position: relative;
     text-align: center;
     color: #fff;
   }
   .main-pic .banner-image .headerpic {
     background-color: black;
   }
-  .main-pic .container {
-    width: 750px;
-  }
-  .main-pic .container .top-left {
+  .main-pic .imgText .top-left {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -573,7 +569,7 @@ body {
     letter-spacing: 2px;
     width: 100%;
   }
-  .main-pic .container .top-left .bottom-left {
+  .main-pic .imgText .top-left .bottom-left {
     font-size: 16px;
     font-weight: bolder;
     letter-spacing: 0.1rem;
@@ -831,6 +827,7 @@ body {
 }
 @media screen and (min-width: 992px) {
   .outermain-lg.active {
+    transition: 0.5s;
     right: 350px;
     filter: brightness(50%);
   }
@@ -891,24 +888,14 @@ body {
     font-size: 26px;
   }
   .main-pic {
-    position: relative;
     text-align: left;
     color: #fff;
   }
-  .main-pic .container {
-    width: 970px;
-  }
-  .main-pic .container .top-left {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-45%, -50%);
+  .main-pic .imgText .top-left {
     font-size: 64px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    width: 970px;
+    background: linear-gradient(270deg, transparent 25%, black);
   }
-  .main-pic .container .top-left .bottom-left {
+  .main-pic .imgText .top-left .bottom-left {
     font-size: 20px;
     font-weight: bolder;
     letter-spacing: 0.1rem;
@@ -1016,6 +1003,14 @@ body {
     width: 300px;
     height: 56px;
     display: none;
+  }
+  .main-pic .imgText .top-left {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    padding: 20px;
   }
   .servicegrid .container {
     width: 970px;
@@ -1232,27 +1227,21 @@ body {
     text-align: left;
     color: #fff;
   }
-  .main-pic .container {
+  .main-pic .banner-image .imgText {
     position: relative;
-    width: 1170px;
   }
-  .main-pic .container .top-left {
-    position: absolute;
+  .main-pic .banner-image .imgText .top-left {
     transform: translate(-52%, -120%);
     font-size: 60px;
-    font-weight: 400;
     line-height: normal;
   }
-  .main-pic .container .top-left.compactHeading {
-    transform: translate(-50%, -150%);
-  }
-  .main-pic .container .top-left .bottom-left {
+  .main-pic .banner-image .imgText .top-left .bottom-left {
     font-size: 26px;
     font-weight: bold;
     letter-spacing: 0.1rem;
     margin-bottom: 15px;
   }
-  .main-pic .container .top-left .main-button {
+  .main-pic .banner-image .imgText .top-left .main-button {
     text-transform: uppercase;
     font-size: 15px;
     padding: 15px;
@@ -2325,6 +2314,7 @@ h2 {
 }
 
 .burger-menu.active .outermain {
+  transition: 0.5s ease-out;
   right: 0;
 }
 
@@ -2337,7 +2327,6 @@ h2 {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: top 0.3s;
   z-index: 1;
   background-color: #fff;
   transition: all 500ms ease;
