@@ -29,7 +29,6 @@ getCookie = (cName) => {
     })
 
     return value;
-
 }
 
 // Message disappeares when cookie is accepted

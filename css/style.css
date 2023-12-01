@@ -770,15 +770,6 @@ body {
     right: 50%;
     transform: translate(50%, 50%);
   }
-  .main-pic .banner-image .imgText .top-left {
-    font-size: 40px;
-  }
-  .main-pic .banner-image .imgText .top-left .bottom-left {
-    font-size: 20px;
-  }
-  .main-pic .banner-image .imgText .top-left .main-button {
-    font-size: 20px;
-  }
   .service-subheading2 {
     display: none;
   }
@@ -824,8 +815,30 @@ body {
   .servicegrid .servicebreakdown .row .col-md-4 {
     width: auto;
   }
+  .banner-image .imgText .top-left {
+    font-size: 40px;
+  }
+  .banner-image .imgText .top-left .bottom-left {
+    font-size: 20px;
+  }
+  .banner-image .imgText .top-left .main-button {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 992px) {
+  .main-topnav .topnav .mainmenu .container .menu-breakdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-topnav .topnav .mainmenu .container .menu-breakdown .dropdown-bespoke {
+    width: 100%;
+  }
+  .main-topnav .topnav .mainmenu .container .menu-breakdown .firstrow {
+    width: auto;
+    padding-left: 30px;
+    align-items: center;
+  }
   .outermain-lg.active {
     transition: 0.5s;
     right: 350px;
@@ -881,17 +894,20 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  .main-pic .banner-image .imgText .top-left {
-    font-size: 62px;
-  }
-  .main-pic .banner-image .imgText .top-left .bottom-left {
-    font-size: 26px;
-  }
   .main-pic {
     text-align: left;
     color: #fff;
   }
+  .main-pic .banner-image .headerpic {
+    height: 560px;
+  }
   .main-pic .imgText .top-left {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    padding: 100px 50px;
     font-size: 64px;
     background: linear-gradient(270deg, transparent 25%, black);
   }
@@ -993,7 +1009,6 @@ body {
     padding: 0;
   }
   .inner .main-topnav .container {
-    width: 970px;
     padding: 0;
   }
   .reviews .culture {
@@ -1003,14 +1018,6 @@ body {
     width: 300px;
     height: 56px;
     display: none;
-  }
-  .main-pic .imgText .top-left {
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    transform: translate(0%, 0%);
-    padding: 20px;
   }
   .servicegrid .container {
     width: 970px;
@@ -1187,10 +1194,10 @@ body {
 }
 @media screen and (min-width: 1260px) {
   .inner .main-topnav .container {
-    width: 1200px;
+    width: 1170px;
   }
   .inner .main-topnav .container .top-help {
-    width: 100%;
+    width: 1170px;
   }
   .inner .main-topnav .container .top-help .searchbar input {
     display: block;
@@ -1206,48 +1213,16 @@ body {
   .smallnav {
     display: none;
   }
-  .main-topnav .topnav .mainmenu .container {
-    width: 1200px;
-  }
-  .main-topnav .topnav .mainmenu .container .menu-breakdown {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .main-topnav .topnav .mainmenu .container .menu-breakdown .dropdown-bespoke {
-    width: 100%;
-  }
-  .main-topnav .topnav .mainmenu .container .menu-breakdown .firstrow {
-    width: auto;
-    padding-left: 30px;
-    align-items: center;
-  }
   .main-pic {
     position: relative;
     text-align: left;
     color: #fff;
   }
-  .main-pic .banner-image .imgText {
-    position: relative;
+  .main-pic .imgText {
+    width: 1170px;
   }
-  .main-pic .banner-image .imgText .top-left {
-    transform: translate(-52%, -120%);
-    font-size: 60px;
-    line-height: normal;
-  }
-  .main-pic .banner-image .imgText .top-left .bottom-left {
-    font-size: 26px;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    margin-bottom: 15px;
-  }
-  .main-pic .banner-image .imgText .top-left .main-button {
-    text-transform: uppercase;
-    font-size: 15px;
-    padding: 15px;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
+  .main-pic .imgText .top-left {
+    width: 1100px;
   }
   .servicegrid .container {
     width: 1170px;
@@ -1336,7 +1311,6 @@ body {
     width: 100%;
   }
   .inner .container .container {
-    width: 1170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
