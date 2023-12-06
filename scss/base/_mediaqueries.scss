@@ -514,7 +514,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                font-size: 30px;
+                //font-size: 30px;
                 font-weight: 400;
                 letter-spacing: 2px;
                 width: 100%;
@@ -1024,10 +1024,27 @@
         }
     }
 
-    .outermain-lg.active {
+    .imgText {
+
+        .top-left {
+            // top: 0;
+            // bottom: 0;
+            // right: 0;
+            // left: 0;
+            //transform: translate(-50%, -50%);
+            //padding: 100px 50px;
+            font-size: 64px;
+            width: 970px;
+            //background: linear-gradient(270deg, transparent 25%, black);
+        }
+    }
+
+    .outermain.active {
         transition: .5s;
         right: 350px;
         filter: brightness(50%);
+        height: 100%;
+        width:100%;
     }
 
     .main-topnav {
@@ -1152,23 +1169,26 @@
         text-align: left;
         color: $white;
 
+      
         .banner-image {
             .headerpic {
                 height: 560px;
             }
+            
         }
 
         .imgText {
 
             .top-left {
-                top: 0;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                transform: translate(0%, 0%);
-                padding: 100px 50px;
-                font-size: 64px;
-                background: linear-gradient(270deg, transparent 25%, black);
+                // top: 0;
+                // bottom: 0;
+                // right: 0;
+                // left: 0;
+                // transform: translate(-50%, -50%);
+                // padding: 100px 50px;
+                // font-size: 64px;
+                // background: linear-gradient(270deg, transparent 25%, black);
+                
 
                 .bottom-left {
                     font-size: 20px;
@@ -1412,6 +1432,8 @@
         filter: brightness(0.5);
         height: 550px;
     }
+
+    
 
 
 
@@ -1662,7 +1684,7 @@
         .main-topnav {
             .container {
                 //max-width: 100%;
-                width: 1170px;
+                //width: 1170px;
 
                 .top-help {
                     width: 1170px;
@@ -1708,7 +1730,7 @@
                 width: 1170px;
                 
                 .top-left {
-                    width: 1100px;
+                    width: 1170px;
                 }
             }
         }
@@ -1851,14 +1873,15 @@
 
     .inner {
         .container {
-            width: 100%;
+            max-width: 1170px;
             //padding: 0;
 
             .container {
-                //width: 1170px;
+                width: 1170px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                padding:0;
 
                 .top-help {
 

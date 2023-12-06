@@ -564,7 +564,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
     font-weight: 400;
     letter-spacing: 2px;
     width: 100%;
@@ -839,10 +838,16 @@ body {
     padding-left: 30px;
     align-items: center;
   }
-  .outermain-lg.active {
+  .imgText .top-left {
+    font-size: 64px;
+    width: 970px;
+  }
+  .outermain.active {
     transition: 0.5s;
     right: 350px;
     filter: brightness(50%);
+    height: 100%;
+    width: 100%;
   }
   .main-topnav .container .searchMenu .hamburger {
     display: none;
@@ -900,16 +905,6 @@ body {
   }
   .main-pic .banner-image .headerpic {
     height: 560px;
-  }
-  .main-pic .imgText .top-left {
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    transform: translate(0%, 0%);
-    padding: 100px 50px;
-    font-size: 64px;
-    background: linear-gradient(270deg, transparent 25%, black);
   }
   .main-pic .imgText .top-left .bottom-left {
     font-size: 20px;
@@ -1193,9 +1188,6 @@ body {
   }
 }
 @media screen and (min-width: 1260px) {
-  .inner .main-topnav .container {
-    width: 1170px;
-  }
   .inner .main-topnav .container .top-help {
     width: 1170px;
   }
@@ -1222,7 +1214,7 @@ body {
     width: 1170px;
   }
   .main-pic .imgText .top-left {
-    width: 1100px;
+    width: 1170px;
   }
   .servicegrid .container {
     width: 1170px;
@@ -1308,12 +1300,14 @@ body {
     width: 1170px;
   }
   .inner .container {
-    width: 100%;
+    max-width: 1170px;
   }
   .inner .container .container {
+    width: 1170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
   }
   .inner .container .container .top-help .itbtn,
   .inner .container .container .top-help .contactbtn {
