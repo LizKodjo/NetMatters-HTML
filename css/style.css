@@ -914,6 +914,20 @@ body {
     letter-spacing: 0.1rem;
     margin-bottom: 15px;
   }
+  .gradient {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(270deg, transparent 25%, black);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .latestnews .container {
     width: 970px;
   }
@@ -2078,21 +2092,6 @@ h2 {
 
 .link-text {
   margin-left: 10px;
-}
-
-.gradient {
-  position: absolute;
-  height: 100%;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-image: linear-gradient(270deg, transparent 25%, black);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .bespokebtn::before {
