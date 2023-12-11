@@ -11,7 +11,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 setCookie = (cName, cValue, expDays) => {
     let date = new Date();
     // calculate date
-    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 1000));
     const expires = "expires=" + date.toUTCString();
     // create and save cookie at root
     document.cookie = cName + "=" + cValue + ";" + expires + "; path=/";
@@ -25,7 +25,7 @@ getCookie = (cName) => {
 
     let value;
     cArr.forEach(val => {
-        if(val.indexOf(name) === 0) value = val.substring(name.length);
+        if (val.indexOf(name) === 0) value = val.substring(name.length);
     })
 
     return value;
@@ -41,7 +41,13 @@ document.querySelector('#acceptcookie').addEventListener("click", () => {
 // check cookie
 
 cookieMessage = () => {
-    if (!getCookie("cookieLiz"))
-    document.querySelector('#myModal').style.display = "block";
+    if (!getCookie("cookieLiz")) {
+        document.querySelector('#myModal').style.display = "block";
+    } else {
+        localStorage.setItem("cookieLiz", true);
+    }
 }
 window.addEventListener("load", cookieMessage);
+
+
+

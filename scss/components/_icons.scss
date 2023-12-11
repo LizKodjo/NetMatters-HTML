@@ -46,3 +46,10 @@
 .dev-icon {
     @include punch;
 }
+
+.bespoke-icon,
+.it-icon,
+.tele-icon,
+.web-icon, .dev-icon {
+    display: block;
+}
