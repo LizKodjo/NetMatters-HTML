@@ -1024,6 +1024,17 @@
         }
     }
 
+    .topnav {
+        .content-heading {
+            font-size: 32px;
+            text-decoration: none;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            //display:block;
+            width: 100%;
+        }
+    }
+
     .imgText {
 
         .top-left {
@@ -1040,7 +1051,7 @@
     }
 
     .outermain.active {
-        transition: .5s;
+        transition: all .5s;
         right: 350px;
         filter: brightness(50%);
         height: 100%;

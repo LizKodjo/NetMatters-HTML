@@ -837,12 +837,19 @@ body {
     padding-left: 30px;
     align-items: center;
   }
+  .topnav .content-heading {
+    font-size: 32px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
   .imgText .top-left {
     font-size: 64px;
     width: 970px;
   }
   .outermain.active {
-    transition: 0.5s;
+    transition: all 0.5s;
     right: 350px;
     filter: brightness(50%);
     height: 100%;
