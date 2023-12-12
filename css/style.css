@@ -856,8 +856,7 @@ body {
     width: 100%;
   }
   .smallsearchphone {
-    color: #d64541;
-    font-size: 26px;
+    font-size: 30px;
   }
   .main-topnav .container .searchMenu .hamburger {
     display: none;
@@ -1103,7 +1102,7 @@ body {
     width: 100%;
   }
   .smallnav .container .smallnavtop .mobile-container .smallsearchphone {
-    font-size: 32px;
+    font-size: 30px;
     margin-left: 15px;
   }
   .smallnav .container .smallnavtop .hamburger-container {
@@ -1131,7 +1130,7 @@ body {
     position: relative;
     transition: none;
     color: #a3a8ac;
-    font-size: 13px;
+    font-size: 12px;
   }
   .smallnav .container .searchform .searchbar input {
     visibility: hidden;
@@ -1552,6 +1551,7 @@ a[class$=-content] {
 
 .digipic {
   color: #2ecc71;
+  font-size: 30px;
 }
 
 .telecomsservices a:hover,
@@ -1583,7 +1583,7 @@ a[class$=-content] {
 }
 
 .webpic {
-  font-size: 24px;
+  font-size: 30px;
   color: #926fb1;
 }
 
@@ -1601,6 +1601,7 @@ a[class$=-content] {
 
 .cyberpic {
   color: #f62459;
+  font-size: 30px;
 }
 
 .devcourse a:hover,
@@ -1617,7 +1618,7 @@ a[class$=-content] {
 
 .devpic {
   color: #ce4125;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .topnav .content-heading {
@@ -2220,7 +2221,7 @@ h2 {
 .hamburger-menu {
   background-color: #333645;
   height: 56px;
-  width: 52px;
+  width: 56px;
   position: relative;
   cursor: pointer;
   padding: 1rem;
@@ -2255,11 +2256,11 @@ h2 {
 }
 
 .bar-top {
-  top: 35%;
+  top: 33%;
 }
 
 .bar-bottom {
-  top: 65%;
+  top: 67%;
 }
 
 .hamburger-menu.active .bar-top {
@@ -2295,11 +2296,6 @@ h2 {
 .burger-menu.active .outermain {
   transition: 0.5s ease-out;
   right: 0;
-}
-
-.outermain {
-  transition: ease-in-out;
-  transition-duration: 0.5s;
 }
 
 #main-topnav {

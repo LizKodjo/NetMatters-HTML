@@ -1059,8 +1059,8 @@
     }
 
     .smallsearchphone {
-        color: $telecoms;
-        font-size: 26px;
+        //color: $telecoms;
+        font-size: 30px;
     }
 
     .main-topnav {
@@ -1516,7 +1516,7 @@
                     width: 100%;
 
                     .smallsearchphone {
-                        font-size: 32px;
+                        font-size: 30px;
                         margin-left: 15px;
                     }
                 }
@@ -1554,7 +1554,7 @@
                     position: relative;
                     transition: none;
                     color: #a3a8ac;
-                    font-size: 13px;
+                    font-size: 12px;
 
                     input {
                         visibility: hidden;

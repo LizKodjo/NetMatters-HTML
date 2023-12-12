@@ -11,7 +11,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 setCookie = (cName, cValue, expDays) => {
     let date = new Date();
     // calculate date
-    date.setTime(date.getTime() + (expDays * 24 * 60 * 1000));
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
     const expires = "expires=" + date.toUTCString();
     // create and save cookie at root
     document.cookie = cName + "=" + cValue + ";" + expires + "; path=/";
@@ -35,7 +35,7 @@ getCookie = (cName) => {
 document.querySelector('#acceptcookie').addEventListener("click", () => {
     document.querySelector("#myModal").style.display = "none";
 
-    setCookie("cookieLiz", true, 10);
+    setCookie("cookieLiz", true, 365);
 })
 
 // check cookie

@@ -2,7 +2,7 @@
 .hamburger-menu {
     background-color: $primary-dark-col;
     height: 56px;
-    width: 52px;
+    width: 56px;
     position: relative;
     cursor: pointer;
     padding: 1rem;
@@ -44,12 +44,12 @@
 
 // Top bar positioning
 .bar-top {
-    top: 35%;
+    top: 33%;
 }
 
 // Bottom bar positioning
 .bar-bottom {
-    top: 65%;
+    top: 67%;
 }
 
 // Tablets and desktops
@@ -103,8 +103,8 @@
 }
 
 
-.outermain {
-    transition: ease-in-out;
-    transition-duration: .500s;
+// .outermain:after {
+//     transition: opacity .5s, width .1s .5s, height .1s .5s;
+//     transition-duration: .500s;
 
-}
+// }
