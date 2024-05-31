@@ -108,7 +108,7 @@ small {
 }
 .btn {
     @extend %btnwhitett;
-    margin: 15px 0;
+    margin-top: 15px;
     border-radius: 3px;
     line-height: 35px;
     padding: 5px 15px;
@@ -175,16 +175,16 @@ small {
    
     }
 .latestbtn2 {
-    background-color: $web-design;
+    background-color: $developer;
     &:hover {
-        background-color: $web-design;
+        background-color: $developer;
         color: $white;
     }
 }
 .latestbtn3 {
-    background-color: $developer;
+    background-color: $it-support;
     &:hover {
-        background-color: $developer;
+        background-color: $it-support;
         color: $white;
     }
 }

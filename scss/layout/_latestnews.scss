@@ -38,7 +38,7 @@ h2 {
 .postedby {
     // font-size: 15px;
     display: inline-block;
-    padding: 15px;
+    padding-left: 15px;
 }
 
 .jobspan {
@@ -50,9 +50,11 @@ h2 {
 
 
 .dateposted {
-    padding-top: 15px;
+    padding-top: 30px;
     border-top: 1px solid $alto;
-    margin-top: 15px;
+    //margin:15px 0;
+    margin-top: 30px;
+    
 }
 
 .jobspec {

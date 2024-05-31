@@ -1,33 +1,29 @@
 // Main fonts
 body {
-    font-family: $primary-font;
-    font-size: 1rem;
+  font-family: $primary-font;
+  font-size: 1rem;
 }
 
 // Latest News articles
 .jobtitle1 {
-    @extend %smallspacing;
-    color: $digital-market;
+  @extend %smallspacing;
+  color: $digital-market;
 }
 
 .jobtitle2 {
-    @extend %smallspacing;
-    color: $web-design;
+  @extend %smallspacing;
+  color: $developer;
 }
 
 .jobtitle3 {
-    @extend %smallspacing;
-    color: $developer;
+  @extend %smallspacing;
+  color: $it-support;
 }
 
-
-
-
-
 .clients-think {
-    @include boldleft;
+  @include boldleft;
 }
 
 .welcome {
-    @include boldleft;
+  @include boldleft;
 }
