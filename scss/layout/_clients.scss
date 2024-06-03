@@ -19,7 +19,8 @@
     position: relative;
     display: inline-block;
     .btn {
-        font-size: 16px;
+        font-size: 14px;
+        white-space: nowrap;
         &:hover {
             color: $white;
         }
@@ -45,11 +46,12 @@
 
 .tooltipimg .imgtext {
     visibility: hidden;
-    width: 280px;
+    max-width: 280px;
     // height: 30px;
-    font-size: 12px;
+    font-size: 14px;
     background-color: $primary-dark-col;
     color: $white;
+    line-height: 1.375;
 
     text-align: center;
     padding: 20px;
@@ -60,6 +62,10 @@
     bottom: 100%;
     left: 50%;
     margin: 0 0 50px -140px;
+    h3 {
+        margin-top: 0;
+        font-size: 16px;
+    }
 }
 
 

@@ -33,7 +33,7 @@
   }
 
   .outermain {
-    position: fixed;
+    
     right: 0;
     transition: right 0.5s, width 0.5s;
   }
@@ -1178,16 +1178,14 @@
   }
 
   .outermain {
-    position: fixed;
+    
     right: 0;
     transition: right 0.5s, width 0.5s;
 
     //height: 0;
   }
 
-
-
-  .smallsearchphone {
+   .smallsearchphone {
     //color: $telecoms;
     font-size: 30px;
   }
@@ -1558,7 +1556,7 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1260px) {
+@media (min-width: 992px) and (max-width: 1259px) {
   .inner {
     .main-topnav {
       padding: 0;
@@ -1793,39 +1791,53 @@
 @media (min-width: 1260px) {
   .inner {
     .main-topnav {
-      .container {
-        //max-width: 100%;
-        //width: 1170px;
-
-        .top-help {
-          //width: 1170px;
-
-          .searchbar input {
-            display: block;
-            width: 240px;
-          }
-
-          .col-md-7 {
-            .searchMenu {
-              .searchInput {
-                .searchbar {
-                  input {
-                    width: 240px;
-                    // height: 56px;
-                    display: inline-block !important;
-                  }
-
-                  button {
-                    border-radius: 0 3px 3px 0;
+      .tabMenu {
+        width: 1170px;
+      }
+      .topnav {
+        .mainmenu {
+        
+          //max-width: 100%;
+          width: 1170px;
+  
+          .top-help {
+            width: 1170px;
+  
+            .searchbar input {
+              display: block;
+              width: 240px;
+            }
+  
+            .col-md-7 {
+              .searchMenu {
+                .searchInput {
+                  .searchbar {
+                    input {
+                      width: 240px;
+                      // height: 56px;
+                      display: inline-block !important;
+                    }
+  
+                    button {
+                      border-radius: 0 3px 3px 0;
+                    }
                   }
                 }
               }
             }
           }
+          .menu-breakdown {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
+      
     }
   }
+
+
 
   .smallnav {
     display: none;
@@ -1989,15 +2001,15 @@
   }
 
   .inner {
-    .container {
+    .main-topnav {
       //max-width: 1170px;
       //padding: 0;
 
-      .container {
-        width: 1170px;
+      .topnav {
+        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         padding: 0;
 
         .top-help {
