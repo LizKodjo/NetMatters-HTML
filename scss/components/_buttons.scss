@@ -1,4 +1,3 @@
-
 .sub-btn {
     @include primarydark;
     height: auto;
@@ -11,6 +10,7 @@
     color: $white;
     border: 1px solid transparent;
 }
+
 .sub-btn:hover {
     background-color: darken($primary-dark-col, 10);
     // border: none;
@@ -25,10 +25,11 @@
     height: 56px;
     line-height: 46px;
     font-size: 18px;
-    float:left;
+    float: left;
     vertical-align: middle;
     padding: 5px 15px;
 }
+
 .itbtn:hover {
     background-color: darken($it-support, 10);
 }
@@ -40,7 +41,7 @@
     height: 56px;
     line-height: 46px;
     font-size: 18px;
-    float:left;
+    float: left;
     vertical-align: middle;
     padding: 5px 15px;
 }
@@ -53,8 +54,9 @@
 .searchbtn {
     width: 25px;
 }
+
 .searchbar button {
-    border:none;
+    border: none;
     padding: 7px 20px 3px;
     // cursor: pointer;
     height: 56px;
@@ -62,11 +64,12 @@
     vertical-align: bottom;
     color: $white;
     background-color: $consent-change;
-    border-radius: 0 3px 3px 0;
+    // border-radius: 0 3px 3px 0;
     outline: none;
     float: right;
 }
-.searchbar button:hover{
+
+.searchbar button:hover {
     background-color: darken($primary-warm-col, 10);
 }
 
@@ -87,7 +90,7 @@
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-    text-transform:uppercase;
+    text-transform: uppercase;
     line-height: 1;
     width: 134px;
     // height: 62px;  
@@ -97,15 +100,17 @@
 small {
     font-size: 10px;
 }
-.bespoke:hover .bespokebtn, 
+
+.bespoke:hover .bespokebtn,
 .itsupport:hover .itsupportbtn,
 .digitalmarketing:hover .digimarketbtn,
 .telecomsservices:hover .telecomsbtn,
 .webdesign:hover .webdesignbtn,
 .cyber:hover .cybersecbtn,
-.devcourse:hover .devcoursebtn { 
+.devcourse:hover .devcoursebtn {
     text-decoration: none;
 }
+
 .btn {
     @extend %btnwhitett;
     margin-top: 15px;
@@ -117,6 +122,7 @@ small {
     font-weight: 400;
     font-size: 18px;
 }
+
 .trustbtn {
     @extend %topcontactbtn;
     @include jade;
@@ -124,39 +130,38 @@ small {
 
 .googlebtn {
     @extend %topcontactbtn;
-    @include havelock;  
+    @include havelock;
     margin-bottom: 10px;
 }
+
 .googlebtn:hover,
 .trustbtn:hover {
     color: $white;
 }
-.googlebtn:hover{
+
+.googlebtn:hover {
     background-color: darken($it-support, 10);
 }
+
 .trustbtn:hover {
     background-color: darken($jade, 10);
 }
 
-.culture, .choose-us {
+.culture,
+.choose-us {
     @extend %btnwhitett;
     @include charade;
     // margin-bottom: 50px;
     padding: 10px 30px;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
-.choose-us:hover, 
+.choose-us:hover,
 .culture:hover {
     color: $white;
     background-color: darken($charade, 10);
 }
-.choose-us {
-    margin-bottom: 17px;
-}
-.culture {
-    margin-bottom: 50px;
-}
+
 .latestbtn {
     @include havelock;
     color: $white;
@@ -166,23 +171,29 @@ small {
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
 .latestbtn1 {
     background-color: $digital-market;
+
     &:hover {
         background-color: $digital-market;
-        color:$white;
+        color: $white;
     }
-   
-    }
+
+}
+
 .latestbtn2 {
     background-color: $developer;
+
     &:hover {
         background-color: $developer;
         color: $white;
     }
 }
+
 .latestbtn3 {
     background-color: $it-support;
+
     &:hover {
         background-color: $it-support;
         color: $white;
@@ -199,18 +210,23 @@ small {
             .btn--bespoke:hover {
                 background-color: shade(bespoke, dark);
             }
+
             .btn--it-support:hover {
-                background-color: shade(it-support,dark);
+                background-color: shade(it-support, dark);
             }
+
             .btn--digital:hover {
                 background-color: shade(digital, dark);
             }
+
             .btn--telecoms:hover {
                 background-color: shade(telecoms, dark);
             }
+
             .btn--web:hover {
                 background-color: shade(web, dark);
             }
+
             .btn--cyber:hover {
                 background-color: shade(cyber, dark);
             }
@@ -218,4 +234,46 @@ small {
     }
 }
 
+// social media buttons
 
+.social-logos {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        padding-left: 0;
+
+        [class$="-btn"] {
+            padding: 12px 22px 16px;
+            background-color: $ebony-clay;
+            font-size: 26px;
+            line-height: 26px;
+            color: $white;
+            //width: 35%;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .fb-btn:hover {
+            background-color: #3b5998;
+            text-decoration: none;
+        }
+
+        .ln-btn:hover {
+            background-color: #0077b5;
+            text-decoration: none;
+        }
+
+        .tw-btn:hover {
+            background-color: #00aced;
+            text-decoration: none;
+        }
+
+        .in-btn:hover {
+            background-color: #d93175;
+            text-decoration: none;
+        }
+    }
+}
