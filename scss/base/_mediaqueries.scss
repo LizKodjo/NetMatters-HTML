@@ -1060,7 +1060,7 @@
             .imgText {
               display: block;
               max-width: 100%;
-              text-align: justify;
+              text-align: left;
               .top-left {
                 // top: 0;
                 // bottom: 0;
@@ -1127,15 +1127,16 @@
 
   }
 
-
-
   .outermain.active {
-    transition: all 0.5s;
+    transition: 0.7s;
     right: 350px;
     filter: brightness(50%);
     height: 100%;
-    width: 100%;
+    width: 100%;       
+    
   }
+ 
+
 
   .smallsearchphone {
     //color: $telecoms;
@@ -1945,7 +1946,7 @@
           .itbtn,
           .contactbtn {
             height: 56px;
-            font-size: 1.125rem;
+            font-size: 1.7rem;
             padding: 5px 15px;
             display: inline-block;
           }

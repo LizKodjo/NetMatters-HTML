@@ -812,7 +812,7 @@ body {
   .banner .bannerSlideshow .main-pic .banner-image .gradient .imgText {
     display: block;
     max-width: 100%;
-    text-align: justify;
+    text-align: left;
   }
   .banner .bannerSlideshow .main-pic .banner-image .gradient .imgText .top-left {
     font-size: 64px;
@@ -848,7 +848,7 @@ body {
     align-items: center;
   }
   .outermain.active {
-    transition: all 0.5s;
+    transition: 0.7s;
     right: 350px;
     filter: brightness(50%);
     height: 100%;
@@ -1242,7 +1242,7 @@ body {
   .inner .container .container .top-help .itbtn,
   .inner .container .container .top-help .contactbtn {
     height: 56px;
-    font-size: 1.125rem;
+    font-size: 1.7rem;
     padding: 5px 15px;
     display: inline-block;
   }
@@ -2202,8 +2202,12 @@ h2 {
 }
 
 .burger-menu.active .outermain {
-  transition: 0.5s ease-out;
+  transition: 10s ease-out;
   right: 0;
+}
+
+.outermain::before {
+  transition: all 10s ease-out;
 }
 
 #main-topnav {
