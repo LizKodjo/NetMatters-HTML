@@ -1,0 +1,89 @@
+.largeSidebar {
+    margin: 0;
+    display: block;
+    z-index: 1;
+    position: fixed;
+    //justify-content: flex-end;
+
+    height: 100%;
+    width: auto;
+    position: fixed;
+    // z-index: -1;
+    top: 0;
+    right: 0;
+    background-color: $primary-dark-col;
+    overflow-x: auto;
+    transition: .5s;
+    //padding: 20px;
+
+    //margin: 0 0 15px;
+
+    .large-nav {
+        .mob-submenu {
+            //padding-left: 0;
+            //padding: 20px 0 0 0;
+            //max-width: 100%;
+            width: 350px;
+
+            li:not(:first-child) {
+                border-top: 1px solid rgba(0, 0, 0, 0.45);
+                //padding-top: 0;
+            }
+
+            li {
+                text-decoration: none;
+                list-style: none;
+                border-top: 1px solid hsla(0, 0%, 100%, .1);
+                //             border-bottom: 1px solid rgba(0, 0, 0, .25);
+                padding: 0;
+                margin: 0;
+                //background-color: rgba(0, 0, 0, 0.25);
+                //max-width: 100%;
+
+                a {
+                    //text-decoration: none;
+                    position: relative;
+                    //display: block;
+                    background-color: rgba(0, 0, 0, 0.25);
+
+                    padding: 15px 20px;
+                    font-size: 18px;
+                    margin: 0;
+                }
+            }
+
+            .menu-arrows {
+                font-size: 10px;
+            }
+
+        }
+
+        ul {
+            //background-color: rgba(0, 0, 0, 0.25);
+
+            //padding: 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 0;
+
+            li {
+                color: $white;
+                list-style: none;
+                padding: 20px 0;
+
+                a {
+                    //padding: 19px 0 18px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: $white;
+                    display: block;
+                    transition: 0.3s;
+                    border-radius: 3px;
+                    text-align: left;
+                    outline: 1px solid rgba(0, 0, 0, 0.25);
+                    border: 1px solid hsla(0, 0%, 100%, 0.1);
+                }
+            }
+        }
+    }
+}

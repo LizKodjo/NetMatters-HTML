@@ -9,13 +9,10 @@
         border-color: #5bc0de;
         outline: 0;
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
-        0 0 8px rgba(91, 192, 222, .6);
+            0 0 8px rgba(91, 192, 222, .6);
     }
 }
 
-// .searchbar {
-//     display: flex;
-// }
 
 ::placeholder {
     color: $primary-warm-col;
@@ -30,8 +27,9 @@
     height: 56px;
     line-height: 46px;
     float: left;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 .menu:hover {
     background-color: darken($primary-dark-col, 10);
 }
@@ -52,8 +50,8 @@
         padding: 14px 16px;
         text-decoration: none;
         font-size: 19.2px;
-        margin-left:10px;
-        padding:10px 15.08px 10px 0;
+        margin-left: 10px;
+        padding: 10px 15.08px 10px 0;
     }
 
     .icon {
@@ -81,6 +79,7 @@
     &:hover {
         overflow: visible;
     }
+
     float: left;
     overflow: hidden;
 }
@@ -110,6 +109,7 @@ a[class$="-content"] {
     .mainmenu {
         .container {
             .menu-breakdown {
+
                 // Adjust the heading of the dropdown menu
                 .dropdown-heading {
                     display: block;
@@ -119,37 +119,27 @@ a[class$="-content"] {
     }
 }
 
-
-
-
 // styling background on links and the dropdown hover
 .bespoke a:hover,
 .bespoke-content {
     background-color: darken($bespoke, 10);
     color: $white;
     text-decoration: underline;
-    
+
 }
 
 .bespoke:hover .bespokebtn {
     background-color: $bespoke;
+
     .bespokepic {
         color: $white;
-    }   
+    }
 }
 
 .bespokepic {
-    color: $bespoke;    
+    color: $bespoke;
     font-size: 30px;
 }
-
-
-
-
-
-
-
-
 
 .bespoke:hover .bespoke-content,
 .itsupport:hover .itsupport-content,
@@ -178,12 +168,12 @@ a[class$="-content"] {
 .itsupport a:hover,
 .itsupport-content {
     @extend %linkunderline;
-    background-color: darken($it-support,10);
+    background-color: darken($it-support, 10);
 }
-
 
 .itsupport:hover .itsupportbtn {
     background-color: $it-support;
+
     .itpic {
         color: $white;
     }
@@ -200,10 +190,9 @@ a[class$="-content"] {
     background-color: darken($digital-market, 10);
 }
 
-
-
 .digitalmarketing:hover .digimarketbtn {
     background-color: $digital-market;
+
     .digipic {
         color: $white;
     }
@@ -220,10 +209,9 @@ a[class$="-content"] {
     background-color: darken($telecoms, 10);
 }
 
-
-
 .telecomsservices:hover .telecomsbtn {
     background-color: $telecoms;
+
     .telepic {
         color: $white;
     }
@@ -239,10 +227,9 @@ a[class$="-content"] {
     background-color: darken($web-design, 10);
 }
 
-
-
 .webdesign:hover .webdesignbtn {
     background-color: $web-design;
+
     .webpic {
         color: $white;
     }
@@ -262,6 +249,7 @@ a[class$="-content"] {
 
 .cyber:hover .cybersecbtn {
     background-color: $cyber;
+
     .cyberpic {
         color: $white;
     }
@@ -278,10 +266,9 @@ a[class$="-content"] {
     background-color: darken($developer, 10);
 }
 
-
-
 .devcourse:hover .devcoursebtn {
     background-color: $developer;
+
     .devpic {
         color: $white;
     }
@@ -302,13 +289,12 @@ a[class$="-content"] {
         a {
             text-decoration: none;
         }
-        
+
         &:hover {
             text-decoration: none;
         }
     }
 }
-
 
 // Main picture
 .headerpic {

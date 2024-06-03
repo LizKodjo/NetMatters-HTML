@@ -309,6 +309,14 @@ body {
   }
 }
 @media (min-width: 1px) {
+  .largeSidebar {
+    visibility: hidden;
+  }
+  .outermain {
+    position: fixed;
+    right: 0;
+    transition: right 0.5s, width 0.5s;
+  }
   .main-topnav {
     padding: 0;
   }
@@ -809,6 +817,17 @@ body {
   }
 }
 @media (min-width: 992px) {
+  .banner .bannerSlideshow .main-pic .banner-image .gradient .imgText .top-left {
+    font-weight: 600;
+  }
+  .banner .bannerSlideshow .main-pic .banner-image .gradient .imgText .top-left .bottom-left {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .largeSidebar {
+    visibility: visible;
+    width: 350px;
+  }
   .banner .bannerSlideshow .main-pic .banner-image .gradient .imgText {
     display: block;
     max-width: 100%;
@@ -848,11 +867,15 @@ body {
     align-items: center;
   }
   .outermain.active {
-    transition: 0.7s;
     right: 350px;
+    transition: left 20s filter 1s;
     filter: brightness(50%);
     height: 100%;
-    width: 100%;
+  }
+  .outermain {
+    position: fixed;
+    right: 0;
+    transition: right 0.5s, width 0.5s;
   }
   .smallsearchphone {
     font-size: 30px;
@@ -860,7 +883,7 @@ body {
   .main-topnav .container .searchMenu .hamburger {
     display: none;
   }
-  .sidenav {
+  .largeSidebar {
     width: 350px;
   }
   .servicegrid {
@@ -868,7 +891,9 @@ body {
     padding-bottom: 50px;
     max-width: 970px;
   }
-  .servicegrid .serviceSections .servicebreakdown .row .bespoke-b, .servicegrid .serviceSections .servicebreakdown .row .it-b, .servicegrid .serviceSections .servicebreakdown .row .digital-b {
+  .servicegrid .serviceSections .servicebreakdown .row .bespoke-b,
+  .servicegrid .serviceSections .servicebreakdown .row .it-b,
+  .servicegrid .serviceSections .servicebreakdown .row .digital-b {
     width: 33.3333%;
   }
   .reviews .container {
@@ -887,7 +912,7 @@ body {
     line-height: 1.95;
   }
   .smallnav,
-  .searchbar input {
+  .sidenav .searchbar input {
     display: none;
   }
   .inner .main-topnav {
@@ -1173,7 +1198,10 @@ body {
   .servicegrid .serviceSections .servicebreakdown .row {
     display: flex;
   }
-  .servicegrid .serviceSections .servicebreakdown .row .telecoms-b, .servicegrid .serviceSections .servicebreakdown .row .web-b, .servicegrid .serviceSections .servicebreakdown .row .cyber-b, .servicegrid .serviceSections .servicebreakdown .row .dev-b {
+  .servicegrid .serviceSections .servicebreakdown .row .telecoms-b,
+  .servicegrid .serviceSections .servicebreakdown .row .web-b,
+  .servicegrid .serviceSections .servicebreakdown .row .cyber-b,
+  .servicegrid .serviceSections .servicebreakdown .row .dev-b {
     width: 25%;
   }
   .reviews .container {
@@ -1275,6 +1303,9 @@ footer .footerlist {
   padding: 0;
   line-height: 1.5;
   letter-spacing: 0.5px;
+}
+footer .footerlist li {
+  line-height: 22px;
 }
 footer .footerlist a {
   color: white;
@@ -2307,6 +2338,65 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 30px;
+}
+
+.largeSidebar {
+  margin: 0;
+  display: block;
+  z-index: 1;
+  position: fixed;
+  height: 100%;
+  width: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #333645;
+  overflow-x: auto;
+  transition: 0.5s;
+}
+.largeSidebar .large-nav .mob-submenu {
+  width: 350px;
+}
+.largeSidebar .large-nav .mob-submenu li:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+}
+.largeSidebar .large-nav .mob-submenu li {
+  text-decoration: none;
+  list-style: none;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+  padding: 0;
+  margin: 0;
+}
+.largeSidebar .large-nav .mob-submenu li a {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 15px 20px;
+  font-size: 18px;
+  margin: 0;
+}
+.largeSidebar .large-nav .mob-submenu .menu-arrows {
+  font-size: 10px;
+}
+.largeSidebar .large-nav ul {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.largeSidebar .large-nav ul li {
+  color: #fff;
+  list-style: none;
+  padding: 20px 0;
+}
+.largeSidebar .large-nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  border-radius: 3px;
+  text-align: left;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
 }
 
 .sub-btn {

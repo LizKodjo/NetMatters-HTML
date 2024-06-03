@@ -10,7 +10,7 @@
 
   @media (min-width: 992px) {}
 
-  @media (min-width: 1200px) {}
+  @media (min-width: 1260px) {}
 
   width: 100%;
 }
@@ -27,6 +27,17 @@
 
 // hide nav on small screens
 @media (min-width: 1px) {
+
+  .largeSidebar {
+    visibility: hidden;
+  }
+
+  .outermain {
+    position: fixed;
+    right: 0;
+    transition: right 0.5s, width 0.5s;
+  }
+
 
   .main-topnav {
     padding: 0;
@@ -291,24 +302,24 @@
   }
 
   .reviews {
-   .container {
-    padding: 50px 0;
+    .container {
+      padding: 50px 0;
 
-    .intro-review {
-      .welcomenet {
-        .col-md-6 {
-          .netButtons {
-            .choose-us {
-              margin-bottom: 17px !important;
-            }
+      .intro-review {
+        .welcomenet {
+          .col-md-6 {
+            .netButtons {
+              .choose-us {
+                margin-bottom: 17px !important;
+              }
 
-            .culture {
-              margin-bottom: 17px !important;
+              .culture {
+                margin-bottom: 17px !important;
+              }
             }
           }
         }
       }
-   }
 
     }
 
@@ -1058,9 +1069,37 @@
         .banner-image {
           .gradient {
             .imgText {
+              .top-left {
+                font-weight: 600;
+                .bottom-left {
+                  font-size: 26px;
+                  font-weight: 600;
+                }                
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .largeSidebar {
+    visibility: visible;
+    width: 350px;
+
+  }
+
+  .banner {
+    .bannerSlideshow {
+      .main-pic {
+        .banner-image {
+          .gradient {
+            .imgText {
               display: block;
               max-width: 100%;
               text-align: left;
+
               .top-left {
                 // top: 0;
                 // bottom: 0;
@@ -1128,14 +1167,24 @@
   }
 
   .outermain.active {
-    transition: 0.7s;
+
     right: 350px;
+    //background-color: rgba(0, 0, 0, 0.4);
+    transition: left 20s filter 1s;
     filter: brightness(50%);
     height: 100%;
-    width: 100%;       
-    
+    //width: 100%;       
+
   }
- 
+
+  .outermain {
+    position: fixed;
+    right: 0;
+    transition: right 0.5s, width 0.5s;
+
+    //height: 0;
+  }
+
 
 
   .smallsearchphone {
@@ -1153,7 +1202,7 @@
     }
   }
 
-  .sidenav {
+  .largeSidebar {
     width: 350px;
   }
 
@@ -1162,10 +1211,14 @@
     padding-top: 50px;
     padding-bottom: 50px;
     max-width: 970px;
+
     .serviceSections {
       .servicebreakdown {
         .row {
-          .bespoke-b, .it-b, .digital-b {
+
+          .bespoke-b,
+          .it-b,
+          .digital-b {
             width: 33.3333%;
           }
         }
@@ -1182,17 +1235,19 @@
         .welcomenet,
         .starclient {
           .col-md-6 {
-           //width: 50%;
+            //width: 50%;
 
             .review1 {
               .ash-review {
                 line-height: 1.7;
+
                 .reviewer {
                   margin: 0;
                 }
               }
 
             }
+
             .welcomenet {
               line-height: 1.95;
             }
@@ -1203,7 +1258,7 @@
   }
 
   .smallnav,
-  .searchbar input {
+  .sidenav .searchbar input {
     display: none;
   }
 
@@ -1260,7 +1315,7 @@
 
   .main-topnav {
     .topnav {
-       max-width: 100%;
+      max-width: 100%;
 
       .mainmenu {
         .container {
@@ -1372,7 +1427,7 @@
 
   .servicegrid {
     .container {
-     // width: 970px;
+      // width: 970px;
 
       .serveheadings {
         width: 945px;
@@ -1833,14 +1888,18 @@
       .servicebreakdown {
         .row {
           display: flex;
-          .telecoms-b, .web-b, .cyber-b, .dev-b {
-            width:25%;
+
+          .telecoms-b,
+          .web-b,
+          .cyber-b,
+          .dev-b {
+            width: 25%;
           }
         }
 
       }
     }
-    
+
   }
 
   .reviews {
