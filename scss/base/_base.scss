@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  //color: #666;
 }
 
 body {
@@ -61,12 +62,12 @@ body {
 
 .text-block2 {
   @include imgOverlay;
-  background-color: $developer;
+  background-color: $bespoke;
 }
 
 .text-block3 {
   @include imgOverlay;
-  background-color: $it-support;
+  background-color: #db8c0d;
 }
 
 .vacancies:hover {

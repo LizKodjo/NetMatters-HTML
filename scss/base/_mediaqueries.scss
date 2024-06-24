@@ -33,7 +33,7 @@
   }
 
   .outermain {
-    
+
     right: 0;
     transition: right 0.5s, width 0.5s;
   }
@@ -1038,6 +1038,27 @@
       }
     }
   }
+
+  // Contact us page
+  .breadcrumb-container {
+    .container {
+      width: 750px;
+    }
+  }
+
+  .bottom {
+    .row {
+      .col-lg-4, .col-lg-8 {
+        width: 750px;
+      }      
+    }
+  }
+
+  .page-head {
+    .container {
+      width: 750px;
+    }
+  }
 }
 
 
@@ -1071,10 +1092,11 @@
             .imgText {
               .top-left {
                 font-weight: 600;
+
                 .bottom-left {
                   font-size: 26px;
                   font-weight: 600;
-                }                
+                }
 
               }
             }
@@ -1178,14 +1200,14 @@
   }
 
   .outermain {
-    
+
     right: 0;
     transition: right 0.5s, width 0.5s;
 
     //height: 0;
   }
 
-   .smallsearchphone {
+  .smallsearchphone {
     //color: $telecoms;
     font-size: 30px;
   }
@@ -1407,19 +1429,19 @@
     // }
   }
 
-  .servicegrid {
-    .serviceSections {
-      .row {
+  // .servicegrid {
+  //   .serviceSections {
+  //     .row {
 
-        //display: block;
+  //       //display: block;
 
-        // .col-md-4 {
-        //   width: unset;
-        // }
-      }
-    }
+  //       // .col-md-4 {
+  //       //   width: unset;
+  //       // }
+  //     }
+  //   }
 
-  }
+  // }
 
 
 
@@ -1554,6 +1576,37 @@
       width: 970px;
     }
   }
+
+  // Contact us page
+  #middle {
+    .breadcrumb-container {
+      .container {
+        width: 970px;
+      }
+    }
+
+    .top {
+      .page-head {
+        .container {
+          width: 970px;
+        }
+      }     
+    }
+
+    .office-addresses {
+      .container {
+        width: 970px;
+      }
+    }
+
+    .bottom {
+      .row {
+        .col-lg-4, .col-lg-8 {
+          width: 970px;
+        }       
+      }      
+    }
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
@@ -1563,7 +1616,12 @@
 
       .container {
         //width: 970px;
-        padding: 0;
+        //padding: 0;
+
+        display: flex;
+        align-items: center;
+        max-width: 1170px;
+
       }
     }
   }
@@ -1633,64 +1691,62 @@
     filter: brightness(0.5);
     height: 550px;
   }
+
+  // Contact page
+  .breadcrumb-container {
+    border-top: 1px solid $primary-dark-col;
+
+    .breadcrumb {
+      &>li {
+        color: $primary-dark-col;
+
+        &>a {
+          color: $primary-dark-col;
+        }
+      }
+    }
+  }
+
+  .page-head {
+    background-color: $primary-dark-col;
+    margin-top: -50px;
+    padding: 24px 0;
+
+    &:not(.bottom) {
+      margin-bottom: 50px;
+    }
+
+    .container {
+
+      //max-width: 100%;
+      h1 {
+        color: $white !important;
+        margin: 0;
+      }
+    }
+  }
+
+  .spacer-sm {
+    margin-bottom: 30px;
+    //max-width: 100%;
+  }
+
+  .office-addresses {
+    .service-list {
+      .office-address-row {
+        .col-md-4 {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
-  // // .inner {
-  // //   .main-topnav {
-  // //     .top-help {
-  // //       display: none;
-  // //     }
-  // //   }
-  // // }
-
-  // .smallnav {
-  //   //padding: 20px 0;
-
-  //   .container {
-  //     //max-width: 100%;
-
-  //     .smallnavtop {
-  //       // display: table;
-  //       // margin: 0;
-  //       // width: 100%;
-
-  //       .col-xs-6 {
-  //         //   padding: 0;
-  //         //   display: table-cell;
-  //         //   float: none;
-  //         //   vertical-align: middle;
-  //         //   width: 100%;
-
-
-  //       }
-
-  //       // .mobile-container {
-  //       //   //   padding: 0;
-  //       //   //   display: table-cell;
-  //       //   //   float: none;
-  //       //   //   vertical-align: middle;
-  //       //   //   width: 100%;
-
-  //       //   // .smallsearchphone {
-  //       //   //   // font-size: 30px;
-  //       //   //   // margin-left: 15px;
-  //       //   // }
-  //       // }
-
-
-  //     }
-
-  //     // padding: 0;
-
-  //   }
-  // }
 
   .banner {
     position: relative;
   }
-
-
 
   .reviews {
     .container {
@@ -1748,14 +1804,6 @@
     }
   }
 
-  // .newsletter {
-  //   .container {
-  //     max-width: 100%;
-  //     // padding-bottom: 50px;
-  //     // padding-top: 50px;
-  //   }
-  // }
-
   footer {
     .container {
       max-width: 100%;
@@ -1785,8 +1833,18 @@
       max-width: 100%;
     }
   }
-}
 
+  // Contact us page
+  .hidden-xs {
+    display: none !important;
+  }
+
+  .breadcrumb-container {
+    .breadcrumb {
+      display: none;
+    }
+  }
+}
 
 @media (min-width: 1260px) {
   .inner {
@@ -1794,20 +1852,21 @@
       .tabMenu {
         width: 1170px;
       }
+
       .topnav {
         .mainmenu {
-        
+
           //max-width: 100%;
           width: 1170px;
-  
+
           .top-help {
             width: 1170px;
-  
+
             .searchbar input {
               display: block;
               width: 240px;
             }
-  
+
             .col-md-7 {
               .searchMenu {
                 .searchInput {
@@ -1817,7 +1876,7 @@
                       // height: 56px;
                       display: inline-block !important;
                     }
-  
+
                     button {
                       border-radius: 0 3px 3px 0;
                     }
@@ -1826,6 +1885,7 @@
               }
             }
           }
+
           .menu-breakdown {
             display: flex;
             align-items: center;
@@ -1833,11 +1893,9 @@
           }
         }
       }
-      
+
     }
   }
-
-
 
   .smallnav {
     display: none;
@@ -2024,6 +2082,30 @@
         }
       }
     }
+  }
+
+  // Contact us page
+  #middle {
+    .breadcrumb-container {
+      .container {
+        width: 1200px;
+      }
+    }   
+    .top {
+      .page-head {
+        .container {
+          width: 1200px;
+        }
+      }
+    } 
+    .office-addresses {
+      .container {
+        width: 1200px;
+      }
+    }
+
+    
+    
   }
 }
 
