@@ -2,7 +2,7 @@
 
 include "inc\dbconnect.php";
 
-$db = connect();
+//$db = connect();
 
 // Page title
 $title = "Contact Us | Netmatters";

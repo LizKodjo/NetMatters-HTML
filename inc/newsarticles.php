@@ -1,19 +1,14 @@
 <?php
 
-require_once 'dbconnect.php';
-$db = connect();  
+require_once "dbconnect.php";
 
 
 function newsSections($db) {
     try {                   
 
-        $newsQuery = $db->query('SELECT * FROM articles ORDER BY date DESC LIMIT 3');
-        //$newsQuery->execute(['id' => $id]);
-        //$record = $newsQuery->fetch(PDO::FETCH_ASSOC);
-        //print_r($record);
-       return $newsQuery->fetchAll(PDO::FETCH_ASSOC);     
-      
-                
+        $newsQuery = $db->query("SELECT * FROM articles ORDER BY date DESC LIMIT 3");
+        return $newsQuery->fetchAll(PDO::FETCH_ASSOC);
+    
     } catch (PDOException $e) {
         echo "Tesing failed: " . $e->getMessage();
         exit;
@@ -64,7 +59,7 @@ function newsBlock($id, $image, $alt, $blocktext, $heading, $paragraph, $readtim
 }
 
 // Get each records data
-if ($db) {
+if ($db instanceof PDO) {
     foreach (newsSections($db) as $record) {
         echo newsBlock(
             $record["id"],

@@ -1,7 +1,7 @@
 <?php
 include "inc\dbconnect.php";
 
-$db = connect();
+//$db = connect();
 
 $title = "Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters";
 include('inc/header.php'); ?>

@@ -1,8 +1,7 @@
 <?php
 // Connect to database
 function connect() {
-    //include '..\pdoconfig.env';
-    include 'pdoconfig.env';
+    include '..\pdoconfig.env';
   
 
     try {
