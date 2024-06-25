@@ -21,12 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
     $marketing = filter_var($_POST["marketing_preference"], FILTER_VALIDATE_BOOLEAN);
 
-    // $fullname = $_POST["name"];
-    // $company = $_POST["company"];
-    // $email = $_POST["email"];
-    // $telephone = $_POST["telephone"];
-    // $message = $_POST["message"];
-    // $marketing = $_POST["marketing_preference"];
 
    
     if (empty($fullname)) {
