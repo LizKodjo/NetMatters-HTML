@@ -170,18 +170,19 @@ include('inc/header.php');
                 </div>
             </div>
             <div class="col-lg-8 col-lg-pull-4">
-                <form method="POST" action="inc/contactform.php" id="contact-form" accept-charset="UTF-8">
+                <form method="POST" action="contactform.php" id="contact-form" accept-charset="UTF-8">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="name" class="required">Your name</label>
                                 <input class="form-control" name="name" type="text" value id="name">
+                                
                                 </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="company">Company Name</label>
-                                <input class="form-control" name="company" type="text" value id="company">
+                                <input class="form-control" name="company" type="text" value id="company">                               
                             </div>
                         </div>
                         <div class="col-md-6">

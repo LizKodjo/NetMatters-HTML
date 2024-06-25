@@ -82,7 +82,7 @@
             <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
                 &times;</a> -->
             <ul>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contact-us.php">Contact Us</a></li>
                 <li><a href="#"><span class="material-symbols-outlined bespokepic">monitor</span><br>
                         <small>Bespoke</small><br> Software</a></li>
             </ul>
@@ -326,7 +326,7 @@
                             <div class="row top-help">
                                 <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
                                     <div class="container-headerLogo">
-                                        <img class="logo" src="img/asset0.png" alt="Netmatters Dark logo">
+                                        <a href="index.php"><img class="logo" src="img/asset0.png" alt="Netmatters Dark logo"></a>
                                     </div>
                                 </div>
                                 <!-- <div class="container headerSearch"> -->
@@ -381,7 +381,7 @@
                                 <div class="row smallnavtop">
                                     <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
                                         <div class="logo-container">
-                                            <img class="logo" src="img/asset0.png" alt="Netmatters Dark logo">
+                                            <a href="index.php"><img class="logo" src="img/asset0.png" alt="Netmatters Dark logo"></a>
                                         </div>
                                     </div>
                                     <div class="col-xs-3 hidden-sm hidden-md hidden-lg mobile-container">

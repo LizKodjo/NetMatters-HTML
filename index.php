@@ -378,131 +378,14 @@ include('inc/header.php'); ?>
                 <div class="container">
                     <div class="vacancy-list">
                         <div class="row">
-                            <?php include ("inc/newsarticles.php"); ?>
+                            <?php include("inc/newsarticles.php"); ?>
                         </div>
                     </div>                    
                 </div>
-            </div>
-
+            </div>  
           
-
-            <!-- <div class="newsarticles">
-                <div class="container">
-                    <div class="vacancy-list">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6">
-                                <section class="vacancies">
-                                    <div>
-                                        <div class="container latestImg">
-                                        <?php
-                                               $id = 1;
-                                               $newsQuery = $db->prepare('SELECT * FROM news WHERE id = :id');
-                                               $newsQuery->execute(['id' => $id]);
-                                               $firstSec = $newsQuery->fetch(PDO::FETCH_ASSOC);                                               
-                                               ?>
-                                            <div><img class="jobvac" src="<?=$firstSec['lastestImg']; ?>" alt="Abels Moving Services">
-                                            </div>
-                                            <div class="text-block1">
-                                                <a href="#"><?=$firstSec['textBlock']; ?></a>
-                                            </div>
-                                        </div>
-                                        <div class="container">
-                                            <div class="art-details">
-                                               
-                                                <h3 class="jobtitle1"><?=$firstSec['heading']; ?><span class="dots">...</span><span class="more">bel's Moving Services</span><span class="jobspan">
-                                                         <?=$firstSec['readTime']; ?></span></h3>
-                                                <div class="jobspec">
-                                                    <p><?=$firstSec['mainBody']; ?><span class="dots">...</span><span class="more">tory of providing bespoke, end-to-end removal services for high net-worth individuals across London, East Anglia and
-                                                            internationally.
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                                <button class="btn latestbtn1">Read more</button><br>
-                                                <div class="dateposted">
-                                                    <img class="jobpic" src="<?=$firstSec['avatarImg']; ?>" alt="Netmatters trademark">
-                                                    <div class="postedby">
-                                                        <p><strong><?=$firstSec['subheading']; ?></strong><br><?=$firstSec['date']; ?></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <section class="vacancies secone">
-                                    <div class="container latestImg">
-                                    <?php
-                                               $id = 2;
-                                               $secondQuery = $db->prepare('SELECT * FROM news WHERE id = :id');
-                                               $secondQuery->execute(['id' => $id]);
-                                               $secondSec = $secondQuery->fetch(PDO::FETCH_ASSOC);                                               
-                                               ?>
-                                        <div><img class="jobvac" src="<?=$secondSec['lastestImg']; ?>" alt="Junior Telecoms Technician">
-                                        </div>
-                                        <div class="text-block2">
-                                            <a href="#"><?=$secondSec['textBlock']; ?></a>
-                                        </div>
-                                    </div>
-                                    <div class="container">
-                                        <div class="art-details">
-                                            <h3 class="jobtitle2"><?=$secondSec['heading']; ?><span class="dots">...</span><span class="jobspan">
-                                                          - <?=$secondSec['readTime']; ?></span></h3>
-                                            <div class="jobspec">
-                                                <p><?=$secondSec['mainBody']; ?><span class="dots">...</span><span class="more">, Norfolk/hybrid following a successful probation period.
-                                                    </span></p>
-                                            </div>
-                                            <button class="btn latestbtn2">Read more</button><br>
-                                            <div class="dateposted">
-                                                <img class="jobpic" src="<?=$secondSec['avatarImg']; ?>" alt="Netmatters trademark">
-                                                <div class="postedby">
-                                                    <p><strong><?=$secondSec['subheading']; ?></strong><br><?=$secondSec['date']; ?></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <section class="vacancies lastone">
-                                    <div class="container latestImg">
-                                    <?php
-                                               $id = 3;
-                                               $thirdQuery = $db->prepare('SELECT * FROM news WHERE id = :id');
-                                               $thirdQuery->execute(['id' => $id]);
-                                               $thirdSec = $thirdQuery->fetch(PDO::FETCH_ASSOC);  
-                                                                                        
-                                               ?>
-                                        <div><img class="jobvac" src="<?=$thirdSec['lastestImg']; ?>" alt="2nd Line Technician">
-                                            <div class="text-block3">
-                                                <a href="#"><?=$thirdSec['textBlock']; ?></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="container">
-                                        <div class="art-details">
-                                            <h3 class="jobtitle3"><?=$thirdSec['heading']; ?><span class="jobspan">
-                                                    - <?=$thirdSec['readTime']; ?></span></h3>
-                                            <div class="jobspec">
-                                                <p><?=$thirdSec['mainBody']; ?><span class="dots">...</span><span class="more">am, Norfolk</span>
-                                                </p>
-                                            </div>
-                                            <button class="btn latestbtn3">Read more</button><br>
-                                            <div class="dateposted">
-                                                <img class="jobpic" src="<?=$thirdSec['avatarImg']; ?>" alt="Netmatters trademark">
-                                                <div class="postedby">
-                                                    <p><strong><?=$thirdSec['subheading']; ?></strong><br><?=$thirdSec['date']; ?></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
+
 
         <h2 class="viewheading">View All <i class="fa-solid fa-arrow-right"></i></h2>
     </div>
@@ -678,4 +561,5 @@ include('inc/header.php'); ?>
     <!-- </div> -->
 </main>
 
-<?php include('inc/footer.php');
+<?php include('inc/footer.php'); ?>
+

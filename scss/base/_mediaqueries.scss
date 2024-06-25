@@ -1429,19 +1429,6 @@
     // }
   }
 
-  // .servicegrid {
-  //   .serviceSections {
-  //     .row {
-
-  //       //display: block;
-
-  //       // .col-md-4 {
-  //       //   width: unset;
-  //       // }
-  //     }
-  //   }
-
-  // }
 
 
 
@@ -1602,7 +1589,7 @@
     .bottom {
       .row {
         .col-lg-4, .col-lg-8 {
-          width: 970px;
+          width: 940px;
         }       
       }      
     }
@@ -2104,7 +2091,13 @@
       }
     }
 
-    
+    .bottom {
+      .row {
+        .col-lg-4, .col-lg-8 {
+          width: 50%;
+        }       
+      }      
+    }  
     
   }
 }
