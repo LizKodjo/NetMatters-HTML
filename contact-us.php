@@ -2,6 +2,7 @@
 
 include "inc\dbconnect.php";
 
+
 //$db = connect();
 
 // Page title
@@ -170,7 +171,7 @@ include('inc/header.php');
                 </div>
             </div>
             <div class="col-lg-8 col-lg-pull-4">
-                <form method="POST" action="contactform.php" id="contact-form" accept-charset="UTF-8">
+                <form method="POST" action="inc\contactform.php" id="contact-form" accept-charset="UTF-8">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">

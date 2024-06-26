@@ -1,19 +1,69 @@
 <?php
 
-require_once "dbconnect.php";
+//function newsSections() {
 
+    function getLatestNews(){
+        include('dbconnect.php');
+     
+        try {
+            $sql = $db->query("SELECT * FROM articles ORDER BY date DESC LIMIT 3");
+            $latestnews = $sql->fetchAll();
+            return $latestnews;
+            // print_r($latestnews);
 
-function newsSections($db) {
-    try {                   
-
-        $newsQuery = $db->query("SELECT * FROM articles ORDER BY date DESC LIMIT 3");
-        return $newsQuery->fetchAll(PDO::FETCH_ASSOC);
-    
-    } catch (PDOException $e) {
-        echo "Tesing failed: " . $e->getMessage();
-        exit;
+            
+        } catch(Exception $e) {
+            echo "Unable to retrieve table from database";
+            exit;
+        }
     }
-}
+   
+//     try {  
+       
+//         require_once "dbconnect.php";
+//         //$db = connect(); 
+      
+        
+                       
+
+//         $newsQuery = $db->query("SELECT * FROM articles ORDER BY date DESC LIMIT 3");
+//         //$newsQuery->execute();
+//         //$record = $newsQuery->fetch(PDO::FETCH_ASSOC);
+//         //print_r($record);
+
+//         $records = $newsQuery->fetchAll(PDO::FETCH_ASSOC);
+//         //print_r($records);
+//         echo "Connected to database<br>";
+       
+//             // foreach ($records as $test) {
+//             //      //print_r($test['id'] . "<br>");
+//             //     //echo $records;
+//             //     $id = $test['id'];
+//             //     $image = $test['image'];
+//             //     $blocktext = $test['blocktext'];
+//             //     $readtime = $test['readtime'];
+//             //     $paragraph = $test['paragraph'];
+//             //     $avatar = $test['avatar'];
+//             //     $avataralt = $test['avataralt'];
+//             //     $postedby = $test['postedby'];
+//             //     $date = $test['date'];
+               
+          
+                
+//             //     echo $id;
+//             //     //print_r($records["id"]);
+//             //     $testid = $test;
+//             //     //print_r($info);
+//             //     //print($test['image']);
+//             //     //print_r($test['id']);
+//             }
+        
+   
+//     } catch (PDOException $e) {
+//         echo "Tesing failed: " . $e->getMessage();
+//         exit;
+//     }
+// //}
 
 
 
@@ -26,7 +76,7 @@ function newsBlock($id, $image, $alt, $blocktext, $heading, $paragraph, $readtim
             <div>
                 <div class="container latestImg">
                 
-                    <div><img class="jobvac" src="'. htmlspecialchars($image) .'" alt="'.htmlspecialchars($alt).'">
+                    <div><img class="jobvac" src="'. $image .'" alt="'.htmlspecialchars($alt).'">
                     </div>
                     <div class="text-block1">
                         <a href="#">'.htmlspecialchars($blocktext).'</a>
@@ -58,9 +108,10 @@ function newsBlock($id, $image, $alt, $blocktext, $heading, $paragraph, $readtim
   ';
 }
 
-// Get each records data
-if ($db instanceof PDO) {
-    foreach (newsSections($db) as $record) {
+
+//Get each records data
+//if ($records instanceof PDO) {
+    foreach (getLatestNews() as $record) {
         echo newsBlock(
             $record["id"],
             $record["image"],
@@ -76,7 +127,7 @@ if ($db instanceof PDO) {
             $record["color"]
         );
     }
-} else {
-    echo "Couldn't set up the article.";
-}
+// } else {
+//     echo "Couldn't set up the article.";
+// }
 
