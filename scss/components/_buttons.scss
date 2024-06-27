@@ -163,7 +163,7 @@ small {
 }
 
 .latestbtn {
-    @include havelock;
+    //@include havelock;
     color: $white;
     text-transform: uppercase;
     height: auto;
@@ -182,23 +182,23 @@ small {
 
 }
 
-.latestbtn2 {
-    background-color: #f7b322;
+// .latestbtn2 {
+//     background-color: #f7b322;
 
-    &:hover {
-        background-color: #f7b322;
-        color: $white;
-    }
-}
+//     &:hover {
+//         background-color: #f7b322;
+//         color: $white;
+//     }
+// }
 
-.latestbtn3 {
-    background-color: #db8c0d;
+// .latestbtn3 {
+//     background-color: #db8c0d;
 
-    &:hover {
-        background-color: #db8c0d;
-        color: $white;
-    }
-}
+//     &:hover {
+//         background-color: #db8c0d;
+//         color: $white;
+//     }
+// }
 
 
 

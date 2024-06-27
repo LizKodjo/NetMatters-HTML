@@ -5,20 +5,20 @@ body {
 }
 
 // Latest News articles
-.jobtitle1 {
+.jobtitle {
   @extend %smallspacing;
-  color: $digital-market;
+  //color: $digital-market;
 }
 
-.jobtitle2 {
-  @extend %smallspacing;
-  color: $bespoke;
-}
+// .jobtitle2 {
+//   @extend %smallspacing;
+//   color: $bespoke;
+// }
 
-.jobtitle3 {
-  @extend %smallspacing;
-  color: #db8c0d;
-}
+// .jobtitle3 {
+//   @extend %smallspacing;
+//   color: #db8c0d;
+// }
 
 .clients-think {
   @include boldleft;

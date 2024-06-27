@@ -55,20 +55,21 @@ body {
   position: relative;
 }
 
-.text-block1 {
+.text-block {
   @include imgOverlay;
-  background-color: $digital-market;
+  
+ // background-color: $digital-market;
 }
 
-.text-block2 {
-  @include imgOverlay;
-  background-color: $bespoke;
-}
+// .text-block2 {
+//   @include imgOverlay;
+//   background-color: $bespoke;
+// }
 
-.text-block3 {
-  @include imgOverlay;
-  background-color: #db8c0d;
-}
+// .text-block3 {
+//   @include imgOverlay;
+//   background-color: #db8c0d;
+// }
 
 .vacancies:hover {
   transform: translate(0, -15px);

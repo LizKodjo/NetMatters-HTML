@@ -26,7 +26,7 @@
   text-decoration: underline;
 }
 
-.jobtitle3, .jobtitle2, .jobtitle1 {
+.jobtitle {
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: 600;
@@ -75,46 +75,15 @@ body {
   position: relative;
 }
 
-.text-block1 {
+.text-block {
   position: absolute;
   top: 10px;
   right: 0;
   color: #fff;
   padding: 4px 10px;
   text-transform: uppercase;
-  background-color: #2ecc71;
 }
-.text-block1 a {
-  color: #fff;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-.text-block2 {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  color: #fff;
-  padding: 4px 10px;
-  text-transform: uppercase;
-  background-color: #67809f;
-}
-.text-block2 a {
-  color: #fff;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-.text-block3 {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  color: #fff;
-  padding: 4px 10px;
-  text-transform: uppercase;
-  background-color: #db8c0d;
-}
-.text-block3 a {
+.text-block a {
   color: #fff;
   font-weight: 600;
   font-size: 12px;
@@ -496,9 +465,7 @@ body {
   .latestnews .vacancies .art-details {
     padding: 30px 15px;
   }
-  .latestnews .jobtitle1,
-  .latestnews .jobtitle2,
-  .latestnews .jobtitle3 {
+  .latestnews .jobtitle1 {
     font-weight: 400px;
     font-size: 15px;
   }
@@ -2070,10 +2037,6 @@ h2 {
   vertical-align: baseline;
 }
 
-.jobtitle {
-  color: #4183d7;
-}
-
 .postedby {
   display: inline-block;
   padding-left: 15px;
@@ -2915,8 +2878,6 @@ small {
 }
 
 .latestbtn {
-  background-color: #4183d7;
-  border-color: #4183d7;
   color: #fff;
   text-transform: uppercase;
   height: auto;
@@ -2930,22 +2891,6 @@ small {
 }
 .latestbtn1:hover {
   background-color: #2ecc71;
-  color: #fff;
-}
-
-.latestbtn2 {
-  background-color: #f7b322;
-}
-.latestbtn2:hover {
-  background-color: #f7b322;
-  color: #fff;
-}
-
-.latestbtn3 {
-  background-color: #db8c0d;
-}
-.latestbtn3:hover {
-  background-color: #db8c0d;
   color: #fff;
 }
 
@@ -3068,18 +3013,6 @@ small {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-}
-
-.jobtitle1 {
-  color: #2ecc71;
-}
-
-.jobtitle2 {
-  color: #67809f;
-}
-
-.jobtitle3 {
-  color: #db8c0d;
 }
 
 .clients-think {
