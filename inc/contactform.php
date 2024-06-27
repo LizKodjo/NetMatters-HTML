@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $fullnameError = 'Please enter your name.';
     } else {
         $fullname = sanitizeData($fullname);
-        if(!preg_match("/^[A-z ,.'-]+$/g", $fullname)) {
+        if(!preg_match("/^[A-z ,.'-]+$/", $fullname)) {
             $fullnameError = "Please enter a valid name.";
         }
     }
@@ -79,8 +79,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 try {   
        
     require_once "dbconnect.php";
-    $db = connect();
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    //$db = connect();
+    //$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
           
 
         $query = "INSERT INTO contactform (name, company, email, telephone, message, marketing)
