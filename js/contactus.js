@@ -13,18 +13,14 @@ const emailpattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+
 const telpattern = /^\+?(?:\d\s?){10,12}$/;
 
 // prevent form default
-if (form) {
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        validateForm();
-    });
-}
+// if (form) {
+//     form.addEventListener('submit', e => {
+//         e.preventDefault();
+//         validateForm();
+//     });
+// }
 
-if (question) {
-    question.addEventListener('submit', e => {
-        e.preventDefault();
-    });
-}
+
 
 // set error
 
@@ -44,12 +40,14 @@ const setSuccess = (element) => {
 }
 
 //front end validation
-function validateForm() {
+function validateForm(e) {
     // get the values and sanitize 
     const nameValue = fullName.value.trim();
     const companyValue = company.value.trim();
     const emailValue = email.value.trim();
     const telValue = tel.value.trim();
+
+
 
     if (!nameValue || !nameValue.match(/^[A-z ,.'-]+$/i)) {
         setError(fullName);
@@ -71,6 +69,12 @@ function validateForm() {
 }
 
 // accordion
+
+if (question) {
+    question.addEventListener('click', e => {
+        e.preventDefault();
+    });
+}
 
 
 question.addEventListener("click", () => {

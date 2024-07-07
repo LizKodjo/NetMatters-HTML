@@ -2485,7 +2485,6 @@ h2 {
 }
 .office-addresses .block .image img {
   max-width: 100%;
-  vertical-align: middle;
 }
 .office-addresses .block .image .img-full {
   width: 100%;
@@ -2548,9 +2547,6 @@ h2 {
   overflow: hidden;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-}
-.office-addresses .container {
-  width: 750px;
 }
 
 .service-list .block {
@@ -2725,6 +2721,23 @@ h2 {
   font-size: 85%;
 }
 
+ul.formerrors {
+  padding: 1em;
+  margin-bottom: 1.25em;
+  background: rgba(247, 112, 94, 0.5);
+  border: 1px solid rgba(247, 112, 94, 0.5);
+  list-style-position: inside;
+  border-radius: 3px;
+}
+
+.formsuccess {
+  padding: 1em;
+  margin-bottom: 1.25em;
+  background: rgba(143, 247, 94, 0.5);
+  border: 1px solid rgba(143, 247, 94, 0.5);
+  border-radius: 3px;
+}
+
 .sub-btn {
   background-color: #333645;
   border-color: #333645;
@@ -2785,6 +2798,7 @@ h2 {
   vertical-align: bottom;
   color: #fff;
   background-color: #999aa2;
+  border-radius: 0 3px 3px 0;
   outline: none;
   float: right;
 }

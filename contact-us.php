@@ -1,18 +1,15 @@
 <?php
-
+session_start();
 include "inc\dbconnect.php";
-
-
-//$db = connect();
 
 // Page title
 $title = "Contact Us | Netmatters";
-include('inc/header.php'); 
+include ('inc/header.php');
 ?>
 
 <!-- <div class="container"> -->
-    <div id="middle">
-        <div class="hidden-xs breadcrumb-container">
+<div id="middle">
+    <div class="hidden-xs breadcrumb-container">
         <div class="container">
             <ul class="breadcrumb">
                 <li>
@@ -40,7 +37,7 @@ include('inc/header.php');
                             </a>
                         </div>
                         <div class="content">
-                            
+
                             <p class="h2">
                                 <a href="#">Cambridge Office</a>
                             </p>
@@ -150,7 +147,8 @@ include('inc/header.php');
                                     </h4>
                                     <div class="answer initiallyHidden" style="display: none;">
                                         <p>
-                                            Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.
+                                            Netmatters IT are offering an Out of Hours service for Emergency and
+                                            Critical tasks.
                                         </p>
                                         <p>
                                             <strong>Monday - Friday 18:00 - 22:00 </strong>
@@ -158,9 +156,11 @@ include('inc/header.php');
                                             <strong>Sunday 10:00 - 18:00 </strong>
                                         </p>
                                         <p>
-                                            To log a critical task, you will need to call our main line number and select
+                                            To log a critical task, you will need to call our main line number and
+                                            select
                                             Option 2 to leave an Out of Hours&nbsp;
-                                            voicemail. A technician will contact you on the number provided within 45 minutes
+                                            voicemail. A technician will contact you on the number provided within 45
+                                            minutes
                                             of your call.&nbsp;
                                         </p>
                                     </div>
@@ -172,18 +172,36 @@ include('inc/header.php');
             </div>
             <div class="col-lg-8 col-lg-pull-4">
                 <form method="POST" action="inc\contactform.php" id="contact-form" accept-charset="UTF-8">
+                    <!-- Display error messages -->
+                    <?php if (isset($_SESSION['status']) && $_SESSION['status'] === 'error'):
+                        $errors = $_SESSION['errors'];
+                        ?>
+                        <ul class="formerrors">
+                            <?php foreach ($errors as $e): ?>
+                                <li><?= $e; ?></li>
+                            <?php endforeach; ?>
+
+                        </ul>
+                    <?php elseif (isset($_SESSION['status']) && $_SESSION['status'] === 'success'):
+                        $data = $_SESSION['data'];
+                        ?>
+                        <div class="formsuccess">
+                            <p>Form submitted successfully.</p>
+                        </div>
+
+                    <?php endif; ?>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="name" class="required">Your name</label>
                                 <input class="form-control" name="name" type="text" value id="name">
-                                
-                                </div>
+
+                            </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="company">Company Name</label>
-                                <input class="form-control" name="company" type="text" value id="company">                               
+                                <input class="form-control" name="company" type="text" value id="company">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -247,8 +265,9 @@ include('inc/header.php');
 </div>
 <!-- </div> -->
 
-<?php include('inc/footer.php'); ?>
-
-
-
-
+<?php
+include ('inc/footer.php');
+unset($_SESSION['status']);
+unset($_SESSION['errors']);
+unset($_SESSION['data']);
+?>

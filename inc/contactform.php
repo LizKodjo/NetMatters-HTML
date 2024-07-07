@@ -1,14 +1,19 @@
 <?php
 
+session_start();
+include_once "dbconnect.php";
 
 
-// Error messages
-$fullnameError = $companyError = $emailError = $telephoneError = $messageError= "";
-$fullname = $company = $email = $telephone = $message = "";
+// Define variables
 
-function sanitizeData($data) {
+$fullname = $company = $email = $telephone = $message = $marketing = $token = "";
+$errors = [];
+$data = [];
+
+// Function to sanitise data
+function sanitiseData($data)
+{
     // santitize incoming data
-
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
@@ -17,102 +22,110 @@ function sanitizeData($data) {
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // $fullname = sanitizeData($_POST["name"]);
-    // $company = sanitizeData($_POST["company"]);
-    // $email = sanitizeData($_POST["email"]);
-    // $telephone = sanitizeData($_POST["telephone"]);
-    // $message = sanitizeData($_POST["message"]);
-    // $marketing = filter_var($_POST["marketing_preference"], FILTER_VALIDATE_BOOLEAN);
+    // $fullname = filter_input(INPUT_POST, $_POST["name"], FILTER_SANITIZE_STRING);
+    // $company = filter_input(INPUT_POST, $_POST["company"], FILTER_SANITIZE_STRING);
+    // $email = $_POST["email"];
+    // $telephone = filter_input(INPUT_POST, $_POST["telephone"], FILTER_SANITIZE_STRING);
+    // $message = filter_input(INPUT_POST, $_POST["message"], FILTER_SANITIZE_STRING);
+    // $marketing = $_POST["marketing_preference"];
 
-    $fullname = $_POST["name"];
-    $company = $_POST["company"];
-    $email = $_POST["email"];
-    $telephone = $_POST["telephone"];
-    $message = $_POST["message"];
-    $marketing = $_POST["marketing_preference"];
-
-
-   
-    if (empty($fullname)) {
-        $fullnameError = 'Please enter your name.';
-    } else {
-        $fullname = sanitizeData($fullname);
-        if(!preg_match("/^[A-z ,.'-]+$/", $fullname)) {
-            $fullnameError = "Please enter a valid name.";
+    if (!empty($_POST["name"])) {
+        $fullname = sanitiseData($_POST["name"]);
+        if (ctype_alpha(str_replace(" ", "", $fullname)) === false) {
+            $errors[] = "Name should have only alphabets and spaces";
         }
+    } else {
+        $errors[] = "Please enter your name";
     }
-    if (empty($company)) {
+
+    if (!empty($_POST["company"])) {
+        $company = sanitiseData($_POST["company"]);
+        if (!ctype_alpha(str_replace(" ", "", $company))) {
+            $errors[] = "Company should have only alphabets and spaces";
+        }
+    } else {
         $company = "";
-    } else {
-        $company = sanitizeData($_POST["company"]);        
-    }
-    if (empty($email)) {
-        echo $emailError = 'Please enter an email address.'; 
-    } else {
-        $email = sanitizeData($_POST["email"]);;
-
-        if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            echo $emailError = "Please enter a valid email.";
-        }
     }
 
-    if (empty($telephone)) {
-        echo $telephoneError = 'Telephone is required.';
+    if (!empty($_POST["email"])) {
+        $email = sanitiseData($_POST["email"]);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $errors[] = "Please enter a valid email.";
+        }
     } else {
-        $telephone = sanitizeData($_POST["telephone"]);
-        if (!preg_match('/^\+?(?:\d\s?){10,12}$/', $telephone)) {
-        echo $telephoneError = 'Please enter a valid number.';
-        }
-        if(strlen($telephone) != 11) {
-            echo $telephoneError = "Please enter a valid number.";
-        }
+        $errors[] = "Please enter an email address.";
     }
 
-    if (empty($message)) {
+    if (!empty($_POST["telephone"])) {
+        $telephone = sanitiseData($_POST["telephone"]);
+        if (!preg_match("/^\+?(?:\d\s?){10,12}$/", $telephone)) {
+            $errors[] = "Please enter a valid telephone number.";
+        }
+    } else {
+        $errors[] = "Please enter a telephone number.";
+    }
+
+    if (!empty($_POST["message"])) {
+        $message = sanitiseData($_POST["message"]);
+        // if (!ctype_alpha(str_replace(" ", "", $message))) {
+        //     $errors[] = "The message should have only alphabets and spaces please";
+        // }
+    } else {
         $message = "";
+    }
+    if (!empty($_POST["marketing_preference"])) {
+        $marketing = $_POST["marketing_preference"];
+        $marketing = filter_var($marketing, FILTER_VALIDATE_BOOL);
     } else {
-        $message = sanitizeData($_POST["message"]);
+        $marketing = "";
     }
 
 
 
-try {   
-       
-    require_once "dbconnect.php";
-    //$db = connect();
-    //$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-          
-
-        $query = "INSERT INTO contactform (name, company, email, telephone, message, marketing)
-        VALUES (?, ?, ?, ?, ?, ?)";
-        
-
-        $stmt = $db->prepare($query);
-        // $stmt = $db->prepare("INSERT INTO contactform (name. company, email, telephone, message, marketing)
-        // VAUES (:name, :company, :email, :telephone, :message, :marketing)");
-
-        $stmt->execute([$fullname, $company, $email, $telephone, $message, $marketing]);
-        // $stmt->bind_param(':name', $name);
-        // $stmt->bind_param(':company', $company);
-        // $stmt->bind_parm(':email', $email);
-        // $stmt->bind_param(':telephone', $telephone);
-        // $stmt->bind_param(':message', $message);
-        // $stmt->bind_param(':marketing', $marketing);
-        
-        $stmt = null;
-
-        echo "Form successfully submitted";
-
-        header("Location: ../contact-us.php");
-
+    if ($errors) {
+        //var_dump($errors);
+        $_SESSION['status'] = 'error';
+        $_SESSION['errors'] = $errors;
+        header('Location: ../contact-us.php?result=error');
         die();
+    } else {
+        //echo "All fields are correct";
+        $data = [
+            "name" => $fullname,
+            "company" => $company,
+            "email" => $email,
+            "telephone" => $telephone,
+            "message" => $message,
+            "marketing_preference" => $marketing
+        ];
 
-    } catch (PDOException $e) {
-        die("Query failed: " . $e->getMessage());
+        $_SESSION["status"] = 'success';
+        $_SESSION["data"] = $data;
+        header("Location:../contact-us.php?result=success");
+        //die();
     }
-    $db = null;
 
-} else {   
+    try {
+        $stmt = $db->prepare("INSERT INTO netmatters_form (fullname, company, email, telephone, message, marketing) 
+            VALUES (:fullname, :company, :email, :telephone, :message, :marketing)");
+
+        $stmt->bindParam(":fullname", $fullname, PDO::PARAM_STR);
+        $stmt->bindParam(":company", $company, PDO::PARAM_STR);
+        $stmt->bindParam(":email", $email, PDO::PARAM_STR);
+        $stmt->bindParam(":telephone", $telephone, PDO::PARAM_STR);
+        $stmt->bindParam(":message", $message, PDO::PARAM_STR);
+        $stmt->bindParam(":marketing", $marketing, PDO::PARAM_BOOL);
+
+        $stmt->execute();
+        header("Location: ../contact-us.php");
+        die();
+    } catch (PDOException $e) {
+        return "error saving data" . $e->getMessage();
+    }
+
+} else {
 
     header("Location: ../index.php");
+    exit;
 }
+
