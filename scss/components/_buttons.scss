@@ -163,24 +163,25 @@ small {
 }
 
 .latestbtn {
+
     //@include havelock;
     color: $white;
     text-transform: uppercase;
     height: auto;
-    padding: 15px;
+    padding: 5px 15px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
-.latestbtn1 {
-    background-color: $digital-market;
+// .latestbtn1 {
+//     background-color: $digital-market;
 
-    &:hover {
-        background-color: $digital-market;
-        color: $white;
-    }
+//     &:hover {
+//         background-color: $digital-market;
+//         color: $white;
+//     }
 
-}
+// }
 
 // .latestbtn2 {
 //     background-color: #f7b322;

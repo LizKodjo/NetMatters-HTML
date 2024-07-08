@@ -2666,29 +2666,37 @@ h2 {
   float: left;
   margin-right: 20px;
 }
-.section .row .col-lg-pull-4 #contact-form .form-group .pretty-checkbox .button .mdi-action-done {
-  display: none;
-  line-height: 26px;
-  text-align: center;
-  font-size: 22px;
-  border-radius: 50%;
+.section .row .col-lg-pull-4 #contact-form .form-group .pretty-checkbox input[type=checkbox] {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: #cfcfcf;
+  border-radius: 3px;
+  appearance: none;
+  cursor: pointer;
 }
-.section .row .col-lg-pull-4 #contact-form .form-group .pretty-checkbox .button .mdi-action-done:checked {
-  background-color: green;
-}
-.section .row .col-lg-pull-4 #contact-form .form-group .pretty-checkbox .button .mdi-action-done::before {
+.section .row .col-lg-pull-4 #contact-form .form-group .pretty-checkbox input[type=checkbox]::before {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 3px;
   left: 9px;
   width: 5px;
   height: 13px;
   border: 4px solid transparent;
   border-left: none;
   border-top: none;
+  transform: rotate(45deg) scale(1);
+  justify-content: center;
+  align-items: center;
 }
-.section .row .col-lg-pull-4 #contact-form .form-group .pretty-checkbox .button input[type=checkbox] {
-  display: none;
+.section .row .col-lg-pull-4 #contact-form .form-group .pretty-checkbox input[type=checkbox]:checked {
+  background-color: #333645;
+}
+.section .row .col-lg-pull-4 #contact-form .form-group .pretty-checkbox input[type=checkbox]:checked:before {
+  border-color: white;
+}
+.section .row .col-lg-pull-4 #contact-form .form-group .pretty-checkbox input[type=checkbox]:checked:after {
+  display: block;
 }
 .section .row .col-lg-pull-4 #contact-form .form-group .form-control.has-error {
   border-color: #d64541;
@@ -2895,17 +2903,9 @@ small {
   color: #fff;
   text-transform: uppercase;
   height: auto;
-  padding: 15px;
+  padding: 5px 15px;
   border-radius: 5px;
   margin-bottom: 20px;
-}
-
-.latestbtn1 {
-  background-color: #2ecc71;
-}
-.latestbtn1:hover {
-  background-color: #2ecc71;
-  color: #fff;
 }
 
 .main-pic .container .top-left .btn--bespoke:hover {

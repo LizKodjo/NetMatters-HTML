@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+$token = md5(uniqid(microtime(), true));
+$_SESSION['token'] = $token;
+
 include "inc\dbconnect.php";
 
 // Page title
@@ -224,12 +228,12 @@ include ('inc/header.php');
                         </textarea>
                     </div>
                     <div class="form-group">
-                        <label class="pretty-checkbox">
+                        <label class="pretty-checkbox checklabel">
                             <span class="media">
                                 <span class="media-left checkbox-left">
                                     <span class="button">
                                         <span class="mdi-action-done"></span>
-                                        <input name="marketing_preference" type="checkbox" value="1">
+                                        <input name="marketing_preference" type="checkbox" value="1" class="check">
                                     </span>
                                 </span>
                                 <span class="media-body">
@@ -251,6 +255,7 @@ include ('inc/header.php');
                     </div>
                     <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
                     <div class="my_name_wrap" style="display: none;"></div>
+                    <input type="hidden" name="token" value="<?= $token ?>">
                     <div class="action-block">
                         <button class="btn btn-primary">Send Enquiry</button>
                         <small class="helper-text">

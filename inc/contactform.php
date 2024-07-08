@@ -22,13 +22,13 @@ function sanitiseData($data)
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // $fullname = filter_input(INPUT_POST, $_POST["name"], FILTER_SANITIZE_STRING);
-    // $company = filter_input(INPUT_POST, $_POST["company"], FILTER_SANITIZE_STRING);
-    // $email = $_POST["email"];
-    // $telephone = filter_input(INPUT_POST, $_POST["telephone"], FILTER_SANITIZE_STRING);
-    // $message = filter_input(INPUT_POST, $_POST["message"], FILTER_SANITIZE_STRING);
-    // $marketing = $_POST["marketing_preference"];
 
+    // Check token
+    if (empty($_POST['token']) || $_POST['token'] !== $_SESSION['token']) {
+        $errors[] = 'Invalid token';
+    }
+
+    // check name entry
     if (!empty($_POST["name"])) {
         $fullname = sanitiseData($_POST["name"]);
         if (ctype_alpha(str_replace(" ", "", $fullname)) === false) {
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $errors[] = "Please enter your name";
     }
-
+    // if company field is filled, make sure data is secure and correct
     if (!empty($_POST["company"])) {
         $company = sanitiseData($_POST["company"]);
         if (!ctype_alpha(str_replace(" ", "", $company))) {
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $company = "";
     }
-
+    // check email address is not blank and is valid
     if (!empty($_POST["email"])) {
         $email = sanitiseData($_POST["email"]);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $errors[] = "Please enter an email address.";
     }
-
+    // Check phone number is valid 
     if (!empty($_POST["telephone"])) {
         $telephone = sanitiseData($_POST["telephone"]);
         if (!preg_match("/^\+?(?:\d\s?){10,12}$/", $telephone)) {
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $errors[] = "Please enter a telephone number.";
     }
-
+    // Check message is valid
     if (!empty($_POST["message"])) {
         $message = sanitiseData($_POST["message"]);
         // if (!ctype_alpha(str_replace(" ", "", $message))) {
@@ -73,6 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $message = "";
     }
+    // Check if marketing is checked or not.  It can be left unchecked
     if (!empty($_POST["marketing_preference"])) {
         $marketing = $_POST["marketing_preference"];
         $marketing = filter_var($marketing, FILTER_VALIDATE_BOOL);
@@ -84,6 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($errors) {
         //var_dump($errors);
+        // Display all error messages 
         $_SESSION['status'] = 'error';
         $_SESSION['errors'] = $errors;
         header('Location: ../contact-us.php?result=error');
@@ -98,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "message" => $message,
             "marketing_preference" => $marketing
         ];
-
+        // Display the success message after form has been completed correctly.
         $_SESSION["status"] = 'success';
         $_SESSION["data"] = $data;
         header("Location:../contact-us.php?result=success");
@@ -106,9 +108,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     try {
+        // Use prepared statement to prevent sql injection attacks
         $stmt = $db->prepare("INSERT INTO netmatters_form (fullname, company, email, telephone, message, marketing) 
             VALUES (:fullname, :company, :email, :telephone, :message, :marketing)");
-
+        //  bind to save information securely in table
         $stmt->bindParam(":fullname", $fullname, PDO::PARAM_STR);
         $stmt->bindParam(":company", $company, PDO::PARAM_STR);
         $stmt->bindParam(":email", $email, PDO::PARAM_STR);
@@ -120,6 +123,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: ../contact-us.php");
         die();
     } catch (PDOException $e) {
+        // Display error message if information was not saved.
         return "error saving data" . $e->getMessage();
     }
 
