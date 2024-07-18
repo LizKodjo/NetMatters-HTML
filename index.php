@@ -4,7 +4,7 @@ include "inc\dbconnect.php";
 //$db = connect();
 
 $title = "Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters";
-include('inc/header.php'); ?>
+include 'inc/header.php'; ?>
 
 
 <main>
@@ -32,7 +32,8 @@ include('inc/header.php'); ?>
                                     services<br>
                                     with complete transparency.
                                 </div>
-                                <button class="main-button btn--web">why choose us? <i class="fa-solid fa-arrow-right"></i></button>
+                                <button class="main-button btn--web">why choose us? <i
+                                        class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -46,7 +47,8 @@ include('inc/header.php'); ?>
                             <div class="top-left compactHeading"><strong>Bespoke Software</strong><br>
                                 <div class="bottom-left">Delivering expert bespoke software<br>
                                     solutions across a range of industries.</div>
-                                <button class="main-button btn--bespoke">Find out more <i class="fa-solid fa-arrow-right"></i></button>
+                                <button class="main-button btn--bespoke">Find out more <i
+                                        class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -62,7 +64,8 @@ include('inc/header.php'); ?>
                                 <div class="bottom-left">Fast and cost-effective IT Support<br>
                                     services for your business
                                 </div>
-                                <button class="main-button btn--it-support">Find out more <i class="fa-solid fa-arrow-right"></i></button>
+                                <button class="main-button btn--it-support">Find out more <i
+                                        class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -78,7 +81,8 @@ include('inc/header.php'); ?>
                                 <div class="bottom-left">Generating your new business<br> through
                                     result-driven marketing activities
                                 </div>
-                                <button class="main-button btn--digital">Find out more <i class="fa-solid fa-arrow-right"></i></button>
+                                <button class="main-button btn--digital">Find out more <i
+                                        class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -94,7 +98,8 @@ include('inc/header.php'); ?>
                                 <div class="bottom-left">A new approach to connectivity, see <br>
                                     how we can help your business.
                                 </div>
-                                <button class="main-button btn--telecoms">Find out more <i class="fa-solid fa-arrow-right"></i></button>
+                                <button class="main-button btn--telecoms">Find out more <i
+                                        class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -110,7 +115,8 @@ include('inc/header.php'); ?>
                                 <div class="bottom-left">For businesses looking to make a strong<br>
                                     and effective first impression.
                                 </div>
-                                <button class="main-button btn--web">Find out more <i class="fa-solid fa-arrow-right"></i></button>
+                                <button class="main-button btn--web">Find out more <i
+                                        class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -126,7 +132,8 @@ include('inc/header.php'); ?>
                                     Keeping businesses and their customers<br>
                                     sensitive information protected.
                                 </div>
-                                <button class="main-button btn--cyber">Find out more <i class="fa-solid fa-arrow-right"></i></button>
+                                <button class="main-button btn--cyber">Find out more <i
+                                        class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -146,7 +153,8 @@ include('inc/header.php'); ?>
                     <div class="col-md-12 clearfix serveheadings">
                         <!-- <div class="topHeadings"> -->
                         <h2 class="h1 float-left-sm serviceheading"><strong>Our Services</strong></h2>
-                        <h3 class="float-right-sm hidden-xs servicesubheading"><a href="#">View Our Work <i class="fa-solid fa-arrow-right"></i></a></h3>
+                        <h3 class="float-right-sm hidden-xs servicesubheading"><a href="#">View Our Work <i
+                                    class="fa-solid fa-arrow-right"></i></a></h3>
                         <!-- </div> -->
                     </div>
 
@@ -184,7 +192,8 @@ include('inc/header.php'); ?>
                         </div>
                     </div>
                     <div class="col-md-4 digital-b">
-                        <div class="service digital-block"><span class="material-symbols-outlined digital-icon">signal_cellular_alt</span>
+                        <div class="service digital-block"><span
+                                class="material-symbols-outlined digital-icon">signal_cellular_alt</span>
                             <p class="service-topic">Digital Marketing</p>
                             <p class="service-info">Driven brand awareness & ROI through
                                 creative
@@ -229,7 +238,8 @@ include('inc/header.php'); ?>
                     <!-- </div> -->
                     <!-- <div class="container lower-second"> -->
                     <div class="col-lg-3 col-md-6 col-sm-6 cyber-b">
-                        <div class="service cyber-block"><span class="material-symbols-outlined cyber-icon">security</span>
+                        <div class="service cyber-block"><span
+                                class="material-symbols-outlined cyber-icon">security</span>
                             <p class="service-topic">Cyber Security</p>
                             <p class="service-info">Prevention, testing, consultancy & breach
                                 management
@@ -259,7 +269,8 @@ include('inc/header.php'); ?>
                     <!-- </div> -->
                 </div>
 
-                <h2 class="service-subheading2"><a href="#">View our Work <i class="fa-solid fa-arrow-right"></i></a></h2>
+                <h2 class="service-subheading2"><a href="#">View our Work <i class="fa-solid fa-arrow-right"></i></a>
+                </h2>
             </div>
         </div>
     </div>
@@ -313,7 +324,8 @@ include('inc/header.php'); ?>
                             that
                             ensures you get the most from our relationship in an upfront manner.</p>
                         <div class="netButtons">
-                            <button class="btn choose-us">Why Choose us? <i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="btn choose-us">Why Choose us? <i
+                                    class="fa-solid fa-arrow-right"></i></button>
                             <button class="btn culture">Our Culture <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
@@ -351,8 +363,10 @@ include('inc/header.php'); ?>
                                     Partnership
                                     LLP</span></p>
                             <div>
-                                <button class="btn googlebtn">Google Reviews <i class="fa-solid fa-arrow-right"></i></button>
-                                <button class="btn trustbtn">Trustpilot Reviews <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                                <button class="btn googlebtn">Google Reviews <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                                <button class="btn trustbtn">Trustpilot Reviews <span><i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
                             </div>
                         </div>
                     </div>
@@ -378,12 +392,12 @@ include('inc/header.php'); ?>
                 <div class="container">
                     <div class="vacancy-list">
                         <div class="row">
-                            <?php include("inc/newsarticles.php"); ?>
+                            <?php include ("inc/newsarticles.php"); ?>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
-            </div>  
-          
+            </div>
+
         </div>
 
 
@@ -420,7 +434,8 @@ include('inc/header.php'); ?>
                     <h3>Searles Leisure Resort</h3><br>
                     Searles Leisure Resort, on the beautiful North Norfolk coast, is an award-winning
                     UK holiday resort for families. <br>
-                    <button class="btn btn--digital">View our case study <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn btn--digital">View our case study <i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </span>
             </div>
 
@@ -448,7 +463,8 @@ include('inc/header.php'); ?>
                     Black Swan Care Group own and manage
                     21 high-quality care and residential homes with
                     a focus on putting the needs of their residents first"
-                    <button class="btn btn--bespoke">View our case study <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn btn--bespoke">View our case study <i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
 
@@ -480,7 +496,8 @@ include('inc/header.php'); ?>
                     <h3>Girl Guiding Anglia</h3>
                     Girl Guiding Anglia is part of Girguiding, the UK's leading charity for
                     girls and young women in the UK. <br>
-                    <button class="btn btn--it-support">View our case study <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn btn--it-support">View our case study <i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
 
@@ -489,7 +506,8 @@ include('inc/header.php'); ?>
                 <div class="imgtext">
                     <h3>Sweetzy</h3>
                     Sweetzy are an online sweets retailer, based in Wymondham. <br>
-                    <button class="btn btn--digital">View our case study <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn btn--digital">View our case study <i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
 
@@ -506,7 +524,8 @@ include('inc/header.php'); ?>
                     <h3>GDST</h3>
                     The <strong>Girls' Day School Trust (GDST)</strong> is the UK's leading
                     family of 25 independent girls' schools. <br>
-                    <button class="btn btn--digital">View our case study <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn btn--digital">View our case study <i
+                            class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
@@ -561,5 +580,4 @@ include('inc/header.php'); ?>
     <!-- </div> -->
 </main>
 
-<?php include('inc/footer.php'); ?>
-
+<?php include 'inc/footer.php'; ?>

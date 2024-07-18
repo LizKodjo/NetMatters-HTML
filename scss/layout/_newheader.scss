@@ -1,0 +1,101 @@
+header {
+    background-color: $white;
+
+    .inner {
+        //padding: 20px 0;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+
+            &>* {
+                flex: 0 0 auto;
+                max-width: 100%;
+            }
+
+            .logo-container {
+                img {
+                    max-width: 100%;
+                    display: block;
+                }
+
+            }
+
+            .searchMenu {
+                float: right;
+                padding: 7px 0;
+
+
+                .btn {
+                    height: 56px;
+                    line-height: 46px;
+                    font-size: 18px;
+                    float: left;
+
+                    .fa-computer-mouse,
+                    .fa-paper-plane {
+                        margin-right: 5px;
+                    }
+
+
+                    span {
+                        font-size: 23.008px;
+                        line-height: 45px;
+                    }
+
+                    .pull-left {
+                        float: left !important;
+                    }
+                }
+
+
+                .search-form-wrapper-tablet {
+                    .search-form {
+                        >.form-control {
+                            width: 300px;
+                            height: 56px;
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .search-form-wrapper--mobile>.search-form {
+            margin-top: 11px;
+            position: relative;
+
+            .hidden {
+                display: none !important;
+                visibility: hidden !important;
+            }
+
+            &>.form-control {
+                background-color: rgba(0, 0, 0, .1);
+                outline: 1px solid hsla(0, 0%, 100%, .2);
+                border: 2px solid rgba(0, 0, 0, .1);
+                transition: none;
+                width: 100%;
+                padding-right: 40px;
+            }
+
+            .form-control {
+                display: inline-block;
+            }
+
+            button {
+                background: none;
+                border: none;
+                color: $primary-dark-col;
+                position: absolute;
+                right: 5px;
+                line-height: 47px;
+                font-size: 20px;
+                outline: none;
+            }
+        }
+
+
+    }
+}

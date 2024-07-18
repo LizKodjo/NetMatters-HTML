@@ -239,66 +239,69 @@
             </ul>
             <!-- <div class="submenu"></div> -->
             <ul class="mob-submenu">
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Bespoke Software</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  IT Support</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Digital Marketing</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Telecoms Services</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Web Design</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Cyber Security</a></li>
-                
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Bespoke Software</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> IT Support</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Digital Marketing</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Telecoms Services</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Web Design</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Cyber Security</a></li>
+
             </ul>
             <ul>
                 <li>Our Work</li>
             </ul>
             <div class="submenu"></div>
             <ul class="mob-submenu">
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Case Studies</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Our Digital Marketing Clients</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Our Website Clients</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Our IT Clients</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Our Bespoke Software Clients</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Our Telecoms Clients</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Case Studies</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Digital Marketing Clients</a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Website Clients</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our IT Clients</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Bespoke Software Clients</a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Telecoms Clients</a></li>
             </ul>
             <ul>
                 <li>Our Knowledge</li>
             </ul>
             <div class="submenu"></div>
             <ul class="mob-submenu">
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Technologies</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Industries</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  News</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Insights</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Technologies</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Industries</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> News</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Insights</a></li>
             </ul>
             <ul>
                 <li>Training</li>
             </ul>
             <div class="submenu"></div>
             <ul class="mob-submenu">
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Train for a career in tech</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Skills Bootcamp</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  SCS Frequently asked questions</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Scion Collaborators</a></li>
-                
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Train for a career in tech</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Skills Bootcamp</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> SCS Frequently asked questions</a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Scion Collaborators</a></li>
+
             </ul>
             <ul>
                 <li>Our company</li>
             </ul>
             <div class="submenu"></div>
             <ul class="mob-submenu">
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Why Choose Us</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Our Culture</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Our Team</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Our Careers</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Our Benefits</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Why Choose Us</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Culture</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Team</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Careers</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Benefits</a></li>
             </ul>
             <ul>
                 <li>Contact us</li>
             </ul>
             <div class="submenu"></div>
             <ul class="mob-submenu">
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Cambridge Office</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Wymondham Office</a></li>
-                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i>  Great Yarmouth Office</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Cambridge Office</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Wymondham Office</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Great Yarmouth Office</a></li>
             </ul>
             <ul>
                 <li>Covid Risk Assessments</li>
@@ -308,7 +311,7 @@
 
     <!-- Main Body -->
 
-    <div id="outermain" class="outermain outermain-sm outermain-lg">
+    <div id="outermain" class="container outermain outermain-sm outermain-lg">
 
         <div id="innerSection" class="innerSection">
 
@@ -326,7 +329,8 @@
                             <div class="row top-help">
                                 <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
                                     <div class="container-headerLogo">
-                                        <a href="index.php"><img class="logo" src="img/asset0.png" alt="Netmatters Dark logo"></a>
+                                        <a href="index.php"><img class="logo" src="img/asset0.png"
+                                                alt="Netmatters Dark logo"></a>
                                     </div>
                                 </div>
                                 <!-- <div class="container headerSearch"> -->
@@ -381,7 +385,8 @@
                                 <div class="row smallnavtop">
                                     <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
                                         <div class="logo-container">
-                                            <a href="index.php"><img class="logo" src="img/asset0.png" alt="Netmatters Dark logo"></a>
+                                            <a href="index.php"><img class="logo" src="img/asset0.png"
+                                                    alt="Netmatters Dark logo"></a>
                                         </div>
                                     </div>
                                     <div class="col-xs-3 hidden-sm hidden-md hidden-lg mobile-container">
@@ -1173,7 +1178,7 @@
                                             <!-- <span class="material-symbols-outlined devpic">school</span> -->
                                             <span class="icon-school devpic"></span><br>
                                             <!-- <span><i class="fa-solid fa-graduation-cap fa-flip-horizontal devpic"></i></span><br> -->
-                                                <small>Developer</small><br>Course</button>
+                                            <small>Developer</small><br>Course</button>
                                         <div class="devcourse-content">
                                             <div class="container dropdown-heading">
                                                 <a class="content-heading" href="#">Our Developer Course
