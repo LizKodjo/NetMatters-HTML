@@ -68,21 +68,13 @@ function validateForm(e) {
     }
 }
 
+
 // accordion
 
 if (question) {
-    question.addEventListener('click', e => {
+    question.addEventListener("click", (e) => {
         e.preventDefault();
+        question.classList.toggle("active");
+        answer.style.display = "block";
     });
 }
-
-
-question.addEventListener("click", () => {
-    question.classList.toggle("active");
-    answer.style.display = "block";
-});
-
-// checked.addEventListener("click", () => {
-//     checked.classList.toggle("active");
-
-// });

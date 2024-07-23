@@ -18,7 +18,7 @@ body {
   overflow: hidden;
   padding: 0;
   top: 0;
-  
+
 }
 
 // Main page
@@ -57,8 +57,8 @@ body {
 
 .text-block {
   @include imgOverlay;
-  
- // background-color: $digital-market;
+
+  // background-color: $digital-market;
 }
 
 // .text-block2 {
@@ -102,100 +102,9 @@ body {
   margin-top: 20px;
 }
 
-// Mobile menu
 
-#main {
-  transition: margin-right 0.5s;
-  // padding: 16px;
-}
 
-.sidenav,
-.mobile-nav {
-  height: 100%;
-  width: 275px;
-  position: fixed;
-  // z-index: -1;
-  top: 0;
-  right: 0;
-  background-color: $primary-dark-col;
-  overflow-x: auto;
-  // transition: 0.5s;
-  padding-top: 20px;
 
-  .submenu {
-    margin: 0 0 15px;
-  }
-
-  .mob-submenu {
-    padding: 20px 0 0 0;
-    width: auto;
-
-    li:not(:first-child) {
-      border-top: 1px solid rgba(0, 0, 0, 0.45);
-    }
-
-    li {
-      padding: 0;
-
-      a {
-        background-color: rgba(0, 0, 0, 0.25);
-        padding: 10px;
-        font-size: 16px;
-      }
-    }
-  }
-
-  ul {
-    padding: 21px;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin: -20px 0 0;
-
-    li {
-      color: $white;
-      list-style: none;
-      padding: 20px 0 0;
-
-      a {
-        padding: 19px 0 18px;
-        text-decoration: none;
-        font-size: 18px;
-        color: $white;
-        display: block;
-        transition: 0.3s;
-        border-radius: 3px;
-        text-align: center;
-        outline: 1px solid rgba(0, 0, 0, 0.25);
-        border: 1px solid hsla(0, 0%, 100%, 0.1);
-      }
-    }
-  }
-}
-
-.sidenav {
-  .new-subsection {
-    .lower-submenu {
-      border-top: 1px solid hsla(0, 0%, 100%, 0.1);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-    }
-
-    .mini-menu {
-      padding: 0;
-
-      a {
-        font-size: 14px;
-        border-top: 1px solid hsla(0, 0%, 100%, 0.5);
-        background-color: rgba(0, 0, 0, 0.25);
-        padding: 15px 20px;
-        position: relative;
-      }
-    }
-  }
-}
-
-.smallnav {
-  margin-top: 0;
-}
 
 // slick styles for banner image
 

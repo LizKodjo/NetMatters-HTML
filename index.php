@@ -4,8 +4,11 @@ include "inc\dbconnect.php";
 //$db = connect();
 
 $title = "Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters";
-include 'inc/header.php'; ?>
+include 'inc/header.php';
+?>
 
+<!-- End of header -->
+</header>
 
 <main>
 
@@ -580,4 +583,7 @@ include 'inc/header.php'; ?>
     <!-- </div> -->
 </main>
 
-<?php include 'inc/footer.php'; ?>
+<!-- Footer -->
+<footer>
+    <!-- Start of footer -->
+    <?php include "inc/footer.php"; ?>

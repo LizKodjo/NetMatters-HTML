@@ -88,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Display all error messages 
         $_SESSION['status'] = 'error';
         $_SESSION['errors'] = $errors;
-        header('Location: ../contact-us.php?result=error');
+        header('Location: ../contact-us.php?result=error#contact-form');
         die();
     } else {
         //echo "All fields are correct";
@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Display the success message after form has been completed correctly.
         $_SESSION["status"] = 'success';
         $_SESSION["data"] = $data;
-        header("Location:../contact-us.php?result=success");
+        header("Location:../contact-us.php?result=success#contact-form");
         //die();
     }
 

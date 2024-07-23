@@ -171,7 +171,12 @@ small {
     padding: 5px 15px;
     border-radius: 5px;
     margin-bottom: 20px;
+
+    &:hover {
+        color: $white;
+    }
 }
+
 
 // .latestbtn1 {
 //     background-color: $digital-market;

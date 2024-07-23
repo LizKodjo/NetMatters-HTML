@@ -11,6 +11,9 @@ $title = "Contact Us | Netmatters";
 include "inc/header.php";
 ?>
 
+<!-- End of header  -->
+</header>
+
 <main>
     <div id="middle">
         <div class="hidden-xs breadcrumb-container">
@@ -230,12 +233,12 @@ include "inc/header.php";
                         </textarea>
                         </div>
                         <div class="form-group">
-                            <label class="pretty-checkbox checklabel">
+                            <label class="pretty-checkbox">
                                 <span class="media">
                                     <span class="media-left checkbox-left">
                                         <span class="button">
                                             <span class="mdi-action-done"></span>
-                                            <input name="marketing_preference" type="checkbox" value="1" class="check">
+                                            <input name="marketing_preference" type="checkbox" value="1">
                                         </span>
                                     </span>
                                     <span class="media-body">
@@ -272,9 +275,10 @@ include "inc/header.php";
     </div>
 </main>
 
-<?php
-include "inc/footer.php";
-unset($_SESSION['status']);
-unset($_SESSION['errors']);
-unset($_SESSION['data']);
-?>
+<footer>
+    <!-- Start of footer -->
+    <?php include "inc/footer.php";
+    unset($_SESSION['status']);
+    unset($_SESSION['errors']);
+    unset($_SESSION['data']);
+    ?>

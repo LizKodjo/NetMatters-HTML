@@ -14,7 +14,8 @@
     border-top-right-radius: 10px;
     padding: 0 10px;
     cursor: pointer;
-    font-size: 12px;
+    display: flex;
+    font-size: 12.8px;
 
     &:hover,
     &:focus,
@@ -26,15 +27,34 @@
 }
 
 .modal {
-    background: rgba(0, 0, 0, .7);
+    //background: rgba(0, 0, 0, .7);
+
+    .modal-dialog {
+        margin: auto;
+
+        // position: relative;
+        // width: auto;
+        // .modal-content {
+        //     position: relative;
+        //     background-color: $white;
+        //     border: 1px solid rgba(0, 0, 0, .2);
+        //     border-radius: 5px;
+        //     box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+        //     background-clip: padding-box;
+        //     outline: none;
+        // }
+
+    }
 }
 
 .modal-title {
     font-size: 26px;
+    //padding: 15px 0;
 }
 
 .modal-header {
     justify-content: flex-start;
+    padding: 15px 20px;
 }
 
 .modal-body {
@@ -43,6 +63,7 @@
     color: $dove-gray;
     line-height: 1.875;
     letter-spacing: .4px;
+    padding: 20px;
 
     .privacy {
         text-decoration: none;
@@ -51,43 +72,59 @@
 }
 
 .modal-footer {
-    
-    .btn {
-        height: auto;
-        line-height: 35px;
-        padding: 5px 15px;
-        font-size: 17px;
-        border-radius: 3px;
-        white-space: normal;
-        display: block;
-        width: 100%;        
+    .modal-footer {
+        margin: 0;
+        padding: 19px 20px 20px;
+        text-align: right;
+        //align-items: baseline;
+        //flex-wrap: nowrap;
 
-        // &:active {
-        //     background-color: darken($web-design, 10);
-        //     color: $white;
-        // }
+
     }
 
-    .btn--consent-change:hover,
-    .btn--consent-change:active:focus,
-    .btn--consent-change:focus {
-        background-color: darken($consent-change, 10);
-        color: $white;
-        outline: none;
-    }
+    .row {
+        >* {
+            flex: 0 0 auto;
+            max-width: 100%;
+        }
 
-    .btn--web:hover,
-    .btn--web:active:focus,
-    .btn--web:focus {
-        background-color: darken($web-design, 10);
-        color: $white;
-        outline: none;
+        .btn {
+            height: auto;
+            line-height: 35px;
+            padding: 5px 15px;
+            font-size: 17.008px;
+            border-radius: 3px;
+            white-space: normal;
+            display: block;
+            // width: 100%;
+
+            // &:active {
+            //     background-color: darken($web-design, 10);
+            //     color: $white;
+            // }
+        }
+
+        .btn--consent-change:hover,
+        .btn--consent-change:active:focus,
+        .btn--consent-change:focus {
+            background-color: darken($consent-change, 10);
+            color: $white;
+            outline: none;
+        }
+
+        .btn--web:hover,
+        .btn--web:active:focus,
+        .btn--web:focus {
+            background-color: darken($web-design, 10);
+            color: $white;
+            outline: none;
+        }
     }
 }
 
 #consentPolicy {
     display: flex;
-    position: fixed;
+    //position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
