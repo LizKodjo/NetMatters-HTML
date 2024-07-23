@@ -1845,12 +1845,11 @@
   .inner {
     .main-topnav {
       .container {
-        display: flex;
-        //width: 1200px;
+        width: 1200px;
 
-        // .top-help {
-        //   //width: 1200px;
-        // }
+        .top-help {
+          width: 1200px;
+        }
 
         .searchMenu {
           .searchInput {

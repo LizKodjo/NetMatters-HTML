@@ -71,56 +71,57 @@
     }
 }
 
+
 .modal-footer {
-    .modal-footer {
-        margin: 0;
-        padding: 19px 20px 20px;
-        text-align: right;
-        //align-items: baseline;
-        //flex-wrap: nowrap;
+    margin: 0;
+    padding: 19px 20px 20px;
+    text-align: right;
+    //align-items: baseline;
+    //flex-wrap: nowrap;
+    justify-content: center;
 
 
+}
+
+.row {
+    >* {
+        flex: 0 0 auto;
+        max-width: 100%;
     }
 
-    .row {
-        >* {
-            flex: 0 0 auto;
-            max-width: 100%;
-        }
+    .btn {
+        height: auto;
+        line-height: 35px;
+        padding: 5px 15px;
+        font-size: 17.008px;
+        border-radius: 3px;
+        white-space: normal;
+        display: block;
+        // width: 100%;
 
-        .btn {
-            height: auto;
-            line-height: 35px;
-            padding: 5px 15px;
-            font-size: 17.008px;
-            border-radius: 3px;
-            white-space: normal;
-            display: block;
-            // width: 100%;
+        // &:active {
+        //     background-color: darken($web-design, 10);
+        //     color: $white;
+        // }
+    }
 
-            // &:active {
-            //     background-color: darken($web-design, 10);
-            //     color: $white;
-            // }
-        }
+    .btn--consent-change:hover,
+    .btn--consent-change:active:focus,
+    .btn--consent-change:focus {
+        background-color: darken($consent-change, 10);
+        color: $white;
+        outline: none;
+    }
 
-        .btn--consent-change:hover,
-        .btn--consent-change:active:focus,
-        .btn--consent-change:focus {
-            background-color: darken($consent-change, 10);
-            color: $white;
-            outline: none;
-        }
-
-        .btn--web:hover,
-        .btn--web:active:focus,
-        .btn--web:focus {
-            background-color: darken($web-design, 10);
-            color: $white;
-            outline: none;
-        }
+    .btn--web:hover,
+    .btn--web:active:focus,
+    .btn--web:focus {
+        background-color: darken($web-design, 10);
+        color: $white;
+        outline: none;
     }
 }
+
 
 #consentPolicy {
     display: flex;

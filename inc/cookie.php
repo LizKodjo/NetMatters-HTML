@@ -30,16 +30,18 @@
                     </div>
                     <!-- Modal Footer -->
                     <div class="modal-footer">
-                        <!-- <div class="row">
-                                <div class="col-sm-6"> -->
-                        <button class="btn btn--consent-change" data-bs-dismiss="modal">Change
-                            Settings</button>
+                        <!-- <div class="row"> -->
+                        <!-- <div class="col-sm-6 spacer-xs"> -->
+                        <a class="btn btn--consent-change" data-bs-dismiss="modal">Change Settings
+                        </a>
                         <!-- </div> -->
                         <!-- <div class="col-sm-6"> -->
-                        <button id="acceptcookie" type="button" class="btn btn--web" data-bs-dismiss="modal">Accept
-                            cookies</button>
+                        <a id="acceptcookie" type="button" class="btn btn--web" data-bs-dismiss="modal">Accept
+                            cookies
+                        </a>
                         <!-- </div> -->
                     </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>

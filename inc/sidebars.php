@@ -237,12 +237,12 @@
         </ul>
         <!-- <div class="submenu"></div> -->
         <ul class="mob-submenu">
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Bespoke Software</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> IT Support</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Digital Marketing</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Telecoms Services</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Web Design</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Cyber Security</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Bespoke Software</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; IT Support</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Digital Marketing</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Telecoms Services</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Web Design</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Cyber Security</a></li>
 
         </ul>
         <ul>
@@ -250,35 +250,38 @@
         </ul>
         <div class="submenu"></div>
         <ul class="mob-submenu">
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Case Studies</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Digital Marketing Clients</a>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Case Studies</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Our Digital Marketing
+                    Clients</a>
             </li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Website Clients</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our IT Clients</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Bespoke Software Clients</a>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Our Website Clients</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Our IT Clients</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Our Bespoke Software Clients</a>
             </li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Telecoms Clients</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Our Telecoms Clients</a></li>
         </ul>
         <ul>
             <li>Our Knowledge</li>
         </ul>
         <div class="submenu"></div>
         <ul class="mob-submenu">
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Technologies</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Industries</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> News</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Insights</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Technologies</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Industries</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; News</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Insights</a></li>
         </ul>
         <ul>
             <li>Training</li>
         </ul>
         <div class="submenu"></div>
         <ul class="mob-submenu">
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Train for a career in tech</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Skills Bootcamp</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> SCS Frequently asked questions</a>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Train for a career in tech</a>
             </li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Scion Collaborators</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Skills Bootcamp</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; SCS Frequently asked
+                    questions</a>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Scion Collaborators</a></li>
 
         </ul>
         <ul>
@@ -286,20 +289,20 @@
         </ul>
         <div class="submenu"></div>
         <ul class="mob-submenu">
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Why Choose Us</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Culture</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Team</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Careers</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Our Benefits</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Why Choose Us</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Our Culture</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Our Team</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Our Careers</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Our Benefits</a></li>
         </ul>
         <ul>
             <li>Contact us</li>
         </ul>
         <div class="submenu"></div>
         <ul class="mob-submenu">
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Cambridge Office</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Wymondham Office</a></li>
-            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> Great Yarmouth Office</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Cambridge Office</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Wymondham Office</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right menu-arrows"></i> &nbsp; Great Yarmouth Office</a></li>
         </ul>
         <ul>
             <li>Covid Risk Assessments</li>

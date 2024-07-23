@@ -1079,7 +1079,10 @@ body {
 }
 @media (min-width: 1260px) {
   .inner .main-topnav .container {
-    display: flex;
+    width: 1200px;
+  }
+  .inner .main-topnav .container .top-help {
+    width: 1200px;
   }
   .inner .main-topnav .container .searchMenu .searchInput .searchbar input {
     display: inline-block !important;
@@ -1276,6 +1279,14 @@ footer .footerlist a {
   color: #fff;
 }
 
+.searchbar input {
+  padding: 5px 15px;
+  border-radius: 0;
+  width: 174px;
+  height: 56px;
+  border-color: #ccc;
+  border: 1px solid #e5e5e5;
+}
 .searchbar input:focus {
   border-color: #5bc0de;
   outline: 0;
@@ -2266,16 +2277,18 @@ h2 {
   color: #333645;
 }
 
-.modal-footer .modal-footer {
+.modal-footer {
   margin: 0;
   padding: 19px 20px 20px;
   text-align: right;
+  justify-content: center;
 }
-.modal-footer .row > * {
+
+.row > * {
   flex: 0 0 auto;
   max-width: 100%;
 }
-.modal-footer .row .btn {
+.row .btn {
   height: auto;
   line-height: 35px;
   padding: 5px 15px;
@@ -2284,16 +2297,16 @@ h2 {
   white-space: normal;
   display: block;
 }
-.modal-footer .row .btn--consent-change:hover,
-.modal-footer .row .btn--consent-change:active:focus,
-.modal-footer .row .btn--consent-change:focus {
+.row .btn--consent-change:hover,
+.row .btn--consent-change:active:focus,
+.row .btn--consent-change:focus {
   background-color: #7e808a;
   color: #fff;
   outline: none;
 }
-.modal-footer .row .btn--web:hover,
-.modal-footer .row .btn--web:active:focus,
-.modal-footer .row .btn--web:focus {
+.row .btn--web:hover,
+.row .btn--web:active:focus,
+.row .btn--web:focus {
   background-color: #79539a;
   color: #fff;
   outline: none;
@@ -2317,15 +2330,15 @@ h2 {
   margin: 0;
   display: block;
   z-index: 1;
-  position: fixed;
   height: 100%;
-  width: auto;
+  width: 351px;
   position: fixed;
   top: 0;
   right: 0;
   background-color: #333645;
-  overflow-x: auto;
+  overflow: auto;
   transition: 0.5s;
+  padding: 0;
 }
 .largeSidebar .large-nav .mob-submenu li:not(:first-child) {
   border-top: 1px solid rgba(0, 0, 0, 0.45);
@@ -2341,13 +2354,14 @@ h2 {
   position: relative;
   background-color: rgba(0, 0, 0, 0.25);
   padding: 15px 20px;
-  font-size: 1.2em;
+  font-size: 14px;
 }
 .largeSidebar .large-nav .mob-submenu .menu-arrows {
-  font-size: 10px;
+  font-size: 7px;
 }
 .largeSidebar .large-nav ul {
-  font-size: 1.2em;
+  padding-left: 0;
+  font-size: 16px;
   text-transform: uppercase;
   margin: 0;
 }
