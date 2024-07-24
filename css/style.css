@@ -214,42 +214,38 @@ body {
     max-width: 100%;
   }
   .smallnav .container .searchform {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    display: table;
+    width: 100%;
+  }
+  .smallnav .container .searchform .searchbar {
     margin-top: 11px;
     position: relative;
   }
-  .smallnav .container .searchform .searchbar {
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    padding: 8px 40px 5px 15px;
+  .smallnav .container .searchform .searchbar .searchInput {
     background-color: rgba(0, 0, 0, 0.1);
     outline: 1px solid hsla(0, 0%, 100%, 0.2);
-    width: 100%;
-    position: relative;
+    border: 2px solid rgba(0, 0, 0, 0.1);
     transition: none;
-    color: #a3a8ac;
-    font-size: 12px;
-    border: 1px solid #a3a8ac;
-    border-radius: 0 3px 3px 0;
+    width: 100%;
+    padding-right: 40px;
+    border-radius: 3px;
+    height: 47px;
   }
-  .smallnav .container .searchform .searchbar input {
-    visibility: hidden;
+  .smallnav .container .searchform .searchbar .searchInput:focus {
+    border-color: #ccc;
+    box-shadow: none;
+  }
+  .smallnav .container .searchform .searchbar .searchInput:active {
+    box-shadow: 0 0 3px #fff;
+  }
+  .smallnav .container .searchform .searchbar label {
+    display: none;
+  }
+  .smallnav .container .searchform .searchbar .search-input1 {
+    display: none;
   }
   .smallnav .container .searchform .searchbar .searchbtn {
     font-size: 20px;
-  }
-  .smallnav .container .searchform .searchbar button {
-    background: none;
-    border: none;
-    color: #333645;
-    position: absolute;
-    right: 5px;
-    bottom: -10px;
-    line-height: 47px;
-    font-size: 20px;
-    outline: none;
-    padding: 1px 5px;
   }
   .smallnav .container .smallnavtop {
     display: table;
@@ -294,8 +290,8 @@ body {
     padding: 7px 0;
     margin-left: 20px;
   }
-  .smallnav .container .searchform .searchbar input {
-    visibility: hidden;
+  .smallnav .container .searchform .searchbar .search-input {
+    display: none;
   }
   .smallnav .container .searchform .searchbar button {
     background: none;
@@ -422,6 +418,14 @@ body {
   }
   .copyright .container {
     padding: 0;
+  }
+  .section .row .col-lg-pull-4 #contact-form .action-block {
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 376px) {
+  .section .row .col-lg-pull-4 #contact-form .action-block {
+    flex-direction: row;
   }
 }
 @media (max-width: 480px) {
@@ -971,9 +975,6 @@ body {
     height: 56px;
     display: none;
   }
-  .servicegrid .container {
-    width: 970px;
-  }
   .servicegrid .container .serveheadings {
     width: 945px;
   }
@@ -1217,17 +1218,20 @@ body {
     padding: 5px 15px;
     display: inline-block;
   }
-  main #middle .breadcrumb-container .container {
+  #middle .breadcrumb-container .container {
     width: 1200px;
   }
-  main #middle .top .page-head .container {
+  #middle .top .page-head .container {
     width: 1200px;
   }
-  main #middle .office-addresses .container {
+  #middle .office-addresses .container {
     width: 1200px;
   }
-  main #middle .section .row .col-lg-4,
-  main #middle .section .row .col-lg-8 {
+  #middle .bottom {
+    width: 1200px;
+  }
+  #middle .bottom .row .col-lg-4,
+  #middle .bottom .row .col-lg-8 {
     width: 50%;
   }
 }
@@ -1283,7 +1287,6 @@ footer .footerlist a {
   padding: 5px 15px;
   border-radius: 0;
   width: 174px;
-  height: 56px;
   border-color: #ccc;
   border: 1px solid #e5e5e5;
 }
@@ -2288,15 +2291,6 @@ h2 {
   flex: 0 0 auto;
   max-width: 100%;
 }
-.row .btn {
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  font-size: 17.008px;
-  border-radius: 3px;
-  white-space: normal;
-  display: block;
-}
 .row .btn--consent-change:hover,
 .row .btn--consent-change:active:focus,
 .row .btn--consent-change:focus {
@@ -3055,7 +3049,7 @@ small {
   padding-left: 0;
 }
 .social-logos .container [class$=-btn] {
-  padding: 12px 22px 16px;
+  padding: 12px 23px 16px;
   background-color: #212330;
   font-size: 26px;
   line-height: 26px;

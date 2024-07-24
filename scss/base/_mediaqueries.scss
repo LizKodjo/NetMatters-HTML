@@ -56,46 +56,70 @@
       // width: 320px;
 
       .searchform {
-        @include flexevencenter;
-        align-content: center;
-        margin-top: 11px;
-        position: relative;
+        //@include flexevencenter;
+        //align-content: center;
+        display: table;
+        width: 100%;
+
 
         .searchbar {
-          border: 2px solid rgba(0, 0, 0, 0.1);
-          // font-size: 20px;
-          padding: 8px 40px 5px 15px;
-          background-color: rgba(0, 0, 0, 0.1);
-          outline: 1px solid hsla(0, 0%, 100%, 0.2);
-          width: 100%;
+          margin-top: 11px;
           position: relative;
-          transition: none;
-          color: #a3a8ac;
-          font-size: 12px;
 
-          border: 1px solid $primary-warm-col;
-          border-radius: 0 3px 3px 0;
+          .searchInput {
+            background-color: rgba(0, 0, 0, 0.1);
+            outline: 1px solid hsla(0, 0%, 100%, .2);
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            transition: none;
+            width: 100%;
+            padding-right: 40px;
+            border-radius: 3px;
+            height: 47px;
+            //width: 290px;
 
-          input {
-            visibility: hidden;
+
+            &:focus {
+              border-color: #ccc;
+              box-shadow: none;
+            }
+
+            &:active {
+              box-shadow: 0 0 3px $white;
+            }
+
+          }
+
+
+
+          label {
+            display: none;
+
+            // border: 2px solid rgba(0, 0, 0, 0.1);
+            // // font-size: 20px;
+            // padding: 8px 40px 5px 15px;
+            // background-color: rgba(0, 0, 0, 0.1);
+            // outline: 1px solid hsla(0, 0%, 100%, 0.2);
+            // width: 100%;
+            // position: relative;
+            // transition: none;
+            // color: #a3a8ac;
+            // font-size: 12px;
+
+            // border: 1px solid $primary-warm-col;
+            // border-radius: 0 3px 3px 0;
+          }
+
+          .search-input1 {
+            display: none;
           }
 
           .searchbtn {
             font-size: 20px;
           }
 
-          & button {
-            background: none;
-            border: none;
-            color: $primary-dark-col;
-            position: absolute;
-            right: 5px;
-            bottom: -10px;
-            line-height: 47px;
-            font-size: 20px;
-            outline: none;
-            padding: 1px 5px;
-          }
+          // & button {
+          //   /
+          // }
         }
       }
 
@@ -168,9 +192,12 @@
           // width: 100%;
           // position: relative;
           // transition: none;
+          .search-input {
+            display: none;
+          }
 
           input {
-            visibility: hidden;
+            // visibility: hidden;
           }
         }
 
@@ -421,6 +448,35 @@
   .copyright {
     .container {
       padding: 0;
+    }
+  }
+
+  // Contact form
+
+  .section {
+    .row {
+      .col-lg-pull-4 {
+        #contact-form {
+          .action-block {
+            flex-direction: column-reverse;
+            ;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 376px) {
+  .section {
+    .row {
+      .col-lg-pull-4 {
+        #contact-form {
+          .action-block {
+            flex-direction: row;
+          }
+        }
+      }
     }
   }
 }
@@ -1640,7 +1696,7 @@
 
   .servicegrid {
     .container {
-      width: 970px;
+      //width: 970px;
 
       .serveheadings {
         width: 945px;
@@ -1659,6 +1715,8 @@
       }
     }
   }
+
+  #middle {}
 }
 
 @media (max-width: 991px) {
@@ -2096,41 +2154,55 @@
   }
 
   // Contact us page
-  main {
-    #middle {
-      .breadcrumb-container {
-        .container {
-          width: 1200px;
-        }
+  // main {
+  #middle {
+    .breadcrumb-container {
+      .container {
+        width: 1200px;
       }
-
-      .top {
-        .page-head {
-          .container {
-            width: 1200px;
-          }
-        }
-      }
-
-      .office-addresses {
-        .container {
-          width: 1200px;
-        }
-      }
-
-      .section {
-        .row {
-
-          .col-lg-4,
-          .col-lg-8 {
-            width: 50%;
-          }
-        }
-      }
-
     }
+
+    .top {
+      .page-head {
+        .container {
+          width: 1200px;
+        }
+      }
+    }
+
+    .office-addresses {
+      .container {
+        width: 1200px;
+      }
+    }
+
+    .bottom {
+      width: 1200px;
+
+      .row {
+        // width: 1200px;
+        //display: flex;
+
+        // .hourstest,
+        // .formtest {
+        //   // flex: 0 0 auto;
+        //   // max-width: 100%;
+        //   width: 1200px;
+        // }
+        .col-lg-4,
+        .col-lg-8 {
+          width: 50%;
+        }
+      }
+    }
+
+
+
   }
 }
+
+
+// }
 
 @media (min-width: 768px) and (max-width: 1259px) {
   .latestnews {
@@ -2147,3 +2219,11 @@
     }
   }
 }
+
+// @media (max-width: 1259px) {
+//   // .row>* {
+//   //   flex: 0 0 auto;
+//   //   max-width: 100%;
+//   // }
+
+// }

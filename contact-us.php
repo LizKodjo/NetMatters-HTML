@@ -122,8 +122,8 @@ include "inc/header.php";
             </div>
         </div>
         <div class="section bottom container">
-            <div class="row">
-                <div class="col-lg-4 col-lg-push-8">
+            <div class="row formlayout">
+                <div class="col-lg-4 col-lg-push-8 hourstest">
                     <div>
                         <div class="cms-block">
                             <p>
@@ -179,7 +179,7 @@ include "inc/header.php";
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-lg-pull-4">
+                <div class="col-lg-8 col-lg-pull-4 formtest">
                     <form method="POST" action="inc/contactform.php" id="contact-form" accept-charset="UTF-8">
                         <!-- Display error messages -->
                         <?php if (isset($_SESSION['status']) && $_SESSION['status'] === 'error'):

@@ -132,8 +132,8 @@
                                 </div>
                                 <div class="searchform">
                                     <form class="searchbar">
-                                        <label for="search-input">Search...</label>
-                                        <input class="search-input" type="text" placeholder="Search..." name="q"
+                                        <label for="search-input1">Search...</label>
+                                        <input class="searchInput" type="text" placeholder="Search..." name="q"
                                             id="search-input1">
                                         <button type="submit"><i class="fa fa-search searchbtn"></i></button>
                                     </form>
@@ -582,7 +582,7 @@
                                 <div class="searchform">
                                     <form class="searchbar">
                                         <label for="search-input">Search...</label>
-                                        <input class="search-input" type="text" placeholder="Search..." name="q"
+                                        <input class="searchInput" type="text" placeholder="Search..." name="q"
                                             id="search-input">
                                         <button type="submit"><i class="fa fa-search searchbtn"></i></button>
                                     </form>

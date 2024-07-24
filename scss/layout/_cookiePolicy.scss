@@ -89,21 +89,21 @@
         max-width: 100%;
     }
 
-    .btn {
-        height: auto;
-        line-height: 35px;
-        padding: 5px 15px;
-        font-size: 17.008px;
-        border-radius: 3px;
-        white-space: normal;
-        display: block;
-        // width: 100%;
+    // .btn {
+    //     // height: auto;
+    //     // line-height: 35px;
+    //     // padding: 5px 15px;
+    //     // font-size: 17.008px;
+    //     // border-radius: 3px;
+    //     // white-space: normal;
+    //     //display: block;
+    //     // width: 100%;
 
-        // &:active {
-        //     background-color: darken($web-design, 10);
-        //     color: $white;
-        // }
-    }
+    //     // &:active {
+    //     //     background-color: darken($web-design, 10);
+    //     //     color: $white;
+    //     // }
+    // }
 
     .btn--consent-change:hover,
     .btn--consent-change:active:focus,
