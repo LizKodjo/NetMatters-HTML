@@ -593,8 +593,6 @@ body {
     border-radius: 0;
     width: 174px;
     height: 56px;
-    border-color: #ccc;
-    border: 1px solid #e5e5e5;
   }
   .main-topnav .container .searchMenu .btn {
     height: 56px;
