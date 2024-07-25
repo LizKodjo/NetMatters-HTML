@@ -818,9 +818,6 @@ body {
   .inner .main-topnav .container .top-help .contactbtn {
     margin-left: 20px;
   }
-  .inner .main-topnav .container .top-help .col-md-7 .searchMenu .searchInput .searchbar button {
-    border-radius: 3px;
-  }
   .main-topnav .topnav {
     max-width: 100%;
   }
@@ -967,6 +964,9 @@ body {
   }
   .reviews .culture {
     margin-top: 0;
+  }
+  .col-md-7 .searchMenu .searchInput .searchbar button {
+    border-radius: 3px;
   }
   .col-md-7 .searchMenu .searchInput .searchbar input {
     width: 300px;
@@ -1215,6 +1215,9 @@ body {
     font-size: 1.7rem;
     padding: 5px 15px;
     display: inline-block;
+  }
+  .inner .main-topnav .topnav .top-help .col-md-7 .searchMenu .searchInput .searchbar button {
+    border-radius: 0 3px 3px 0;
   }
   #middle .breadcrumb-container .container {
     width: 1200px;
