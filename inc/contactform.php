@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Display the success message after form has been completed correctly.
         $_SESSION["status"] = 'success';
         $_SESSION["data"] = $data;
-        header("Location:../contact-us.php?result=success#contact-form");
+        header("Location: ../contact-us.php?result=success#contact-form");
         //die();
     }
 
@@ -120,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(":marketing", $marketing, PDO::PARAM_BOOL);
 
         $stmt->execute();
-        header("Location: ../contact-us.php");
+        header("Location: ../contact-us.php?result=success#contact-form");
         die();
     } catch (PDOException $e) {
         // Display error message if information was not saved.
