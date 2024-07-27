@@ -681,15 +681,11 @@ body {
   .breadcrumb-container .container {
     width: 750px;
   }
-  .bottom .row .col-lg-4,
-  .bottom .row .col-lg-8 {
-    width: 750px;
-  }
   .page-head .container {
     width: 750px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .banner-image .imgText .top-left {
     font-size: 40px;
   }
@@ -698,6 +694,10 @@ body {
   }
   .banner-image .imgText .top-left .main-button {
     font-size: 20px;
+  }
+  #middle .bottom .row .col-lg-4,
+  #middle .bottom .row .col-lg-8 {
+    width: 750px;
   }
 }
 @media (min-width: 992px) {
@@ -948,10 +948,6 @@ body {
   #middle .office-addresses .container {
     width: 970px;
   }
-  #middle .bottom .row .col-lg-4,
-  #middle .bottom .row .col-lg-8 {
-    width: 940px;
-  }
 }
 @media (min-width: 992px) and (max-width: 1259px) {
   .inner .main-topnav {
@@ -981,6 +977,10 @@ body {
   }
   .servicegrid .container .service-blocks .upper-row .container {
     display: flex;
+  }
+  #middle .bottom .row .col-lg-4,
+  #middle .bottom .row .col-lg-8 {
+    width: 940px;
   }
 }
 @media (max-width: 991px) {
@@ -1230,10 +1230,6 @@ body {
   }
   #middle .bottom {
     width: 1200px;
-  }
-  #middle .bottom .row .col-lg-4,
-  #middle .bottom .row .col-lg-8 {
-    width: 50%;
   }
 }
 @media (min-width: 768px) and (max-width: 1259px) {
