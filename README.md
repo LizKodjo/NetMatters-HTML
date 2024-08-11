@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=lizkodjo&label=Profile%20views&color=0e75b6&style=flat" alt="lizkodjo" /> </p>
 
-- 🔭 This project was to [rebuild the Netmatters website from scratch using html, css, javascript, sass and php. It is to showcase skills gained whilst on the Netmatters web developer training course.](https://netmatters.elizabeth-kodjo.netmatters-scs.co.uk)
+- 🔭 This project was to [rebuild the Netmatters website from scratch using html, css, javascript, sass and php. It showcases my skills gained whilst on the award winning Netmatters web developer training course.](https://netmatters.elizabeth-kodjo.netmatters-scs.co.uk).  Click to view.
 
 - 👨‍💻 All of my projects are available at [https://elizabeth-kodjo.netmatters-scs.co.uk](https://elizabeth-kodjo.netmatters-scs.co.uk)
 
