@@ -165,14 +165,6 @@ body {
   right: 50%;
 }
 
-.btn--consent-change:hover {
-  background-color: #999aa2;
-}
-
-.btn-danger:hover {
-  background-color: #926fb1;
-}
-
 .welcome {
   margin: -6px 0 40px;
 }
@@ -650,6 +642,9 @@ body {
   .servicegrid .serviceSections .servicebreakdown .row .cyber-b,
   .servicegrid .serviceSections .servicebreakdown .row .dev-b {
     width: 50%;
+  }
+  .modal-footer {
+    flex-wrap: nowrap;
   }
   .latestnews .viewheading {
     display: none;
@@ -2251,8 +2246,20 @@ h2 {
   border-color: #75788a;
 }
 
-.modal .modal-dialog {
+#myModal {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-direction: row;
   margin: auto;
+}
+#myModal .modal-dialog {
+  margin: auto;
+  max-width: 600px;
 }
 
 .modal-title {
@@ -2284,37 +2291,40 @@ h2 {
   justify-content: center;
 }
 
-.row > * {
-  flex: 0 0 auto;
-  max-width: 100%;
-}
-.row .btn--consent-change:hover,
-.row .btn--consent-change:active:focus,
-.row .btn--consent-change:focus {
+.btn--consent-change:hover,
+.btn--consent-change:active,
+.btn--consent-change:active:focus,
+.btn--consent-change:focus {
   background-color: #7e808a;
   color: #fff;
   outline: none;
 }
-.row .btn--web:hover,
-.row .btn--web:active:focus,
-.row .btn--web:focus {
+
+.btn--web:hover,
+.btn--web:active:focus,
+.btn--web:focus {
   background-color: #79539a;
   color: #fff;
   outline: none;
 }
 
-#consentPolicy {
-  display: flex;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  outline: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
+.changeBtn,
+.acceptBtn {
+  width: 100%;
+}
+
+.btn--consent-change {
+  margin-top: 0;
+  border-radius: 3px;
+  line-height: 35px;
+  padding: 5px 15px;
+  white-space: normal;
+  height: auto;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
 }
 
 .largeSidebar {

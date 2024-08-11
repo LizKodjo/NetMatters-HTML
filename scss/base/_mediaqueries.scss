@@ -1016,11 +1016,10 @@
     }
   }
 
-  // .copyright {
-  //   .container {
-  //     width: 100%;
-  //   }
-  // }
+  .modal-footer {
+
+    flex-wrap: nowrap;
+  }
 
   .latestnews {
     .viewheading {
@@ -1088,15 +1087,6 @@
     }
   }
 
-  // .bottom {
-  //   .row {
-
-  //     .col-lg-4,
-  //     .col-lg-8 {
-  //       width: 750px;
-  //     }
-  //   }
-  // }
 
   .page-head {
     .container {
@@ -1729,10 +1719,6 @@
       }
     }
   }
-
-
-
-
 }
 
 @media (max-width: 991px) {
@@ -2206,21 +2192,21 @@
     .bottom {
       width: 1200px;
 
-      .row {
-        // width: 1200px;
-        //display: flex;
+      // .row {
+      //   // width: 1200px;
+      //   //display: flex;
 
-        // .hourstest,
-        // .formtest {
-        //   // flex: 0 0 auto;
-        //   // max-width: 100%;
-        //   width: 1200px;
-        // }
-        // .col-lg-4,
-        // .col-lg-8 {
-        //   width: 50%;
-        // }
-      }
+      //   // .hourstest,
+      //   // .formtest {
+      //   //   // flex: 0 0 auto;
+      //   //   // max-width: 100%;
+      //   //   width: 1200px;
+      //   // }
+      //   // .col-lg-4,
+      //   // .col-lg-8 {
+      //   //   width: 50%;
+      //   // }
+      // }
     }
 
 
