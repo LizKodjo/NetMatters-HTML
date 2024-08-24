@@ -53,7 +53,7 @@
                             <div class="row top-help">
                                 <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
                                     <div class="container-headerLogo">
-                                        <a href="index.php"><img class="logo" src="img/asset0.png"
+                                        <a href="/"><img class="logo" src="img/asset0.png"
                                                 alt="Netmatters Dark logo"></a>
                                     </div>
                                 </div>

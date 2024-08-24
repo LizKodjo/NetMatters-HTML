@@ -2247,7 +2247,7 @@ h2 {
 }
 
 #myModal {
-  display: flex;
+  display: none;
   overflow-x: hidden;
   overflow-y: auto;
   align-items: center;

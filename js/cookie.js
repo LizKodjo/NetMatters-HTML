@@ -1,8 +1,8 @@
 
 // Clients tooltip script
 
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
@@ -19,9 +19,9 @@ setCookie = (cName, cValue, expDays) => {
 
 // Function to check if cookie is available
 getCookie = (cName) => {
-    let name = cName + "=";
-    let cDecoded = decodeURIComponent(document.cookie);
-    let cArr = cDecoded.split("; ");
+    const name = cName + "=";
+    const cDecoded = decodeURIComponent(document.cookie);
+    const cArr = cDecoded.split("; ");
 
     let value;
     cArr.forEach(val => {
@@ -48,6 +48,8 @@ cookieMessage = () => {
     }
 }
 window.addEventListener("load", cookieMessage);
+
+
 
 
 
